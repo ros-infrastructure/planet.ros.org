@@ -47,7 +47,8 @@ if __name__ == '__main__':
                 final_description += sanitized_object
                 continue
             else:
-                final_description += object
+                #final_description += object
+                pass
         description = final_description
 
     sys.stdout.write(description)
