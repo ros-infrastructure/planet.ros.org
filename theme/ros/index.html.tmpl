@@ -12,37 +12,115 @@
 ### examples/config.ini and examples/index.html.tmpl in the Planet source.
 
 <head>
-<title><TMPL_VAR name></title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">">
-<link rel="stylesheet" href="planet.css" type="text/css">
-<TMPL_IF feedtype>
-<link rel="alternate" href="<TMPL_VAR feed ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml">
-</TMPL_IF>
+  <title><TMPL_VAR name></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">">
+  <link rel="stylesheet" href="planet.css" type="text/css">
+  <TMPL_IF feedtype>
+    <link rel="alternate" href="<TMPL_VAR feed ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml">
+  </TMPL_IF>
+  <script type="text/javascript">
+    function toggle(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+  </script>
 </head>
 
 <body>
-<h1><TMPL_VAR name></h1>
-<TMPL_VAR admin>
+
+### The overall div
+<div style="width: 100%; text-align: center;">
+
+  ### write ROS PLANET
+  <div class="top_block" style="display: inline-block; width:500px;padding-bottom:30px;margin-bottom:10px">
+    <div style="padding-left:50px;padding-right:50px">
+      <div style="width:60px;height:60px;float:left;scale:150%;">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin meet"
+                    viewBox="0 0 39 39">
+          <circle cx="5" cy="5" r="4" fill="#2E3E60"/>
+          <circle cx="20" cy="5" r="4" fill="#2E3E60"/>
+          <circle cx="35" cy="5" r="4" fill="#2E3E60"/>
+          <circle cx="5" cy="20" r="4" fill="#2E3E60"/>
+          <circle cx="20" cy="20" r="4" fill="#2E3E60"/>
+          <circle cx="35" cy="20" r="4" fill="#2E3E60"/>
+          <circle cx="5" cy="35" r="4" fill="#2E3E60"/>
+          <circle cx="20" cy="35" r="4" fill="#2E3E60"/>
+          <circle cx="35" cy="35" r="4" fill="#2E3E60"/>
+        </svg>
+      </div>
+      <div class="ROS_planet_text" style="float:right;">planet ROS</div>
+    </div>
+    <br/>
+  </div>
+  <br/>
+
+  <div style="display: inline-block; width:500px;margin-bottom:10px">
+    <div style="display: inline-block;">
+       <table>
+           <tr>
+               <td>
+                   <a class="top_button" href="./rss20.xml">
+                       <div>
+                           <img src="./images/feedicon.png"/>
+                           <br/>
+                           Subscribe
+                       </div>
+                   </a>
+               </td>
+               <td>
+                   <a class="top_button" href="javascript:toggle('add_your_blog')">
+                       <div>
+                           <img src="./images/feedicon.png"/>
+                           <br/>
+                           Add your blog
+                       </div>
+                   </a>
+               </td>
+               <td>
+                   <a class="top_button" href="javascript:toggle('participants')">
+                       <div>
+                           <img src="./images/feedicon.png"/>
+                           <br/>
+                           Participants
+                       </div>
+                   </a>
+               </td>
+           </tr>
+      </table>
+    </div>
+
+### add the section that describes the feeds that are used
+    <div id="participants" style="display:none">
+      <strong>Last updated </strong> on <TMPL_VAR date> (UTC)<br/><br/>
+      <strong>Current Subscriptions:</strong><br/>
+      <TMPL_LOOP Channels>
+      <a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="images/feed-icon-10x10.png" alt="(feed)"></a> <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>,
+      </TMPL_LOOP>
+    </div>
+    
+### add the bottom section that describes the feeds that are used
+    <div id="add_your_blog" style="display:none">
+      <strong>Wanna add your ROS blog ?</strong><br/>
+      Or have any comments/suggestions, please contact mr.ros@ros.org
+    </div>
+  </div
+
+
+### The main div
+<div style="width: 100%; text-align: center;">
+
+### The div with all the items
+<div class="all_items" style="display: inline-block;">
 
 <TMPL_LOOP Items>
 <TMPL_IF new_date>
-<TMPL_UNLESS __FIRST__>
-### End <div class="channelgroup">
-</div>
-### End <div class="daygroup">
-</div>
-</TMPL_UNLESS>
 <div class="daygroup">
-<h2><TMPL_VAR new_date></h2>
+<div class="date"><TMPL_VAR new_date></div>
 </TMPL_IF>
-
-<TMPL_IF new_channel>
-<TMPL_UNLESS new_date>
-### End <div class="channelgroup">
-</div>
-</TMPL_UNLESS>
-<div class="channelgroup">
 
 ### Planet provides template variables for *all* configuration options for
 ### the channel (and defaults), even if it doesn't know about them.  We
@@ -50,18 +128,20 @@
 ### doesn't know about the "face", "facewidth" and "faceheight" configuration
 ### variables, but makes them available to us anyway.
 
-<h3><a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">"><TMPL_VAR channel_name></a></h3>
-<TMPL_IF channel_face>
-<img class="face" src="images/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt="">
-</TMPL_IF>
-</TMPL_IF>
-
-
-<div class="entrygroup" id="<TMPL_VAR id>"<TMPL_IF channel_language> lang="<TMPL_VAR channel_language>"</TMPL_IF>>
-<TMPL_IF title>
-<h4<TMPL_IF title_language> lang="<TMPL_VAR title_language>"</TMPL_IF>><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR title></a></h4>
-</TMPL_IF>
+### create the div for the item
 <div class="entry">
+
+### get the title of the article
+<TMPL_IF title>
+<div class="entry_title" <TMPL_IF title_language> lang="<TMPL_VAR title_language>"</TMPL_IF>><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR title></a></div>
+</TMPL_IF>
+### get the name of the channel
+<TMPL_IF channel_name>
+<div class="channel_name">from <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">"><TMPL_VAR channel_name></a></div>
+</TMPL_IF>
+
+<div style="clear:both"></div>
+
 <div class="content"<TMPL_IF content_language> lang="<TMPL_VAR content_language>"</TMPL_IF>>
 <TMPL_VAR content>
 </div>
@@ -72,42 +152,27 @@
 ### Comment extra fields are 'author' and 'category' which we
 ### demonstrate below.
 
-<p class="date">
-<a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_IF author>by <TMPL_VAR author ESCAPE="HTML"> at </TMPL_IF><TMPL_VAR date><TMPL_IF category> under <TMPL_VAR category></TMPL_IF></a>
+<div style="clear:both"></div>
+<p class="by_and_date">
+<a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_IF author>by <TMPL_VAR author ESCAPE="HTML"> on </TMPL_IF><TMPL_VAR date><TMPL_IF category> under <TMPL_VAR category></TMPL_IF></a>
 </p>
-</div>
+### end of the item
 </div>
 
-<TMPL_IF __LAST__>
-### End <div class="channelgroup">
-</div>
-### End <div class="daygroup">
-</div>
-</TMPL_IF>
 </TMPL_LOOP>
 
-
-<div class="sidebar">
-<img src="images/logo.png" width="136" height="136" alt="">
-
-<h2>Subscriptions</h2>
-<ul>
-<TMPL_LOOP Channels>
-<li>
-<a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="images/feed-icon-10x10.png" alt="(feed)"></a> <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>
-</li>
-</TMPL_LOOP>
-</ul>
-
-<p>
-<strong>Last updated:</strong><br>
-<TMPL_VAR date><br>
-<em>All times are UTC.</em><br>
-<br>
-Powered by:<br>
-<a href="http://www.planetplanet.org/"><img src="images/planet.png" width="80" height="15" alt="Planet" border="0"></a>
-</p>
+### end of the day group
 </div>
+
+### end of all the items
+</div>
+
+### end of the main div
+</div>
+
+### Thank the awesome Planet Venus
+<strong>Powered by the awesome: </strong> <a href="http://www.intertwingly.net/code/venus/"><img src="images/venus.png" width="80" height="15" alt="Planet" border="0"></a><br/><br/>
+
 </body>
 
 </html>

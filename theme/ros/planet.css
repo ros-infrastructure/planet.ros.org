@@ -1,9 +1,7 @@
 body {
-	border-right: 1px solid black;
-	margin-right: 200px;
-
 	padding-left: 20px;
 	padding-right: 20px;
+  margin-top: 0;
 }
 
 h1 {
@@ -23,128 +21,108 @@ h1 {
 	text-align: right;
 }
 
-h2 {
-	font-family: "Bitstream Vera Sans", sans-serif;
-	font-weight: normal;
-	color: #200080;
-
-	margin-left: -20px;
+.top_block {
+    border-radius: 0 0 15px 15px;
+    border-width: thick;
+    border-color: #2E3E60;
+    border-style:solid;
+    border-top: none;
+    margin-bottom:20px;
 }
 
-h3 {
-	font-family: "Bitstream Vera Sans", sans-serif;
-	font-weight: normal;
-
-	background-color: #a0c0ff;
-	border: 1px solid #5080b0;
-
-	padding: 4px;
+.ROS_planet_text {
+    font-size: 40pt;
+    font-family: "Liberation Sans","Bitstream Vera Sans",sans-serif;    
+    color:#2E3E60;
+    font-weight: bold;
+    font-stretch:semi-condensed;
 }
 
-h3 a {
-	text-decoration: none;
-	color: inherit;
-}
-
-h4 {
-	font-family: "Bitstream Vera Sans", sans-serif;
-	font-weight: bold;
-}
-
-h4 a {
-	text-decoration: none;
-	color: inherit;
-}
-
-img.face {
-	float: right;
-	margin-top: -3em;
+.all_items {
+    width: 800px;
 }
 
 .entry {
-	margin-bottom: 2em;
+    font-size: 11pt;
+    margin-bottom: 2em;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    border-radius: 15px;
+    border-width: thick;
+    border-color: #2E3E60;
+    border-style:solid;
 }
 
-.entry .date {
-	font-family: "Bitstream Vera Sans", sans-serif;
+.entry .content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.entry .by_and_date {
+	font-family: "Liberation Sans","Bitstream Vera Sans",sans-serif;;
 	color: grey;
+    text-align: right;
 }
 
-.entry .date a {
+.entry .by_and_date a {
 	text-decoration: none;
 	color: inherit;
 }
 
-.sidebar {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 200px;
-
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-right: 0px;
-
-	padding-top: 20px;
-	padding-left: 0px;
-
-	font-family: "Bitstream Vera Sans", sans-serif;
-	font-size: 85%;
+.daygroup .entry_title {
+    font-family: "Liberation Sans","Bitstream Vera Sans",sans-serif;;
+    font-weight: none;
+    font-size: 25pt;
+    padding-bottom: 20pt;
+    float:left;
 }
 
-.sidebar h2 {
-	font-size: 110%;
-	font-weight: bold;
-	color: black;
-
-	padding-left: 5px;
-	margin-left: 0px;
+.daygroup .channel_name {
+    font-family: "Liberation Sans","Bitstream Vera Sans",sans-serif;
+    color: grey;
+    font-weight: none;
+    float:right;
 }
 
-.sidebar ul {
-	padding-left: 1em;
-	margin-left: 0px;
-
-	list-style-type: none;
+.daygroup .date {
+    font-family: "Liberation Sans","Bitstream Vera Sans",sans-serif;
+    font-size: 20pt;
+    font-weight: none;
+    color:#2E3E60;
+    padding-bottom: 15px;
 }
 
-.sidebar ul li:hover {
-	color: grey;
-}
-
-.sidebar ul li a {
-        text-decoration: none;
-}
-
-.sidebar ul li a:hover {
-        text-decoration: underline;
-}
-
-.sidebar ul li a img {
-        border: 0;
-}
-
-.sidebar p {
-	border-top: 1px solid grey;
-	margin-top: 30px;
-	padding-top: 10px;
-
-	padding-left: 5px;
-}
-
-.sidebar .message {
-    cursor: help;
-    border-bottom: 1px dashed red;
-}
-
-.sidebar a.message:hover {
-    cursor: help;
-	background-color: #ff0000;
-	color: #ffffff !important;
-	text-decoration: none !important;
+.daygroup a {
+    text-decoration: none;
+    color: #2E3E60;
 }
 
 a:hover {
 	text-decoration: underline !important;
-	color: blue !important;
+}
+
+.top_button {
+    color: grey;
+    text-decoration: none;
+    text-align: center;
+}
+
+.top_button a:active, a:focus, input[type="image"] {
+outline: 0;
+}
+
+.top_button div {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.top_button img {
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    text-align: center;
 }

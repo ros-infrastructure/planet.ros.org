@@ -18,8 +18,11 @@ def is_youtube(object):
     for regex in [ 'www\.youtube\.com/v/(\W*)', 'www\.youtube\.com/embed/(\W*)' ]:
         youtube = re.findall(regex, object, flags=re.DOTALL)
         if youtube:
-            return '<iframe width="420" height="315" src="http://www.youtube.com/embed/' +\
+            ans = '<div class="separator" style="clear: both; text-align: center;">'
+            ans += '<iframe width="420" height="315" src="http://www.youtube.com/embed/' +\
                 youtube[0] + '" frameborder="0"></iframe>'
+            ans += '</div>'
+            return ans
     return ''
 
 if __name__ == '__main__':
@@ -47,6 +50,7 @@ if __name__ == '__main__':
                 final_description += sanitized_object
                 continue
             else:
+                # do not display the content, maybe we'll need more rules to override certain defaults
                 #final_description += object
                 pass
         description = final_description

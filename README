@@ -1,0 +1,25 @@
+This is code for creating planet ROS, an aggregation of ROS blogs.
+
+It uses Planet Venus, a rewrite of Planet. More info at: http://www.intertwingly.net/code/venus/
+
+
+INSTALL
+
+On Ubuntu, just install the package: planet-venus
+Copy the current files in a folder.
+
+
+USAGE
+
+From the current folder, run:
+
+rm -fr build; planet --verbose ros.ini
+
+Everything will be built in the build folder. The index will be in ./build/output/index.html
+
+
+SECURITY
+
+By default, all potential HTML threats are removed (iframe, javascript, embed ...).
+The filter wg_desanitizer.py (in ./filters) creates some exceptions to that rule:
+- if <object> contains a Youtube video, an iframe is created cotaining it
