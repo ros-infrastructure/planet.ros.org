@@ -4,23 +4,6 @@ body {
   margin-top: 0;
 }
 
-h1 {
-	margin-top: 0px;
-	padding-top: 20px;
-
-	font-family: "Bitstream Vera Sans", sans-serif;
-	font-weight: normal;
-	letter-spacing: -2px;
-	text-transform: lowercase;
-	text-align: right;
-
-	color: grey;
-}
-
-.admin {
-	text-align: right;
-}
-
 .top_block {
     border-radius: 0 0 15px 15px;
     border-width: thick;
@@ -28,6 +11,17 @@ h1 {
     border-style:solid;
     border-top: none;
     margin-bottom:20px;
+    width:500px;
+    padding-bottom:15px;
+    padding-top:5px
+}
+
+#participants {
+  text-align:left;
+}
+
+#add_your_blog {
+  text-align:left;
 }
 
 .ROS_planet_text {
@@ -38,8 +32,12 @@ h1 {
     font-stretch:semi-condensed;
 }
 
-.all_items {
-    width: 800px;
+#top_info {
+    text-align: left;
+    border-radius: 15px;
+    border-width: thick;
+    border-color: #2E3E60;
+    border-style:solid;
 }
 
 .entry {
@@ -54,6 +52,7 @@ h1 {
     border-width: thick;
     border-color: #2E3E60;
     border-style:solid;
+    width: 800px;
 }
 
 .entry .content {
