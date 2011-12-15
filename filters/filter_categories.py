@@ -14,13 +14,12 @@ from xml.dom import minidom
 
 entry = sys.stdin.read()
 entry_dom = minidom.parseString(entry)
-filter_data = entry_dom.getElementsByTagName("planet:filter_categories")
+options = dict(zip(sys.argv[1::2],sys.argv[2::2]))
 
 # If a configuration parameter called filter_categories exists then grab it's
 # contents and proceed, otherwise allow the entry and exit
-if filter_data:
-    filter_categories = filter_data[0].firstChild.data.strip()
-else:
+filter_categories = options.get('--filter_categories', None)
+if not filter_categories:
     sys.stdout.write(entry)
     sys.exit(0)
 
