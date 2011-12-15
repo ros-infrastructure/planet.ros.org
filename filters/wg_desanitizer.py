@@ -15,9 +15,13 @@ from xml.dom import minidom
 
 def is_youtube(object):
     # try to find youtube videos
-    for regex in [ 'www\.youtube\.com/v/(\W*)', 'www\.youtube\.com/embed/(\W*)' ]:
+    for regex in [ 'www\.youtube\.com/v/(\w*)', 'www\.youtube\.com/embed/(\w*)' ]:
         youtube = re.findall(regex, object, flags=re.DOTALL)
         if youtube:
+            f=open('/tmp/toto','w')
+            f.write(str(youtube))
+            f.write(object)
+            f.close()
             ans = '<div class="separator" style="clear: both; text-align: center;">'
             ans += '<iframe width="420" height="315" src="http://www.youtube.com/embed/' +\
                 youtube[0] + '" frameborder="0"></iframe>'
@@ -27,6 +31,13 @@ def is_youtube(object):
 
 if __name__ == '__main__':
     entry = sys.stdin.read()
+    #f=open('/tmp/toto','w')
+    #f.write(entry)
+    #f.close()
+    if not entry:
+        sys.stdout.write(entry)
+        sys.exit(0)
+    
     entry_dom = minidom.parseString(entry)
 
     # Collect all the <category> elements from the entry and then see
