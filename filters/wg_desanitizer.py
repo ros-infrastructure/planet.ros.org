@@ -31,9 +31,6 @@ def is_youtube(object):
 
 if __name__ == '__main__':
     entry = sys.stdin.read()
-    #f=open('/tmp/toto','w')
-    #f.write(entry)
-    #f.close()
     if not entry:
         sys.stdout.write(entry)
         sys.exit(0)
@@ -49,13 +46,17 @@ if __name__ == '__main__':
     #    sys.stdout.write(entry)
     #    sys.exit(0)
 
-    for regex in ['(&lt;object[.\n]*?&lt;/object&gt;)', '(&lt;iframe[.\n]*?&lt;/iframe&gt;)']:
-        object_list = re.split(regex, description)
+    for regex in ['(&lt;object.*?&lt;/object&gt;)', '(&lt;iframe.*?&lt;/iframe&gt;)']:
+        pat=re.compile(regex,re.DOTALL)
+        object_list = pat.split(description)
         final_description = ''
+        i = 0
         for object in object_list:
-            if not re.findall(regex, object):
+            if i == 0:
                 final_description += object
+                i = 1
                 continue
+            i = 0
             sanitized_object = is_youtube(object)
             if sanitized_object:
                 final_description += sanitized_object
