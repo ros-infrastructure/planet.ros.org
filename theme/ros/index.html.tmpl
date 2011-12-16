@@ -34,8 +34,7 @@
        }
     }
   </script>
-</head>
-
+  <link rel="shortcut icon" href="./images/ros.ico"/></head>
 <body>
 
 ### The overall div
@@ -72,7 +71,7 @@
                <td>
                    <a class="top_button" href="./rss20.xml">
                        <div>
-                           <img src="./images/feedicon.png"/>
+                         <embed class="icon" src="./images/feed-icon.svg" type="image/svg+xml"/> 
                            <br/>
                            Subscribe
                        </div>
@@ -81,7 +80,7 @@
                <td>
                    <a class="top_button" href="javascript:toggle('add_your_blog')">
                        <div>
-                           <img src="./images/feedicon.png"/>
+                         <embed class="icon" src="./images/feed-icon-plus.svg" type="image/svg+xml" /> 
                            <br/>
                            Add your blog
                        </div>
@@ -90,7 +89,7 @@
                <td>
                    <a class="top_button" href="javascript:toggle('participants')">
                        <div>
-                           <img src="./images/feedicon.png"/>
+                         <embed class="icon" src="./images/Robot_Head_clip_art.svg" type="image/svg+xml" style="width:35px"/> 
                            <br/>
                            Participants
                        </div>
@@ -111,16 +110,40 @@
 ### add the section that describes the feeds that are used
   <div class="entry" id="top_info" style="display: none; margin-bottom:10px">
     <div id="participants" class="content" style="display:none">
-      <strong>Current Subscriptions as of <TMPL_VAR date> (UTC):</strong><br/>
+      <strong>Current participants as of <TMPL_VAR date> (UTC):</strong><br/>
       <TMPL_LOOP Channels>
       <a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="images/feed-icon-10x10.png" alt="(feed)"></a> <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>,
       </TMPL_LOOP>
     </div>
     
-### add the bottom section that describes the feeds that are used
+### add the section for a new person to add its own blog
     <div id="add_your_blog" class="content" style="display:none">
-      <strong>Wanna add your ROS blog ?</strong><br/>
-      Or have any comments/suggestions, please contact mr.ros@ros.org
+      <strong>Want your blog to be on the awesome planet ROS ?</strong><br/>
+      <p>
+      If you have a blog that talks about ROS once in a while, and especially if you are a developer, then we want to hear about those contributions on this page ! All you need for that to happen is:
+        <ul>
+          <li>have an RSS/Atom blog (no Tweeter/Facebook/Google+ posts)</li>
+          <li>file a bug on ... indicating your name and your RSS feed/ATOM url </li>
+          <li>make your ROS related posts tagged with any of the following categories: "ROS", "R.O.S.", "ros", "r.o.s."</li>
+        </ul>
+      </p>
+
+      <strong>Warnings</strong><br/>
+      For security reasons, html iframe, embed, object, javascript will be stripped out. Only Youtube videos in object and embed will be kept.
+
+        <strong>Guidelines</strong><br/>
+        <p>
+      Planet ROS is one of the public faces of ROS and is read by users and potential contributors. The content remains the opinion of the bloggers but Planet ROS reserves the right to remove offensive posts.
+    </p>
+      <p>
+      Blogs should be related to ROS but that does not mean they should be devoid of personal subjects and opinions : those are encouraged since Planet ROS is a chance to know more about ROS developers.
+    </p>
+      <p>
+      Posts can be positive and promote ROS or constructive and describe issues but should not contain useless flaming opinions. We want to keep ROS welcoming :)
+    </p>
+    <p>
+      ROS covers a wide variety of people and cultures. Profanities, prejudice, lewd comments and content likely to offend are to be avoided. Do not make personal attacks or attacks against other projects on your blog.
+    </p>
     </div>
   </div>
   <br/>

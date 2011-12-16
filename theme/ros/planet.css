@@ -125,3 +125,8 @@ outline: 0;
     text-decoration: none;
     text-align: center;
 }
+
+.top_button .icon {
+    width: 30px;
+    height: 30px;
+}
