@@ -6,6 +6,7 @@ body {
 
 .top_block {
     border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
     border-width: thick;
     border-color: #2E3E60;
     border-style:solid;
@@ -26,7 +27,7 @@ body {
 
 .ROS_planet_text {
     font-size: 40pt;
-    font-family: "Liberation Sans","Bitstream Vera Sans",sans-serif;    
+    font-family: "Liberation Sans","Bitstream Vera Sans",sans-serif;
     color:#2E3E60;
     font-weight: bold;
     font-stretch:semi-condensed;
