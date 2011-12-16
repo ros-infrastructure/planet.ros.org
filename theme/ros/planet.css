@@ -116,7 +116,7 @@ a:hover {
 outline: 0;
 }
 
-.top_button div {
+div.top_button {
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;

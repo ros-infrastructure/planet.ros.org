@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<html>
 
 ### Fancy Planet HTML template.
 ### 
@@ -14,11 +13,11 @@
 
 <head>
   <title><TMPL_VAR name></title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">"/>
   <link rel="stylesheet" href="planet.css" type="text/css"/>
   <TMPL_IF feedtype>
-    <link rel="alternate" href="<TMPL_VAR feed ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml">
+    <link rel="alternate" href="<TMPL_VAR feed ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml"/>
   </TMPL_IF>
   <script type="text/javascript">
     function toggle(id) {
@@ -59,31 +58,38 @@
        <table>
            <tr>
                <td>
-                   <a class="top_button" href="./rss20.xml">
-                       <div>
-                         <embed class="icon" src="./images/feed-icon.svg" type="image/svg+xml"/> 
-                           <br/>
-                           Subscribe
-                       </div>
-                   </a>
+<div class="top_button">
+<a class="top_button" href="./rss20.xml">                 
+<object class="icon" data="./images/feed-icon.svg" type="image/svg+xml"/>
+</a>
+                 <br/>
+                 <a class="top_button" href="./rss20.xml">
+                 Subscribe
+                 </a>
+</div>
                </td>
                <td>
-                   <a class="top_button" href="javascript:toggle('add_your_blog')">
-                       <div>
-                         <embed class="icon" src="./images/feed-icon-plus.svg" type="image/svg+xml" /> 
-                           <br/>
+<div class="top_button">
+<a class="top_button" href="javascript:toggle('add_your_blog')">
+<object class="icon" data="./images/feed-icon-plus.svg" type="image/svg+xml"/>
+</a>
+<br/>
+<a class="top_button" href="javascript:toggle('add_your_blog')">
                            Add your blog
+</a>
                        </div>
-                   </a>
                </td>
                <td>
+<div class="top_button">
                    <a class="top_button" href="javascript:toggle('participants')">
-                       <div>
-                         <embed class="icon" src="./images/Robot_Head_clip_art.svg" type="image/svg+xml" style="width:35px"/> 
+                         <object class="icon" data="./images/Robot_Head_clip_art.svg" type="image/svg+xml" style="width:35px"/>
+</a>
+
                            <br/>
+<a class="top_button" href="javascript:toggle('participants')">
                            Participants
+</a>
                        </div>
-                   </a>
                </td>
            </tr>
       </table>
@@ -102,7 +108,7 @@
     <div id="participants" class="content" style="display:none">
       <strong>Current participants as of <TMPL_VAR date> (UTC):</strong><br/>
       <TMPL_LOOP Channels>
-      <a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="images/feed-icon-10x10.png" alt="(feed)"></a> <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>,
+      <a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="images/feed-icon-10x10.png" alt="(feed)"/></a> <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>,
       </TMPL_LOOP>
     </div>
     
@@ -185,7 +191,7 @@
 </div>
 
 </TMPL_LOOP>
-
+</div>
 ### end of the day group
 </div>
 
@@ -197,7 +203,7 @@
 
 ### Thank the awesome Planet Venus
 <br/>
-<strong>Powered by the awesome: </strong> <a href="http://www.intertwingly.net/code/venus/"><img src="images/venus.png" width="80" height="15" alt="Planet" border="0"></a><br/><br/>
+<strong>Powered by the awesome: </strong> <a href="http://www.intertwingly.net/code/venus/"><img src="images/venus.png" width="80" height="15" alt="Planet" border="0"/></a><br/><br/>
 
 </body>
 
