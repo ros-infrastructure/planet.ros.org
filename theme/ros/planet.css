@@ -35,6 +35,7 @@ body {
 #top_info {
     text-align: left;
     border-radius: 15px;
+    -moz-border-radius: 15px;
     border-width: thick;
     border-color: #2E3E60;
     border-style:solid;
@@ -49,6 +50,7 @@ body {
     padding-bottom: 10px;
     text-align: left;
     border-radius: 15px;
+    -moz-border-radius: 15px;
     border-width: thick;
     border-color: #2E3E60;
     border-style:solid;
