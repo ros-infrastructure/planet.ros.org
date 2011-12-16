@@ -16,7 +16,7 @@ from xml.dom import minidom
 def is_youtube(object):
     # try to find youtube videos
     for regex in [ 'www\.youtube\.com/v/(\w*)', 'www\.youtube\.com/embed/(\w*)' ]:
-        youtube = re.findall(regex, object, flags=re.DOTALL)
+        youtube = re.findall(regex, object)
         if youtube:
             f=open('/tmp/toto','w')
             f.write(str(youtube))
@@ -49,11 +49,11 @@ if __name__ == '__main__':
     #    sys.stdout.write(entry)
     #    sys.exit(0)
 
-    for regex in ['(&lt;object.*?&lt;/object&gt;)', '(&lt;iframe.*?&lt;/iframe&gt;)']:
-        object_list = re.split(regex, description, flags=re.DOTALL)
+    for regex in ['(&lt;object[.\n]*?&lt;/object&gt;)', '(&lt;iframe[.\n]*?&lt;/iframe&gt;)']:
+        object_list = re.split(regex, description)
         final_description = ''
         for object in object_list:
-            if not re.findall(regex, object, flags=re.DOTALL):
+            if not re.findall(regex, object):
                 final_description += object
                 continue
             sanitized_object = is_youtube(object)
