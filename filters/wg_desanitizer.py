@@ -18,10 +18,6 @@ def is_youtube(object):
     for regex in [ 'www\.youtube\.com/v/(\w*)', 'www\.youtube\.com/embed/(\w*)' ]:
         youtube = re.findall(regex, object)
         if youtube:
-            f=open('/tmp/toto','w')
-            f.write(str(youtube))
-            f.write(object)
-            f.close()
             ans = '<div class="separator" style="clear: both; text-align: center;">'
             ans += '<iframe width="420" height="315" src="http://www.youtube.com/embed/' +\
                 youtube[0] + '" frameborder="0"></iframe>'
