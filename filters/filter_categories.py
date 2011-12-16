@@ -30,14 +30,16 @@ categories = [cat.strip() for cat in filter_categories.split(',')]
 # if it also happens to be in our required categories list.  If there aren't
 # any <category> elements in the entry then skip it
 entry_categories = entry_dom.getElementsByTagName('category')
-if len(entry_categories) > 0:
-    for entry_category in entry_categories:
-        if entry_category.attributes['term'].value in categories:
-            sys.stdout.write(entry)
-            sys.exit(0)
-else:
-    sys.exit(1)
+
+for entry_category in entry_categories:
+    if entry_category.attributes['term'].value in categories:
+        f=open("/tmp/toto", 'w')
+        f.write(entry_category.attributes['term'].value)
+        f.write(str(categories))
+        f.write(entry)
+        f.close()
+        sys.stdout.write(entry)
+        sys.exit(0)
 
 # By default we reject the entry
 sys.exit(1)
-
