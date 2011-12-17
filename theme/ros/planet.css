@@ -74,7 +74,7 @@ body {
 	color: inherit;
 }
 
-.daygroup .entry_title {
+.entry_title {
     font-family: "Liberation Sans","Bitstream Vera Sans",sans-serif;;
     font-weight: none;
     font-size: 25pt;
@@ -82,14 +82,14 @@ body {
     float:left;
 }
 
-.daygroup .channel_name {
+.channel_name {
     font-family: "Liberation Sans","Bitstream Vera Sans",sans-serif;
     color: grey;
     font-weight: none;
     float:right;
 }
 
-.daygroup .date {
+.date {
     font-family: "Liberation Sans","Bitstream Vera Sans",sans-serif;
     font-size: 20pt;
     font-weight: none;
@@ -97,7 +97,7 @@ body {
     padding-bottom: 15px;
 }
 
-.daygroup a {
+.entry a {
     text-decoration: none;
     color: #2E3E60;
 }

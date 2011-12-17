@@ -45,7 +45,7 @@
   <div class="top_block" style="display: inline-block;">
     <div style="padding-left:50px;padding-right:50px;">
       <div style="float:left;padding-top:5px">
-        <object class="icon" style="width:60px; height:60px" data="./images/ros_logo.svg" type="image/svg+xml" />
+        <embed class="icon" style="width:60px; height:60px" src="./images/ros_logo.svg" type="image/svg+xml" />
       </div>
       <div class="ROS_planet_text" style="float:right;">planet ROS</div>
     </div>
@@ -59,9 +59,7 @@
            <tr>
                <td>
 <div class="top_button">
-<a class="top_button" href="./rss20.xml">                 
-<object class="icon" data="./images/feed-icon.svg" type="image/svg+xml"/>
-</a>
+<embed class="icon" src="./images/feed-icon.svg" type="image/svg+xml"/>
                  <br/>
                  <a class="top_button" href="./rss20.xml">
                  Subscribe
@@ -70,9 +68,7 @@
                </td>
                <td>
 <div class="top_button">
-<a class="top_button" href="javascript:toggle('add_your_blog')">
-<object class="icon" data="./images/feed-icon-plus.svg" type="image/svg+xml"/>
-</a>
+<embed class="icon" src="./images/feed-icon-plus.svg" type="image/svg+xml"/>
 <br/>
 <a class="top_button" href="javascript:toggle('add_your_blog')">
                            Add your blog
@@ -81,10 +77,7 @@
                </td>
                <td>
 <div class="top_button">
-                   <a class="top_button" href="javascript:toggle('participants')">
-                         <object class="icon" data="./images/Robot_Head_clip_art.svg" type="image/svg+xml" style="width:35px"/>
-</a>
-
+                  <embed class="icon" src="./images/Robot_Head_clip_art.svg" type="image/svg+xml" style="width:35px"/>
                            <br/>
 <a class="top_button" href="javascript:toggle('participants')">
                            Participants
@@ -115,14 +108,14 @@
 ### add the section for a new person to add its own blog
     <div id="add_your_blog" class="content" style="display:none">
       <strong>Want your blog to be on the awesome planet ROS ?</strong><br/>
-      <p>
+        <p>
       If you have a blog that talks about ROS once in a while, and especially if you are a developer, then we want to hear about those contributions on this page ! All you need for that to happen is:
+        </p>
         <ul>
           <li>have an RSS/Atom blog (no Tweeter/Facebook/Google+ posts)</li>
           <li>file a bug on ... indicating your name and your RSS feed/ATOM url </li>
           <li>make your ROS related posts tagged with any of the following categories: "ROS", "R.O.S.", "ros", "r.o.s."</li>
         </ul>
-      </p>
 
       <strong>Warnings</strong><br/>
       <p>
@@ -149,7 +142,6 @@
 
 <TMPL_LOOP Items>
 <TMPL_IF new_date>
-<div class="daygroup">
 <div class="date"><TMPL_VAR new_date></div>
 </TMPL_IF>
 
@@ -191,9 +183,6 @@
 </div>
 
 </TMPL_LOOP>
-
-### end of the day group
-</div>
 
 ### end of all the items
 </div>
