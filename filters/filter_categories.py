@@ -1,12 +1,10 @@
 """This input filter will filter out certain blog posts based on the <category>
 element.
 
-This is not totally dissimilar to the function of the xpath_sifter.py plugin.
-The main difference are that this one uses minidom instead of xpath and instead
-of using global requires and excludes, this plugin looks for a feed-level
-configuration parameter called filter_categories, which is a comma-separated
-list of categories that are allowed.  If at least one of the categories is not
-found in the blog entry then the entry is rejected.
+The following options are available in the .ini file:
+filter_categories = ROS, ros, R.O.S., r.o.s.
+filter_categories_exceptions = ROS news
+
 """
 
 import sys
@@ -19,7 +17,23 @@ options = dict(zip(sys.argv[1::2],sys.argv[2::2]))
 # If a configuration parameter called filter_categories exists then grab it's
 # contents and proceed, otherwise allow the entry and exit
 filter_categories = options.get('--filter_categories', None)
+do_filter = True
 if not filter_categories:
+    do_filter = False
+
+# figure out if the filter should not be applied
+filter_categories_exceptions = options.get('--filter_categories_exceptions', set())
+if filter_categories_exceptions:
+    filter_categories_exceptions = set([cat.strip() for cat in filter_categories_exceptions.split(',')])
+
+entry_names = entry_dom.getElementsByTagName('planet:name')
+for entry_name in entry_names:
+    name = " ".join(t.nodeValue for t in entry_name.childNodes if t.nodeType == t.TEXT_NODE)
+    if name in filter_categories_exceptions:
+        do_filter = False
+        break
+
+if not do_filter:
     sys.stdout.write(entry)
     sys.exit(0)
 
@@ -33,11 +47,6 @@ entry_categories = entry_dom.getElementsByTagName('category')
 
 for entry_category in entry_categories:
     if entry_category.attributes['term'].value in categories:
-        f=open("/tmp/toto", 'w')
-        f.write(entry_category.attributes['term'].value)
-        f.write(str(categories))
-        f.write(entry)
-        f.close()
         sys.stdout.write(entry)
         sys.exit(0)
 
