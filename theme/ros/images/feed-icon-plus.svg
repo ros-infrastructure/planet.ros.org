@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,14 +36,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="748"
+     inkscape:window-width="2560"
+     inkscape:window-height="1519"
      id="namedview32"
      showgrid="false"
-     inkscape:zoom="0.65186406"
-     inkscape:cx="102.22677"
-     inkscape:cy="91.661017"
-     inkscape:window-x="-3"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="45.313114"
+     inkscape:cy="49.82639"
+     inkscape:window-x="-2"
      inkscape:window-y="-3"
      inkscape:window-maximized="1"
      inkscape:current-layer="RSSicon" />
@@ -135,8 +135,8 @@
      fill="#FFF"
      id="path30" />
   <path
-     style="fill:#00e200;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     d="M 100.75 8.6875 C 98.947152 8.6875 97.5 11.170134 97.5 14.25 L 97.5 20.875 L 90.84375 20.875 C 87.763884 20.875 85.28125 22.322152 85.28125 24.125 L 85.28125 25.5 C 85.28125 27.302848 87.763884 28.75 90.84375 28.75 L 97.5 28.75 L 97.5 35.375 C 97.5 38.454866 98.947152 40.9375 100.75 40.9375 L 102.09375 40.9375 C 103.8966 40.9375 105.34375 38.454866 105.34375 35.375 L 105.34375 28.75 L 112 28.75 C 115.07987 28.75 117.5625 27.302848 117.5625 25.5 L 117.5625 24.125 C 117.5625 22.322152 115.07987 20.875 112 20.875 L 105.34375 20.875 L 105.34375 14.25 C 105.34375 11.170134 103.8966 8.6875 102.09375 8.6875 L 100.75 8.6875 z "
-     transform="scale(2,2)"
-     id="rect3834" />
+     style="fill:#00e200;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:52.2"
+     d="m 194.43934,20.718777 0,23.875 -23.875,0 0,14.8125 23.875,0 0,23.875 14.8125,0 0,-23.875 23.875,0 0,-14.8125 -23.875,0 0,-23.875 -14.8125,0 z"
+     id="rect2997"
+     inkscape:connector-curvature="0" />
 </svg>
