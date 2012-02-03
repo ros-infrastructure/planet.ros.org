@@ -43,12 +43,29 @@ categories = [cat.strip() for cat in filter_categories.split(',')]
 # Collect all the <category> elements from the entry and then see
 # if it also happens to be in our required categories list.  If there aren't
 # any <category> elements in the entry then skip it
+
+# first remove all the <source> elements (they can have categories)
+for entry_elem in entry_dom.getElementsByTagName('entry'):
+    for node in entry_elem.childNodes:
+        if node.tagName == 'source':
+            entry_elem.removeChild(node)
+            break
 entry_categories = entry_dom.getElementsByTagName('category')
 
+do_log=False
+if do_log:
+    f=open('/tmp/planet', 'a')
+    f.write('\n\n\n     begin        \n\n\n' + entry)
 for entry_category in entry_categories:
+    if do_log:
+        f.write(entry_category.attributes['term'].value)
     if entry_category.attributes['term'].value in categories:
         sys.stdout.write(entry)
         sys.exit(0)
+
+if do_log:
+    f.write('\n')
+    f.close()
 
 # By default we reject the entry
 sys.exit(1)
