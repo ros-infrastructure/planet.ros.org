@@ -15,7 +15,7 @@ from xml.dom import minidom
 
 def is_youtube(object):
     # try to find youtube videos
-    for regex in [ 'www\.youtube\.com/v/(\w*)', 'www\.youtube\.com/embed/(\w*)' ]:
+    for regex in [ 'www\.youtube\.com/v/([^"]*?)&quot;', 'www\.youtube\.com/embed/([^"]*?)&quot;' ]:
         youtube = re.findall(regex, object)
         if youtube:
             ans = '<div class="separator" style="clear: both; text-align: center;">'
