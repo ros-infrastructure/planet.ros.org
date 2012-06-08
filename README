@@ -17,6 +17,7 @@ rm -fr build; planet --verbose ros.ini
 
 Everything will be built in the build folder. The index will be in ./build/output/index.html
 
+For the online version, it is located on wgs32
 
 SECURITY
 
