@@ -15,9 +15,13 @@ From the current folder, run:
 
 rm -fr build; planet --verbose ros.ini
 
-Everything will be built in the build folder. The index will be in ./build/output/index.html
+Everything will be built in the ``build`` folder. The index will be in ``./build/output/index.html``. You might need to change variables to
+build and output to different folders: ``output_theme``, ``cache_directory``, ``output_dir`` and ``filter_directories``.
 
-For the online version, it is located on wgs32
+For the online version, it is located on wgs32 in ``/home/vrabaud`` and the script is run with the following cronjob:
+
+16 * * * * planet /home/vrabaud/planetros/ros.ini
+
 
 SECURITY
 
