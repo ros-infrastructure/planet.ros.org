@@ -14,4 +14,5 @@ deploy:
   keep_history: true
   local_dir: output
   on:
-    branch: gh-pages
+    branch: migrating_to_travis
+  target_branch: gh-pages
