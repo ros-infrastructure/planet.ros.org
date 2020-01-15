@@ -5,23 +5,20 @@ It uses Planet Venus, a rewrite of Planet. More info at: http://www.intertwingly
 
 INSTALL
 
-On Ubuntu, just install the package: planet-venus
-Copy the current files in a folder.
+On Ubuntu, to test after installing docker you can just run build.bash
 
 
 USAGE
 
 From the current folder, run:
 
-rm -fr build; planet --verbose ros.ini
 
-Everything will be built in the ``build`` folder. The index will be in ``./build/output/index.html``. You might need to change variables to
+Everything will be built in the ``build`` folder.
+The index will be in ``./output/index.html``. You might need to change variables to
 build and output to different folders: ``output_theme``, ``cache_directory``, ``output_dir`` and ``filter_directories``.
 
-For the online version, it is located on wgs32 in ``/home/vrabaud`` and the script is run with the following cronjob:
-
-16 * * * * planet /home/vrabaud/planetros/ros.ini
-
+This is deployed to github pages via a nightly cron job on travis, as well as on every commit to master changing the config.
+PRs will be test run but not deployed.
 
 SECURITY
 
