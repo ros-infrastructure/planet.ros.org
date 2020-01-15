@@ -1,7 +1,6 @@
 services:
 - docker
 
-
 script:
 - ./build.bash
 
@@ -12,5 +11,5 @@ deploy:
   keep_history: true
   local_dir: output
   on:
-    branch: migrating_to_travis
+    branch: master  # only deploy from master
   target_branch: gh-pages
