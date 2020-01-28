@@ -3,6 +3,7 @@ services:
 
 script:
 - ./build.bash
+- echo 'planet.ros.org' >> output/CNAME
 
 deploy:
   provider: pages
