@@ -1,0 +1,1504 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+
+<channel>
+	<title>Planet ROS</title>
+	<link>http://planet.ros.org</link>
+	<language>en</language>
+	<description>Planet ROS - http://planet.ros.org</description>
+
+<item>
+	<title>ROS Discourse General: Trade-offs to Consider When Collecting Robotics Data</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21359</guid>
+	<link>https://discourse.ros.org/t/trade-offs-to-consider-when-collecting-robotics-data/21359</link>
+	<description>&lt;p&gt;Hi all,&lt;/p&gt;
+&lt;p&gt;Our team at &lt;a href=&quot;https://foxglove.dev&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Foxglove&lt;/a&gt; wrote up &lt;a href=&quot;https://foxglove.dev/blog/recording-your-robotics-data&quot; rel=&quot;noopener nofollow ugc&quot;&gt;a blog post&lt;/a&gt; on typical trade-offs to consider when recording robotics data – whether on ROS 1 or 2, or another platform entirely.&lt;/p&gt;
+&lt;p&gt;While our product &lt;a href=&quot;https://foxglove.dev/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Foxglove Studio&lt;/a&gt; focuses on data visualization and debugging, we know that that constitutes only a small portion of the bigger picture. In an effort to share generally useful knowledge with our user base, we’re working on a blog series covering how to interact with your robotics data – with steps ranging from data collection and storage to analysis and visualization.&lt;/p&gt;
+&lt;p&gt;We hope you find our inaugural post on data collection useful!&lt;/p&gt;
+&lt;p&gt;(As always, feel free to &lt;a href=&quot;https://foxglove.dev&quot; rel=&quot;noopener nofollow ugc&quot;&gt;sign up for our newsletter&lt;/a&gt; to have our future blog posts sent straight to your inbox.)&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/trade-offs-to-consider-when-collecting-robotics-data/21359&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 13 Jul 2021 21:49:29 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Potential Multi-Threading Candidates in ROS2</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21326</guid>
+	<link>https://discourse.ros.org/t/potential-multi-threading-candidates-in-ros2/21326</link>
+	<description>&lt;p&gt;Dear ROS Community,&lt;/p&gt;
+&lt;p&gt;I am working on the topic of understanding how multi-threading can influence the execution time of particular functions and algorithms. In order to conduct tests and benchmarks, I need functions and algorithms that could potentially benefit from multi-threading. Concretely, I am asking for any of these points:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Any open source project that could benefit from multi-threading (your personal project, or any other project stack)&lt;/li&gt;
+&lt;li&gt;Any known function that is used commonly often in ROS and could benefit from multi-threading.&lt;/li&gt;
+&lt;li&gt;Functions or algorithms containing loops with many iterations.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thank you in advance.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/potential-multi-threading-candidates-in-ros2/21326&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 12 Jul 2021 13:46:02 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Introducing ROSboard: Web-based visualizations for ROS1 and ROS2</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21311</guid>
+	<link>https://discourse.ros.org/t/introducing-rosboard-web-based-visualizations-for-ros1-and-ros2/21311</link>
+	<description>&lt;p&gt;Hi everyone,&lt;/p&gt;
+&lt;p&gt;I’m the author of ROSshow (&lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/dheera/rosshow&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - dheera/rosshow: Visualize ROS topics inside a terminal with Unicode/ASCII art&lt;/a&gt;), which lets you visualize ROS topics with ASCII art.&lt;/p&gt;
+&lt;p&gt;I’m introducing ROSboard (&lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/dheera/rosboard&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - dheera/rosboard: ROS node that turns your robot into a web server to visualize ROS topics&lt;/a&gt;), which simply runs on your robot as a ROS node, and serves up live-streamed visualizations on &lt;a href=&quot;https://your-robot-ip:8888/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://your-robot-ip:8888/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/5/513efb0c3280acc9be3519812b43cb54e00a5e00.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;screenshot4&quot;&gt;&lt;img alt=&quot;screenshot4&quot; height=&quot;433&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/5/513efb0c3280acc9be3519812b43cb54e00a5e00_2_690x433.jpeg&quot; width=&quot;690&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;screenshot4&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;1511×950 123 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;This has been a long-running project of mine (I started working on it before WebViz) but I’ve been looking to pick it up again due to various inadequacies in WebViz.&lt;/p&gt;
+&lt;p&gt;A couple of the most important things I’m hoping to achieve with this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ROS1/ROS2 compatible&lt;/strong&gt; – it should work in both ROS versions! Tested in noetic, foxy, galactic, it should work in kinetic and melodic as long as you pip3 install rospkg. By the way, it makes use of my library “rospy2” which allows for the same code to work in ROS1 and ROS2.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Mobile-friendly&lt;/strong&gt; – one of my preferred ways of debugging (especially outdoor) robots is to walk around with the robot and a phone.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Easily extensible&lt;/strong&gt; – creating a custom visualization involves only adding ONE .js file and adding a reference to it in the main .js file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Roadmap for things I hope to do in the future. Collaboration and suggestions welcome! I’d also love to hear more about what the community finds lacking in the current state of local visualization tools. This is a FOSS project, BSD licensed.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(very near future) visualizations for Odometry, OccupancyGrid, LaserScan, Path, Imu, MagneticField&lt;/li&gt;
+&lt;li&gt;(near future) visualization for PointCloud2, Trajectory, time series plots for topics with multiple fields&lt;/li&gt;
+&lt;li&gt;(near future) rosbag v1 support&lt;/li&gt;
+&lt;li&gt;(near future) throttling options&lt;/li&gt;
+&lt;li&gt;(near future) diagnostics aggregation&lt;/li&gt;
+&lt;li&gt;(future) TF tree, URDF visualization, etc.&lt;/li&gt;
+&lt;li&gt;(future) rosbag v2 support&lt;/li&gt;
+&lt;li&gt;(future) bandwidth detection and automatic throttling&lt;/li&gt;
+&lt;li&gt;(future) publishers from the web browser&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;p&gt;&lt;small&gt;10 posts - 5 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/introducing-rosboard-web-based-visualizations-for-ros1-and-ros2/21311&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sun, 11 Jul 2021 17:57:23 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROS News for the Week of July 5th, 2021</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21303</guid>
+	<link>https://discourse.ros.org/t/ros-news-for-the-week-of-july-5th-2021/21303</link>
+	<description>&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#ros-news-for-the-week-752021-1&quot; name=&quot;ros-news-for-the-week-752021-1&quot;&gt;&lt;/a&gt;ROS News for the Week 7/5/2021&lt;/h1&gt;
+&lt;p&gt;&lt;img alt=&quot;tangram&quot; class=&quot;animated&quot; height=&quot;375&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/6/6eb5a57d33ed33767d0fc61a5707b940eaaaf0ed.gif&quot; width=&quot;513&quot; /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.tangramvision.com/resources/depth-sensor-visualizer&quot;&gt;Tool from Tangram: Compare FOV and Working Distance for Depth Cameras&lt;/a&gt;&lt;br /&gt;
+&lt;em&gt;I really appreciate this work, one thing that frustrates me as a computer vision person is when people  don’t do basic specification checking when evaluating a new sensor.&lt;/em&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/e/ef9e05f2cf5db7bdcd8a9d706e05f04127778755.jpeg&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;291&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/e/ef9e05f2cf5db7bdcd8a9d706e05f04127778755_2_517x291.jpeg&quot; width=&quot;517&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;1920×1080 400 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+&lt;a href=&quot;https://discourse.ros.org/t/nist-ariac-2021-results-announced/21290&quot;&gt;NIST has Announced the 2021 ARIAC Winners&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/0/08de46dedd7b21b3409195391abec4f64dc9c88c.png&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;499&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/0/08de46dedd7b21b3409195391abec4f64dc9c88c_2_389x499.png&quot; width=&quot;389&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;726×932 69.6 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+&lt;em&gt;This week, my wonderful intern noticed that YouTube thinks RVIZ is a musical artist.&lt;/em&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;br /&gt;
+**ROSCON TALK PROPOSALS &amp;amp; DIVERSITY SCHOLARSHIP APPLICATIONS ARE DUE TODAY!!!**&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;img alt=&quot;:rotating_light:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/rotating_light.png?v=9&quot; title=&quot;:rotating_light:&quot; /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#events-2&quot; name=&quot;events-2&quot;&gt;&lt;/a&gt;Events&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-2021-call-for-proposals/19811&quot;&gt;7/9/2021 ROSCon CFP Closes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-2021-diversity-scholarships-applications-open/19813&quot;&gt;7/9/2021 ROSCon Diversity Scholarshop Application Deadline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.eventbrite.com/e/intermediate-robotics-2-build-a-ros-2-robot-sponsored-by-amazon-tickets-145965846777&quot;&gt;7/25/2021 Black in Robotics Build a ROS 2 Robot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/join-us-for-the-ros-industrial-asia-pacific-workshop-2021-18th-aug/21176&quot;&gt;8/18/2021 ROS Industrial AP Workshop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/save-the-date-the-px4-developer-summit-is-back-online-for-2021/20147&quot;&gt;9/14/2021 PX4 Dev Summit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://roscon.jp/2021/&quot;&gt;9/16/2021 ROSConJp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://selfracingcars.com/&quot;&gt;10/16/2021 Self Racing Cars Bay Area &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-2021-we-re-back/19243/8&quot;&gt;10/21/2021 ROSCon is Back!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#news-3&quot; name=&quot;news-3&quot;&gt;&lt;/a&gt;News&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/nist-ariac-2021-results-announced/21290&quot;&gt;2021 NIST ARIAC Competition Results&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/4wLyK5wjau0&quot;&gt;OpenCV + Tangram  on Sensors and Calibration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/UMRobotics/status/1413151638462812160&quot;&gt;Throwback: Robotics Research in the 90s&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/DavesArmoury/status/1412796073723240450&quot;&gt;Twitch Plays Operation using ROS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://linuxfoundation.org/press-release/linux-foundation-to-form-new-open-3d-foundation/&quot;&gt;Launch of the Open3D Foundation – FOSS Render Engine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sites.gatech.edu/robotic-art-workshop/&quot;&gt;Robots X Arts Exhibition at RSS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://engineering.virginia.edu/news/2021/06/career-award-racing-safety&quot;&gt;Madhur Behl (F1/Tenth) Awarded NSF Research Grant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://techcrunch.com/2021/07/08/robotics-roundup-19/&quot;&gt;Techcrunch Weekly Roundup on Robotics Funding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://arstechnica.com/cars/2021/07/a-science-fair-or-the-future-of-racing-the-indy-autonomous-challenge/&quot;&gt;Ars Technica on Indy Autonomous Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://roboticsconference.org/&quot;&gt;Robotics Science and Systems 2021 is Next Week&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ifr.org/post/advances-in-programming-lower-cost-of-adoption&quot;&gt;International Federation of Robotics on ROS Industrial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://newsroom.eclipse.org/eclipse-newsletter/2021/june/open-source-software-drives-indy-autonomous-challenge-racecars&quot;&gt;Open Source Software Drives Indy Autonomous Challenge Racecars&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=DWRL1FwL4Bc&quot;&gt;Women in Autonomy on Mentorship&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://techxplore.com/news/2021-06-autonomous-excavators-ready-clock-real-world.html&quot;&gt;Autonomous Excavators powered by ROS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#ros-4&quot; name=&quot;ros-4&quot;&gt;&lt;/a&gt;ROS&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://arxiv.org/pdf/2106.11266.pdf&quot;&gt;Paper on Automatically Checking TF Frames for Issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/QfRHJgeSAOw&quot;&gt;HW Acceleration Working Group Meeting Recording&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/deep-learning-for-manipulation-using-embedded-gpu-acceleration/21295&quot;&gt;Deep Learning for Manipulation Using Embedded GPUs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/micro-ros-teensy-support/16852/32&quot;&gt;Awesome micro-ROS Teensy Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/micro-ros-multithreading-support/21257&quot;&gt;micro-ROS Teensy Support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/new-packages-for-ros-2-rolling-ridley-2021-07-06/21246&quot;&gt;15 New and 26 Updated Packages for Rolling Ridley&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/ros2-memory-usage-no-dds/21206/6&quot;&gt;Profiling ROS 2 Memory Usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/moveit-2-2-support-for-ros-2-foxy-galactic-rolling/21249&quot;&gt;MoveIt 2.2 Support for Foxy, Galactic, Rolling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/open-sourcing-our-ros2-industrial-training-material/21179&quot;&gt;Fraunhaofer &amp;amp; ROS Industrial Open Source their Industrial Training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/ros-mobile-update-2-1/21181&quot;&gt;ROS Mobile 2.1 Released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Ar-Ray-code/rclshark&quot;&gt;RCLShark – Tool for ROS 2 IP Discovery + System Monitoring&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://moveit.ros.org/ros/moveit/galactic/2021/07/08/moveit-galactic.html&quot;&gt;MoveIt 2.2 Change Log / Discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tangramvision.com/resources/depth-sensor-visualizer&quot;&gt;&lt;em&gt;SUPER COOL&lt;/em&gt; Tool from Tangram: Compare FOV and Working Distance for Depth Cameras&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLIII-B1-2021/215/2021/isprs-archives-XLIII-B1-2021-215-2021.pdf&quot;&gt;Image Based Orientation Estimation using ROS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.px4.io/master/en/ros/ros2.html?utm_content=171960200&amp;amp;utm_medium=social&amp;amp;utm_source=twitter&amp;amp;hss_channel=tw-721094774&quot;&gt;PX4 Supports ROS Galactic&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#questions-5&quot; name=&quot;questions-5&quot;&gt;&lt;/a&gt;Questions&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;I chose these questions this week because they are questions that come up way too often and indicate that we need to improve the ROS 2 docs. If you are interested in helping with the ROS 2 docs, or are willing to port an article from the ROS Wiki to the ROS 2 Docs, please let me know. In particular, if you have a lot of experience with ROS 2 launch files I would love your help.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://answers.ros.org/question/381707/whats-the-difference-between-geteulerypr-geteulerzyx-and-getrpy/&quot;&gt;Geometry Transform Issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://answers.ros.org/question/382000/ros2-makes-launch-files-crazy-too-soon-to-be-migrating/&quot;&gt;ROS 2 Launch File Troubles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://answers.ros.org/question/381968/different-version-of-python-will-python-389-work-39/?answer=382145#post-id-382145&quot;&gt;System Python Versions and ROS 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;p&gt;&lt;small&gt;3 posts - 3 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/ros-news-for-the-week-of-july-5th-2021/21303&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 09 Jul 2021 17:16:08 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROSCon Talk Submissions Due This Friday!</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21279</guid>
+	<link>https://discourse.ros.org/t/roscon-talk-submissions-due-this-friday/21279</link>
+	<description>&lt;p&gt;The deadline to submit a proposal for a talk for &lt;a href=&quot;https://roscon.ros.org/2021/#call-for-proposals&quot;&gt;ROSCon 2021 CFP&lt;/a&gt; is this week.&lt;/p&gt;
+&lt;p&gt;Please take a moment to think about the work you’re doing and consider if it would be valuable for others to hear or learn from what you’re doing. The CFP includes the review criteria as well as topic areas of interest. We look forward to reading your proposals and hope to have a chance to learn from you in New Orleans.&lt;/p&gt;
+&lt;p&gt;For your convenience here’s a &lt;a href=&quot;https://roscon2021.hotcrp.com/&quot;&gt;link to the submission site&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;3 posts - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-talk-submissions-due-this-friday/21279&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 08 Jul 2021 15:08:50 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Help with publishing a new ros2 package for UBX Gen 9 GPS devices</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21277</guid>
+	<link>https://discourse.ros.org/t/help-with-publishing-a-new-ros2-package-for-ubx-gen-9-gps-devices/21277</link>
+	<description>&lt;p&gt;Been working on a new ublox dgnss driver for &amp;gt; Gen 9 Ublox devices such as the ZED-F9P. I was thinking of publishing it. Have never published a ros package before.&lt;/p&gt;
+&lt;p&gt;Git hub repo here &lt;a href=&quot;https://github.com/aussierobots/ublox_dgnss&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://github.com/aussierobots/ublox_dgnss&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I built this one as the previous ublox ubx driver was built using the previous standards which are being deprecated. It also did not have the high precision output messages I was looking for. They advised that the package was no longer being actively maintained.&lt;/p&gt;
+&lt;p&gt;The package I’ve created works against Galactic (and had previously run it against Foxy).&lt;/p&gt;
+&lt;p&gt;So I’ve got a few questions:&lt;br /&gt;
+1/ is this package of interest to others?&lt;br /&gt;
+2/ what are the steps to create a new package?&lt;br /&gt;
+3/ are others interested in helping to maintain this if I do publish it?&lt;br /&gt;
+4/ how may I get some input on whether this is at a sufficient quality to be published for others to use?&lt;br /&gt;
+5/ can anyone help review the package structure and/or give recommendations on its set up?&lt;/p&gt;
+&lt;p&gt;Thanks&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;18 posts - 6 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/help-with-publishing-a-new-ros2-package-for-ubx-gen-9-gps-devices/21277&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 08 Jul 2021 14:44:21 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: How can i contribute?</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21241</guid>
+	<link>https://discourse.ros.org/t/how-can-i-contribute/21241</link>
+	<description>&lt;p&gt;Hello everyone, I am a Mechatronic Engineering student interested in robotics (manipulation), so I’m currently learning ROS but I wonder how can I contribute, because I’m new to the open source world and I also feel like I don’t have enough knowledge to make good contributions to the community.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;6 posts - 6 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/how-can-i-contribute/21241&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 06 Jul 2021 14:52:20 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: R2X and Zenoh's Wire Overhead</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21237</guid>
+	<link>https://discourse.ros.org/t/r2x-and-zenohs-wire-overhead/21237</link>
+	<description>&lt;p&gt;Dear ROSers,&lt;/p&gt;
+&lt;p&gt;With a growing number of you adopting &lt;a href=&quot;https://zenoh.io&quot; rel=&quot;noopener nofollow ugc&quot;&gt;zenoh&lt;/a&gt; for R2X communication we have been asked a few times, on  &lt;a href=&quot;https://gitter.im/atolab/zenoh&quot; rel=&quot;noopener nofollow ugc&quot;&gt;zenohâ€™s Gitter channel&lt;/a&gt;, to explain how we get &lt;strong&gt;single digit bytes&lt;/strong&gt; &lt;strong&gt;minimal wire-overhead&lt;/strong&gt;, when sending data, and how to get that. We have just posted a blog that explain the exact nature of this overhead and what are the configuration parameters that allow to control it. You can read the details &lt;a href=&quot;https://zenoh.io/blog/2021-07-05-zenoh-overhead/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Good reading and as always, let us know if you have more questions or suggestions.&lt;/p&gt;
+&lt;p&gt;Take Care!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;3 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/r2x-and-zenohs-wire-overhead/21237&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 05 Jul 2021 13:01:38 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROS2 Memory Usage (no DDS)</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21206</guid>
+	<link>https://discourse.ros.org/t/ros2-memory-usage-no-dds/21206</link>
+	<description>&lt;p&gt;For resource-constrained systems, using ROS2 could be challenging. An application willing to use ROS2 must link against ROS2 libraries and afford the memory usage by entities like nodes/pubs/subs, and DDS entities.&lt;/p&gt;
+&lt;p&gt;The intention is to benchmark memory usage of ROS2 applications, and based on results, discuss strategies to reduce the memory usage.&lt;/p&gt;
+&lt;p&gt;To better isolate ROS2 from the DDS memory usage, we’ll be using &lt;a href=&quot;https://github.com/mauropasse/rmw_stubdds&quot; rel=&quot;noopener nofollow ugc&quot;&gt;StubDDS&lt;/a&gt; which has stubbed RMW APIS and should have a minimal memory footprint, while keeping basic functionality (like pub/sub with intra-process communication).&lt;/p&gt;
+&lt;h3&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#objetive-1&quot; name=&quot;objetive-1&quot;&gt;&lt;/a&gt;Objetive&lt;/h3&gt;
+&lt;p&gt;We want to identify the ROS2 memory usage by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ROS2 shared libraries: RSS memory usage at startup.&lt;/li&gt;
+&lt;li&gt;Memory footprint of ROS2 entities.&lt;/li&gt;
+&lt;li&gt;How does memory scale with:
+&lt;ul&gt;
+&lt;li&gt;Variable number of nodes&lt;/li&gt;
+&lt;li&gt;Variable number of pubs/subs, using same or different messages&lt;/li&gt;
+&lt;li&gt;Different messages sizes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Analyze ways to reduce memory usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Test platform specs: Quad-core ARM 1.2 MHz - 433Mb RAM&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Memory usage depends on the platform tested. x86 has the biggest memory usage. In this post, results belong to the platform specified above which had the lowest memory usage, so we can consider results as a the minimum memory ROS2 will use.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Memory tool used: &lt;a href=&quot;https://linux.die.net/man/1/pmap&quot; rel=&quot;noopener nofollow ugc&quot;&gt;pmap&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Example usage:   &lt;code&gt;$ pmap -x &amp;lt;PID of application&amp;gt;&lt;/code&gt;&lt;br /&gt;
+This tool provides information about memory metrics like &lt;a href=&quot;https://en.wikipedia.org/wiki/Resident_set_size&quot; rel=&quot;noopener nofollow ugc&quot;&gt;RSS&lt;/a&gt;, VSZ used by each shared library loaded by the application.&lt;/p&gt;
+&lt;h3&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#ros2-shared-libraries-rss-memory-usage-2&quot; name=&quot;ros2-shared-libraries-rss-memory-usage-2&quot;&gt;&lt;/a&gt;ROS2 shared libraries: RSS memory usage&lt;/h3&gt;
+&lt;h4&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#base-rss-memory-3&quot; name=&quot;base-rss-memory-3&quot;&gt;&lt;/a&gt;Base RSS memory&lt;/h4&gt;
+&lt;p&gt;We want to obtain the RSS memory usage from ROS2 shared libraries at startup. But before we have to run an application not using ROS2, like the classic &lt;a href=&quot;https://www.programiz.com/cpp-programming/examples/print-sentence&quot; rel=&quot;noopener nofollow ugc&quot;&gt;HelloWorld&lt;/a&gt; program, and measure the memory usage for the simplest app:&lt;/p&gt;
+&lt;p&gt;Memory usage by non-ROS2 shared libraries: ~1Mb&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/1/12bf83e3e326dcec86240bb1fe668022cf587109.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;237&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/1/12bf83e3e326dcec86240bb1fe668022cf587109_2_345x237.png&quot; width=&quot;345&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;846×582 44.9 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The total memory usage is ~1Mb, which is the “base” RSS memory usage and should not be taken into account when trying to get specific ROS2 memory usage.&lt;/p&gt;
+&lt;p&gt;The memory usage by these libraries doesn’t almost increase when adding ROS2 elements and creating bigger applications.&lt;/p&gt;
+&lt;h4&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#ros2-base-rss-memory-4&quot; name=&quot;ros2-base-rss-memory-4&quot;&gt;&lt;/a&gt;ROS2 base RSS memory&lt;/h4&gt;
+&lt;p&gt;In some architectures memory is loaded from shared libraries into process space when they are first used. So to the helloworld previously used we’ll add just &lt;strong&gt;rclcpp::init()&lt;/strong&gt; to make sure RCLCPP is loaded (and its dependencies).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Helloworld (no link with ROS2 libs):  ~1Mb.&lt;/li&gt;
+&lt;li&gt;Application with only &lt;strong&gt;rclcpp::init()&lt;/strong&gt;: ~3Mb (So, ~2Mb due to ROS2 shared libs).&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;&lt;a href=&quot;http://librclcpp.so/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;librclcpp.so&lt;/a&gt;&lt;/strong&gt; maps 792 Kb into process memory. Biggest impact on memory (25% of total RSS).&lt;br /&gt;
+&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/9/91367a785ad8da9694a8cc15ed7ba294488a4dbe.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;500&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/9/91367a785ad8da9694a8cc15ed7ba294488a4dbe_2_403x500.png&quot; width=&quot;403&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;912×1129 167 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We can see in the pie graph that 52 shared libraries are added by ROS2, most of them mapping 8Kb each into process space.&lt;/p&gt;
+&lt;h3&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#minimum-system-node-with-publisher-and-subscriber-5&quot; name=&quot;minimum-system-node-with-publisher-and-subscriber-5&quot;&gt;&lt;/a&gt;Minimum system: node with publisher and subscriber&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;RSS=4Mb (~1Mb increase against app with &lt;strong&gt;rclcpp::init()&lt;/strong&gt; only)&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;&lt;a href=&quot;http://librclcpp.so/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;librclcpp.so&lt;/a&gt;&lt;/strong&gt; maps 1196 Kb into process memory. Biggest impact on memory (28.6% of total RSS).&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;librclcpp.so&lt;/strong&gt; sees an increase of 400Kb when creating entities for first time. It remains constant after, if the system gets bigger (same for all other libs).&lt;/li&gt;
+&lt;li&gt;Memory used by the new entities is included in &lt;em&gt;anon&lt;/em&gt; (&lt;a href=&quot;https://stackoverflow.com/questions/22437965/operating-system-anonymous-memory&quot; rel=&quot;noopener nofollow ugc&quot;&gt;anonymous memory&lt;/a&gt;) and as the process name &lt;em&gt;memory_benchmark&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/d/d5246617020d21be5f67b17f6493d9fc119dd993.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;500&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/d/d5246617020d21be5f67b17f6493d9fc119dd993_2_470x500.png&quot; width=&quot;470&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;914×972 168 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;With this benchmark we can say that the base RSS memory for a ROS2 app is ~4Mb since this value, i.e. memory used by ROS2 and non-ROS2 shared libs, is maintained&lt;br /&gt;
+when increasing the size of the system adding more nodes/pubs/subs.&lt;/p&gt;
+&lt;p&gt;When bigger systems are created, the extra memory belongs to the application and also shows in “anon” (anonymous) memory. Extra memory depends on the size and number of ROS2 entities.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The base memory will grow considerably if using a real DDS as CycloneDDS or FastRTPS, which is not taken into account here.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Short analysis about librclcpp.so&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Clearly RCLCPP has a big impact on memory usage. A comparision on &lt;strong&gt;librclcpp.so&lt;/strong&gt; section sizes compared to &lt;strong&gt;librcl.so&lt;/strong&gt; shows why such an impact, the library is quite big and loading it into process space will have a big impact.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ size -A librclcpp.so     &lt;em&gt;# This command shows section sizes of the library&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/8/8981a14d034f289055680d149bd84310814105d0.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;220&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/8/8981a14d034f289055680d149bd84310814105d0_2_345x220.png&quot; width=&quot;345&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;1059×677 40.4 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Sections such as the .gnu.hash, .dynsym, .dynstr, .rela.dyn, .gnu.version, .gnu.version_r and .init must be available at run-time and loaded in physical memory partially or entirely by the run-time linker (corresponds to 215Kb on &lt;strong&gt;librclcpp.so&lt;/strong&gt; ). The other sections are loaded when needed (lazy allocation).&lt;/p&gt;
+&lt;h2&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#memory-footprint-of-ros2-entities-6&quot; name=&quot;memory-footprint-of-ros2-entities-6&quot;&gt;&lt;/a&gt;Memory footprint of ROS2 entities&lt;/h2&gt;
+&lt;p&gt;Here we analyze the memory usage by single entities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Node&lt;/li&gt;
+&lt;li&gt;Publishers&lt;/li&gt;
+&lt;li&gt;Subscription&lt;/li&gt;
+&lt;li&gt;Messages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Procedure to obtain values and comments&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;By default when creating a node, 6 services/1pub/1sub are created whithin the node (used by ROS2 params). We modified rclcpp code to not create them:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ros2/rclcpp/blob/e9e398d2d49de2ecc3148d425f8659d9db74918c/rclcpp/src/rclcpp/node_interfaces/node_parameters.cpp#L69-L80&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Parameter services and parameter event publisher&lt;/a&gt; - &lt;a href=&quot;https://github.com/ros2/rclcpp/blob/e9e398d2d49de2ecc3148d425f8659d9db74918c/rclcpp/src/rclcpp/time_source.cpp#L130-L132&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Parameter event subscription&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The approach taken to get memory usage by different entities consists on creating a large number of those, and measure the app memory usage after creation of each new entity. Allocators could allocate way more memory than needed for each entity, so it requires the creation of multiple entities until we see a new increase on RSS. Creating a large number of them allow us to obtain average values.&lt;/p&gt;
+&lt;p&gt;The memory usage by entity seems to be constant regardless of the amount of entities created (linear memory increase).&lt;br /&gt;
+&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/9/950f737b5e3cf45194268dc307438d6e8da8900c.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;243&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/9/950f737b5e3cf45194268dc307438d6e8da8900c_2_517x243.png&quot; width=&quot;517&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;893×421 34.1 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+&lt;img alt=&quot;image&quot; height=&quot;98&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/2/20f9dfc267793e658b374636cfd2b5a47c79e62c.png&quot; width=&quot;274&quot; /&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;With these values we can get a formula for an approximate minimum usage of memory on a ROS2 system:&lt;br /&gt;
+&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/d/d4648a9e8a45b7dae2a9cccdd9b298ebb925bc09.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;53&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/d/d4648a9e8a45b7dae2a9cccdd9b298ebb925bc09_2_690x53.png&quot; width=&quot;690&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;1255×97 9.85 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;For example a system of 10 nodes like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Node
+&lt;ul&gt;
+&lt;li&gt;3 Pubs → MsgA ← 3 Subs&lt;/li&gt;
+&lt;li&gt;2 Pubs → MsgB ← 2 Subs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So there are 2 diff messages used in subscriptions, 2 diff messages used in publishers.&lt;/p&gt;
+&lt;p&gt;Nnodes = 10 ; Nsubs = 50 ; Npubs = 50 ; Nmsgs_used_by_subs = 2 ; Nmsgs_used_by_pubs = 2;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RSS&lt;/strong&gt; ~= 4Mb +10 * 5Kb + 50 * 7.5Kb + 50 * 2.3Kb + 2 * 11.5Kb + 2 * 4.13Kb = &lt;strong&gt;4667 Kb&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#node-size-not-constant-when-enabling-ros2-params-7&quot; name=&quot;node-size-not-constant-when-enabling-ros2-params-7&quot;&gt;&lt;/a&gt;Node size not constant when enabling ROS2 params&lt;/h3&gt;
+&lt;p&gt;As mentioned before, we’ve removed the six services, publisher and subscription used by ROS2 parameters when creating every node:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ros2/rclcpp/blob/e9e398d2d49de2ecc3148d425f8659d9db74918c/rclcpp/src/rclcpp/node_interfaces/node_parameters.cpp#L69-L80&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Parameter services and parameter event publisher&lt;/a&gt; - &lt;a href=&quot;https://github.com/ros2/rclcpp/blob/e9e398d2d49de2ecc3148d425f8659d9db74918c/rclcpp/src/rclcpp/time_source.cpp#L130-L132&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Parameter event subscription&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Without these entities, the average node size seems to be constant regardless of the amount of nodes (~5Kb), so the increase in memory is linear with the amount of nodes.&lt;/p&gt;
+&lt;p&gt;After re-enabling the creation of these entities, new nodes additions have a non-linear increase of memory.&lt;/p&gt;
+&lt;p&gt;The first nodes being created take ~50Kb each, but after creating 100 nodes, a new node uses almost 100Kb. As average, every new 60 nodes the node size increases 50Kb.&lt;/p&gt;
+&lt;p&gt;In the left plot below, we compare the total system RSS creating nodes with and without the parameter event entities. In the plot on the right, the average node size with respect to amount of nodes created.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/7/7afa24a5a9277d6ce4d2302f8a6a8f897aa43a95.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;196&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/7/7afa24a5a9277d6ce4d2302f8a6a8f897aa43a95_2_690x196.png&quot; width=&quot;690&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;971×276 47.4 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h3&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#using-different-messages-sizes-8&quot; name=&quot;using-different-messages-sizes-8&quot;&gt;&lt;/a&gt;Using different messages sizes&lt;/h3&gt;
+&lt;p&gt;In the previous tests we used a small message (just an &lt;em&gt;int&lt;/em&gt;) to be used on publishers and subscriptions. An average node with a pub/sub took ~15Kb RSS.&lt;/p&gt;
+&lt;p&gt;If we add 1Kb data field to the message, the average memory taken when creating a node/pub/sub was 20Kb.&lt;/p&gt;
+&lt;p&gt;MsgA: int;&lt;br /&gt;
+MsgB: int + 1Kb array&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Node: Pub → MsgA ← Sub    : ~15Kb average memory per node&lt;/li&gt;
+&lt;li&gt;Node: Pub → MsgB ← Sub    : ~20Kb average memory per node&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So we can say that memory used by publishers/subscriptions also depend on the message being used.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stub vs FastRTPS entiities&lt;/strong&gt;&lt;br /&gt;
+Of course the memory usage by entities is different if we use a real DDS (like FastRTPS) instead of the Stub DDS:&lt;br /&gt;
+&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/9/954109a3dbae130cf4e31389f858e892e8f082b5.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;176&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/9/954109a3dbae130cf4e31389f858e892e8f082b5_2_345x176.png&quot; width=&quot;345&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;926×474 46.1 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#ros2-memory-when-system-scales-9&quot; name=&quot;ros2-memory-when-system-scales-9&quot;&gt;&lt;/a&gt;ROS2 memory when system scales&lt;/h2&gt;
+&lt;p&gt;Here we compare:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shared libs RSS for only a HelloWorld&lt;/li&gt;
+&lt;li&gt;Shared libs RSS when only rclcpp::init&lt;/li&gt;
+&lt;li&gt;Shared libs RSS of a single node pub/sub system&lt;/li&gt;
+&lt;li&gt;Shared libs RSS of 100 nodes each with a pub/sub, all using same message type.&lt;/li&gt;
+&lt;li&gt;Shared libs RSS of 100 nodes each with a pub/sub using a different message type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The bars graph shows the total memory usage (RSS) by the different applications.&lt;br /&gt;
+&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/0/0d18d1ac0701ecd617982fe933d3bd3c9d77660b.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;243&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/0/0d18d1ac0701ecd617982fe933d3bd3c9d77660b_2_345x243.png&quot; width=&quot;345&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;1006×711 84.5 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+The pie graphs show the porportional RSS from each shared library for each of the tests.&lt;br /&gt;
+&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/6/658ddc7e612adb3efafd392081648b2d93bc70bf.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;149&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/6/658ddc7e612adb3efafd392081648b2d93bc70bf_2_690x149.jpeg&quot; width=&quot;690&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;2227×484 233 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The memory usage in the case of a single node/pub/sub system is what’s considered the &lt;em&gt;base&lt;/em&gt; memory usage of a ROS2 app (middle pie graph). The size of the shared libraries RSS doesn’t increase when increasing the size of the system (adding nodes,pubs,subs,etc).&lt;br /&gt;
+Increasing the size of the system (without creating new messages) as seen in the 4th pie, shows that extra memory goes to “anon” (memory allocated for nodes/pubs/subs/msgs).&lt;/p&gt;
+&lt;p&gt;Increasing the size of the system but creating also new messages as seen in the 5th pie, shows that much of the extra memory goes to the &lt;code&gt;memory_benchmark&lt;/code&gt; application, since now has to include each new message header file and they are used as template arguments for pubs/subs.&lt;/p&gt;
+&lt;h2&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#possible-approaches-to-reduce-memory-usage-10&quot; name=&quot;possible-approaches-to-reduce-memory-usage-10&quot;&gt;&lt;/a&gt;Possible approaches to reduce memory usage&lt;/h2&gt;
+&lt;p&gt;We can divide efforts in reducing memory usage in two main areas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduce memory used by shared libraries&lt;/li&gt;
+&lt;li&gt;Reduce memory used by ROS2 entities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Focusing on one or the other depends on the size of the system trying to fit in some platform. If the system is made up by hundreds of entities, better to focus on reducing size of entities.&lt;/p&gt;
+&lt;p&gt;On the contrary if the system is small, the focus should be better on reducing the “base” ROS2 memory usage.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reduce memory used by shared libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Some ideas to reduce memory used by shared libraries are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduce size of &lt;strong&gt;librclcpp.so&lt;/strong&gt; (since has the biggest footprint), by dividing it into modules (shared libs) which can be used or not at user will.&lt;/li&gt;
+&lt;li&gt;Remove not needed dependencies: Some platforms mark as NEEDED many shared libs that are not really used at run-time.&lt;/li&gt;
+&lt;li&gt;Link all libs statically, to reduce the start-up/run-time overhead and bookkeeping required to load shared libraries symbols at runtime. From the pie graphs we can see a good memory usage by dozens of small libraries (which at least use 4Kb each due minimum page size). Estimated 12% RSS reduction.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Reduce memory used by ROS2 entities&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove libstatistics, tracetools, etc. with compile flags. These libraries add extra pubs/subs to every entity created. Same with ROS2 params.&lt;/li&gt;
+&lt;li&gt;Review what are entities made up of and see if they can be optimized.&lt;/li&gt;
+&lt;li&gt;Messages seem to have an impact on memory usage. Review use of messages, see if can be optimized.&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;p&gt;&lt;small&gt;6 posts - 6 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/ros2-memory-usage-no-dds/21206&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 02 Jul 2021 11:15:11 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: 🎆 ROS News for the Week of 6/28/2021</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21192</guid>
+	<link>https://discourse.ros.org/t/ros-news-for-the-week-of-6-28-2021/21192</link>
+	<description>&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#ros-news-for-the-week-of-6282021-1&quot; name=&quot;ros-news-for-the-week-of-6282021-1&quot;&gt;&lt;/a&gt;ROS News for the Week of 6/28/2021&lt;/h1&gt;
+&lt;p&gt;I am posting the update early this week due to the holidays in North America.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/e/e8481f54e4f25e5b53e6111a76e3e6a1480b80ba.jpeg&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;374&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/e/e8481f54e4f25e5b53e6111a76e3e6a1480b80ba_2_516x374.jpeg&quot; width=&quot;516&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;2048×1486 456 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+&lt;a href=&quot;https://techcrunch.com/2021/07/01/zebra-technologies-is-acquiring-warehouse-robotics-company-fetch/?tpcc=ECTW2020&quot;&gt;Fetch Robotics Acquired by Zebra for $290M&lt;/a&gt; Congrats &lt;a href=&quot;https://twitter.com/meloneewise/status/1410619223961866245/photo/1&quot;&gt;Melonee&lt;/a&gt; and team!&lt;p&gt;&lt;/p&gt;
+&lt;br /&gt; 
+&lt;p&gt;&lt;img alt=&quot;ros-i&quot; class=&quot;animated&quot; height=&quot;319&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/3/3198873778e33bdd6f5326c003fbc4a234f3a501.gif&quot; width=&quot;575&quot; /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://discourse.ros.org/t/open-sourcing-our-ros2-industrial-training-material/21179&quot;&gt;ROSIN / Fraunhofer Release Massive Collection of ROS 2 Training Materials&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/c/cbb1848d41d6ff80e637f0d06b88d7bf7f9b0cf0.jpeg&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;336&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/c/cbb1848d41d6ff80e637f0d06b88d7bf7f9b0cf0_2_517x336.jpeg&quot; width=&quot;517&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;1063×691 120 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+Happy 4th of July / Canada Day – Here is the &lt;a href=&quot;https://youtu.be/9gnYQsXk58o&quot;&gt;“Beer Outdoor Transporter (B.O.T.)”&lt;/a&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#events-2&quot; name=&quot;events-2&quot;&gt;&lt;/a&gt;Events&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-2021-call-for-proposals/19811&quot;&gt;7/9/2021 ROSCon CFP Closes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-2021-diversity-scholarships-applications-open/19813&quot;&gt;7/9/2021 ROSCon Diversity Scholarshop Application Deadline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.eventbrite.com/e/intermediate-robotics-2-build-a-ros-2-robot-sponsored-by-amazon-tickets-145965846777&quot;&gt;7/25/2021 Black in Robotics Build a ROS 2 Robot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/join-us-for-the-ros-industrial-asia-pacific-workshop-2021-18th-aug/21176&quot;&gt;8/18/2021 ROS Industrial AP Workshop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/save-the-date-the-px4-developer-summit-is-back-online-for-2021/20147&quot;&gt;9/14/2021 PX4 Dev Summit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://roscon.jp/2021/&quot;&gt;9/16/2021 ROSConJp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://selfracingcars.com/&quot;&gt;10/16/2021 Self Racing Cars Bay Area &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-2021-we-re-back/19243/8&quot;&gt;10/21/2021 ROSCon is Back!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#news-3&quot; name=&quot;news-3&quot;&gt;&lt;/a&gt;News&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://prtimes.jp/main/html/rd/p/000000035.000064534.html&quot;&gt;New 6-Axis Arm with Desktop Version and ROS Support (Japanese)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://fetchrobotics.com/fetch-robotics-blog/zebra-technologies-to-acquire-fetch-robotics/&quot;&gt;Fetch Acquired by Zebra for $290M&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://techcrunch.com/2021/07/01/zebra-technologies-is-acquiring-warehouse-robotics-company-fetch/?tpcc=ECTW2020&quot;&gt;TechCrunch on Fetch Acquisition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://techcrunch.com/2021/07/01/after-8-4m-raise-strawberry-picking-robotics-startup-traptic-begins-commercial-deployment/&quot;&gt;Traptic Raises $8.4M, releases Commercial Strawberry Harvest Robot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=aS0Kttqd_Gk&quot;&gt;Grasping / Reorienting Objects for Excavators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spectrum.ieee.org/automaton/robotics/robotics-hardware/why-robots-cant-help-find-survivors-in-the-florida-building-collapse&quot;&gt;Why Robots Can’t Be Counted on to Finding Survivors in the Florida Building Collapse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://robohub.org/ieee-icra-2021-awards-with-videos-and-papers/&quot;&gt;RoboHub on ICRA Awards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/9gnYQsXk58o&quot;&gt;B.O.T. – Beer Outdoor Transporter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ekRts9U1X2Y&amp;amp;t=16s&quot;&gt;Interesting Comparison of Physics Engines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.kickstarter.com/projects/ldrobot/ld-air-lidar-360-tof-sensor-for-all-robotic-applications?ref=thanks-tweet&quot;&gt;New Low Cost 360 ToF  LIDAR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#ros-4&quot; name=&quot;ros-4&quot;&gt;&lt;/a&gt;ROS&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/open-sourcing-our-ros2-industrial-training-material/21179&quot;&gt;ROSIN / Fraunhofer Release Massive Collection of ROS 2 Training Materials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/XA20_iRBLrg&quot;&gt;Pre-Release Testing with ROS 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/ros-mobile-update-2-1/21181&quot;&gt;ROS Mobile 2.1 Released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vimeo.com/manage/videos/569519842&quot;&gt;June Ignition Community Meeting on Reinforcement Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://automaticaddison.com/how-to-set-up-the-ros-navigation-stack-on-a-robot/&quot;&gt;ROS NavStack Setup Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://msadowski.github.io/3d-mapping-with-ros/&quot;&gt;3D Mapping Using ROS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/IntelligentRoboticsLabs/ros2_planning_system/issues/144&quot;&gt;PlanSys2 Is In Galactic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/BQzmCmSijaA&quot;&gt;ROS on OpenCV Weekly Webinar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/workon-ros-improve-your-ros-workflow/21081&quot;&gt;workon_ros EZ Toggling Between Distros&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/new-packages-for-noetic-2021-06-25/21091&quot;&gt;36 New and 104 Updated Packages for ROS Noetic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-fr-2021-report/21104&quot;&gt;Report from ROSCon France&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://gazebosim.org/tutorials?tut=kinematic_loop&amp;amp;cat=&quot;&gt;4-Bar Linkages in SDFormat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/osrf/gazebo/pull/3009&quot;&gt;Distortion “Improvements” in Gazebo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/RoboStack&quot;&gt;RoboStack – Cross Platform ROS Packages in Conda&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://discourse.ros.org/t/new-packages-for-foxy-fitzroy-2021-06-30/21160&quot;&gt;17 New and 51 Updated Packages for ROS 2 Foxy&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://circuitcellar.com/cc-blog/intro-to-robot-operating-system-ros-part-1/&quot;&gt;Great ROS Intro Blog Post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://zenn.dev/array/articles/4c82fc8382e62d&quot;&gt;Darknet ROS YOLO V4 Benchmarking (Japanese)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#ros-questions-5&quot; name=&quot;ros-questions-5&quot;&gt;&lt;/a&gt;ROS Questions&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://answers.ros.org/question/381479/image-annotation-tool-reading-ros1-bags/&quot;&gt;Bag Image Annotation Tools?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://answers.ros.org/question/381454/room-segmentation-on-ros2/&quot;&gt;Room Segmentation in ROS 2?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://answers.ros.org/question/381529/how-can-i-suppress-tf_repeated_data-warnings/&quot;&gt;How to Suppress Warnings in Noetic?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/ros-news-for-the-week-of-6-28-2021/21192&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 01 Jul 2021 20:43:17 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROS-Mobile Update 2.1</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21181</guid>
+	<link>https://discourse.ros.org/t/ros-mobile-update-2-1/21181</link>
+	<description>&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/5/5ca4947d68700db9e294b0419e895aa759f866a1.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;ic_launcher-web&quot;&gt;&lt;img alt=&quot;ic_launcher-web&quot; height=&quot;300&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/5/5ca4947d68700db9e294b0419e895aa759f866a1_2_300x300.png&quot; width=&quot;300&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;ic_launcher-web&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;512Ã—512 24 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;We are happy to present version 2.1.0 of our app ROS-Mobile, which includes a variety of bug fixes and new features like a battery indicator, rqt-plot integration and additional TF layers to publish targets via touch input as well as display 2D laser scans.&lt;br /&gt;
+Feel free to test the changes or the app in general!&lt;/p&gt;
+&lt;p&gt;App on Google Play:&lt;/p&gt;&lt;aside class=&quot;onebox googleplayapp&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+
+      &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.schneewittchen.rosandroid&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;play.google.com&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    &lt;h3&gt;ROS-Mobile&lt;/h3&gt;
+
+&lt;div class=&quot;aspect-image&quot;&gt;&lt;img class=&quot;thumbnail&quot; height=&quot;250&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/d/db791e05e3aa3a6fb47894aab0e0c0bda6a7ebb0.jpeg&quot; width=&quot;512&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;Control and Visualization for the Robot Operating System (ROS)...&lt;/p&gt;
+&lt;em&gt;Free&lt;/em&gt;
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;If you would like to contribute, give us feedback or ideas, you can reach us on our github page at&lt;/p&gt;&lt;aside class=&quot;onebox allowlistedgeneric&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+      &lt;img class=&quot;site-icon&quot; height=&quot;32&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/b/bad3e5f9ad67c1ddf145107ce7032ac1d7b22563.svg&quot; width=&quot;32&quot; /&gt;
+
+      &lt;a href=&quot;https://github.com/ROS-Mobile/ROS-Mobile-Android&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    &lt;div class=&quot;aspect-image&quot;&gt;&lt;img class=&quot;thumbnail&quot; height=&quot;345&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/6/6655dcd0015808750cbdcb79018569500ee822c9_2_690x345.png&quot; width=&quot;690&quot; /&gt;&lt;/div&gt;
+
+&lt;h3&gt;&lt;a href=&quot;https://github.com/ROS-Mobile/ROS-Mobile-Android&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;ROS-Mobile/ROS-Mobile-Android&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;Visualization and controlling application for Android - ROS-Mobile/ROS-Mobile-Android&lt;/p&gt;
+
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+            &lt;p&gt;&lt;small&gt;6 posts - 4 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/ros-mobile-update-2-1/21181&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 01 Jul 2021 13:57:35 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Join us for the ROS-Industrial Asia Pacific Workshop 2021 - 18th Aug</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21176</guid>
+	<link>https://discourse.ros.org/t/join-us-for-the-ros-industrial-asia-pacific-workshop-2021-18th-aug/21176</link>
+	<description>&lt;p&gt;We are in process of finalizing the details with regards to the 2021 ROS-Industrial Asia Pacific Workshop. The event listing is located on the ros-industrial website &lt;a href=&quot;https://rosindustrial.org/events/2021/8/18/ros-industrial-asia-pacific-workshop-2021&quot; rel=&quot;noopener nofollow ugc&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The event will be held as a one day digital event this year on the 18th of August.&lt;/p&gt;
+&lt;p&gt;Do keep a look out for the finalized speaker line-up through this thread, and you may proceed to register online at an earlybird rate &lt;a href=&quot;https://tinyurl.com/rosiworkshop2021&quot; rel=&quot;noopener nofollow ugc&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/c/ce2aba37366ee0c43666870a0aef28789dcb821d.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;ANNUAL WORKSHOP 2021&quot;&gt;&lt;img alt=&quot;ANNUAL WORKSHOP 2021&quot; height=&quot;500&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/c/ce2aba37366ee0c43666870a0aef28789dcb821d_2_500x500.png&quot; width=&quot;500&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;ANNUAL WORKSHOP 2021&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;800Ã—800 431 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Best Regards,&lt;br /&gt;
+The ROS-Industrial Asia Pacific Team&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/join-us-for-the-ros-industrial-asia-pacific-workshop-2021-18th-aug/21176&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 01 Jul 2021 06:43:34 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: New packages for Foxy Fitzroy 2021-06-30</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21160</guid>
+	<link>https://discourse.ros.org/t/new-packages-for-foxy-fitzroy-2021-06-30/21160</link>
+	<description>&lt;p&gt;We’re happy to announce new packages for Foxy Fitzroy!&lt;/p&gt;
+&lt;h2&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#package-updates-for-foxy-1&quot; name=&quot;package-updates-for-foxy-1&quot;&gt;&lt;/a&gt;Package Updates for foxy&lt;/h2&gt;
+&lt;h3&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#added-packages-17-2&quot; name=&quot;added-packages-17-2&quot;&gt;&lt;/a&gt;Added Packages [17]:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ros-foxy-can-dbc-parser: 1.1.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-dynamixel-hardware-interface: 0.0.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/dynamixel_sdk&quot;&gt;ros-foxy-dynamixel-sdk-custom-interfaces&lt;/a&gt;: 3.7.40-4&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/dynamixel_sdk&quot;&gt;ros-foxy-dynamixel-sdk-examples&lt;/a&gt;: 3.7.40-4&lt;/li&gt;
+&lt;li&gt;ros-foxy-force-torque-sensor-broadcaster: 0.4.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-gripper-controllers: 0.4.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-imu-sensor-broadcaster: 0.4.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-launch-system-modes: 0.8.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-massrobotics-amr-sender: 1.0.0-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/mavros&quot;&gt;ros-foxy-mavros&lt;/a&gt;: 2.0.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/mavros_msgs&quot;&gt;ros-foxy-mavros-msgs&lt;/a&gt;: 2.0.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://projects.coin-or.org/qpOASES&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-qpoases-vendor&lt;/a&gt;: 3.2.3-2&lt;/li&gt;
+&lt;li&gt;ros-foxy-rcdiscover: 1.1.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://micro.ros.org/docs/concepts/client_library/lifecycle_and_system_modes/&quot;&gt;ros-foxy-test-launch-system-modes&lt;/a&gt;: 0.8.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-tf-transformations: 1.0.2-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-twist-mux: 4.0.1-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-urdf-test: 2.0.0-2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#updated-packages-51-3&quot; name=&quot;updated-packages-51-3&quot;&gt;&lt;/a&gt;Updated Packages [51]:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ros-foxy-controller-interface: 0.6.1-1 → 0.7.1-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-controller-manager: 0.6.1-1 → 0.7.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/controller_manager_msgs&quot;&gt;ros-foxy-controller-manager-msgs&lt;/a&gt;: 0.6.1-1 → 0.7.1-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-diff-drive-controller: 0.3.1-1 → 0.4.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/dynamixel_sdk&quot;&gt;ros-foxy-dynamixel-sdk&lt;/a&gt;: 3.7.40-3 → 3.7.40-4&lt;/li&gt;
+&lt;li&gt;ros-foxy-effort-controllers: 0.3.1-1 → 0.4.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/fmi_adapter&quot;&gt;ros-foxy-fmi-adapter&lt;/a&gt;: 2.1.0-1 → 2.1.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/fmi_adapter&quot;&gt;ros-foxy-fmi-adapter-examples&lt;/a&gt;: 2.1.0-1 → 2.1.1-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-forward-command-controller: 0.3.1-1 → 0.4.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/gazebo_ros_control&quot;&gt;ros-foxy-gazebo-ros2-control&lt;/a&gt;: 0.0.2-1 → 0.0.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/gazebo_ros_control&quot;&gt;ros-foxy-gazebo-ros2-control-demos&lt;/a&gt;: 0.0.2-1 → 0.0.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/geometric_shapes&quot;&gt;ros-foxy-geometric-shapes&lt;/a&gt;: 2.0.2-1 → 2.1.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-hardware-interface: 0.6.1-1 → 0.7.1-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-joint-state-broadcaster: 0.3.1-1 → 0.4.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-joint-state-controller: 0.3.1-1 → 0.4.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-joint-trajectory-controller: 0.3.1-1 → 0.4.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/mavros&quot;&gt;ros-foxy-libmavconn&lt;/a&gt;: 2.0.0-1 → 2.0.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://mavlink.io/en/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-mavlink&lt;/a&gt;: 2021.5.5-1 → 2021.6.6-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://moveit.ros.org&quot;&gt;ros-foxy-moveit-msgs&lt;/a&gt;: 2.0.1-1 → 2.1.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/facontidavide/PlotJuggler&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-plotjuggler&lt;/a&gt;: 3.1.1-1 → 3.2.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/facontidavide/PlotJuggler&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-plotjuggler-ros&lt;/a&gt;: 1.1.1-4 → 1.5.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-point-cloud-msg-wrapper: 1.0.6-1 → 1.0.7-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-position-controllers: 0.3.1-1 → 0.4.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-raptor-dbw-can: 1.0.0-1 → 1.1.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-raptor-dbw-joystick: 1.0.0-1 → 1.1.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-raptor-dbw-msgs: 1.0.0-1 → 1.1.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-raptor-pdu: 1.0.0-1 → 1.1.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-raptor-pdu-msgs: 1.0.0-1 → 1.1.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-ros2-control: 0.6.1-1 → 0.7.1-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-ros2-control-test-assets: 0.6.1-1 → 0.7.1-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-ros2-controllers: 0.3.1-1 → 0.4.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-ros2controlcli: 0.6.1-1 → 0.7.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://assimp.sourceforge.net/index.html&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-rviz-assimp-vendor&lt;/a&gt;: 8.2.1-1 → 8.2.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros2/rviz/blob/ros2/README.md&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-rviz-common&lt;/a&gt;: 8.2.1-1 → 8.2.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros2/rviz/blob/ros2/README.md&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-rviz-default-plugins&lt;/a&gt;: 8.2.1-1 → 8.2.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://www.ogre3d.org/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-rviz-ogre-vendor&lt;/a&gt;: 8.2.1-1 → 8.2.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros2/rviz/blob/ros2/README.md&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-rviz-rendering&lt;/a&gt;: 8.2.1-1 → 8.2.2-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-rviz-rendering-tests: 8.2.1-1 → 8.2.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/rviz2&quot;&gt;ros-foxy-rviz-visual-testing-framework&lt;/a&gt;: 8.2.1-1 → 8.2.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros2/rviz/blob/ros2/README.md&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-rviz2&lt;/a&gt;: 8.2.1-1 → 8.2.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://micro.ros.org/docs/concepts/client_library/lifecycle_and_system_modes/&quot;&gt;ros-foxy-system-modes&lt;/a&gt;: 0.7.1-4 → 0.8.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://micro.ros.org/docs/concepts/client_library/lifecycle_and_system_modes/&quot;&gt;ros-foxy-system-modes-examples&lt;/a&gt;: 0.7.1-4 → 0.8.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://micro.ros.org/docs/concepts/client_library/lifecycle_and_system_modes/&quot;&gt;ros-foxy-system-modes-msgs&lt;/a&gt;: 0.7.1-4 → 0.8.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-transmission-interface: 0.6.1-1 → 0.7.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://turtlebot3.robotis.com&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-turtlebot3-fake-node&lt;/a&gt;: 2.2.2-1 → 2.2.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://turtlebot3.robotis.com&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-turtlebot3-gazebo&lt;/a&gt;: 2.2.2-1 → 2.2.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://turtlebot3.robotis.com&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-turtlebot3-simulations&lt;/a&gt;: 2.2.2-1 → 2.2.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://tvm.apache.org/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-foxy-tvm-vendor&lt;/a&gt;: 0.7.2-1 → 0.7.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/ur_client_library&quot;&gt;ros-foxy-ur-client-library&lt;/a&gt;: 0.2.2-1 → 1.0.0-1&lt;/li&gt;
+&lt;li&gt;ros-foxy-velocity-controllers: 0.3.1-1 → 0.4.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/warehouse_ros&quot;&gt;ros-foxy-warehouse-ros-mongo&lt;/a&gt;: 2.0.1-1 → 2.0.2-1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#removed-packages-0-4&quot; name=&quot;removed-packages-0-4&quot;&gt;&lt;/a&gt;Removed Packages [0]:&lt;/h3&gt;
+&lt;p&gt;Thanks to all ROS maintainers who make packages available to the ROS community. The above list of packages was made possible by the work of the following maintainers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Alejandro Hernandez&lt;/li&gt;
+&lt;li&gt;Apex.AI, Inc.&lt;/li&gt;
+&lt;li&gt;Arne Nordmann&lt;/li&gt;
+&lt;li&gt;Bence Magyar&lt;/li&gt;
+&lt;li&gt;Dave Coleman&lt;/li&gt;
+&lt;li&gt;David V. Lu!!&lt;/li&gt;
+&lt;li&gt;Davide Faconti&lt;/li&gt;
+&lt;li&gt;Enrique Fernandez&lt;/li&gt;
+&lt;li&gt;Felix Exner&lt;/li&gt;
+&lt;li&gt;Felix Ruess&lt;/li&gt;
+&lt;li&gt;Geoffrey Biggs&lt;/li&gt;
+&lt;li&gt;Jacob Perron&lt;/li&gt;
+&lt;li&gt;Josh Whitley&lt;/li&gt;
+&lt;li&gt;Karsten Knese&lt;/li&gt;
+&lt;li&gt;MoveIt Release Team&lt;/li&gt;
+&lt;li&gt;New Eagle&lt;/li&gt;
+&lt;li&gt;Ralph Lange&lt;/li&gt;
+&lt;li&gt;Tyler Weaver&lt;/li&gt;
+&lt;li&gt;Victor Lopez&lt;/li&gt;
+&lt;li&gt;Vladimir Ermakov&lt;/li&gt;
+&lt;li&gt;Will Son&lt;/li&gt;
+&lt;li&gt;karsten&lt;/li&gt;
+&lt;li&gt;leandro&lt;/li&gt;
+&lt;li&gt;masaya&lt;/li&gt;
+&lt;li&gt;neweagle&lt;/li&gt;
+&lt;li&gt;willson&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&quot;:foxy:&quot; class=&quot;emoji emoji-custom only-emoji&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/3/344de41e02f077024f3074b1d56045570ba8a2a9.png?v=9&quot; title=&quot;:foxy:&quot; /&gt; &lt;img alt=&quot;:turtle:&quot; class=&quot;emoji only-emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/turtle.png?v=9&quot; title=&quot;:turtle:&quot; /&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/new-packages-for-foxy-fitzroy-2021-06-30/21160&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 30 Jun 2021 17:10:27 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROS 2.0 courseware for robot programming courses</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21148</guid>
+	<link>https://discourse.ros.org/t/ros-2-0-courseware-for-robot-programming-courses/21148</link>
+	<description>&lt;p&gt;Hello, I would like to get some suggestions for structuring a ROS 2.0 courseware for a robot programming course. I have heard many times how challenging is for instructors to structure the appropriate content of a ROS 2.0-based course, as a result, they end up discarding the option to teach ROS 2.0. However, ROS 2.0 is a standard framework in robotics, so it could be great to have a course content template that instructors aiming to teach ROS 2.0 could base on to teach ROS-related concepts.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;12 posts - 8 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/ros-2-0-courseware-for-robot-programming-courses/21148&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 29 Jun 2021 20:39:24 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Build Custom Tools to Explore Your ROS Data Using Foxglove Studio Extensions</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21129</guid>
+	<link>https://discourse.ros.org/t/build-custom-tools-to-explore-your-ros-data-using-foxglove-studio-extensions/21129</link>
+	<description>&lt;p&gt;Hello all,&lt;/p&gt;
+&lt;p&gt;If you’re not familiar with our team, we develop &lt;strong&gt;&lt;a href=&quot;https://foxglove.dev/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Foxglove Studio&lt;/a&gt;&lt;/strong&gt; – an open source desktop application that integrates tools across the ROS ecosystem (and others) to help you visualize &amp;amp; debug your robotics data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We just announced an alpha release of one of our most widely requested &amp;amp; highly anticipated features –&lt;/strong&gt; &lt;a href=&quot;https://foxglove.dev/docs/extensions/getting-started&quot; rel=&quot;noopener nofollow ugc&quot;&gt; &lt;strong&gt;user-contributed extensions&lt;/strong&gt; &lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;With extensions, you can build &amp;amp; install your own custom panels in Studio to meet your project-specific needs – all while leveraging our existing features. Check out our full announcement &lt;a href=&quot;https://foxglove.dev/blog/announcing-foxglove-studio-extensions&quot; rel=&quot;noopener nofollow ugc&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We’re still brainstorming new features for our next release, so please let us know what improvements you’d like to see! Join us on &lt;a href=&quot;https://foxglove.dev/join-slack&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Slack&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/foxglovedev&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Twitter&lt;/a&gt;, or &lt;a href=&quot;https://github.com/foxglove/studio&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Github&lt;/a&gt; to share your feature requests and other feedback.&lt;/p&gt;
+&lt;p&gt;Download the app &lt;a href=&quot;https://foxglove.dev/download&quot; rel=&quot;noopener nofollow ugc&quot;&gt;here&lt;/a&gt; to get started – happy hacking!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Read &lt;a href=&quot;https://discourse.ros.org/t/foxglove-studio-visualization-and-debugging-for-ros/19627&quot;&gt;our ROS Discourse announcement from earlier this year&lt;/a&gt;, as well as our more recent &lt;a href=&quot;https://discourse.ros.org/t/updates-to-foxglove-studio-v0-10-2-for-ros-visualization-debugging/20783&quot;&gt;product updates&lt;/a&gt;, to get up-to-speed on what we’ve been working on.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/build-custom-tools-to-explore-your-ros-data-using-foxglove-studio-extensions/21129&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 28 Jun 2021 17:51:31 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: 👉 ROSCon Registration / Talk Submissions / Diversity Scholarships</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21128</guid>
+	<link>https://discourse.ros.org/t/roscon-registration-talk-submissions-diversity-scholarships/21128</link>
+	<description>&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/1/1ee3d90d0925018dd64a3b872b94f87e37f34c09.jpeg&quot; title=&quot;ROSCon2021&quot;&gt;&lt;img alt=&quot;ROSCon2021&quot; height=&quot;500&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/1/1ee3d90d0925018dd64a3b872b94f87e37f34c09_2_373x500.jpeg&quot; width=&quot;373&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;ROSCon2021&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;811×1086 332 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#roscon-update-1&quot; name=&quot;roscon-update-1&quot;&gt;&lt;/a&gt;ROSCon Update&lt;/h1&gt;
+&lt;p&gt;Hi Everyone,&lt;/p&gt;
+&lt;p&gt;I wanted to give a quick update about ROSCon 2021 in New Orleans.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://roscon.ros.org/2021/#location&quot;&gt;ROSCon registration is currently open.&lt;/a&gt; Register now for the best cpnference rates. ROSCon usually sells out so don’t delay.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://roscon.ros.org/2021/#call-for-proposals&quot;&gt;The deadline for ROSCon NOLA talk submissions&lt;/a&gt; is &lt;span class=&quot;discourse-local-date&quot;&gt;2021-07-10T06:59:00Z&lt;/span&gt;. I think we do “anywhere in the world” time, but please don’t wait until then to submit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://roscon.ros.org/2021/#more-info&quot;&gt;ROSCon Diversity Scholarships are due&lt;/a&gt; no later than &lt;span class=&quot;discourse-local-date&quot;&gt;2021-07-16T07:00:00Z&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-registration-talk-submissions-diversity-scholarships/21128&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 28 Jun 2021 17:34:20 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROS 2 in Robocup 2021</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21122</guid>
+	<link>https://discourse.ros.org/t/ros-2-in-robocup-2021/21122</link>
+	<description>&lt;p&gt;The &lt;a href=&quot;https://2021.robocup.org&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Robocup 2021&lt;/a&gt; ended yesterday. The &lt;a href=&quot;https://humanoid.robocup.org/hl-2021/v-hsc/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;virtual humanoid league&lt;/a&gt;, based on &lt;a href=&quot;https://github.com/cyberbotics/webots&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Webots&lt;/a&gt; including a &lt;a href=&quot;https://github.com/robocup-hl-tc/v-hsc-ros-bridge&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ROS bridge to ROS 2&lt;/a&gt;, was a great success with lots of fun and enthusiasm from the participants. Congratulation to the winners and thank you to the organizers and participants for such a wonderful competition. See the &lt;a class=&quot;inline-onebox&quot; href=&quot;https://youtube.com/watch?v=sYTp1X3nGuE&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Best Moments of the RoboCup Humanoid League Virtual Competition 2021 - YouTube&lt;/a&gt; (I am sure you will smile at the last few seconds &lt;img alt=&quot;:wink:&quot; class=&quot;emoji&quot; src=&quot;https://emoji.discourse-cdn.com/twitter/wink.png?v=9&quot; title=&quot;:wink:&quot; /&gt;).&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/ros-2-in-robocup-2021/21122&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 28 Jun 2021 10:03:11 +0000</pubDate>
+</item>
+<item>
+	<title>Mat Sadowski Blog: Making a 3D mapping prototype with ROS</title>
+	<guid isPermaLink="false">https://msadowski.github.io/3d-mapping-with-ros</guid>
+	<link>https://msadowski.github.io/3d-mapping-with-ros/</link>
+	<description>&lt;p&gt;In my &lt;a href=&quot;https://msadowski.github.io/rtk-plug-n-play-with-septentrio/&quot;&gt;previous post&lt;/a&gt; I’ve shared some of my experience working with Septentrio Mosaic X-5 dev kits. After seeing some good results with that hardware I’ve decided to try to use them with some other hardware to realise a prototype that I had in mind for quite some years. In this post I’m going to describe what I did to get a first prototype working and share some tips for anyone who would like to replicate them.&lt;/p&gt;
+
+
+
+&lt;h2 id=&quot;the-idea&quot;&gt;The idea&lt;/h2&gt;
+
+&lt;p&gt;I’ve been interested in developing a proof of concept system for mapping (either using SLAM or other methods) for at least 7 years now (it might be slightly related to the fact that I was developing something similar for my master thesis). Since I’ve had a chance to work with RTK GNSS units (firstly with &lt;a href=&quot;https://msadowski.github.io/ardusimple-rtk-moving-forward/&quot;&gt;ArduSimple&lt;/a&gt; and then with &lt;a href=&quot;https://msadowski.github.io/rtk-plug-n-play-with-septentrio/&quot;&gt;Septentrio’s solutions&lt;/a&gt;) the logical next step was to start integrating more sensors. Before we get into the nitty-gritty details and the final demo I run let’s take a look at the first prototype of the idea:&lt;/p&gt;
+
+&lt;figure class=&quot;center&quot;&gt;
+&lt;video class=&quot;center&quot; controls=&quot;&quot; style=&quot;width: 100%;&quot;&gt;
+    &lt;source src=&quot;https://msadowski.github.io/images/3d_mapping/room_scanning.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;figcaption&gt; Indoor scanning
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;the-design&quot;&gt;The design&lt;/h2&gt;
+
+&lt;p&gt;Here is the list of hardware that I had access to for this project:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2x &lt;a href=&quot;https://shop.septentrio.com/en/shop/mosaic-h-gnss-heading-module-evaluation-kit-2-gnss-antennae&quot;&gt;Septentrio Mosaic X-5 dev kit&lt;/a&gt; - precise GNSS modules in RTK setup&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.xsens.com/products/mti-600-series&quot;&gt;Xsens MTi-630-DK&lt;/a&gt; - AHRS (a precise magnetometer was a must-have for the prototype)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.livoxtech.com/mid-40-and-mid-100&quot;&gt;Livox Mid-40 LiDAR&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Two Mikrotik routers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;sensors&quot;&gt;Sensors&lt;/h3&gt;
+
+&lt;h4 id=&quot;livox-mid-40&quot;&gt;Livox Mid-40&lt;/h4&gt;
+
+&lt;figure class=&quot;center&quot;&gt;
+    &lt;img alt=&quot;Livox Mid-40&quot; src=&quot;https://msadowski.github.io/images/livox/livox_mid40.jpg&quot; /&gt;
+    &lt;figcaption&gt;Livox Mid-40 LiDAR&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I’ve received Mid-40 from Livox over 2 years ago and described my initial thoughts in &lt;a href=&quot;https://msadowski.github.io/livox-mid40-review/&quot;&gt;this blog post&lt;/a&gt;. Having a neat scanning pattern was an interesting feature for the prototype. With a single plane LiDAR, I would have to move the prototype quite a bit to gather data, with Mid-40 I could instantly tell if the data was good because I would immediately see the features in the scans.&lt;/p&gt;
+
+&lt;h4 id=&quot;xsens-mti-630-dk&quot;&gt;Xsens MTi-630-DK&lt;/h4&gt;
+
+&lt;figure class=&quot;center&quot;&gt;
+    &lt;img alt=&quot;Xsens AHRS&quot; src=&quot;https://msadowski.github.io/images/3d_mapping/xsens.jpg&quot; /&gt;
+    &lt;figcaption&gt;MTi-630-DK mounted on the prototype frame&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.xsens.com/&quot;&gt;Xsens&lt;/a&gt; was very kind to lend me an evaluation unit of MTi-630-DK for my demonstrator, even though the initial phase of the project took me way longer than anticipated. The MTi-630 is an Attitude and Heading Reference System (AHRS) as it runs on-board sensor fusion algorithms that estimate absolute 3D orientation, in this blog post I’m using IMU and AHRS interchangeably. The main feature I was after in the IMU/AHRS was as precise globally referenced heading as I could get. The better the AHRS the less angular drift I would expect to see in my data.&lt;/p&gt;
+
+&lt;p&gt;In the video I’ve shared in the previous section you can see me testing the first prototype in a room running just the MTi and the Mid-40. I used double sided-tape to attach the unit to the top of the LiDAR, created a simple URDF file with correct offset between frames and voila! By slowly rotating the LiDAR in place I was able to scan the room. Let’s take a look at it again:&lt;/p&gt;
+
+&lt;figure class=&quot;center&quot;&gt;
+&lt;video class=&quot;center&quot; controls=&quot;&quot; style=&quot;width: 100%;&quot;&gt;
+    &lt;source src=&quot;https://msadowski.github.io/images/3d_mapping/room_scanning.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;figcaption&gt; Indoor scanning
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Do you see an issue with the 3D map being created? As the LiDAR is turning left you can notice that the new points appear shifted with regard to the points that were initially captured.&lt;/p&gt;
+
+&lt;figure class=&quot;center&quot;&gt;
+    &lt;img alt=&quot;Livox Mid-40&quot; src=&quot;https://msadowski.github.io/images/3d_mapping/lidar_offset.png&quot; /&gt;
+    &lt;figcaption&gt;Bad map!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In my hastily prepared prototype, I assumed that the Mid-40 origin is in the centre of the LiDAR, while according to the docs the origin of the LiDAR is flushed with the front face of the unit. Oh well, it’ll be fixed in the next iteration that will include the next sensor.&lt;/p&gt;
+
+&lt;p&gt;And if you are thinking now “hey, Mat, won’t placing the sensor so close to some moving parts, that are undoubtedly magnetic and surely inside the LiDAR, affect the sensor readings?” then you are right. Even though I couldn’t see it when looking at RVIZ data, much later I noticed that turning on LiDAR affected the magnetometer reading that was fused by the AHRS for the orientation estimation.&lt;/p&gt;
+
+&lt;h4 id=&quot;septentrio-mosaic-x-5&quot;&gt;Septentrio Mosaic X-5&lt;/h4&gt;
+
+&lt;figure class=&quot;center&quot;&gt;
+    &lt;img alt=&quot;Livox Mid-40&quot; src=&quot;https://msadowski.github.io/images/septentrio/mosaic_dev_kit.jpeg&quot; /&gt;
+    &lt;figcaption&gt;Septentrio Mosaic X-5 Dev Kit&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I’ve used Septentrio dev kits in exactly the same way that I’ve described in the &lt;a href=&quot;https://msadowski.github.io/rtk-plug-n-play-with-septentrio/&quot;&gt;previous blog post&lt;/a&gt;. Just as a quick recap: one unit was functioning as a base station, sending corrections to the rover unit that I’ve mounted on the prototype. All exchanging information through WiFi.&lt;/p&gt;
+
+&lt;p&gt;Having very precise location information is the core problem to solve for this prototype. Another approach that could be used would be to try to run SLAM, but this would require more processing power and most likely a LiDAR with a more repeatable pattern and higher field of view.&lt;/p&gt;
+
+&lt;h2 id=&quot;putting-it-all-together&quot;&gt;Putting it all together&lt;/h2&gt;
+
+&lt;h3 id=&quot;hardware&quot;&gt;Hardware&lt;/h3&gt;
+
+&lt;p&gt;Here is how I connected everything up when it comes to hardware:&lt;/p&gt;
+
+&lt;figure class=&quot;center&quot;&gt;
+    &lt;img alt=&quot;Hardware diagram&quot; src=&quot;https://msadowski.github.io/images/3d_mapping/architecture.jpg&quot; /&gt;
+    &lt;figcaption&gt;Simplified hardware architecture of the system&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I’ve mounted all the components on a frame built from 2020 V-slot profiles, making sure I have enough room for anything I might want to add in the future:&lt;/p&gt;
+
+&lt;figure class=&quot;center&quot;&gt;
+    &lt;img alt=&quot;2020 profile based prototype&quot; src=&quot;https://msadowski.github.io/images/3d_mapping/prototype.jpg&quot; /&gt;
+    &lt;figcaption&gt;First prototype (before moving IMU to the bottom frame)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The LiDAR and the Router were both powered off a single 3S LiPO battery, while the GNSS unit and the IMU was powered from my laptop’s USB ports.&lt;/p&gt;
+
+&lt;p&gt;There are two issues with this setup:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;I planned to use my laptop for processing and could not be bothered setting up a smaller processing unit&lt;/li&gt;
+  &lt;li&gt;The unit weighs too much to be comfortably carried for long periods, even if a 2nd person carries the laptop&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The best thing about this setup was the flexibility for mounting things. I had enough space to keep adding any hardware I might have needed or wanted to try out. After all, my only goal in these experiments was to prove the concept.&lt;/p&gt;
+
+&lt;h3 id=&quot;software&quot;&gt;Software&lt;/h3&gt;
+
+&lt;p&gt;For my prototype, I’ve used ROS Melodic, since that’s the version I’m still mostly using, and I had it on my machine. Something I love ROS for is the existing packages and libraries. What I think is interesting, is that for the prototype I didn’t need to write any software, I was just able to put together a bunch of existing packages by having the right configuration (perhaps having a good idea of what I’m doing helped too).&lt;/p&gt;
+
+&lt;figure class=&quot;center&quot;&gt;
+    &lt;img alt=&quot;Software Architecture Diagram&quot; src=&quot;https://msadowski.github.io/images/3d_mapping/software_architecture.jpg&quot; /&gt;
+    &lt;figcaption&gt;ROS nodes I've run for a proof of concept&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;To make testing easier I’ve created a xacro file that defined all the dimensions and components, together with their position. Bein able to visualise the setup made testing easier as I could double check the state estimation matches reality:&lt;/p&gt;
+
+&lt;figure class=&quot;center&quot;&gt;
+    &lt;img alt=&quot;URDF Robot Model&quot; src=&quot;https://msadowski.github.io/images/3d_mapping/urdf.png&quot; /&gt;
+    &lt;figcaption&gt;Sensor placement in urdf/xacro&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This data on where sensors are with respect to one another is used throughout the system. Not only it allows to accurately represent the PointCloud in RVIZ but it also is used by EKF nodes for checking the relative positions between elements.&lt;/p&gt;
+
+&lt;p&gt;The localization is a classic ROS ekf stack described in detail &lt;a href=&quot;http://docs.ros.org/en/noetic/api/robot_localization/html/index.html&quot;&gt;on these pages&lt;/a&gt;. Running this EKF allows us to get an estimated position of the robot in a fixed coordinate frame (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;odom&lt;/code&gt;). Setting the Fixed frame to map in RVIZ then allows us to visualised all the LiDAR points as you can see here:&lt;/p&gt;
+
+&lt;figure class=&quot;center&quot;&gt;
+&lt;video class=&quot;center&quot; controls=&quot;&quot; style=&quot;width: 100%;&quot;&gt;
+    &lt;source src=&quot;https://msadowski.github.io/images/3d_mapping/3d_run.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;figcaption&gt; An OK mapping run
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is one of the 2 mapping runs I’ve run with this hardware, with a hand-tuned heading offset. This result is exactly what I need to prove the concept. If you know &lt;a href=&quot;https://en.wikipedia.org/wiki/Pareto_principle&quot;&gt;Pareto principle&lt;/a&gt; I firmly believe that in 20% of the time, I’ve shown 80% of the system functionality. The remaining 80% time required is a solid grind, with lots of tuning and field trips to create something viable.&lt;/p&gt;
+
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
+
+&lt;p&gt;I’ve learned a tonne in this project, so naturally, there is some brain dump:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;V-Slot 2020 profiles are amazing, if you work with them I highly recommend 3D printing or sourcing some caps that you can place on the profile ends. They are quite sharp, without caps you don’t want them anywhere near surfaces you care about&lt;/li&gt;
+  &lt;li&gt;Start work with some computer that will run everything and have a small screen, running everything on the laptop, and carrying a heavy prototype is not a great idea&lt;/li&gt;
+  &lt;li&gt;In my experience so far, every trial takes me between 3-5 hours, mostly because I’m in the city, and quiet places with good views of the sky are hard to come by. If you are using ROS then record bagfiles and use them for tuning the system (especially localization and IMU integration)&lt;/li&gt;
+  &lt;li&gt;Use checklists - on one occasion I had all the cables I needed by pure luck. I highly recommend using a checklist for field packing and performing experiments. Ensuring your GNSS unit is connected to the router when testing will surely save you some debugging time as well!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;further-thoughts&quot;&gt;Further thoughts&lt;/h3&gt;
+
+&lt;p&gt;For a project like this timing is everything. Both the LiDAR and the IMU that I’ve used support sync input, while Septentrio’s Mosaic can easily be configured to provide sync output. Instead of using EKF as I did, perhaps the data could be used directly with very little sensor fusion. This would probably be the approach I would have taken if I was developing a handheld module.&lt;/p&gt;
+
+&lt;p&gt;Instead, I’m way more likely to put this kind of hardware on a mobile robot of some kind, making sensor fusion a much more likely requirement as the precise position and orientation would be used for other aspects than mapping.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next steps?&lt;/h2&gt;
+
+&lt;p&gt;Right now I don’t have any plans to pursue this project further as it is. I’m glad that I was able to prove the concept but I don’t have a use case for such a device. I’ll use these learnings in future robot integration projects. If someone wants to build off the work I’ve described here for an open-source project then I’ll be more than happy to help out, but for now, it’s time to focus on other ideas that I have in the pipeline!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://msadowski.github.io/3d-mapping-with-ros/&quot;&gt;Making a 3D mapping prototype with ROS&lt;/a&gt; was originally published by Mateusz Sadowski at &lt;a href=&quot;https://msadowski.github.io&quot;&gt;msadowski blog&lt;/a&gt; on June 28, 2021.&lt;/p&gt;</description>
+	<pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+	<author>mat@msadowski.ch (Mateusz Sadowski)</author>
+</item>
+<item>
+	<title>ROS Discourse General: ROSCon Fr 2021 report</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21104</guid>
+	<link>https://discourse.ros.org/t/roscon-fr-2021-report/21104</link>
+	<description>&lt;p&gt;Despite the pandemic, ROSConFr 2021 was held virtually on the 22th and and 23th of June 2021.&lt;br /&gt;
+The initial plan was to hold it in conjunction with the RoboCup. But this event was postponed in 2022.&lt;br /&gt;
+ROSCon Fr 2019 was held in conjunction with the Open Source Robotics Foundation. This post follows the same structure than the one written in 2019 and inspired by &lt;a class=&quot;mention&quot; href=&quot;https://discourse.ros.org/u/gbiggs&quot;&gt;@gbiggs&lt;/a&gt; .&lt;br /&gt;
+The event was free for anyone.&lt;br /&gt;
+The livestream had a steady 65 people watching at any one time throughout the first day, and 60 people the second day. Thanks to all the participants, ROSCon Fr was an exciting event for all.&lt;br /&gt;
+Presentation slides and videos will be published on the website in a few weeks.&lt;/p&gt;
+&lt;p&gt;The invited talks, submitted talks and lightning talks were of high quality. As our third local event, we consider ROSCon Fr 2021 to have been a success and a credit to the French ROS user community.&lt;br /&gt;
+Given the exceptional situation we are very happy that so many people attended the video stream.&lt;/p&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#invited-talks-1&quot; name=&quot;invited-talks-1&quot;&gt;&lt;/a&gt;Invited talks&lt;/h1&gt;
+&lt;p&gt;The first invited talk was given by Bence Magyar (&lt;a class=&quot;mention&quot; href=&quot;https://discourse.ros.org/u/bmagyar&quot;&gt;@bmagyar&lt;/a&gt;), Research Scientist at Five AI.&lt;br /&gt;
+Talking about the history and future of ros(2)_controls, he gave us a perspective on future developments concerning the hardware interface and the controllers.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/2/24733b9e920d0b4c94dd4cb2ce4bcd328cd94231.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;PhotoBenceMagyarInvitedTalk&quot;&gt;&lt;img alt=&quot;PhotoBenceMagyarInvitedTalk&quot; height=&quot;314&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/2/24733b9e920d0b4c94dd4cb2ce4bcd328cd94231_2_690x314.jpeg&quot; width=&quot;690&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;PhotoBenceMagyarInvitedTalk&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;3376×1538 396 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The second invited talk was given by María Merlan (&lt;a class=&quot;mention&quot; href=&quot;https://discourse.ros.org/u/mamerlan&quot;&gt;@mamerlan&lt;/a&gt;, eProsima), Jan Staschulat (&lt;a class=&quot;mention&quot; href=&quot;https://discourse.ros.org/u/janstaschulat&quot;&gt;@JanStaschulat&lt;/a&gt; Bosch) and Pablo Garrido (&lt;a class=&quot;mention&quot; href=&quot;https://discourse.ros.org/u/pablogs&quot;&gt;@pablogs&lt;/a&gt;  eProsima). They described Micro-XRCE and micro-ROS.&lt;br /&gt;
+It started with a very clear and easy to follow introduction on how to bring ROS-2 to micro controllers by Maria.&lt;br /&gt;
+Jan gave us precisions on the architecture and how to code with rclc.&lt;br /&gt;
+The last part was a live demonstration realized by Pablo.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/8/8a9037822f33bd355eebef439cb5f6fe69b1a5bf.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;PhotoeProsimaInvitedTalk&quot;&gt;&lt;img alt=&quot;PhotoeProsimaInvitedTalk&quot; height=&quot;314&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/8/8a9037822f33bd355eebef439cb5f6fe69b1a5bf_2_690x314.jpeg&quot; width=&quot;690&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;PhotoeProsimaInvitedTalk&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;3376×1538 341 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Due to the format, it was not possible for Bence, Maria, Jan and Pablo to make direct new contacts. But we had a public chat with numerous questions by the French robotics community.&lt;br /&gt;
+This chat was actually extremely lively and contribute to further improving participation by French roboticists in global open source robotics activities.&lt;br /&gt;
+All the participants of ROSCon Fr 2021 benefited from their participation.&lt;/p&gt;
+&lt;p&gt;The format was 45 minutes of presentation and 15 minutes of questions.&lt;br /&gt;
+We would like to thank them again for their presentation to this event.&lt;/p&gt;
+&lt;p&gt;Compare to last year we had no keynotes.&lt;br /&gt;
+We could not have social events due to the pandemic.&lt;/p&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#submitted-talks-and-lightning-talks-2&quot; name=&quot;submitted-talks-and-lightning-talks-2&quot;&gt;&lt;/a&gt;Submitted talks and lightning talks&lt;/h1&gt;
+&lt;p&gt;ROSCon Fr 2021, mixing the ROSCon method and the French research community, established a programme committee and made a public call for submissions. The programme committee received 15 submissions.&lt;/p&gt;
+&lt;p&gt;After review by the programme committee, the 15 presentations were selected and given presentation slots ranging from 20 minutes to 50 minutes (based on the speaker proposals). The presentations were selected covered a broad range of ROS-related topics, such as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Very impressive new robots: Reachy (Pollen Robotics, Kangooroo (TOWARD and PAL Robotics), NB-120 (Nimbl’Bot) from French startups&lt;/li&gt;
+&lt;li&gt;ROSIN funded project: ROS4PRO and ROS In Occtanie&lt;/li&gt;
+&lt;li&gt;An industrial deployment of ROS for warehouse activities by Rapyuta robotics&lt;/li&gt;
+&lt;li&gt;Extensions for ROS-2 Corail for real-time on ROS-2, tracing ros2 events with ros2_tracing, ros2_control feedback for complex I/O control.&lt;/li&gt;
+&lt;li&gt;Formal verification with Fiacre (LAAS), and Robot Skills Toolchain (ONERA) showing how to program and certifiy the execution of complex missions&lt;/li&gt;
+&lt;li&gt;Demonstration of a final European project based on ROS-2 (Magellium) for complex robotics assembly in space, and another project for Agricultural robotics (XLIM).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also in the ROSCon and developer conference tradition, half an hour of the programme was made available for lightning talks.&lt;br /&gt;
+It was fun and interesting for both the presenters and the audience but did not work as well as it did in 2019 probably due to the format. We had only 3 compare to 20 in 2019.&lt;/p&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#live-demos-3&quot; name=&quot;live-demos-3&quot;&gt;&lt;/a&gt;Live Demos&lt;/h1&gt;
+&lt;p&gt;We had three live demos: one from our invited guests by Pablo (eProsima), one from Nicolas (Luos), the last one during the lightning talk of &lt;a class=&quot;mention&quot; href=&quot;https://discourse.ros.org/u/doisyg&quot;&gt;@doisyg&lt;/a&gt;  (Wyca) with PlotJuggler.&lt;br /&gt;
+&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/a/a69e7203da6ef1968c6731d61d105ac73a1c204e.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;LiveDemoeProsima&quot;&gt;&lt;img alt=&quot;LiveDemoeProsima&quot; height=&quot;314&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/a/a69e7203da6ef1968c6731d61d105ac73a1c204e_2_690x314.jpeg&quot; width=&quot;690&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;LiveDemoeProsima&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;3376×1538 567 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/7/72d4f70c0e56689c8f6719b3724cf5e97b0c975d.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;LiveDemoLuosNicolas&quot;&gt;&lt;img alt=&quot;LiveDemoLuosNicolas&quot; height=&quot;314&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/7/72d4f70c0e56689c8f6719b3724cf5e97b0c975d_2_690x314.jpeg&quot; width=&quot;690&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;LiveDemoLuosNicolas&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;3376×1538 518 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/e/ec35796b68e8d7b70867434106c1c760fcf99a3e.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;LiveDemoWycaPlotJuggler&quot;&gt;&lt;img alt=&quot;LiveDemoWycaPlotJuggler&quot; height=&quot;314&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/e/ec35796b68e8d7b70867434106c1c760fcf99a3e_2_690x314.jpeg&quot; width=&quot;690&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;LiveDemoWycaPlotJuggler&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;3376×1538 522 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#live-stream-statistics-4&quot; name=&quot;live-stream-statistics-4&quot;&gt;&lt;/a&gt;Live stream statistics&lt;/h1&gt;
+&lt;p&gt;For the event we used BigBlueButton an open source solution. It was supported by LAAS/CNRS.&lt;br /&gt;
+&lt;img alt=&quot;stats-roscon-jun22&quot; height=&quot;238&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/b/bbe9a71a3a70a7daddd85e66fd1cd3846a30630d.png&quot; width=&quot;671&quot; /&gt;&lt;br /&gt;
+&lt;img alt=&quot;stats-roscon-jun23&quot; height=&quot;221&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/3/36151ed5584dc855a09fca2e386f3537ead51525.png&quot; width=&quot;663&quot; /&gt;&lt;/p&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#sponsors-5&quot; name=&quot;sponsors-5&quot;&gt;&lt;/a&gt;Sponsors&lt;/h1&gt;
+&lt;p&gt;ROSCon Fr 2021 was sponsored by the following companies and organisations:&lt;/p&gt;
+&lt;p&gt;Gold: &lt;a href=&quot;https://www.generationrobots.com/en/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Generation Robots&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Friendship:  &lt;a href=&quot;https://www.robotics-place.com/en/homepage/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Robotics Place&lt;/a&gt;, GT-7 Robotique humanoïde, &lt;a href=&quot;https://2rm.cnrs.fr/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;2RM&lt;/a&gt; and &lt;a href=&quot;https://s-mart.fr/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;SMART&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#final-remarks-6&quot; name=&quot;final-remarks-6&quot;&gt;&lt;/a&gt;Final remarks&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/e/e7ef4f182e12bdb8eb2c813b42e0e22ff01af689.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;PhotoDeGroupeROSConFr2021&quot;&gt;&lt;img alt=&quot;PhotoDeGroupeROSConFr2021&quot; height=&quot;314&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/e/e7ef4f182e12bdb8eb2c813b42e0e22ff01af689_2_690x314.jpeg&quot; width=&quot;690&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;PhotoDeGroupeROSConFr2021&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;3222×1468 1.05 MB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;ROSCon Fr 2021 was a success and demonstrated both to us and to the French ROS community that people are welcoming this event.&lt;br /&gt;
+We believe that ROSCon Fr 2021 despite the situation was welcome and is providing a real interest to the community, encouraged many new connections, and demonstrated real commercial interests.&lt;/p&gt;
+&lt;p&gt;We’re already preparing ROSCon Fr 2022 and welcome feedback from the community !&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;5 posts - 5 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-fr-2021-report/21104&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sun, 27 Jun 2021 16:50:29 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: New Packages for Noetic 2021/06/25</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21091</guid>
+	<link>https://discourse.ros.org/t/new-packages-for-noetic-2021-06-25/21091</link>
+	<description>&lt;p&gt;We’re happy to announce &lt;strong&gt;36&lt;/strong&gt; new packages and &lt;strong&gt;104&lt;/strong&gt; updates are now available in ROS Noetic. This sync was tagged as &lt;a href=&quot;https://github.com/ros/rosdistro/blob/noetic/2021-06-25/noetic/distribution.yaml&quot; rel=&quot;noopener nofollow ugc&quot;&gt;noetic/2021-06-25&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thank you to every maintainer and contributor who made these updates available!&lt;/p&gt;
+&lt;h2&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#package-updates-for-ros-noetic-1&quot; name=&quot;package-updates-for-ros-noetic-1&quot;&gt;&lt;/a&gt;Package Updates for ROS Noetic&lt;/h2&gt;
+&lt;h3&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#added-packages-36-2&quot; name=&quot;added-packages-36-2&quot;&gt;&lt;/a&gt;Added Packages [36]:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ros-noetic-cartesian-control-msgs: 0.1.0-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-cartesian-interface: 0.1.3-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-cartesian-trajectory-controller: 0.1.3-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-cartesian-trajectory-interpolation: 0.1.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://foxglove.dev/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-foxglove-msgs&lt;/a&gt;: 1.0.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/imu_monitor&quot;&gt;ros-noetic-imu-monitor&lt;/a&gt;: 1.6.32-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/base_local_planner&quot;&gt;ros-noetic-neo-local-planner&lt;/a&gt;: 1.0.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/osm_cartography&quot;&gt;ros-noetic-osm-cartography&lt;/a&gt;: 0.3.0-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-paho-mqtt-c: 1.3.8-8&lt;/li&gt;
+&lt;li&gt;ros-noetic-parameter-pa: 1.2.3-2&lt;/li&gt;
+&lt;li&gt;ros-noetic-pass-through-controllers: 0.1.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/pr2_bringup&quot;&gt;ros-noetic-pr2-bringup&lt;/a&gt;: 1.6.32-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://pr.willowgarage.com/wiki/pr2_camera_synchronizer&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-pr2-camera-synchronizer&lt;/a&gt;: 1.6.32-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.ros.org/wiki/pr2_computer_monitor&quot;&gt;ros-noetic-pr2-computer-monitor&lt;/a&gt;: 1.6.32-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/pr2_controller_configuration&quot;&gt;ros-noetic-pr2-controller-configuration&lt;/a&gt;: 1.6.32-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://pr.willowgarage.com&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-pr2-ethercat&lt;/a&gt;: 1.6.32-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/pr2_robot&quot;&gt;ros-noetic-pr2-robot&lt;/a&gt;: 1.6.32-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/pr2_run_stop_auto_restart&quot;&gt;ros-noetic-pr2-run-stop-auto-restart&lt;/a&gt;: 1.6.32-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-rc-reason-clients: 0.2.1-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-rc-reason-msgs: 0.2.1-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-ros-controllers-cartesian: 0.1.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/route_network&quot;&gt;ros-noetic-route-network&lt;/a&gt;: 0.3.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/rqt_pr2_dashboard&quot;&gt;ros-noetic-rqt-pr2-dashboard&lt;/a&gt;: 0.4.0-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-scaled-controllers: 0.1.0-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-scaled-joint-trajectory-controller: 0.1.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/speed_scaling_interface&quot;&gt;ros-noetic-speed-scaling-interface&lt;/a&gt;: 0.1.0-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-speed-scaling-state-controller: 0.1.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/test_osm&quot;&gt;ros-noetic-test-osm&lt;/a&gt;: 0.3.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/turtlebot3_autorace&quot;&gt;ros-noetic-turtlebot3-autorace-2020&lt;/a&gt;: 1.1.0-7&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/turtlebot3_autorace&quot;&gt;ros-noetic-turtlebot3-autorace-camera&lt;/a&gt;: 1.1.0-7&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/turtlebot3_autorace&quot;&gt;ros-noetic-turtlebot3-autorace-core&lt;/a&gt;: 1.1.0-7&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/turtlebot3_autorace&quot;&gt;ros-noetic-turtlebot3-autorace-detect&lt;/a&gt;: 1.1.0-7&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/turtlebot3_autorace&quot;&gt;ros-noetic-turtlebot3-autorace-driving&lt;/a&gt;: 1.1.0-7&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/turtlebot3_autorace&quot;&gt;ros-noetic-turtlebot3-autorace-msgs&lt;/a&gt;: 1.1.0-7&lt;/li&gt;
+&lt;li&gt;ros-noetic-twist-controller: 0.1.3-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-ur-msgs: 1.3.4-1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#updated-packages-104-3&quot; name=&quot;updated-packages-104-3&quot;&gt;&lt;/a&gt;Updated Packages [104]:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ros-noetic-ackermann-steering-controller: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-bota-driver&lt;/a&gt;: 0.5.9-1 → 0.6.0-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-bota-node&lt;/a&gt;: 0.5.9-1 → 0.6.0-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-bota-signal-handler&lt;/a&gt;: 0.5.9-1 → 0.6.0-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-bota-worker&lt;/a&gt;: 0.5.9-1 → 0.6.0-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_control/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-combined-robot-hw&lt;/a&gt;: 0.19.4-1 → 0.19.5-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_control/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-combined-robot-hw-tests&lt;/a&gt;: 0.19.4-1 → 0.19.5-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_control/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-controller-interface&lt;/a&gt;: 0.19.4-1 → 0.19.5-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_control/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-controller-manager&lt;/a&gt;: 0.19.4-1 → 0.19.5-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_control/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-controller-manager-msgs&lt;/a&gt;: 0.19.4-1 → 0.19.5-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/controller_manager_tests&quot;&gt;ros-noetic-controller-manager-tests&lt;/a&gt;: 0.19.4-1 → 0.19.5-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-costmap-cspace: 0.10.10-1 → 0.10.11-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/delphi_esr_msgs&quot;&gt;ros-noetic-delphi-esr-msgs&lt;/a&gt;: 3.2.0-1 → 3.3.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/delphi_mrr_msgs&quot;&gt;ros-noetic-delphi-mrr-msgs&lt;/a&gt;: 3.2.0-1 → 3.3.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/delphi_srr_msgs&quot;&gt;ros-noetic-delphi-srr-msgs&lt;/a&gt;: 3.2.0-1 → 3.3.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/derived_object_msgs&quot;&gt;ros-noetic-derived-object-msgs&lt;/a&gt;: 3.2.0-1 → 3.3.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_controllers/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-diff-drive-controller&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_controllers/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-effort-controllers&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/stack-of-tasks/eigenpy&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-eigenpy&lt;/a&gt;: 2.6.3-1 → 2.6.4-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.shadowrobot.com/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-ethercat-grant&lt;/a&gt;: 0.2.5-5 → 0.2.5-8&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_controllers/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-force-torque-sensor-controller&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_controllers/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-forward-command-controller&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/four_wheel_steering_controller&quot;&gt;ros-noetic-four-wheel-steering-controller&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/geodesy&quot;&gt;ros-noetic-geodesy&lt;/a&gt;: 0.5.5-1 → 0.5.6-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/geographic_info&quot;&gt;ros-noetic-geographic-info&lt;/a&gt;: 0.5.5-1 → 0.5.6-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/geographic_msgs&quot;&gt;ros-noetic-geographic-msgs&lt;/a&gt;: 0.5.5-1 → 0.5.6-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-graceful-controller: 0.3.0-1 → 0.4.0-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-graceful-controller-ros: 0.3.0-1 → 0.4.0-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-gripper-action-controller: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_control/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-hardware-interface&lt;/a&gt;: 0.19.4-1 → 0.19.5-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/hector_gazebo&quot;&gt;ros-noetic-hector-gazebo&lt;/a&gt;: 0.5.3-1 → 0.5.4-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/hector_gazebo_plugins&quot;&gt;ros-noetic-hector-gazebo-plugins&lt;/a&gt;: 0.5.3-1 → 0.5.4-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/hector_gazebo_thermal_camera&quot;&gt;ros-noetic-hector-gazebo-thermal-camera&lt;/a&gt;: 0.5.3-1 → 0.5.4-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/hector_gazebo_worlds&quot;&gt;ros-noetic-hector-gazebo-worlds&lt;/a&gt;: 0.5.3-1 → 0.5.4-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/hector_sensors_gazebo&quot;&gt;ros-noetic-hector-sensors-gazebo&lt;/a&gt;: 0.5.3-1 → 0.5.4-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/kartech_linear_actuator_msgs&quot;&gt;ros-noetic-ibeo-msgs&lt;/a&gt;: 3.2.0-1 → 3.3.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_controllers/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-imu-sensor-controller&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_control/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-joint-limits-interface&lt;/a&gt;: 0.19.4-1 → 0.19.5-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_controllers/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-joint-state-controller&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_controllers/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-joint-trajectory-controller&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.ros.org/wiki/joy&quot;&gt;ros-noetic-joy&lt;/a&gt;: 1.15.0-1 → 1.15.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.ros.org/wiki/joystick_drivers&quot;&gt;ros-noetic-joystick-drivers&lt;/a&gt;: 1.15.0-1 → 1.15.1-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-joystick-interrupt: 0.10.10-1 → 0.10.11-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/kartech_linear_actuator_msgs&quot;&gt;ros-noetic-kartech-linear-actuator-msgs&lt;/a&gt;: 3.2.0-1 → 3.3.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/leo&quot;&gt;ros-noetic-leo&lt;/a&gt;: 1.2.1-1 → 1.2.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/leo_description&quot;&gt;ros-noetic-leo-description&lt;/a&gt;: 1.2.1-1 → 1.2.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/leo&quot;&gt;ros-noetic-leo-teleop&lt;/a&gt;: 1.2.1-1 → 1.2.2-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-map-organizer: 0.10.10-1 → 0.10.11-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://mavlink.io/en/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-mavlink&lt;/a&gt;: 2021.5.5-1 → 2021.6.6-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/dfki-ric/mir_robot&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-mir-actions&lt;/a&gt;: 1.1.2-1 → 1.1.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/dfki-ric/mir_robot&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-mir-description&lt;/a&gt;: 1.1.2-1 → 1.1.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/dfki-ric/mir_robot&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-mir-driver&lt;/a&gt;: 1.1.2-1 → 1.1.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/dfki-ric/mir_dwb_critics&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-mir-dwb-critics&lt;/a&gt;: 1.1.2-1 → 1.1.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/dfki-ric/mir_robot&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-mir-gazebo&lt;/a&gt;: 1.1.2-1 → 1.1.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/dfki-ric/mir_robot&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-mir-msgs&lt;/a&gt;: 1.1.2-1 → 1.1.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/dfki-ric/mir_robot&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-mir-navigation&lt;/a&gt;: 1.1.2-1 → 1.1.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/dfki-ric/mir_robot&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-mir-robot&lt;/a&gt;: 1.1.2-1 → 1.1.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/mobileye_560_660_msgs&quot;&gt;ros-noetic-mobileye-560-660-msgs&lt;/a&gt;: 3.2.0-1 → 3.3.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/neobotix_usboard_msgs&quot;&gt;ros-noetic-neobotix-usboard-msgs&lt;/a&gt;: 3.2.0-1 → 3.3.0-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-neonavigation: 0.10.10-1 → 0.10.11-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-neonavigation-common: 0.10.10-1 → 0.10.11-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-neonavigation-launch: 0.10.10-1 → 0.10.11-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/network_interface&quot;&gt;ros-noetic-network-interface&lt;/a&gt;: 3.0.0-1 → 3.1.0-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-obj-to-pointcloud: 0.10.10-1 → 0.10.11-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/pacmod_msgs&quot;&gt;ros-noetic-pacmod-msgs&lt;/a&gt;: 3.2.0-1 → 3.3.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/stack-of-tasks/pinocchio&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-pinocchio&lt;/a&gt;: 2.6.0-1 → 2.6.1-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-planner-cspace: 0.10.10-1 → 0.10.11-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/facontidavide/PlotJuggler&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-plotjuggler&lt;/a&gt;: 3.1.1-1 → 3.2.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/facontidavide/PlotJuggler&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-plotjuggler-ros&lt;/a&gt;: 1.1.1-1 → 1.5.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_controllers/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-position-controllers&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/rc_visard_driver&quot;&gt;ros-noetic-rc-genicam-driver&lt;/a&gt;: 0.5.0-1 → 0.5.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/rc_hand_eye_calibration_client&quot;&gt;ros-noetic-rc-hand-eye-calibration-client&lt;/a&gt;: 3.1.0-1 → 3.2.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/rc_pick_client&quot;&gt;ros-noetic-rc-pick-client&lt;/a&gt;: 3.1.0-1 → 3.2.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/rc_roi_manager_gui&quot;&gt;ros-noetic-rc-roi-manager-gui&lt;/a&gt;: 3.1.0-1 → 3.2.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/rc_silhouettematch_client&quot;&gt;ros-noetic-rc-silhouettematch-client&lt;/a&gt;: 3.1.0-1 → 3.2.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/rc_tagdetect_client&quot;&gt;ros-noetic-rc-tagdetect-client&lt;/a&gt;: 3.1.0-1 → 3.2.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://roboception.com/rc_visard&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-rc-visard&lt;/a&gt;: 3.1.0-1 → 3.2.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/rc_visard_description&quot;&gt;ros-noetic-rc-visard-description&lt;/a&gt;: 3.1.0-1 → 3.2.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/rc_visard_driver&quot;&gt;ros-noetic-rc-visard-driver&lt;/a&gt;: 3.1.0-1 → 3.2.1-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-rcdiscover: 1.0.4-1 → 1.1.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/robot_localization&quot;&gt;ros-noetic-robot-localization&lt;/a&gt;: 2.7.1-1 → 2.7.2-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-rokubimini&lt;/a&gt;: 0.5.9-1 → 0.6.0-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-rokubimini-bus-manager&lt;/a&gt;: 0.5.9-1 → 0.6.0-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-rokubimini-description&lt;/a&gt;: 0.5.9-1 → 0.6.0-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-rokubimini-ethercat&lt;/a&gt;: 0.5.9-1 → 0.6.0-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-rokubimini-msgs&lt;/a&gt;: 0.5.9-1 → 0.6.0-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-rokubimini-serial&lt;/a&gt;: 0.5.9-1 → 0.6.0-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/ros_control&quot;&gt;ros-noetic-ros-control&lt;/a&gt;: 0.19.4-1 → 0.19.5-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/ros_controllers&quot;&gt;ros-noetic-ros-controllers&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/ros_numpy&quot;&gt;ros-noetic-ros-numpy&lt;/a&gt;: 0.0.4-5 → 0.0.5-2&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/rqt_controller_manager&quot;&gt;ros-noetic-rqt-controller-manager&lt;/a&gt;: 0.19.4-1 → 0.19.5-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/rqt_joint_trajectory_controller&quot;&gt;ros-noetic-rqt-joint-trajectory-controller&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/rqt_rviz&quot;&gt;ros-noetic-rqt-rviz&lt;/a&gt;: 0.6.1-1 → 0.7.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/rviz&quot;&gt;ros-noetic-rviz&lt;/a&gt;: 1.14.7-1 → 1.14.8-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-safety-limiter: 0.10.10-1 → 0.10.11-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/dfki-ric/mir_robot&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-sdc21x0&lt;/a&gt;: 1.1.2-1 → 1.1.3-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.ros.org/wiki/spacenav_node&quot;&gt;ros-noetic-spacenav-node&lt;/a&gt;: 1.15.0-1 → 1.15.1-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-track-odometry: 0.10.10-1 → 0.10.11-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-trajectory-tracker: 0.10.10-1 → 0.10.11-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_control/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-transmission-interface&lt;/a&gt;: 0.19.4-1 → 0.19.5-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://wiki.ros.org/ur_client_library&quot;&gt;ros-noetic-ur-client-library&lt;/a&gt;: 0.2.0-1 → 0.3.1-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/ros-controls/ros_controllers/wiki&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-velocity-controllers&lt;/a&gt;: 0.18.1-1 → 0.19.0-1&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ros.org/wiki/xacro&quot;&gt;ros-noetic-xacro&lt;/a&gt;: 1.14.6-2 → 1.14.7-1&lt;/li&gt;
+&lt;li&gt;ros-noetic-ypspur-ros: 0.3.4-1 → 0.3.5-1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#removed-packages-4-4&quot; name=&quot;removed-packages-4-4&quot;&gt;&lt;/a&gt;Removed Packages [4]:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-bota-device-driver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gitlab.com/botasys/bota_driver&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-noetic-rokubimini-examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-rokubimini-factory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.ros.org/bota_driver&quot;&gt;ros-noetic-rokubimini-manager&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks to all ROS maintainers who make packages available to the ROS community. The above list of packages was made possible by the work of the following maintainers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;Ashe Kim&lt;/li&gt;
+&lt;li&gt;Atsushi Watanabe&lt;/li&gt;
+&lt;li&gt;AutonomouStuff Software Development Team&lt;/li&gt;
+&lt;li&gt;AutonomouStuff Software Team&lt;/li&gt;
+&lt;li&gt;Bence Magyar&lt;/li&gt;
+&lt;li&gt;Bota Systems AG&lt;/li&gt;
+&lt;li&gt;Dave Feil-Seifer&lt;/li&gt;
+&lt;li&gt;Davide Faconti&lt;/li&gt;
+&lt;li&gt;Eric Wieser&lt;/li&gt;
+&lt;li&gt;Felix Exner&lt;/li&gt;
+&lt;li&gt;Felix Ruess&lt;/li&gt;
+&lt;li&gt;Fictionlab&lt;/li&gt;
+&lt;li&gt;G.A. vd. Hoorn&lt;/li&gt;
+&lt;li&gt;Jack O’Quin&lt;/li&gt;
+&lt;li&gt;John Hurliman&lt;/li&gt;
+&lt;li&gt;Jonathan Bohren&lt;/li&gt;
+&lt;li&gt;Justin Carpentier&lt;/li&gt;
+&lt;li&gt;Martin Günther&lt;/li&gt;
+&lt;li&gt;Masaru Morita&lt;/li&gt;
+&lt;li&gt;Michael Ferguson&lt;/li&gt;
+&lt;li&gt;Monika Florek-Jasinska&lt;/li&gt;
+&lt;li&gt;Neobotix GmbH&lt;/li&gt;
+&lt;li&gt;Peter Weissig&lt;/li&gt;
+&lt;li&gt;Robert Haschke&lt;/li&gt;
+&lt;li&gt;Sachin Chitta&lt;/li&gt;
+&lt;li&gt;Sammy Pfeiffer&lt;/li&gt;
+&lt;li&gt;Shadow Robot’s software team&lt;/li&gt;
+&lt;li&gt;Stefan Fabian&lt;/li&gt;
+&lt;li&gt;Stefan Scherzinger&lt;/li&gt;
+&lt;li&gt;Tom Moore&lt;/li&gt;
+&lt;li&gt;Vincent Rousseau&lt;/li&gt;
+&lt;li&gt;Vladimir Ermakov&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/new-packages-for-noetic-2021-06-25/21091&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 25 Jun 2021 22:26:21 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: @foxglove/rosmsg: ROS1 and ROS2 message definition parsing TypeScript library</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21086</guid>
+	<link>https://discourse.ros.org/t/foxglove-rosmsg-ros1-and-ros2-message-definition-parsing-typescript-library/21086</link>
+	<description>&lt;p&gt;&lt;a href=&quot;https://github.com/foxglove/rosmsg&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://github.com/foxglove/rosmsg&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;mention&quot;&gt;@foxglove&lt;/span&gt;/rosmsg is a library written in TypeScript and published to npm (so it can be used in any TypeScript or JavaScript project) that parses ROS1 and ROS2 message definitions into a structured representation and can convert this representation back into a canonical message definition. This library evolved out of the native ROS support in &lt;a href=&quot;https://foxglove.dev/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Foxglove&lt;/a&gt; and has graduated to a standalone library. The primary use case is pairing with other libraries that handle serialization and deserialization for ROS1/ROS2 data formats, but it could be useful on its own to create validation tools for &lt;code&gt;.msg&lt;/code&gt; files or as a reference for formal grammars describing the two message definition languages.&lt;/p&gt;
+&lt;p&gt;The published library is a single self-contained JavaScript file that can run in a browser or Node.js environments.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;6 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/foxglove-rosmsg-ros1-and-ros2-message-definition-parsing-typescript-library/21086&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 25 Jun 2021 16:46:47 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROS News for the Week of 6/21/2021</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21082</guid>
+	<link>https://discourse.ros.org/t/ros-news-for-the-week-of-6-21-2021/21082</link>
+	<description>&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#ros-news-for-the-week-6212021-1&quot; name=&quot;ros-news-for-the-week-6212021-1&quot;&gt;&lt;/a&gt;ROS News for the Week 6/21/2021&lt;/h1&gt;
+&lt;p&gt;&lt;img alt=&quot;embark-small&quot; class=&quot;animated&quot; height=&quot;228&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/8/8d960a54b15676afcba71131ae6c96162148fca3.gif&quot; width=&quot;400&quot; /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=6-02xycYbws&quot;&gt;Ride along with Embark Trucks&lt;/a&gt; – &lt;a href=&quot;https://www.reuters.com/technology/self-driving-truck-maker-embark-go-public-via-46-bln-spac-deal-2021-06-23/&quot;&gt;They were just SPAC’d for $5.2B&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/0/064f68481d66b8664060b5db5794620bb25a2efe.jpeg&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;375&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/0/064f68481d66b8664060b5db5794620bb25a2efe_2_499x375.jpeg&quot; width=&quot;499&quot; /&gt;&lt;div class=&quot;meta&quot;&gt;
+&lt;svg class=&quot;fa d-icon d-icon-far-image svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class=&quot;filename&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;informations&quot;&gt;2048×1536 344 KB&lt;/span&gt;&lt;svg class=&quot;fa d-icon d-icon-discourse-expand svg-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+&lt;a href=&quot;https://robohub.org/simulations-real-robots-and-bloopers-from-the-dots-competition-powering-emergency-food-distribution-using-swarms/&quot;&gt;DOTS SWARM Robot Competition&lt;/a&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#events-2&quot; name=&quot;events-2&quot;&gt;&lt;/a&gt;Events&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.eventbrite.com/e/intermediate-robotics-2-build-a-ros-2-robot-sponsored-by-amazon-tickets-144488642419&quot;&gt;6/27/2021 Black in Robotics Build a ROS 2 Robot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.transportationops.org/event/carma-webinar-series-traffic-incident-management-basic-travel-and-weather-use-cases&quot;&gt;6/29/2021 DoT CARMA on Incident Management and Weather for Autonomous Vehicles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://community.gazebosim.org/t/ignition-community-meeting-june-2021/978&quot;&gt;6/30/2021 Ignition Community Meeting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://register.gotowebinar.com/register/8160410789861656076&quot;&gt;6/30/2021 Mass Robotics How to Start a Robotics Company&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-2021-call-for-proposals/19811&quot;&gt;7/9/2021 ROSCon CFP Closes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-2021-diversity-scholarships-applications-open/19813&quot;&gt;7/9/2021 ROSCon Diversity Scholarshop Application Deadline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.eventbrite.com/e/intermediate-robotics-2-build-a-ros-2-robot-sponsored-by-amazon-tickets-145965846777&quot;&gt;7/25/2021 Black in Robotics Build a ROS 2 Robot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/save-the-date-the-px4-developer-summit-is-back-online-for-2021/20147&quot;&gt;9/14/2021 PX4 Dev Summit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://roscon.jp/2021/&quot;&gt;9/16/2021 ROSConJp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://selfracingcars.com/&quot;&gt;10/16/2021 Self Racing Cars Bay Area &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/roscon-2021-we-re-back/19243/8&quot;&gt;10/21/2021 ROSCon is Back!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#news-3&quot; name=&quot;news-3&quot;&gt;&lt;/a&gt;News&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://spectrum.ieee.org/automaton/robotics/industrial-robots/whats-going-on-with-amazons-hightech-warehouse-robots&quot;&gt;Amazon Warehouse Bots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.therobotreport.com/how-graze-mowings-self-driving-mower-is-disrupting-the-100-billion-commercial-landscaping-industry/&quot;&gt;Graze Robot Mower&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://techcrunch.com/2021/06/21/toyota-research-institute-shows-how-its-robotics-work-with-difficult-surfaces-in-the-home/&quot;&gt;Toyota Home Robot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://techcrunch.com/2021/06/24/robotics-roundup-17/?tpcc=ECTW2020&quot;&gt;Techcrunch Robot Roundup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.getrevue.co/profile/svrobo/issues/interesting-things-in-robotics-this-week-issue-16-656255&quot;&gt;Silicon Valley Robotics: Interesting Things in Robotics this Week&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://robohub.org/simulations-real-robots-and-bloopers-from-the-dots-competition-powering-emergency-food-distribution-using-swarms/&quot;&gt;DOTS Robot Competition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.roboticsbusinessreview.com/category/start-up-profile/&quot;&gt;RBR Start-Up Profiles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.automate.org/industry-insights/safety-equation-changes-with-amrs&quot;&gt;Melonee Wise of Fetch: Safety with AMRs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://public.tableau.com/views/CVPR2021/Dashboard1?:language=en-US&amp;amp;:display_count=n&amp;amp;:origin=viz_share_link:showVizHome=no&quot;&gt;CVPR 2021 Searchable Papers/Talks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.kitware.com/demos/cvpr-2021-papers/?filter=authors&amp;amp;search=&quot;&gt;CVPR 2021 Search Papers / Talks II&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://conf.researchr.org/details/ease-2021/ease-2021-papers/1/How-Do-Agile-Practitioners-Interpret-and-Foster-Technical-Excellence-&quot;&gt;How Do Agile Practitioners Interpret and Foster “Technical Excellence”?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=6-02xycYbws&quot;&gt;Embark Trucks Ride Along&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.reuters.com/technology/self-driving-truck-maker-embark-go-public-via-46-bln-spac-deal-2021-06-23/&quot;&gt;SPAC ATTACK: Embark Trucks $5.2B&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=uUQJcjyerM4&quot;&gt;Binary TTC Temportal Geofence for Autonomous Navigation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://rpg.ifi.uzh.ch/TimeLens.html&quot;&gt;Time Lens: Event Based Video Frame Interpolation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.swri.org/industry/industrial-robotics-automation/blog/are-cobots-really-safe-easy-use&quot;&gt;Are COBOTS Really Safe and Easy to Use&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=AHUv9Zda_48&quot;&gt;Crazy Spherical Gear&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/BodyPartRecognition.pdf&quot;&gt;Single Image Human Pose from Single Depth Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.therobotreport.com/hyundai-completes-acquisition-controlling-stake-boston-dynamics/&quot;&gt;Boston Dynamics Acquired AGAIN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://venturebeat.com/2021/06/21/nvidias-isaac-robot-simulations-debut-on-omniverse/&quot;&gt;Venture Beat on Isaac Sim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://dronedj.com/2021/06/23/yikes-insane-drone-light-show-fail-sends-drones-plunging-from-the-sky-video/&quot;&gt;Drone Show Fail&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://fidler-lab.github.io/efficient-annotation-cookbook/&quot;&gt;Efficient Annotation Cookbook for Image Classification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://arxiv.org/pdf/2102.12472.pdf&quot;&gt;4D Panoptic LIDAR Segmentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#ros-4&quot; name=&quot;ros-4&quot;&gt;&lt;/a&gt;ROS&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://moveit.ros.org/ros2/moveit/2021/06/08/moveit-vs-moveit2.html&quot;&gt;MoveIt vs MoveIt 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.nvidia.com/isaac-sim?ncid=so-twit-243478#cid=em09_so-twit_en-us&quot;&gt;Isaac Sim: Multi Camera Support in ROS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/eprosima-is-launching-integration-service-v3-0-0/20515/2&quot;&gt;Integration Service 3.0 Launch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.ros.org/t/ros2-bno055-driver/20994&quot;&gt;BNO055 ROS Driver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.seqsense.org/alpine-ros&quot;&gt;ROS On Alpine Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://foxglove.dev/blog/announcing-foxglove-studio-extensions&quot;&gt;Foxglove Studio Extensions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;
+&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.ros.org/c/general/8.rss#questions-5&quot; name=&quot;questions-5&quot;&gt;&lt;/a&gt;Questions&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://answers.ros.org/question/381067/beginner-ros-noetic-windows10-commands/&quot;&gt;ROS Noetic Windows Commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://answers.ros.org/question/381048/coordinate-frameworks-and-robot_localization-package/&quot;&gt;Coordinate Frameworks and Robot_Localization Package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://answers.ros.org/question/380724/cross-compile-foxy-for-armhf/&quot;&gt;Cross-compile Foxy for armhf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/ros-news-for-the-week-of-6-21-2021/21082&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 25 Jun 2021 16:17:01 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: workon_ros: Improve your ROS workflow</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21081</guid>
+	<link>https://discourse.ros.org/t/workon-ros-improve-your-ros-workflow/21081</link>
+	<description>&lt;p&gt;Hello everyone,&lt;br /&gt;
+Wanted to share this project that I have been working on and off for some time. It allows you to &lt;strong&gt;easily source ROS distros and ROS workspaces&lt;/strong&gt; while working from anywhere on your system.&lt;br /&gt;
+It saves you the time of navigating to the workspace or entering the complete path for the setup file while working on workspaces. This was inspired from the &lt;a href=&quot;https://virtualenvwrapper.readthedocs.io/en/latest/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;virtualenvwrapper&lt;/a&gt; package for python.&lt;/p&gt;
+&lt;p&gt;Just recently added &lt;strong&gt;bash completion&lt;/strong&gt; and &lt;strong&gt;support for sourcing workspaces&lt;/strong&gt; which makes it somewhat suitable for the workflow!&lt;br /&gt;
+There are plans to add multiple paths support for workspaces as well as a &lt;code&gt;deactivate_ros&lt;/code&gt; function as well.&lt;br /&gt;
+GitHub link: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/jasmeet0915/workon_ros&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - jasmeet0915/workon_ros: A shell script aimed at making it easier to work with multiple ROS distros and workspaces simultaneously inspired from virtualenvwrapper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Do give this a try and share your feedbacks and reviews!&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;example&quot; class=&quot;animated&quot; height=&quot;338&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/e/eb0268cd07e4ad123244a72073ea41464c878d24.gif&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;6 posts - 4 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/workon-ros-improve-your-ros-workflow/21081&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 25 Jun 2021 16:15:35 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Tf_transformations - ROS 2 Python package for easy TF math</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21077</guid>
+	<link>https://discourse.ros.org/t/tf-transformations-ros-2-python-package-for-easy-tf-math/21077</link>
+	<description>&lt;p&gt;Piggy-backing on the announcement of &lt;a href=&quot;https://discourse.ros.org/t/rospy2-a-cringe-worthy-ros1-like-interface-for-ros2/21067/5&quot;&gt;rospy2&lt;/a&gt;, I too am trying to make it easier to migrate ROS 1 Python code to ROS 2. In particular, I’ve made the new package &lt;a href=&quot;https://github.com/DLu/tf_transformations/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;&lt;code&gt;tf_transformations&lt;/code&gt;&lt;/a&gt; to fill the hole left by the useful ROS 1 library &lt;a href=&quot;https://github.com/ros/geometry/blob/noetic-devel/tf/src/tf/transformations.py&quot; rel=&quot;noopener nofollow ugc&quot;&gt;&lt;code&gt;transformations.py&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In short, if you wrote the following in ROS 1,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from tf.transformations import euler_from_quaternion
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;the only change you need to your code in ROS 2 is&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from tf_transformations import euler_from_quaternion
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For more information about the rationale behind the library, why it wasn’t already in ROS 2, the installation procedures and more, please see the &lt;a href=&quot;https://github.com/DLu/tf_transformations/blob/main/README.md&quot; rel=&quot;noopener nofollow ugc&quot;&gt;project README&lt;/a&gt;. Note that the library is currently making its way through the buildfarm for foxy, galactic and rolling, so &lt;a href=&quot;https://www.youtube.com/watch?v=8YjFbMbfXaQ&quot; rel=&quot;noopener nofollow ugc&quot;&gt;exciting things are coming soon&lt;/a&gt;.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/tf-transformations-ros-2-python-package-for-easy-tf-math/21077&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 25 Jun 2021 13:49:19 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Rospy2: A cringe-worthy ROS1-like interface for ROS2</title>
+	<guid isPermaLink="false">discourse.ros.org-topic-21067</guid>
+	<link>https://discourse.ros.org/t/rospy2-a-cringe-worthy-ros1-like-interface-for-ros2/21067</link>
+	<description>&lt;p&gt;Hi everyone,&lt;br /&gt;
+This might make some people cringe, but let’s face it – you have a lot of ROS1 code and you aren’t switching to ROS2 yet because you have to rewrite a LOT of nodes.&lt;/p&gt;
+&lt;p&gt;So I wrote a legacy interface that behaves like &lt;code&gt;rospy&lt;/code&gt; but speaks ROS2 behind the curtain. This is very different from a ROS1/ROS2 bridge in that you don’t need to run a ROS1 master at all.&lt;/p&gt;
+&lt;p&gt;The idea is to be able to take any ROS1 node, replace&lt;br /&gt;
+&lt;code&gt;import rospy&lt;/code&gt;&lt;br /&gt;
+with&lt;br /&gt;
+&lt;code&gt;import rospy2 as rospy&lt;/code&gt;&lt;br /&gt;
+and &lt;strong&gt;BAM&lt;/strong&gt; it should work on ROS2.&lt;/p&gt;
+&lt;aside class=&quot;onebox allowlistedgeneric&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+      &lt;img class=&quot;site-icon&quot; height=&quot;32&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/b/bad3e5f9ad67c1ddf145107ce7032ac1d7b22563.svg&quot; width=&quot;32&quot; /&gt;
+
+      &lt;a href=&quot;https://github.com/dheera/rospy2&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    &lt;div class=&quot;aspect-image&quot;&gt;&lt;img class=&quot;thumbnail&quot; height=&quot;345&quot; src=&quot;https://aws1.discourse-cdn.com/business7/uploads/ros/optimized/2X/c/cdd6cf624389472465c547da53f0e7e71a23ed96_2_690x345.png&quot; width=&quot;690&quot; /&gt;&lt;/div&gt;
+
+&lt;h3&gt;&lt;a href=&quot;https://github.com/dheera/rospy2&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;dheera/rospy2&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;Contribute to dheera/rospy2 development by creating an account on GitHub.&lt;/p&gt;
+
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;This is far from complete but here’s an initial effort with a test node.&lt;/p&gt;
+&lt;p&gt;Feedback and contributions welcome!&lt;/p&gt;
+&lt;p&gt;Before continuing with this, I’m also trying to gauge interest as to:&lt;/p&gt;
+&lt;p&gt;(0) How many people would actually use something like this, if it was more fully-fledged?&lt;/p&gt;
+&lt;p&gt;(1) What ROS1 features do you absolutely need that this doesn’t yet support?&lt;/p&gt;
+&lt;p&gt;(2) Is there strong interest in a C++ version of this? Minding of course that it might be much harder to build a C++ equivalent considering that I’ve hugely abused Python’s lack of strong typing to make this work.&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;6 posts - 5 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.ros.org/t/rospy2-a-cringe-worthy-ros1-like-interface-for-ros2/21067&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 25 Jun 2021 01:09:52 +0000</pubDate>
+</item>
+
+</channel>
+</rss>
