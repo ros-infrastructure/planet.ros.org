@@ -3,7 +3,7 @@ on:
   push:
     branches:
      - master
-     - move_to_actions
+  pullrequest:
   schedule:
     - cron: '0 */4 * * *'  # every 4 hours
 jobs:
@@ -19,6 +19,7 @@ jobs:
           echo 'planet.ros.org'  | sudo tee output/CNAME
 
       - name: Deploy 🚀
+        if: github.ref_name == 'master'
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages # The branch the action should deploy to.
