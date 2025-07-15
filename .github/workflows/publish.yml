@@ -3,7 +3,7 @@ on:
   push:
     branches:
      - master
-  pullrequest:
+  pull_request:
   schedule:
     - cron: '0 */4 * * *'  # every 4 hours
 jobs:
