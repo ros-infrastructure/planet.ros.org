@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rss="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <foaf:Group>
+    <foaf:name>Open Robotics</foaf:name>
+    <foaf:homepage/>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>William Woodall</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="http://wjwwood.io">
+            <dc:title>wjwwood.github.io</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="http://wjwwood.io/atom.xml"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>David Hodo</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="">
+            <dc:title/>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about=""/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>Michael Ferguson</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="">
+            <dc:title/>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about=""/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>ROS news</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="https://www.ros.org/news/">
+            <dc:title>ROS robotics news</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="https://www.ros.org/news/atom.xml"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>mobotica</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="http://mobotica.blogspot.com/">
+            <dc:title>mobotica</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="http://mobotica.blogspot.com/feeds/posts/default?alt=rss"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>Achu Wilson</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="https://achuwilson.wordpress.com">
+            <dc:title>Achu's TechBlog</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="https://achuwilson.wordpress.com/feed/"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>ASL ETHZ</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="">
+            <dc:title>Kommentare zu:</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="https://blogs.ethz.ch/asl/feed/"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>Robbie The Robot</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="http://escaliente-robotics.blogspot.com/">
+            <dc:title>Robbie The Robot</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="http://www.blogger.com/feeds/7243454580732362942/posts/default"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>NooTriX</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="https://nootrix.com/">
+            <dc:title>nootrix</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="https://nootrix.com/feed/"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>ROS Industrial</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="https://rosindustrial.org/news/">
+            <dc:title>Blog - ROS-Industrial</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="http://rosindustrial.squarespace.com/news?format=rss"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>Yujin R&amp;D</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="">
+            <dc:title/>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about=""/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>Isaac Saito</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="http://ros-logger.blogspot.com/">
+            <dc:title>ROS Jogger</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="http://ros-logger.blogspot.com/feeds/posts/default?alt=rss"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>John Stowers</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="http://www.johnstowers.co.nz/blog/">
+            <dc:title>Johns Blog</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="http://www.johnstowers.co.nz/blog/feeds/ROS.atom.xml"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>MobileWill</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="https://mobilewill.us">
+            <dc:title>MobileWill</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="https://mobilewill.us/feed/"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>MoveIt!</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="https://moveit.ros.org">
+            <dc:title>MoveIt Motion Planning Framework</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="https://moveit.ros.org/feed.xml"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>CAR: Components, Agents, and Robots with Dynamic Languages</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="">
+            <dc:title/>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about=""/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>Open Source Robotics Foundation</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="http://OFFLINEZIP.wpsho">
+            <dc:title>Open Robotics</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="http://OFFLINEZIP.wpshofeed/"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>PAL Robotics blog</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="">
+            <dc:title/>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about=""/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>Sachin Chitta's Blog</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="">
+            <dc:title/>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about=""/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>TORK</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="https://opensource-robotics.tokyo.jp?lang=en">
+            <dc:title>Tokyo Opensource Robotics Kyokai Association</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="https://opensource-robotics.tokyo.jp/?feed=rss2&amp;#038;lang=en"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>Pi Robot</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="">
+            <dc:title/>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about=""/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>ROSVirtual</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="">
+            <dc:title/>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about=""/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>ROS Discourse General</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="https://discourse.openrobotics.org/c/ros/ros-general/8">
+            <dc:title>ROS General - Open Robotics Discourse</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="https://discourse.openrobotics.org/c/ros/ros-general/8.rss"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>Mat Sadowski Blog</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="https://msadowski.github.io">
+            <dc:title>msadowski blog</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="https://msadowski.github.io/feed.xml"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>Transitive Robotics Blog</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="https://transitiverobotics.com/blog/">
+            <dc:title>Transitive Robotics Blog</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="https://transitiverobotics.com/blog/rss.xml"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+    <foaf:member>
+      <foaf:Agent>
+        <foaf:name>Robots For Robots</foaf:name>
+        <foaf:weblog>
+          <foaf:Document rdf:about="https://www.youtube.com/channel/UCZT16dToD1ov6lnoEcPL6rw">
+            <dc:title>RobotsForRobots</dc:title>
+            <rdfs:seeAlso>
+              <rss:channel rdf:about="http://www.youtube.com/feeds/videos.xml?channel_id=UCZT16dToD1ov6lnoEcPL6rw"/>
+            </rdfs:seeAlso>
+          </foaf:Document>
+        </foaf:weblog>
+      </foaf:Agent>
+    </foaf:member>
+  </foaf:Group>
+</rdf:RDF>

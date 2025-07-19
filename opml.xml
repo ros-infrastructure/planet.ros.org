@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<opml version="1.1">
+  <head>
+    <title>Planet ROS</title>
+    <dateModified>Sat, 19 Jul 2025 20:10:03 GMT</dateModified>
+    <ownerName>Open Robotics</ownerName>
+    <ownerEmail>info@openrobotics.org</ownerEmail>
+  </head>
+  <body>
+    <outline type="rss" text="William Woodall" title="wjwwood.github.io" xmlUrl="http://wjwwood.io/atom.xml"/>
+    <outline type="rss" text="David Hodo" title="" xmlUrl=""/>
+    <outline type="rss" text="Michael Ferguson" title="" xmlUrl=""/>
+    <outline type="rss" text="ROS news" title="ROS robotics news" xmlUrl="https://www.ros.org/news/atom.xml"/>
+    <outline type="rss" text="mobotica" title="mobotica" xmlUrl="http://mobotica.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline type="rss" text="Achu Wilson" title="Achu's TechBlog" xmlUrl="https://achuwilson.wordpress.com/feed/"/>
+    <outline type="rss" text="ASL ETHZ" title="Kommentare zu:" xmlUrl="https://blogs.ethz.ch/asl/feed/"/>
+    <outline type="rss" text="Robbie The Robot" title="Robbie The Robot" xmlUrl="http://www.blogger.com/feeds/7243454580732362942/posts/default"/>
+    <outline type="rss" text="NooTriX" title="nootrix" xmlUrl="https://nootrix.com/feed/"/>
+    <outline type="rss" text="ROS Industrial" title="Blog - ROS-Industrial" xmlUrl="http://rosindustrial.squarespace.com/news?format=rss"/>
+    <outline type="rss" text="Yujin R&amp;D" title="" xmlUrl=""/>
+    <outline type="rss" text="Isaac Saito" title="ROS Jogger" xmlUrl="http://ros-logger.blogspot.com/feeds/posts/default?alt=rss"/>
+    <outline type="rss" text="John Stowers" title="Johns Blog" xmlUrl="http://www.johnstowers.co.nz/blog/feeds/ROS.atom.xml"/>
+    <outline type="rss" text="MobileWill" title="MobileWill" xmlUrl="https://mobilewill.us/feed/"/>
+    <outline type="rss" text="MoveIt!" title="MoveIt Motion Planning Framework" xmlUrl="https://moveit.ros.org/feed.xml"/>
+    <outline type="rss" text="CAR: Components, Agents, and Robots with Dynamic Languages" title="" xmlUrl=""/>
+    <outline type="rss" text="Open Source Robotics Foundation" title="Open Robotics" xmlUrl="http://OFFLINEZIP.wpshofeed/"/>
+    <outline type="rss" text="PAL Robotics blog" title="" xmlUrl=""/>
+    <outline type="rss" text="Sachin Chitta's Blog" title="" xmlUrl=""/>
+    <outline type="rss" text="TORK" title="Tokyo Opensource Robotics Kyokai Association" xmlUrl="https://opensource-robotics.tokyo.jp/?feed=rss2&amp;#038;lang=en"/>
+    <outline type="rss" text="Pi Robot" title="" xmlUrl=""/>
+    <outline type="rss" text="ROSVirtual" title="" xmlUrl=""/>
+    <outline type="rss" text="ROS Discourse General" title="ROS General - Open Robotics Discourse" xmlUrl="https://discourse.openrobotics.org/c/ros/ros-general/8.rss"/>
+    <outline type="rss" text="Mat Sadowski Blog" title="msadowski blog" xmlUrl="https://msadowski.github.io/feed.xml"/>
+    <outline type="rss" text="Transitive Robotics Blog" title="Transitive Robotics Blog" xmlUrl="https://transitiverobotics.com/blog/rss.xml"/>
+    <outline type="rss" text="Robots For Robots" title="RobotsForRobots" xmlUrl="http://www.youtube.com/feeds/videos.xml?channel_id=UCZT16dToD1ov6lnoEcPL6rw"/>
+  </body>
+</opml>

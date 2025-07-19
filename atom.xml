@@ -1,0 +1,1727 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:planet="http://planet.intertwingly.net/" xmlns:indexing="urn:atom-extension:indexing" indexing:index="no"><access:restriction xmlns:access="http://www.bloglines.com/about/specs/fac-1.0" relationship="deny"/>
+  <title>Planet ROS</title>
+  <updated>2025-07-19T20:10:03Z</updated>
+  <generator uri="http://intertwingly.net/code/venus/">Venus</generator>
+  <author>
+    <name>Open Robotics</name>
+    <email>info@openrobotics.org</email>
+  </author>
+  <id>http://planet.ros.org/atom.xml</id>
+  <link href="http://planet.ros.org/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="http://planet.ros.org" rel="alternate"/>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-49145</id>
+    <link href="https://discourse.openrobotics.org/t/is-dds-suitable-for-rf-datalink-communication-with-intermittent-connection/49145" rel="alternate" type="text/html"/>
+    <title>Is DDS suitable for RF datalink communication with intermittent connection?</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>I’m not using ROS myself, but I understand that ROS 2 relies on DDS as its middleware, so I thought this community might be a good place to ask.</p>
+<p>I’m working on a UAV system that includes a secondary datalink between the drone and the ground segment, used for control/status messages. The drone flies up to 35 km away and communicates over an RF-based datalink with an estimated bandwidth of around 2 Mbps, though the link is prone to occasional disconnections and packet loss due to the nature of the environment.</p>
+<p>I’m considering whether DDS is a suitable protocol for this kind of scenario, or if its overhead and discovery/heartbeat mechanisms might cause issues in a lossy or intermittent RF link.</p>
+<p>Has anyone here tried using DDS over real-world RF communication (not simulated Wi-Fi or Ethernet), and can share experiences or advice?</p>
+<p>Thanks in advance!<br/>
+S.</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/is-dds-suitable-for-rf-datalink-communication-with-intermittent-connection/49145">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-17T22:09:15Z</updated>
+    <published>2025-07-17T22:09:15Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>Santana27</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/is-dds-suitable-for-rf-datalink-communication-with-intermittent-connection/49145.rss" title="Is DDS suitable for RF datalink communication with intermittent connection?"/>
+      <updated>2025-07-19T20:10:03Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45257</id>
+    <link href="https://discourse.openrobotics.org/t/feature-freeze-for-gazebo-jetty-x-post-from-gazebo-community/45257" rel="alternate" type="text/html"/>
+    <title>Feature freeze for Gazebo Jetty (x-post from Gazebo Community)</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Hello everyone!</p>
+<p>The feature freeze period for Gazebo Jetty starts on <span class="discourse-local-date">Fri, Jul 25, 2025 12:00 AM UTC</span>.</p>
+<p>During the feature freeze period, we will not accept new features to Gazebo. This includes new features to Jetty as well as to currently stable versions. If you have a new feature you want to contribute, please open a PR before we go into feature freeze noting that changes can be made to open PRs during the feature freeze period. This period will be close when we go into code freeze on <span class="discourse-local-date">Mon, Aug 25, 2025 12:00 AM UTC</span>.</p>
+<p><strong>Bug fixes and documentation changes will still be accepted after the freeze date.</strong></p>
+<p>More information on the release timeline can be here: <a class="inline-onebox" href="https://github.com/gazebo-tooling/release-tools/issues/1271" rel="noopener nofollow ugc">Release Jetty · Issue #1271 · gazebo-tooling/release-tools · GitHub</a></p>
+<p>The Gazebo Dev Team <img alt=":gazebo:" class="emoji emoji-custom" height="20" src="https://us1.discourse-cdn.com/flex022/uploads/ros/original/2X/6/65ca80e7c1f76154e9158bb4ad6aeaa5b25968cb.png?v=14" title=":gazebo:" width="20"/></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/feature-freeze-for-gazebo-jetty-x-post-from-gazebo-community/45257">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-17T02:40:28Z</updated>
+    <published>2025-07-17T02:40:28Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>azeey</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/feature-freeze-for-gazebo-jetty-x-post-from-gazebo-community/45257.rss" title="Feature freeze for Gazebo Jetty (x-post from Gazebo Community)"/>
+      <updated>2025-07-19T20:10:03Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45230</id>
+    <link href="https://discourse.openrobotics.org/t/donate-your-rosbag-cloudini-benchmark/45230" rel="alternate" type="text/html"/>
+    <title>Donate your rosbag (Cloudini benchmark)</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Hi,</p>
+<p>as my presentation about <a href="https://github.com/facontidavide/cloudini" rel="noopener nofollow ugc">Cloudini</a> was accepted at ROSCon 2025, I want to come prepared with an automated benchmarking suite that measure performance over a wide range of datasets.</p>
+<p><strong>You can contribute to this donating a rosbag!!!</strong></p>
+<p>Thanks for your help. Let’s make pointcloud smaller together <img alt=":pinched_fingers:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/pinched_fingers.png?v=14" title=":pinched_fingers:" width="20"/></p>
+<p/><div class="lightbox-wrapper"><a class="lightbox" href="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/8/8/88ad82fceccac5f5f67cecd56982dfaf56efbac5.png" rel="noopener nofollow ugc" title="image"><img alt="image" height="345" src="https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/8/8/88ad82fceccac5f5f67cecd56982dfaf56efbac5_2_690x345.png" width="690"/></a></div><p/>
+<h2><a class="anchor" href="https://discourse.openrobotics.org#p-97058-how-to-1" name="p-97058-how-to-1"/>How to</h2>
+<ul>
+<li>
+<p>You can submit it using the Github Issues or sending it to me at <a href="mailto:davide.faconti@gmail.com">davide.faconti@gmail.com</a>, but consider that the rosbag will be made <strong>public</strong> (I am creating an open benchmarking repo in Gihub).</p>
+</li>
+<li>
+<p>It should contain at least one <strong>sensor_msgs::PointCloud2</strong>. All other topics can be removed (if you don’t, i will)</p>
+</li>
+<li>
+<p>Please cut your rosbag to <strong>30-45 seconds</strong>. You can use any of these resources:</p>
+<ul>
+<li><a href="https://mcap-editor.netlify.app/" rel="noopener nofollow ugc">https://mcap-editor.netlify.app/</a></li>
+<li><a class="inline-onebox" href="https://github.com/sensmore/kappe" rel="noopener nofollow ugc">GitHub - sensmore/kappe: Kappe is an efficient data migration tool designed to seamlessly convert and split ROS2 MCAP files.</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" href="https://discourse.openrobotics.org#p-97058-data-donation-disclaimer-public-availability-for-ci-benchmarking-2" name="p-97058-data-donation-disclaimer-public-availability-for-ci-benchmarking-2"/>Data Donation Disclaimer: Public Availability for CI Benchmarking</h2>
+<p>By donating your data files, you acknowledge and agree to the following terms regarding their use and public availability:</p>
+<p><strong>Purpose:</strong> The donated data will be used for research purposes, specifically to perform and validate benchmarking within Continuous Integration (CI) environments.</p>
+<p><strong>Public Availability:</strong> You understand and agree that the donated data, or subsets thereof, will be made <strong>publicly available</strong>. This public release is essential for researchers and the wider community to reproduce, verify, and build upon the benchmarking results, fostering transparency and collaborative progress in pointcloud compression.</p>
+<p><strong>Anonymization/Pseudonymization:</strong>  Please ensure that no personally identifiable information is included in the data you submit, as it will be made public as-is.</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/donate-your-rosbag-cloudini-benchmark/45230">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-15T13:35:03Z</updated>
+    <published>2025-07-15T13:35:03Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>facontidavide</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/donate-your-rosbag-cloudini-benchmark/45230.rss" title="Donate your rosbag (Cloudini benchmark)"/>
+      <updated>2025-07-19T20:10:03Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45225</id>
+    <link href="https://discourse.openrobotics.org/t/everything-i-know-about-ros-interfaces-explainer-video/45225" rel="alternate" type="text/html"/>
+    <title>Everything I Know About ROS Interfaces: Explainer Video</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>I made a video about everything I’ve learned about ROS Interfaces (messages/services/actions) in my fifteen years of working with ROS.</p>
+<p><a href="https://www.youtube.com/watch?v=FOTif0DWBfE">The ROS Interface Primer</a></p>
+
+<p>Text Version: <a class="inline-onebox" href="https://tinyurl.com/rosinterfaceprimer" rel="noopener nofollow ugc">ROS Interface Primer - Google Docs</a> (Google Doc)</p>
+<p>Featuring:<br/>
+<img alt=":information_source:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/information_source.png?v=14" title=":information_source:" width="20"/> Information about Interfaces, from Super Basic to Complex Design Issues<br/>
+<img alt=":microscope:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/microscope.png?v=14" title=":microscope:" width="20"/>Original Research analyzing all the interfaces in ROS 2 Humble<br/>
+<img alt=":magic_wand:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/magic_wand.png?v=14" title=":magic_wand:" width="20"/>Best Practices for designing new interfaces<br/>
+<img alt=":supervillain:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/supervillain.png?v=14" title=":supervillain:" width="20"/>Hot takes (i.e. the things that I think ROS 2 Interfaces do wrong)<br/>
+<img alt=":name_badge:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/name_badge.png?v=14" title=":name_badge:" width="20"/> Three different ways to divide information among topics<br/>
+<img alt=":waffle:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/waffle.png?v=14" title=":waffle:" width="20"/> Fun with multidimensional arrays<br/>
+<img alt=":nine:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/nine.png?v=14" title=":nine:" width="20"/> Nine different recipes for “optional” components of interfaces<br/>
+<img alt=":thought_balloon:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/thought_balloon.png?v=14" title=":thought_balloon:" width="20"/> Strong opinions that defy the ROS Orthodoxy<br/>
+<img alt=":prohibited:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/prohibited.png?v=14" title=":prohibited:" width="20"/> Zero content generated by AI/LLM</p>
+<p>Making video is hard, and so I’m calling this version 1.0 of the video, so please let me know what I got wrong and what I’m missing, and I may make another version in the future.</p>
+<p>In closing: bring back Pose2D you monsters.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/everything-i-know-about-ros-interfaces-explainer-video/45225">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-15T11:18:08Z</updated>
+    <published>2025-07-15T11:18:08Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>DLu</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/everything-i-know-about-ros-interfaces-explainer-video/45225.rss" title="Everything I Know About ROS Interfaces: Explainer Video"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45217</id>
+    <link href="https://discourse.openrobotics.org/t/ros-and-ros2-logging-severity-level/45217" rel="alternate" type="text/html"/>
+    <title>ROS and ROS2 Logging Severity Level</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Hi All!</p>
+<p>I’m working on an application for containerizing ROS (1 &amp; 2) projects.</p>
+<p>I’m asking for the help of everyone experienced with <strong>ROS loggers</strong>.<br/>
+In particular, I’m looking for a solution to generalize the definition of the minimum severity level for all the nodes running in a project.</p>
+<p>This configuration should be possible outside of the node source code, so using parameters, environmental variables, or configuration files.<br/>
+I know that In <strong>ROS 1 (C++ base nodes)</strong> it is possible to set the minimum severity level from <code>rosconsole.config</code>. (What about <strong>ROS 1 Python nodes</strong>? It still uses rosconsole.config?)</p>
+<p>Also I may have some doubts about how named loggers works, each node has its own logger? In principle it is not possible to define the minimum severity level for all the nodes running in  a project?</p>
+<p>In <strong>ROS 2 (C++ and Python nodes)</strong> I know that the <code>--log-level</code> args works to configure the severity when running a node. But again I’m looking for a global solution…</p>
+<p>Anyone with useful resources or insights on this aspect?<br/>
+As anticipated before, the final goal is having an <strong>environmental variable</strong> or a <strong>configuration file</strong> that can be used to set the severity level of all the nodes that will be executed when the project start (so for example multiple nodes running from a launch file).<br/>
+Moreover, I want it to be independent of the language used to write the node (Python or C++).<br/>
+I’m not referring to a “global parameters” because I know that ROS 2 is structured such that each node has its parameters.</p>
+<p>Thanks to all of you!<br/>
+(I hope the question is not badly formulated, I?m not very experienced with this aspects and the different structure of ROS 1 and ROS 2 in managing loggers… So also study resources on this aspects can be very helpful for me)</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/ros-and-ros2-logging-severity-level/45217">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-14T15:06:59Z</updated>
+    <published>2025-07-14T15:06:59Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>AlePuglisi</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/ros-and-ros2-logging-severity-level/45217.rss" title="ROS and ROS2 Logging Severity Level"/>
+      <updated>2025-07-19T20:10:03Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45206</id>
+    <link href="https://discourse.openrobotics.org/t/ros2top-top-like-utility-for-ros2/45206" rel="alternate" type="text/html"/>
+    <title>Ros2top - top-like utility for ROS2</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><strong>Hi everyone!</strong></p>
+<p>Repo: <a class="inline-onebox" href="https://github.com/AhmedARadwan/ros2top" rel="noopener nofollow ugc">GitHub - AhmedARadwan/ros2top</a></p>
+<p>I’ve always found it hard to track each node’s resource usage, so I thought it might be a good idea to build a tool that works for ROS 2 and essentially any Python or C++ process to monitor resource usage in real time. The goal? Quickly see which processes are consuming the most resources and gain better visibility into a running system.</p>
+<p>This is an <strong>initial release</strong>: it relies on the node registering itself to become visible and tracked by the <code>ros2top</code> utility.</p>
+<p><strong>What it does so far:</strong></p>
+<ul>
+<li>Shows per-node CPU, RAM, GPU, and GPU Mem usage.</li>
+<li>Get active nodes based on registration.</li>
+<li>Offers a simple terminal UI interface similar to htop to monitor everything in one place.</li>
+</ul>
+<p><strong>How it works:</strong></p>
+<ul>
+<li>Node imports/includes <code>ros2top</code> and register itself.</li>
+<li><code>ros2top</code> then polls resource stats.</li>
+<li>It displays a list of processes, so you can spot hot resource consumers at a glance.</li>
+</ul>
+<p><strong>Why it might help:</strong></p>
+<ul>
+<li>Instead of juggling <code>htop</code>, <code>nvtop</code>, <code>ros2 node info</code>, etc., you get everything in one screen.</li>
+<li>Ideal for multi‑node systems where it’s easy to lose track of who’s using what.</li>
+</ul>
+<p>I’d love to hear your thoughts:</p>
+<ul>
+<li>Does this sound helpful in your debugging or monitoring workflow?</li>
+<li>Any ideas for features, UI improvements, or integrations?</li>
+<li>Thoughts on automatic registration vs. manual config?</li>
+</ul>
+<p>This is very early-stage, but I hope it can evolve into a valuable tool for the ROS 2 community. Feedback, suggestions, or even contributions are all welcome! <img alt=":blush:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/blush.png?v=14" title=":blush:" width="20"/></p>
+            <p><small>9 posts - 7 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/ros2top-top-like-utility-for-ros2/45206">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-14T09:43:05Z</updated>
+    <published>2025-07-14T09:43:05Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>Ahmed_Ali</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/ros2top-top-like-utility-for-ros2/45206.rss" title="Ros2top - top-like utility for ROS2"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45190</id>
+    <link href="https://discourse.openrobotics.org/t/best-gpu-for-large-scale-multi-robot-simulation-20-50-robots-with-open-rmf-in-ros2/45190" rel="alternate" type="text/html"/>
+    <title>Best GPU for Large-Scale Multi-Robot Simulation (20–50 Robots) with Open RMF in ROS2</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Hello everyone,</p>
+<p>I’m planning to run a large-scale multi-robot simulation using ROS2. The setup involves simulating 100 and more robots in a shared environment, using:</p>
+<p>Simulation tools like Gazebo or Ignition</p>
+<p>Visualization through RViz2</p>
+<p>Open RMF for fleet coordination, traffic scheduling, and path planning</p>
+<p>I’m looking for suggestions regarding a suitable GPU that can smoothly handle the simulation load without performance issues.</p>
+<p>Specifically, I’d like to ask:</p>
+<p>Which NVIDIA GPU models are recommended for this scale of simulation?</p>
+<p>Would GPUs like RTX 3060 / 3070 / 3080 / 4090 or Quadro series be sufficient?</p>
+<p>Is CUDA support helpful for improving performance in Gazebo/Ignition + RViz2?</p>
+<p>What minimum VRAM (GPU memory) is advisable (e.g., 8GB vs 16GB+)?</p>
+<p>Will the suggested GPU models work well across all ROS2 distributions and Ubuntu versions, including future upgrades?</p>
+<p>My aim is to choose a future-ready GPU that supports high-scale multi-robot simulation involving Open RMF logic and visual rendering, with consistent performance.</p>
+<p>Any guidance or shared experiences would be greatly appreciated.</p>
+<p>And also how many robot Gazebo and Rviz  realistically handle in simulation?</p>
+<p>Thank you!d</p>
+            <p><small>7 posts - 2 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/best-gpu-for-large-scale-multi-robot-simulation-20-50-robots-with-open-rmf-in-ros2/45190">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-14T00:59:59Z</updated>
+    <published>2025-07-14T00:59:59Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>Apurva_Nikhare</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/best-gpu-for-large-scale-multi-robot-simulation-20-50-robots-with-open-rmf-in-ros2/45190.rss" title="Best GPU for Large-Scale Multi-Robot Simulation (20&#x2013;50 Robots) with Open RMF in ROS2"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45177</id>
+    <link href="https://discourse.openrobotics.org/t/installation-and-configuration-of-the-raspberry-pi-camera-on-a-ros-2-jazzy-raspberry-pi-5/45177" rel="alternate" type="text/html"/>
+    <title>Installation and configuration of the Raspberry Pi Camera on a ROS 2/Jazzy Raspberry Pi 5</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>We are pleased to release the following information in a document posted in a repository on <a href="https://github.com/ARLunan/Raspberry-Pi-Camera-ROS" rel="noopener nofollow ugc">Raspberry Pi Camera ROS Install</a> that describes the steps to get a Raspberry Pi ™  (or compliant 3rd party)  V1, V2, or V3 Camera working on a Raspberry Pi 5 configured with Ubuntu 24.04/ROS 2 Jazzy. It may also be applicable on selected Raspberry Pi 4 configurations . The document was the result of an ongoing dialog on content, posted on the HBRobotics Forum <a href="https://groups.google.com/g/hbrobotics/c/4VITfijo2cM/m/80LidlKAAgAJ" rel="noopener nofollow ugc">HBRobotics</a> , from notes, Linux Terminal scripts and libraries contributed by Alan Federman, Marco Walther, Sergei Grichine,  Ross Lunan. The necessary libraries are installed from downloaded binaries. The purpose was to enable the functioning of the “camera_ros" package developed by Christian Rauch <a href="https://github.com/christianrauch/camera_ros" rel="noopener nofollow ugc">camera_ros</a>  , which publishes the camera image as ROS 2 messages: /camera/camera_info, /camera/image_raw, /camera/image_compressed, /parameter_events and /rosout .</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/installation-and-configuration-of-the-raspberry-pi-camera-on-a-ros-2-jazzy-raspberry-pi-5/45177">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-12T01:31:46Z</updated>
+    <published>2025-07-12T01:31:46Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>RossBots</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/installation-and-configuration-of-the-raspberry-pi-camera-on-a-ros-2-jazzy-raspberry-pi-5/45177.rss" title="Installation and configuration of the Raspberry Pi Camera on a ROS 2/Jazzy Raspberry Pi 5"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45167</id>
+    <link href="https://discourse.openrobotics.org/t/ros-2-rust-meeting-july-2025/45167" rel="alternate" type="text/html"/>
+    <title>ROS 2 Rust Meeting: July 2025</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>The next ROS 2 Rust Meeting will be <span class="discourse-local-date">Mon, Jul 14, 2025 2:00 PM UTC</span></p>
+<p>The meeting room will be at <a href="https://meet.google.com/rxr-pvcv-hmu" rel="noopener nofollow ugc">https://meet.google.com/rxr-pvcv-hmu</a></p>
+<p>In the unlikely event that the room needs to change, we will update this thread with the new info!</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/ros-2-rust-meeting-july-2025/45167">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-11T11:49:44Z</updated>
+    <published>2025-07-11T11:49:44Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>jhdcs</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/ros-2-rust-meeting-july-2025/45167.rss" title="ROS 2 Rust Meeting: July 2025"/>
+      <updated>2025-07-19T20:10:03Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45153</id>
+    <link href="https://discourse.openrobotics.org/t/california-ros-events-for-july-2025-including-open-sauce/45153" rel="alternate" type="text/html"/>
+    <title>🌉 California ROS Events for July 2025 (including Open Sauce!)</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1><a class="anchor" href="https://discourse.openrobotics.org#p-96910-ros-events-in-california-for-july-2025-1" name="p-96910-ros-events-in-california-for-july-2025-1"/>ROS Events in California for July 2025</h1>
+<p>Hi Everyone,</p>
+<p>I’ve put together a string of exciting ROS and open source events in California this July!</p>
+<p>I had a fantastic time at <a href="https://opensauce.com/">Open Sauce</a> last year talking to other open source projects (like <a href="https://openscad.org/">OpenSCAD</a>, and <a href="https://www.freecad.org/">FreeCAD</a>). This year I’ve organized a joint <a href="https://www.openrobotics.org/">Open Robotics</a> / ROS / <a href="https://oshwa.org/">Open Source Hardware Association</a> / <a href="https://opencv.org/">OpenCV</a> booth. If you are attending Open Sauce we would love for you to stop by (we’ll have tons of free OSHWA / OpenCV / ROS Stickers).</p>
+<p>I’ve also worked with our friends at <a href="http://Hackster.io">Hackster.io</a> to organize an <a href="https://lu.ma/z9t9rtp0">open source @ Open Sauce after party</a> at the <a href="https://www.workatthestudio.com/">Studio 45 fabrication space</a> in San Francisco on Saturday night. The after party is open to everyone, regardless of whether you are planning to attend Open Sauce.</p>
+<p/><div class="lightbox-wrapper"><a class="lightbox" href="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/a/3/a3944f8416751c1ac58eb60f9f8bb1845d79e1d0.jpeg" title="OpenSauce (1)"><img alt="OpenSauce (1)" height="388" src="https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/a/3/a3944f8416751c1ac58eb60f9f8bb1845d79e1d0_2_690x388.jpeg" width="690"/></a></div><br/>
+<a href="https://lu.ma/z9t9rtp0">RSVP for After Party Here</a><p/>
+<h2><a class="anchor" href="https://discourse.openrobotics.org#p-96910-ros-by-the-bay-2" name="p-96910-ros-by-the-bay-2"/>ROS By-The-Bay</h2>
+<p>We’re planning to hold our next <a href="https://www.meetup.com/ros-by-the-bay/events/308994560/?slug=ros-by-the-bay&amp;eventId=308994560&amp;isFirstPublish=true">ROS By-The-Bay Meetup</a> on <span class="discourse-local-date">Fri, Jul 25, 2025 1:00 AM UTC</span>. I’ve lined up two fantastic speakers from <a href="https://www.emberrobotics.com/">Ember Robotics</a> and <a href="https://www.orangewood.co/">Orangewood Robotics</a>.</p>
+<p/><div class="lightbox-wrapper"><a class="lightbox" href="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/a/b/ab581576b66b7b608d618925371897ad640e0dbf.jpeg" title="ROSBTBJuly25"><img alt="ROSBTBJuly25" height="388" src="https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/a/b/ab581576b66b7b608d618925371897ad640e0dbf_2_690x388.jpeg" width="690"/></a></div><br/>
+<a href="https://www.meetup.com/ros-by-the-bay/events/308994560/?slug=ros-by-the-bay&amp;eventId=308994560&amp;isFirstPublish=true">ROS By-The-Bay Meetup</a><p/>
+<h2><a class="anchor" href="https://discourse.openrobotics.org#p-96910-ros-meetup-in-la-3" name="p-96910-ros-meetup-in-la-3"/>ROS Meetup in LA</h2>
+<p>Finally, <a class="mention" href="https://discourse.openrobotics.org/u/mrpollo">@mrpollo</a> and I will be in LA the last week of July for <a href="https://2025.smcit-scc.space/">IEEE SCM-IT/SCC 2025</a>. <a class="mention" href="https://discourse.openrobotics.org/u/mrpollo">@mrpollo</a> and <a class="mention" href="https://discourse.openrobotics.org/u/ivanperez">@ivanperez</a> have organized a <a href="https://2025.smcit-scc.space/track/smc-it-scc-2025-ossw#program">workshop on open source software for space missions.</a>.</p>
+<p>We are tentatively planning to hold <a href="https://lu.ma/clu5i6az">a joint ROS / Dronecode meetup on July 31st</a> but we’re still looking for space and speakers (we just had our venue fall through). We were hoping to find a space in the El Segundo / Long Beach area but we’re open to anything right about now (perhaps Pasadena?). If you have suggestions please reach out.</p>
+<p>I’ll post additional information as we figure it out.</p>
+<p/><div class="lightbox-wrapper"><a class="lightbox" href="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/0/20072bd32070e0b33ca4ce1b7070b11fc4b3fdb0.png" title="ROS-LA-July25"><img alt="ROS-LA-July25" height="388" src="https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/2/0/20072bd32070e0b33ca4ce1b7070b11fc4b3fdb0_2_690x388.png" width="690"/></a></div><p/>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/california-ros-events-for-july-2025-including-open-sauce/45153">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-10T21:06:35Z</updated>
+    <published>2025-07-10T21:06:35Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>Katherine_Scott</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/california-ros-events-for-july-2025-including-open-sauce/45153.rss" title="&#x1F309; California ROS Events for July 2025 (including Open Sauce!)"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45115</id>
+    <link href="https://discourse.openrobotics.org/t/embodied-ai-community-group-meeting-9/45115" rel="alternate" type="text/html"/>
+    <title>Embodied AI Community group meeting #9</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>The <strong>Embodied AI Community Group</strong> dedicated to the topic of applications of <strong>Generative AI to ROS 2 robotics</strong> will have a ninth meeting on <strong>9 July 16:00 UTC (9:00 am PST)</strong> - in less than 24h!</p>
+<p>Join us to keep up with the newest advancements in embodied AI field.<br/>
+We have some exciting topics in the agenda:</p>
+<ul>
+<li>OSRA Technical Governance Committee Special Interest Group on Physical AI by Adam Dąbrowski</li>
+<li>LeRobot framework: what is it, how to use it with ROS and integrate with Agentic AI by Kacper Dąbrowski</li>
+<li>Agentic AI literature review (5 minutes) by Bartłomiej Boczek (myself) and Kajetan Rachwał</li>
+<li>Quick <a href="https://github.com/RobotecAI/rai" rel="noopener nofollow ugc">RAI framework</a> update (3 minutes) by Bartłomiej Boczek</li>
+<li>Free discussion</li>
+</ul>
+<p>Here is the <a href="https://meet.google.com/rkb-xsff-ouw" rel="noopener nofollow ugc">meeting link</a>, meetings take place every month, so feel free to subscribe to <a href="https://calendar.google.com/calendar/u/1?cid=ZjJjOGVkNDljNDNiMGRiNTZhNjhmYzI2Mjg0NWNlMzQ3YWQzNzdlMmI1M2YyNzNmZWFlZWQ4MjVhYTE3NTMzOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" rel="noopener nofollow ugc">the calendar</a> and visit the <a href="https://github.com/ros-wg-embodied-ai" rel="noopener nofollow ugc">group landing page</a>.<br/>
+Detailed agenda can be found in the <a href="https://docs.google.com/document/d/1GMWQins1LQjFvlmVgsAxAr0-5mtHv4RCLoJpv1xP3MM/edit?usp=sharing" rel="noopener nofollow ugc">meeting document</a>. You can also find there all materials and recordings of past meetings.</p>
+<p>See you there!</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/embodied-ai-community-group-meeting-9/45115">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-08T23:10:56Z</updated>
+    <published>2025-07-08T23:10:56Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>boczekbartek</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/embodied-ai-community-group-meeting-9/45115.rss" title="Embodied AI Community group meeting #9"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45100</id>
+    <link href="https://discourse.openrobotics.org/t/ros-2-online-robot-racing-contest-fun-challenge-await-this-july/45100" rel="alternate" type="text/html"/>
+    <title>🏎️ ROS 2 Online Robot Racing Contest — Fun &amp; Challenge Await This July!</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Hi community!</p>
+<p>This July, we’ve prepared something fun for you — an <strong>Online ROS 2 Robot Racing Contest</strong>!</p>
+<p><img alt="Robot Racing Contest" class="animated" height="388" src="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/a/e/aef1e7138c5b4201914f61a900f7be9a6a31f793.gif" width="690"/></p>
+<p>This 100% <strong>free, simulation-based</strong> competition invites robotics developers from around the world to compete. Build your fastest robot lap — and the winner will receive a <strong>real ROS 2 robot</strong> equipped with a camera, LiDAR, and a hot-swappable battery system!</p>
+<p/><div class="lightbox-wrapper"><a class="lightbox" href="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/a/2a4160c274761541cd61c8860b68d8938f085537.png" rel="noopener nofollow ugc" title="Robot Racing Prize"><img alt="Robot Racing Prize" height="250" src="https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/2/a/2a4160c274761541cd61c8860b68d8938f085537_2_248x250.png" width="248"/></a></div><p/>
+<h3><a class="anchor" href="https://discourse.openrobotics.org#p-96793-how-to-participate-1" name="p-96793-how-to-participate-1"/><img alt=":chequered_flag:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/chequered_flag.png?v=14" title=":chequered_flag:" width="20"/> How to Participate</h3>
+<ul>
+<li>
+<p><strong>Open the simulation project in your browser: <a href="https://app.theconstruct.ai/l/6c3e7d72/" rel="noopener nofollow ugc">https://app.theconstruct.ai/l/6c3e7d72/</a></strong><br/>
+<em>(No installation needed — everything runs directly in your browser.)</em></p>
+</li>
+<li>
+<p><strong>Build your project</strong> and complete a full lap in the shortest time possible.</p>
+</li>
+<li>
+<p><strong>Use any tech you like</strong> — ROS 2, OpenCV, line following, deep learning…</p>
+</li>
+<li>
+<p>When you finished, submit your <strong>project link</strong> to <strong>contest@theconstruct.ai</strong> by <strong>July 28th</strong></p>
+</li>
+</ul>
+<p><img alt=":trophy:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/trophy.png?v=14" title=":trophy:" width="20"/> Winners will be announced** during a live online event on <strong>July 31st</strong></p>
+<hr/>
+<p>This contest is more than just a race — it’s a fun way to strengthen your ROS 2 skills and connect with the global ROS community.</p>
+<p>We invite you to race, learn, and enjoy with this robot contest!</p>
+<p>The Construct Robotics Institute<br/>
+<a href="https://theconstruct.ai/" rel="noopener nofollow ugc">theconstruct.ai</a></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/ros-2-online-robot-racing-contest-fun-challenge-await-this-july/45100">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-08T11:55:27Z</updated>
+    <published>2025-07-08T11:55:27Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>Sonia_W</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/ros-2-online-robot-racing-contest-fun-challenge-await-this-july/45100.rss" title="&#x1F3CE;&#xFE0F; ROS 2 Online Robot Racing Contest &#x2014; Fun &amp; Challenge Await This July!"/>
+      <updated>2025-07-19T20:10:03Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45099</id>
+    <link href="https://discourse.openrobotics.org/t/ai-worker-redefines-agility-in-logistics-with-swerve-drive/45099" rel="alternate" type="text/html"/>
+    <title>AI Worker Redefines Agility in Logistics with Swerve Drive</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><img alt=":robot:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/robot.png?v=14" title=":robot:" width="20"/> AI Worker Redefines Agility in Logistics with Swerve Drive <img alt=":rocket:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/rocket.png?v=14" title=":rocket:" width="20"/></p>
+<p><a href="https://www.youtube.com/watch?v=WNpRlIr4zbw">AI WORKER #4: Swerve Drive at Work – Logistics Task Demo</a></p>
+
+<p>Are you interested in the logistics and distribution environment? Our team is thrilled to finally release a new video showcasing our AI Worker’s enhanced driving and operational capabilities!</p>
+<p>This video vividly demonstrates how our AI Worker, equipped with Swerve Drive technology, moves with incredible flexibility and intelligence in a real-world logistics setting. While “Omni-Directional” methods typically include Omni wheels and Mecanum wheels, both rely on friction with the floor, which can lead to lower positional accuracy and even floor damage. In contrast, the Swerve Drive type offers superior positional accuracy, a significant advantage in terms of reduced data noise from a Physical AI perspective. After all, if the data crucial for learning isn’t accurate, the learning outcomes won’t be good either. This Swerve Drive technology allows the AI Worker to navigate narrow spaces within the work area, and most importantly, its horizontal movement capability significantly enhances efficiency for tasks involving conveyor belts or tabletop operations.</p>
+<p>While this video still features some teleoperated segments, our ultimate goal is for this AI Worker to evolve into a fully autonomous system, capable of self-judgment and movement, by integrating with Robot Foundation Models (RFM). Your continued support and encouragement as we pursue this journey would mean a great deal to us! <img alt=":folded_hands:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/folded_hands.png?v=14" title=":folded_hands:" width="20"/></p>
+<p>As with all ROBOTIS robot systems, this AI Worker is also open-source and built on <strong>Open Robotics ROS 2</strong> and <strong>Hugging Face LeRobot</strong>, so those interested in the technical aspects will find it engaging.</p>
+<p>You can watch the original YouTube video at the link below:</p>
+<p>AI WORKER <span class="hashtag-raw">#4:</span> Swerve Drive at Work – Logistics Task Demo<br/>
+<img alt=":backhand_index_pointing_right:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/backhand_index_pointing_right.png?v=14" title=":backhand_index_pointing_right:" width="20"/> <a href="https://youtu.be/WNpRlIr4zbw" rel="noopener nofollow ugc">https://youtu.be/WNpRlIr4zbw</a></p>
+<p>Our open-source GitHub repositories are here:<br/>
+<img alt=":backhand_index_pointing_right:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/backhand_index_pointing_right.png?v=14" title=":backhand_index_pointing_right:" width="20"/> <a class="inline-onebox" href="https://github.com/ROBOTIS-GIT/ai_worker" rel="noopener nofollow ugc">GitHub - ROBOTIS-GIT/ai_worker: AI Worker: FFW (Freedom From Work)</a><br/>
+<img alt=":backhand_index_pointing_right:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/backhand_index_pointing_right.png?v=14" title=":backhand_index_pointing_right:" width="20"/> <a class="inline-onebox" href="https://github.com/ROBOTIS-GIT/physical_ai_tools" rel="noopener nofollow ugc">GitHub - ROBOTIS-GIT/physical_ai_tools: ROBOTIS Physical AI Tools: Physical AI Development Interface with LeRobot and ROS 2</a><br/>
+<img alt=":backhand_index_pointing_right:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/backhand_index_pointing_right.png?v=14" title=":backhand_index_pointing_right:" width="20"/> <a class="inline-onebox" href="https://github.com/ROBOTIS-GIT/robotis_lab" rel="noopener nofollow ugc">GitHub - ROBOTIS-GIT/robotis_lab: robotis_lab</a></p>
+<p>A comprehensive overview of the AI Worker is available on our webpage:<br/>
+<img alt=":backhand_index_pointing_right:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/backhand_index_pointing_right.png?v=14" title=":backhand_index_pointing_right:" width="20"/> <a href="https://ai.robotis.com/" rel="noopener nofollow ugc">https://ai.robotis.com/</a></p>
+<p>Please feel free to leave any questions or feedback in the comments after watching the video! <img alt=":wink:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/wink.png?v=14" title=":wink:" width="20"/></p>
+<p><span class="hashtag-raw">#ROBOTIS</span> <span class="hashtag-raw">#AIWorker</span> <span class="hashtag-raw">#Humanoid</span> <span class="hashtag-raw">#DYNAMIXEL</span> <a class="hashtag-cooked" href="https://discourse.openrobotics.org/tag/robot"><span class="hashtag-icon-placeholder"><svg xmlns="http://www.w3.org/2000/svg" class="fa d-icon d-icon-square-full svg-icon svg-node"><use/></svg></span><span>robot</span></a> <span class="hashtag-raw">#OpenSource</span> <a class="hashtag-cooked" href="https://discourse.openrobotics.org/c/ros/111"><span class="hashtag-icon-placeholder"><svg xmlns="http://www.w3.org/2000/svg" class="fa d-icon d-icon-square-full svg-icon svg-node"><use/></svg></span><span>ROS</span></a> <span class="hashtag-raw">#PhysicalAI</span> <span class="hashtag-raw">#EmbodiedAI</span></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/ai-worker-redefines-agility-in-logistics-with-swerve-drive/45099">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-08T10:32:23Z</updated>
+    <published>2025-07-08T10:32:23Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>Pyo</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/ai-worker-redefines-agility-in-logistics-with-swerve-drive/45099.rss" title="AI Worker Redefines Agility in Logistics with Swerve Drive"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45080</id>
+    <link href="https://discourse.openrobotics.org/t/new-ros2-package-ros2-teleoperation/45080" rel="alternate" type="text/html"/>
+    <title>New ROS2 Package: ros2_teleoperation</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><strong>Hello ROS2 Community,</strong></p>
+<p><img alt="dashboard_compressed" class="animated" height="388" src="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/e/8/e829e5b6f259aef6da6b0b2f9a308fe25f70edcf.gif" width="690"/></p>
+<p>I just release the <em><strong>ros2_teleoperation</strong></em> package, a ROS2 package that allows to visualize different information under one UI, based on QT, this package provides a clean and efficient graphical interface to monitor and teleoperate your robot in real time. With built-in support for GPS visualization, waypoint creation, camera streaming, LiDAR point clouds, IMU data, and more, you can easily select any topic and start visualizing the data you need, all in a few clicks!</p>
+<p>Whether you’re debugging, monitoring, or controlling your robot remotely, <em><strong>ros2_teleoperation</strong></em> offers the flexibility and clarity you need.</p>
+<p>More viewers will be added soon, and if there’s a specific data type you’d like to see, let me know, let’s build the ultimate open-source visualization tool together!</p>
+<p>LINK: <a href="https://github.com/CDonosoK/ros2_teleoperation" rel="noopener nofollow ugc">ros2_teleoperation</a></p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/new-ros2-package-ros2-teleoperation/45080">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-07T17:30:53Z</updated>
+    <published>2025-07-07T17:30:53Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>CDonosoK</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/new-ros2-package-ros2-teleoperation/45080.rss" title="New ROS2 Package: ros2_teleoperation"/>
+      <updated>2025-07-19T20:10:03Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45068</id>
+    <link href="https://discourse.openrobotics.org/t/discussion-with-bruno-mendes-de-silva-cloud-robotics-wg-meeting-2025-07-14/45068" rel="alternate" type="text/html"/>
+    <title>Discussion with Bruno Mendes De Silva | Cloud Robotics WG Meeting 2025-07-14</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>The next meeting for the Cloud Robotics Working Group will be at 1600-1700 UTC on Monday 14th July 2025, where <a href="https://www.linkedin.com/in/brunomendesdasilva/" rel="noopener nofollow ugc">Bruno Mendes De Silva</a>, Co-Founder and CEO of <a href="https://www.heex.io/" rel="noopener nofollow ugc">Heex Technologies</a>, has agreed to join us as a guest expert in Logging and Observability.</p>
+<p>Heex Technologies is a cloud data platform accelerating Physical AI adoption. The company helps customers with their autonomous systems by collecting and presenting only the most relevant data for a required view. We will see some slides and demos, plus gather as much information from Bruno as possible for writing a community guide on Logging and Observability.</p>
+<p>Last meeting, we invited Benji Barash, Co-Founder and CEO of Roboto AI, as a guest expert, also for Logging &amp; Observability. The meeting became more of a presentation and Q&amp;A, as Benji had slides and demos ready to run. He showed very impressive tech from Roboto.AI, including the ability to select a clip of robot data and search other datasets for similar clips to find similar motions! If you would like to see the meeting, the recording is available <a href="https://youtu.be/9Hr_G9fvHhQ?si=SKty-TPqh4YuDInc" rel="noopener nofollow ugc">on YouTube</a>.</p>
+<p>The <strong>meeting link is <a href="https://meet.google.com/xox-nshv-uvm" rel="noopener nofollow ugc">here</a></strong>, and you can sign up to <a href="https://calendar.google.com/calendar/u/0/embed?src=c_3fc5c4d6ece9d80d49f136c1dcd54d7f44e1acefdbe87228c92ff268e85e2ea0@group.calendar.google.com&amp;ctz=UTC" rel="noopener nofollow ugc">our calendar</a> or our <a href="https://groups.google.com/g/cloud-robotics-working-group-invites" rel="noopener nofollow ugc">Google Group</a> for meeting notifications or keep an eye on the <a href="https://cloudroboticshub.github.io/" rel="noopener nofollow ugc">Cloud Robotics Hub</a>.</p>
+<p>Hopefully we will see you there!</p>
+<p>P.S. I couldnâ€™t find the control to insert a date/time, hence writing it in UTC. Has something happened to that?</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/discussion-with-bruno-mendes-de-silva-cloud-robotics-wg-meeting-2025-07-14/45068">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-07T09:37:20Z</updated>
+    <published>2025-07-07T09:37:20Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>mikelikesrobots</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/discussion-with-bruno-mendes-de-silva-cloud-robotics-wg-meeting-2025-07-14/45068.rss" title="Discussion with Bruno Mendes De Silva | Cloud Robotics WG Meeting 2025-07-14"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45055</id>
+    <link href="https://discourse.openrobotics.org/t/new-contact-message-for-sensor-msgs/45055" rel="alternate" type="text/html"/>
+    <title>New contact message for sensor_msgs</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Hi!</p>
+<p>This post will be about the proposal of a <code>Contact.msg</code> for the <code>sensor_msgs</code> package.</p>
+<p>If you have any ideas for changes or usage, please share it in this post and send PR to my message-only package <a href="https://github.com/BartlomiejK2/contact_msgs" rel="noopener nofollow ugc">contact_msgs</a>.</p>
+<h2><a class="anchor" href="https://discourse.openrobotics.org#p-96731-motivation-1" name="p-96731-motivation-1"/>Motivation</h2>
+<p>I could not find simple message that defines whether there is contact between some defined sensor and other undefined object/objects. Messages like <code>/ros_gz_interfaces/msg/Contact.msg</code> are too complicated and simulator specific for simple contact detection. For contact sensor with force and torque readings <code>geometry_msgs/WrenchStamped.msg</code> would be enough.</p>
+<h2><a class="anchor" href="https://discourse.openrobotics.org#p-96731-design-implementation-considerations-2" name="p-96731-design-implementation-considerations-2"/>Design / Implementation Considerations</h2>
+<pre><code class="lang-auto"># This is a message to hold data from simple contact
+
+std_msgs/Header header      # timestamp is the time the contact was measured
+                                        # frame_id is the location of the contact sensor
+
+
+bool contact                # True if there is contact
+</code></pre>
+<h2><a class="anchor" href="https://discourse.openrobotics.org#p-96731-additional-information-3" name="p-96731-additional-information-3"/>Additional Information</h2>
+<p>I believe that this message could be used for creating future hardware interfaces and broadcasters for <code>ros2_control</code> framework. It also would be helpful for fields where contact sensors are widely used, such as legged robotics.</p>
+<h2><a class="anchor" href="https://discourse.openrobotics.org#p-96731-links-4" name="p-96731-links-4"/>Links</h2>
+<p><a href="https://github.com/BartlomiejK2/contact_msgs" rel="noopener nofollow ugc">Contact message repository</a><br/>
+<a href="https://github.com/ros2/common_interfaces/issues/286" rel="noopener nofollow ugc"> <code>common_interfaces</code> issue related to message</a><br/>
+<a href="https://github.com/ros2/common_interfaces/pull/291" rel="noopener nofollow ugc"><code>common_interfaces</code> PR related to message</a><br/>
+<a href="https://github.com/ros/common_msgs/issues/28" rel="noopener nofollow ugc">Old issue related to message</a></p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/new-contact-message-for-sensor-msgs/45055">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-06T22:56:33Z</updated>
+    <published>2025-07-06T22:56:33Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>BartlomiejK</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/new-contact-message-for-sensor-msgs/45055.rss" title="New contact message for sensor_msgs"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45047</id>
+    <link href="https://discourse.openrobotics.org/t/real-time-raspberry-pi-ros-2-image-updated-for-jazzy-and-24-04/45047" rel="alternate" type="text/html"/>
+    <title>Real-time Raspberry Pi ROS 2 image updated for Jazzy and 24.04</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Some of you may remember the ROS 2 real-time image for Raspberry Pi that I <a href="https://roscon.ros.org/2022/#:~:text=A%20Raspberry%20Pi%20image%20with%20ROS%202%20%2B%20RT%20and%20a%20customizable%20image%20builder">presented at ROScon 2022</a> or in <a href="http://discourse.ros.org/t/ros-2-raspberry-pi-4-image-with-the-real-time-kernel-as-presented-in-roscon-2022-and-future-work-nvidia/27994">a previous post</a>. <a class="mention" href="https://discourse.openrobotics.org/u/razr">@razr</a> and I have worked on it and updated it to support ROS 2 Jazzy and Ubuntu 24.04. I just created a release for it here: <a class="inline-onebox" href="https://github.com/ros-realtime/ros-realtime-rpi4-image/releases" rel="noopener nofollow ugc">Releases · ros-realtime/ros-realtime-rpi4-image · GitHub</a></p>
+<p>Contrary to the previous efforts, this image now supports Raspberry Pi 3, 4, and 5! This gives a wider range of choices for people interested in running ROS on Raspberry Pis. I’m particularly excited to start using this on the Raspberry Pi 5 which gives exceptional performance both for normal code and in-terms of delivering a low scheduling latency.</p>
+<p>Here are some preliminary real-time scheduling latency results based on measuring cyclictest latency during a heavy CPU stress test.</p>
+<div class="md-table">
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raspberry Pi 3</td>
+<td><div class="lightbox-wrapper"><a class="lightbox" href="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/d/3/d309c9acca209e0c4d5691c0f1ecf0e88b1bc7e1.png" rel="noopener nofollow ugc" title="24.04_6.8.4-rt11-raspi_rpi3b.png"><img height="450" src="https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/d/3/d309c9acca209e0c4d5691c0f1ecf0e88b1bc7e1_2_600x450.png" width="600"/></a></div></td>
+</tr>
+<tr>
+<td>Raspberry Pi 4</td>
+<td><div class="lightbox-wrapper"><a class="lightbox" href="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/1/216e2e31bbf8c83b773c0a681beba08f5d8a06ea.png" rel="noopener nofollow ugc" title="24.04_6.8.4-rt11-raspi_rpi4.png"><img height="450" src="https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/2/1/216e2e31bbf8c83b773c0a681beba08f5d8a06ea_2_600x450.png" width="600"/></a></div></td>
+</tr>
+<tr>
+<td>Raspberry Pi 5</td>
+<td><div class="lightbox-wrapper"><a class="lightbox" href="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/0/a/0a6eca348eb2c2ccd04f858ee627bd2cc5c81c5d.png" rel="noopener nofollow ugc" title="24.04_6.8.4-rt11-raspi_rpi5.png"><img height="450" src="https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/0/a/0a6eca348eb2c2ccd04f858ee627bd2cc5c81c5d_2_600x450.png" width="600"/></a></div></td>
+</tr>
+</tbody>
+</table>
+</div><p>Enjoy!</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/real-time-raspberry-pi-ros-2-image-updated-for-jazzy-and-24-04/45047">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-05T15:25:56Z</updated>
+    <published>2025-07-05T15:25:56Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>shuhao</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/real-time-raspberry-pi-ros-2-image-updated-for-jazzy-and-24-04/45047.rss" title="Real-time Raspberry Pi ROS 2 image updated for Jazzy and 24.04"/>
+      <updated>2025-07-19T20:10:03Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45027</id>
+    <link href="https://discourse.openrobotics.org/t/introduction-to-omy-and-physical-ai-tool/45027" rel="alternate" type="text/html"/>
+    <title>Introduction to OMY and Physical AI Tool</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a href="https://www.youtube.com/watch?v=3x-eN36pNns">The Beginning of Physical AI Research: Easily Learn Robotics with OMY &amp; Physical AI Tools!</a></p>
+
+<p>Hello everyone! In today’s video, we’re excited to introduce an innovative solution that lowers the barrier to Physical AI research: OMY and Physical AI Tool</p>
+<p><img alt=":backhand_index_pointing_right:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/backhand_index_pointing_right.png?v=14" title=":backhand_index_pointing_right:" width="20"/> Introducing OMY<br/>
+Our OMY is a 6-axis manipulator &amp; gripper specifically designed for Physical AI research. Notably, its Leader-Follower configuration provides an optimized environment for Imitation Learning. Equipped with collision detection and gravity compensation, OMY enables safe and efficient acquisition of training data.</p>
+<p><img alt=":hammer_and_wrench:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/hammer_and_wrench.png?v=14" title=":hammer_and_wrench:" width="20"/> Introducing Physical AI Tools<br/>
+Physical AI Tools is a user-friendly software developed to allow anyone to easily participate in Physical AI research. Built upon ROS 2 and LeRobot, it offers intuitive UI-based data acquisition and monitoring without complex procedures. It’s designed to be easily usable by beginners in robotics learning and part-time data acquisition specialists. Furthermore, with Web UI support, it can be accessed from various devices like mobile phones and tablets.</p>
+<p><img alt=":light_bulb:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/light_bulb.png?v=14" title=":light_bulb:" width="20"/> What You’ll See in This Video:<br/>
+In this video, we’ll walk you through the entire workflow, from introducing OMY to the detailed processes of data acquisition, training, and inference using Physical AI Tools. For the inference, we are currently utilizing the ACT Policy model.</p>
+<p><img alt=":sparkles:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/sparkles.png?v=14" title=":sparkles:" width="20"/> The Future of Physical AI Tools:<br/>
+While currently focused on data acquisition and inference, we will soon be adding training functionalities. We also plan to integrate various open-source models like NVIDIA GR00T N1.5 to provide even more powerful features. All the code for our Physical AI Tools is open-source, emphasizing transparency and extensibility.</p>
+<p>We kindly ask for your continued interest and anticipation for our future contributions to the advancement of Physical AI research.</p>
+<p>Thank you so much for watching the video! Please feel free to leave any questions in the comments.</p>
+<p><img alt=":inbox_tray:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/inbox_tray.png?v=14" title=":inbox_tray:" width="20"/> GitHub Repo</p>
+<ul>
+<li>
+<p><a class="inline-onebox" href="https://github.com/ROBOTIS-GIT/open_manipulator" rel="noopener nofollow ugc">GitHub - ROBOTIS-GIT/open_manipulator: AI Manipulator and Open Manipulator</a></p>
+</li>
+<li>
+<p><a class="inline-onebox" href="https://github.com/ROBOTIS-GIT/physical_ai_tools" rel="noopener nofollow ugc">GitHub - ROBOTIS-GIT/physical_ai_tools: ROBOTIS Physical AI Tools: Physical AI Development Interface with LeRobot and ROS 2</a></p>
+</li>
+</ul>
+<p><span class="hashtag-raw">#ROBOTIS</span> <span class="hashtag-raw">#OMY</span> <a class="hashtag-cooked" href="https://discourse.openrobotics.org/c/ros/111"><span class="hashtag-icon-placeholder"><svg xmlns="http://www.w3.org/2000/svg" class="fa d-icon d-icon-square-full svg-icon svg-node"><use/></svg></span><span>ROS</span></a> <a class="hashtag-cooked" href="https://discourse.openrobotics.org/tag/nvidia"><span class="hashtag-icon-placeholder"><svg xmlns="http://www.w3.org/2000/svg" class="fa d-icon d-icon-square-full svg-icon svg-node"><use/></svg></span><span>nvidia</span></a> <span class="hashtag-raw">#HuggingFace</span> <span class="hashtag-raw">#LeRobot</span> <a class="hashtag-cooked" href="https://discourse.openrobotics.org/tag/robotics"><span class="hashtag-icon-placeholder"><svg xmlns="http://www.w3.org/2000/svg" class="fa d-icon d-icon-square-full svg-icon svg-node"><use/></svg></span><span>robotics</span></a> <span class="hashtag-raw">#physicalai</span> <a class="hashtag-cooked" href="https://discourse.openrobotics.org/tag/ai"><span class="hashtag-icon-placeholder"><svg xmlns="http://www.w3.org/2000/svg" class="fa d-icon d-icon-square-full svg-icon svg-node"><use/></svg></span><span>ai</span></a> <span class="hashtag-raw">#artificialIntelligence</span> <a class="hashtag-cooked" href="https://discourse.openrobotics.org/tag/robot"><span class="hashtag-icon-placeholder"><svg xmlns="http://www.w3.org/2000/svg" class="fa d-icon d-icon-square-full svg-icon svg-node"><use/></svg></span><span>robot</span></a> <span class="hashtag-raw">#opensource</span> <span class="hashtag-raw">#robotarm</span> <span class="hashtag-raw">#LeaderFollower</span> <span class="hashtag-raw">#ImitationLearning</span></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/introduction-to-omy-and-physical-ai-tool/45027">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-04T07:02:29Z</updated>
+    <published>2025-07-04T07:02:29Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>Pyo</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/introduction-to-omy-and-physical-ai-tool/45027.rss" title="Introduction to OMY and Physical AI Tool"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-45004</id>
+    <link href="https://discourse.openrobotics.org/t/need-of-ros-in-industry/45004" rel="alternate" type="text/html"/>
+    <title>Need of ROS in Industry</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>I wanted everyone’s opinion of using ROS in Industry. After working for about 3 years in robotics industry I have few questions popped up in mind and would like to hear perspectives and answers of others on this:</p>
+<p>During my work with industrial robotic arms in industry I have seen very few sources using ROS. Most of the industry in robotic arms is dominated by PLC-Robot communication. My question is why do we need ROS if PLC -Robot is used in industry? What are advantages of using ROS compared to standard robot motion programming of industrial robots (which has motion planners integrated with their controllers)?</p>
+<p>I would like to hear everyone’s thoughts on this.</p>
+            <p><small>6 posts - 6 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/need-of-ros-in-industry/45004">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-07-03T06:12:02Z</updated>
+    <published>2025-07-03T06:12:02Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>ros_wizard</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/need-of-ros-in-industry/45004.rss" title="Need of ROS in Industry"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-44965</id>
+    <link href="https://discourse.openrobotics.org/t/meson-project-support/44965" rel="alternate" type="text/html"/>
+    <title>Meson Project Support</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Hi all,</p>
+<p>For a while now, I have worked on supporting the <a href="https://mesonbuild.com" rel="noopener nofollow ugc">Meson build system</a> in colcon and bloom. The <a href="https://github.com/colcon/colcon-meson" rel="noopener nofollow ugc"><code>colcon-meson</code></a> extension was available for some time now, but the bloom support was only <a href="https://github.com/ros-infrastructure/bloom/pull/691" rel="noopener nofollow ugc">merged recently</a>, and I think now is a good time to announce this to gain some broader usage.</p>
+<p>For a long time, the “ROS build and distribution system” (i.e. catkin, colcon, bloom, ament macros, …) only supported CMake projects. Meson is a relative new build system and there are multiple reasons why projects use Meson. Some claim improved performance over the default CMake/Make combination (<a class="inline-onebox" href="https://mesonbuild.com/Simple-comparison.html" rel="noopener nofollow ugc">A simple comparison</a>) and some just prefer the Python-like syntax over CMake. I found Meson to perform better for frequent rebuilds of projects where many targets do not change. I also spent a fair amount of time figuring out the correct import/export of CMake targets and their properties and dependencies, and found this to be much easier in Meson.</p>
+<p>I added Meson support to colcon and bloom in order to develop and use third-party Meson projects directly in a colcon workspace without the need for a CMake wrapper around the Meson project. Note that the support only covers “plain” Meson projects (build type <code>meson</code>) and does not include ament macros, i.e. there is no <code>ament_meson</code> support yet.</p>
+<h1><a class="anchor" href="https://discourse.openrobotics.org#p-96602-colcon-1" name="p-96602-colcon-1"/>colcon</h1>
+<p>The colcon extension (<code>colcon-meson</code>) is available on PyPI (<code>pip install colcon-meson</code>) and as Debian/RPM package (<code>sudo apt install python3-colcon-meson</code> / <code>sudo dnf install python3-colcon-meson</code>). Once installed, you can check out a Meson project, e.g. <a href="https://libcamera.org" rel="noopener nofollow ugc">libcamera</a>, in your workspace and <code>colcon list</code> should then identify this as</p>
+<pre><code class="lang-auto">libcamera	src/libcamera	(meson)
+</code></pre>
+<p>This also works with a <code>package.xml</code> (identified as type <code>ros.meson</code>) and you can provide additional arguments to Meson via <code>--meson-args</code> in the same way as you would via <code>--cmake-args</code> for CMake packages. From thereon, you can use this like any other package in the colcon workspace, including <code>.meta</code> files:</p>
+<pre><code class="lang-yaml">names:
+  libcamera:
+    meson-args:
+    - --warnlevel=2
+    - --werror
+    - --buildtype=debug
+    - --auto-features=disabled
+    - -Dcam=enabled
+</code></pre>
+<h1><a class="anchor" href="https://discourse.openrobotics.org#p-96602-bloom-2" name="p-96602-bloom-2"/>bloom</h1>
+<p>Meson support is now part of the bloom upstream repo. Hence, you only have to install a recently new bloom version:</p>
+<pre><code class="lang-sh">pip install git+https://github.com/ros-infrastructure/bloom.git
+</code></pre>
+<p>and can then use the standard bloom CLI commands to generate (<code>bloom-generate</code>) and release (<code>bloom-release</code>) Debian or RPM packages. To have bloom select the correct package templates, you have to switch the build type to <code>meson</code>:</p>
+<pre><code class="lang-xml">&lt;package format="3"&gt;
+  &lt;buildtool_depend&gt;meson&lt;/buildtool_depend&gt;
+  &lt;export&gt;
+    &lt;build_type&gt;meson&lt;/build_type&gt;
+  &lt;/export&gt;
+&lt;/package&gt;
+</code></pre>
+<p>I am frequently using <code>colcon-meson</code> to build libcamera in my workspace and I have used the bloom support a few times to release libcamera to the ROS repos (<code>ros-jazzy-libcamera</code>, <code>ros-rolling-libcamera</code>). With this, I am quite confident in its basic functionality to handle pure Meson projects.</p>
+<p>As already mentioned, this does not include support for <code>ament_meson</code> or anything that would replicate the functionality of the ament CMake macros in Meson. I would like to see a wider adaption of Meson in ROS and hope this sparked your interest in Meson and maybe motivated you to start working on <code>ament_meson</code> <img alt=":slight_smile:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/slight_smile.png?v=14" title=":slight_smile:" width="20"/></p>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/meson-project-support/44965">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-06-30T22:18:27Z</updated>
+    <published>2025-06-30T22:18:27Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>christian</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/meson-project-support/44965.rss" title="Meson Project Support"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-44516</id>
+    <link href="https://discourse.openrobotics.org/t/new-packages-for-jazzy-jalisco-2024-07-29/44516" rel="alternate" type="text/html"/>
+    <title>New packages for Jazzy Jalisco 2024-07-29</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Hello there everyone!</p>
+<p>We’re happy to announce <strong>63</strong> new packages and <strong>728</strong> updates are now available in ROS 2 Jazzy Jalisco <img alt=":jazzy:" class="emoji emoji-custom" height="20" src="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/0/6/069b37ebb316d05e401ebef4cd55fee92efc94a8.png?v=14" title=":jazzy:" width="20"/> <img alt=":jazzy:" class="emoji emoji-custom" height="20" src="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/0/6/069b37ebb316d05e401ebef4cd55fee92efc94a8.png?v=14" title=":jazzy:" width="20"/> <img alt=":jazzy:" class="emoji emoji-custom" height="20" src="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/0/6/069b37ebb316d05e401ebef4cd55fee92efc94a8.png?v=14" title=":jazzy:" width="20"/> .</p>
+<p>This sync was tagged as <a href="https://github.com/ros/rosdistro/blob/jazzy/2025-06-29/jazzy/distribution.yaml" rel="noopener nofollow ugc">jazzy/2025-06-29 </a>.</p>
+<h2><a class="anchor" href="https://discourse.openrobotics.org#p-94656-package-updates-for-jazzy-1" name="p-94656-package-updates-for-jazzy-1"/>Package Updates for jazzy</h2>
+<h3><a class="anchor" href="https://discourse.openrobotics.org#p-94656-added-packages-63-2" name="p-94656-added-packages-63-2"/>Added Packages [63]:</h3>
+<ul>
+<li><a href="https://github.com/namo-robotics/aruco_markers" rel="noopener nofollow ugc">ros-jazzy-aruco-markers</a>: 0.0.2-1</li>
+<li>ros-jazzy-aruco-markers-dbgsym: 0.0.2-1</li>
+<li><a href="https://github.com/namo-robotics/aruco_markers" rel="noopener nofollow ugc">ros-jazzy-aruco-markers-msgs</a>: 0.0.2-1</li>
+<li>ros-jazzy-aruco-markers-msgs-dbgsym: 0.0.2-1</li>
+<li>ros-jazzy-at-sonde-ros-driver: 1.0.0-1</li>
+<li>ros-jazzy-at-sonde-ros-driver-dbgsym: 1.0.0-1</li>
+<li>ros-jazzy-autoware-internal-localization-msgs: 1.10.0-1</li>
+<li>ros-jazzy-autoware-internal-localization-msgs-dbgsym: 1.10.0-1</li>
+<li>ros-jazzy-canboat-vendor: 0.0.3-1</li>
+<li>ros-jazzy-canboat-vendor-dbgsym: 0.0.3-1</li>
+<li>ros-jazzy-canopen-inventus-driver: 0.1.3-1</li>
+<li>ros-jazzy-canopen-inventus-driver-dbgsym: 0.1.3-1</li>
+<li>ros-jazzy-canopen-inventus-interfaces: 0.1.3-1</li>
+<li>ros-jazzy-canopen-inventus-interfaces-dbgsym: 0.1.3-1</li>
+<li>ros-jazzy-canopen-ros2-controllers: 0.3.1-1</li>
+<li>ros-jazzy-canopen-ros2-controllers-dbgsym: 0.3.1-1</li>
+<li>ros-jazzy-canopen-tests: 0.3.1-1</li>
+<li>ros-jazzy-clearpath-diagnostics: 2.5.1-1</li>
+<li>ros-jazzy-clearpath-diagnostics-dbgsym: 2.5.1-1</li>
+<li>ros-jazzy-coin-d4-driver: 1.0.0-1</li>
+<li>ros-jazzy-coin-d4-driver-dbgsym: 1.0.0-1</li>
+<li>ros-jazzy-ffw: 1.0.9-1</li>
+<li>ros-jazzy-ffw-joystick-controller: 1.0.9-1</li>
+<li>ros-jazzy-ffw-joystick-controller-dbgsym: 1.0.9-1</li>
+<li>ros-jazzy-ffw-spring-actuator-controller: 1.0.9-1</li>
+<li>ros-jazzy-ffw-spring-actuator-controller-dbgsym: 1.0.9-1</li>
+<li><a href="http://ros.org/wiki/LMS1xx">ros-jazzy-lms1xx</a>: 1.0.1-1</li>
+<li>ros-jazzy-lms1xx-dbgsym: 1.0.1-1</li>
+<li><a href="http://doc.aldebaran.com/libqi" rel="noopener nofollow ugc">ros-jazzy-naoqi-libqi</a>: 3.0.3-1</li>
+<li>ros-jazzy-naoqi-libqi-dbgsym: 3.0.3-1</li>
+<li>ros-jazzy-om-gravity-compensation-controller: 4.0.1-1</li>
+<li>ros-jazzy-om-gravity-compensation-controller-dbgsym: 4.0.1-1</li>
+<li>ros-jazzy-om-spring-actuator-controller: 4.0.1-1</li>
+<li>ros-jazzy-om-spring-actuator-controller-dbgsym: 4.0.1-1</li>
+<li><a href="http://wiki.ros.org/open_manipulator">ros-jazzy-open-manipulator</a>: 4.0.1-1</li>
+<li><a href="http://wiki.ros.org/open_manipulator">ros-jazzy-open-manipulator-collision</a>: 4.0.1-1</li>
+<li>ros-jazzy-open-manipulator-collision-dbgsym: 4.0.1-1</li>
+<li>ros-jazzy-scenario-execution-rviz: 1.3.0-1</li>
+<li>ros-jazzy-scenario-execution-rviz-dbgsym: 1.3.0-1</li>
+<li>ros-jazzy-so-arm-100-hardware: 0.1.1-1</li>
+<li>ros-jazzy-so-arm-100-hardware-dbgsym: 0.1.1-1</li>
+<li>ros-jazzy-tecgihan-driver: 0.1.1-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-applications</a>: 1.3.3-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-aruco-tracker</a>: 1.3.3-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-automatic-parking</a>: 1.3.3-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-automatic-parking-vision</a>: 1.3.3-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-follower</a>: 1.3.3-1</li>
+<li>ros-jazzy-turtlebot3-follower-dbgsym: 1.3.3-1</li>
+<li><a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/manipulation/" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-manipulation</a>: 2.2.1-1</li>
+<li><a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/manipulation/" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-manipulation-bringup</a>: 2.2.1-1</li>
+<li><a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/manipulation/" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-manipulation-cartographer</a>: 2.2.1-1</li>
+<li><a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/manipulation/" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-manipulation-description</a>: 2.2.1-1</li>
+<li><a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/manipulation/" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-manipulation-hardware</a>: 2.2.1-1</li>
+<li>ros-jazzy-turtlebot3-manipulation-hardware-dbgsym: 2.2.1-1</li>
+<li><a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/manipulation/" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-manipulation-moveit-config</a>: 2.2.1-1</li>
+<li>ros-jazzy-turtlebot3-manipulation-navigation2: 2.2.1-1</li>
+<li><a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/manipulation/" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-manipulation-teleop</a>: 2.2.1-1</li>
+<li>ros-jazzy-turtlebot3-manipulation-teleop-dbgsym: 2.2.1-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-panorama</a>: 1.3.3-1</li>
+<li>ros-jazzy-turtlebot3-panorama-dbgsym: 1.3.3-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-yolo-object-detection</a>: 1.3.3-1</li>
+<li>ros-jazzy-zenoh-security-tools: 0.2.5-1</li>
+<li>ros-jazzy-zenoh-security-tools-dbgsym: 0.2.5-1</li>
+</ul>
+<h3><a class="anchor" href="https://discourse.openrobotics.org#p-94656-updated-packages-728-3" name="p-94656-updated-packages-728-3"/>Updated Packages [728]:</h3>
+<ul>
+<li><a href="https://control.ros.org">ros-jazzy-ackermann-steering-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-ackermann-steering-controller-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-admittance-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-admittance-controller-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-apriltag-detector: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-apriltag-detector-dbgsym: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-apriltag-detector-mit: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-apriltag-detector-mit-dbgsym: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-apriltag-detector-umich: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-apriltag-detector-umich-dbgsym: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-apriltag-draw: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-apriltag-draw-dbgsym: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-apriltag-tools: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-apriltag-tools-dbgsym: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-aruco-opencv: 6.0.1-1 → 6.0.2-1</li>
+<li>ros-jazzy-aruco-opencv-dbgsym: 6.0.1-1 → 6.0.2-1</li>
+<li>ros-jazzy-aruco-opencv-msgs: 6.0.1-1 → 6.0.2-1</li>
+<li>ros-jazzy-aruco-opencv-msgs-dbgsym: 6.0.1-1 → 6.0.2-1</li>
+<li>ros-jazzy-autoware-common-msgs: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-common-msgs-dbgsym: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-control-msgs: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-control-msgs-dbgsym: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-internal-debug-msgs: 1.8.1-1 → 1.10.0-1</li>
+<li>ros-jazzy-autoware-internal-debug-msgs-dbgsym: 1.8.1-1 → 1.10.0-1</li>
+<li>ros-jazzy-autoware-internal-metric-msgs: 1.8.1-1 → 1.10.0-1</li>
+<li>ros-jazzy-autoware-internal-metric-msgs-dbgsym: 1.8.1-1 → 1.10.0-1</li>
+<li>ros-jazzy-autoware-internal-msgs: 1.8.1-1 → 1.10.0-1</li>
+<li>ros-jazzy-autoware-internal-msgs-dbgsym: 1.8.1-1 → 1.10.0-1</li>
+<li>ros-jazzy-autoware-internal-perception-msgs: 1.8.1-1 → 1.10.0-1</li>
+<li>ros-jazzy-autoware-internal-perception-msgs-dbgsym: 1.8.1-1 → 1.10.0-1</li>
+<li>ros-jazzy-autoware-internal-planning-msgs: 1.8.1-1 → 1.10.0-1</li>
+<li>ros-jazzy-autoware-internal-planning-msgs-dbgsym: 1.8.1-1 → 1.10.0-1</li>
+<li>ros-jazzy-autoware-localization-msgs: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-localization-msgs-dbgsym: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-map-msgs: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-map-msgs-dbgsym: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-msgs: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-perception-msgs: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-perception-msgs-dbgsym: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-planning-msgs: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-planning-msgs-dbgsym: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-sensing-msgs: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-sensing-msgs-dbgsym: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-system-msgs: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-system-msgs-dbgsym: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-utils: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-debug: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-diagnostics: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-diagnostics-dbgsym: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-geometry: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-geometry-dbgsym: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-logging: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-logging-dbgsym: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-math: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-math-dbgsym: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-pcl: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-rclcpp: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-system: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-system-dbgsym: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-tf: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-uuid: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-visualization: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-utils-visualization-dbgsym: 1.4.1-1 → 1.4.2-1</li>
+<li>ros-jazzy-autoware-v2x-msgs: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-v2x-msgs-dbgsym: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-vehicle-msgs: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-autoware-vehicle-msgs-dbgsym: 1.7.0-1 → 1.8.0-1</li>
+<li>ros-jazzy-battery-state-broadcaster: 1.0.0-1 → 1.0.2-1</li>
+<li>ros-jazzy-battery-state-broadcaster-dbgsym: 1.0.0-1 → 1.0.2-1</li>
+<li>ros-jazzy-battery-state-rviz-overlay: 1.0.0-1 → 1.0.2-1</li>
+<li>ros-jazzy-battery-state-rviz-overlay-dbgsym: 1.0.0-1 → 1.0.2-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-bicycle-steering-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-bicycle-steering-controller-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="https://index.ros.org/p/camera_calibration/github-ros-perception-image_pipeline/">ros-jazzy-camera-calibration</a>: 5.0.10-1 → 5.0.11-1</li>
+<li><a href="http://ros.org/wiki/camera_calibration_parsers">ros-jazzy-camera-calibration-parsers</a>: 5.1.6-1 → 5.1.7-1</li>
+<li>ros-jazzy-camera-calibration-parsers-dbgsym: 5.1.6-1 → 5.1.7-1</li>
+<li><a href="http://ros.org/wiki/camera_info_manager">ros-jazzy-camera-info-manager</a>: 5.1.6-1 → 5.1.7-1</li>
+<li>ros-jazzy-camera-info-manager-dbgsym: 5.1.6-1 → 5.1.7-1</li>
+<li><a href="http://ros.org/wiki/camera_info_manager_py">ros-jazzy-camera-info-manager-py</a>: 5.1.6-1 → 5.1.7-1</li>
+<li>ros-jazzy-canopen: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-402-driver: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-402-driver-dbgsym: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-base-driver: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-base-driver-dbgsym: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-core: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-core-dbgsym: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-fake-slaves: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-fake-slaves-dbgsym: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-interfaces: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-interfaces-dbgsym: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-master-driver: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-master-driver-dbgsym: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-proxy-driver: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-proxy-driver-dbgsym: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-ros2-control: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-ros2-control-dbgsym: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-canopen-utils: 0.3.0-1 → 0.3.1-1</li>
+<li><a href="https://github.com/cartographer-project/cartographer" rel="noopener nofollow ugc">ros-jazzy-cartographer</a>: 2.0.9003-2 → 2.0.9004-1</li>
+<li>ros-jazzy-cartographer-dbgsym: 2.0.9003-2 → 2.0.9004-1</li>
+<li>ros-jazzy-clearpath-bt-joy: 2.3.2-1 → 2.5.1-1</li>
+<li>ros-jazzy-clearpath-common: 2.3.2-1 → 2.5.1-1</li>
+<li>ros-jazzy-clearpath-config: 2.4.0-1 → 2.5.0-1</li>
+<li>ros-jazzy-clearpath-control: 2.3.2-1 → 2.5.1-1</li>
+<li>ros-jazzy-clearpath-customization: 2.3.2-1 → 2.5.1-1</li>
+<li>ros-jazzy-clearpath-description: 2.3.2-1 → 2.5.1-1</li>
+<li>ros-jazzy-clearpath-generator-common: 2.3.2-1 → 2.5.1-1</li>
+<li>ros-jazzy-clearpath-generator-common-dbgsym: 2.3.2-1 → 2.5.1-1</li>
+<li>ros-jazzy-clearpath-manipulators: 2.3.2-1 → 2.5.1-1</li>
+<li>ros-jazzy-clearpath-manipulators-description: 2.3.2-1 → 2.5.1-1</li>
+<li>ros-jazzy-clearpath-mounts-description: 2.3.2-1 → 2.5.1-1</li>
+<li>ros-jazzy-clearpath-nav2-demos: 2.4.0-1 → 2.5.0-1</li>
+<li>ros-jazzy-clearpath-platform-description: 2.3.2-1 → 2.5.1-1</li>
+<li>ros-jazzy-clearpath-ros2-socketcan-interface: 2.1.1-2 → 2.1.4-1</li>
+<li>ros-jazzy-clearpath-ros2-socketcan-interface-dbgsym: 2.1.1-2 → 2.1.4-1</li>
+<li>ros-jazzy-clearpath-sensors-description: 2.3.2-1 → 2.5.1-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-control-msgs</a>: 5.4.0-1 → 5.4.1-1</li>
+<li>ros-jazzy-control-msgs-dbgsym: 5.4.0-1 → 5.4.1-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-control-toolbox</a>: 4.3.0-1 → 4.5.0-1</li>
+<li>ros-jazzy-control-toolbox-dbgsym: 4.3.0-1 → 4.5.0-1</li>
+<li>ros-jazzy-controller-interface: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-controller-interface-dbgsym: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-controller-manager: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-controller-manager-dbgsym: 4.29.0-1 → 4.32.0-1</li>
+<li><a href="http://ros.org/wiki/controller_manager_msgs">ros-jazzy-controller-manager-msgs</a>: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-controller-manager-msgs-dbgsym: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-costmap-queue: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-costmap-queue-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li><a href="https://index.ros.org/p/depth_image_proc/github-ros-perception-image_pipeline/">ros-jazzy-depth-image-proc</a>: 5.0.10-1 → 5.0.11-1</li>
+<li>ros-jazzy-depth-image-proc-dbgsym: 5.0.10-1 → 5.0.11-1</li>
+<li><a href="http://www.ros.org/wiki/diagnostic_aggregator">ros-jazzy-diagnostic-aggregator</a>: 4.2.4-1 → 4.2.6-1</li>
+<li>ros-jazzy-diagnostic-aggregator-dbgsym: 4.2.4-1 → 4.2.6-1</li>
+<li><a href="http://ros.org/wiki/diagnostic_common_diagnostics">ros-jazzy-diagnostic-common-diagnostics</a>: 4.2.4-1 → 4.2.6-1</li>
+<li>ros-jazzy-diagnostic-remote-logging: 4.2.4-1 → 4.2.6-1</li>
+<li>ros-jazzy-diagnostic-remote-logging-dbgsym: 4.2.4-1 → 4.2.6-1</li>
+<li><a href="http://www.ros.org/wiki/diagnostic_updater">ros-jazzy-diagnostic-updater</a>: 4.2.4-1 → 4.2.6-1</li>
+<li>ros-jazzy-diagnostic-updater-dbgsym: 4.2.4-1 → 4.2.6-1</li>
+<li><a href="http://www.ros.org/wiki/diagnostics">ros-jazzy-diagnostics</a>: 4.2.4-1 → 4.2.6-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-diff-drive-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-diff-drive-controller-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-dwb-core: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-dwb-core-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-dwb-critics: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-dwb-critics-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-dwb-msgs: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-dwb-msgs-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-dwb-plugins: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-dwb-plugins-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-dynamixel-hardware-interface: 1.4.3-1 → 1.4.8-1</li>
+<li>ros-jazzy-dynamixel-hardware-interface-dbgsym: 1.4.3-1 → 1.4.8-1</li>
+<li><a href="http://wiki.ros.org/dynamixel_sdk">ros-jazzy-dynamixel-sdk</a>: 3.8.3-1 → 3.8.4-1</li>
+<li><a href="http://wiki.ros.org/dynamixel_sdk">ros-jazzy-dynamixel-sdk-custom-interfaces</a>: 3.8.3-1 → 3.8.4-1</li>
+<li>ros-jazzy-dynamixel-sdk-custom-interfaces-dbgsym: 3.8.3-1 → 3.8.4-1</li>
+<li>ros-jazzy-dynamixel-sdk-dbgsym: 3.8.3-1 → 3.8.4-1</li>
+<li><a href="http://wiki.ros.org/dynamixel_sdk">ros-jazzy-dynamixel-sdk-examples</a>: 3.8.3-1 → 3.8.4-1</li>
+<li>ros-jazzy-dynamixel-sdk-examples-dbgsym: 3.8.3-1 → 3.8.4-1</li>
+<li><a href="http://wiki.ros.org/dynamixel_workbench">ros-jazzy-dynamixel-workbench</a>: 2.2.4-1 → 2.2.5-1</li>
+<li><a href="http://wiki.ros.org/dynamixel_workbench_toolbox">ros-jazzy-dynamixel-workbench-toolbox</a>: 2.2.4-1 → 2.2.5-1</li>
+<li>ros-jazzy-dynamixel-workbench-toolbox-dbgsym: 2.2.4-1 → 2.2.5-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-effort-controllers</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-effort-controllers-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-event-camera-codecs: 1.3.5-1 → 2.0.0-1</li>
+<li>ros-jazzy-event-camera-codecs-dbgsym: 1.3.5-1 → 2.0.0-1</li>
+<li>ros-jazzy-event-camera-msgs: 1.3.6-1 → 2.0.0-1</li>
+<li>ros-jazzy-event-camera-msgs-dbgsym: 1.3.6-1 → 2.0.0-1</li>
+<li>ros-jazzy-event-camera-py: 2.0.0-1 → 2.0.1-1</li>
+<li>ros-jazzy-event-camera-renderer: 1.3.4-1 → 2.0.0-1</li>
+<li>ros-jazzy-event-camera-renderer-dbgsym: 1.3.4-1 → 2.0.0-1</li>
+<li>ros-jazzy-examples-tf2-py: 0.36.11-1 → 0.36.12-1</li>
+<li>ros-jazzy-ffmpeg-encoder-decoder: 2.0.0-1 → 2.0.1-1</li>
+<li>ros-jazzy-ffmpeg-encoder-decoder-dbgsym: 2.0.0-1 → 2.0.1-1</li>
+<li><a href="http://www.ros.org/wiki/image_transport_plugins">ros-jazzy-ffmpeg-image-transport</a>: 2.0.2-1 → 2.0.3-1</li>
+<li>ros-jazzy-ffmpeg-image-transport-dbgsym: 2.0.2-1 → 2.0.3-1</li>
+<li>ros-jazzy-ffmpeg-image-transport-tools: 2.1.1-1 → 2.1.2-1</li>
+<li>ros-jazzy-ffmpeg-image-transport-tools-dbgsym: 2.1.1-1 → 2.1.2-1</li>
+<li>ros-jazzy-ffw-bringup: 1.0.5-1 → 1.0.9-1</li>
+<li>ros-jazzy-ffw-description: 1.0.5-1 → 1.0.9-1</li>
+<li>ros-jazzy-ffw-joint-trajectory-command-broadcaster: 1.0.5-1 → 1.0.9-1</li>
+<li>ros-jazzy-ffw-joint-trajectory-command-broadcaster-dbgsym: 1.0.5-1 → 1.0.9-1</li>
+<li>ros-jazzy-ffw-moveit-config: 1.0.5-1 → 1.0.9-1</li>
+<li>ros-jazzy-ffw-teleop: 1.0.5-1 → 1.0.9-1</li>
+<li>ros-jazzy-fkie-message-filters: 3.2.0-1 → 3.2.1-1</li>
+<li>ros-jazzy-fkie-message-filters-dbgsym: 3.2.0-1 → 3.2.1-1</li>
+<li>ros-jazzy-flex-sync: 2.0.0-1 → 2.0.1-1</li>
+<li>ros-jazzy-flir-camera-description: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-flir-camera-msgs: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-flir-camera-msgs-dbgsym: 3.0.1-1 → 3.0.2-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-force-torque-sensor-broadcaster</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-force-torque-sensor-broadcaster-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-forward-command-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-forward-command-controller-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="http://www.ros.org/wiki/image_transport_plugins">ros-jazzy-foxglove-compressed-video-transport</a>: 1.0.2-1 → 1.0.3-1</li>
+<li>ros-jazzy-foxglove-compressed-video-transport-dbgsym: 1.0.2-1 → 1.0.3-1</li>
+<li>ros-jazzy-generate-parameter-library: 0.4.0-1 → 0.5.0-1</li>
+<li>ros-jazzy-generate-parameter-library-example: 0.4.0-1 → 0.5.0-1</li>
+<li>ros-jazzy-generate-parameter-library-example-dbgsym: 0.4.0-1 → 0.5.0-1</li>
+<li>ros-jazzy-generate-parameter-library-example-external: 0.4.0-1 → 0.5.0-1</li>
+<li>ros-jazzy-generate-parameter-library-example-external-dbgsym: 0.4.0-1 → 0.5.0-1</li>
+<li>ros-jazzy-generate-parameter-library-py: 0.4.0-1 → 0.5.0-1</li>
+<li>ros-jazzy-generate-parameter-module-example: 0.4.0-1 → 0.5.0-1</li>
+<li><a href="http://www.ros.org/wiki/geometry2">ros-jazzy-geometry2</a>: 0.36.11-1 → 0.36.12-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-gpio-controllers</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-gpio-controllers-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="http://ros.org/wiki/gps_common">ros-jazzy-gps-msgs</a>: 2.0.4-1 → 2.1.0-1</li>
+<li>ros-jazzy-gps-msgs-dbgsym: 2.0.4-1 → 2.1.0-1</li>
+<li>ros-jazzy-gps-sensor-broadcaster: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-gps-sensor-broadcaster-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="http://ros.org/wiki/gps_common">ros-jazzy-gps-tools</a>: 2.0.4-1 → 2.1.0-1</li>
+<li>ros-jazzy-gps-tools-dbgsym: 2.0.4-1 → 2.1.0-1</li>
+<li><a href="http://ros.org/wiki/gps_umd">ros-jazzy-gps-umd</a>: 2.0.4-1 → 2.1.0-1</li>
+<li><a href="http://ros.org/wiki/gpsd_client">ros-jazzy-gpsd-client</a>: 2.0.4-1 → 2.1.0-1</li>
+<li>ros-jazzy-gpsd-client-dbgsym: 2.0.4-1 → 2.1.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-gripper-controllers</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-gripper-controllers-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="https://github.com/gazebosim/gz-cmake" rel="noopener nofollow ugc">ros-jazzy-gz-cmake-vendor</a>: 0.0.9-1 → 0.0.10-1</li>
+<li>ros-jazzy-gz-ros2-control: 1.2.12-1 → 1.2.13-1</li>
+<li>ros-jazzy-gz-ros2-control-dbgsym: 1.2.12-1 → 1.2.13-1</li>
+<li><a href="https://github.com/ros-controls/gz_ros2_control/blob/master/README.md" rel="noopener nofollow ugc">ros-jazzy-gz-ros2-control-demos</a>: 1.2.12-1 → 1.2.13-1</li>
+<li>ros-jazzy-gz-ros2-control-demos-dbgsym: 1.2.12-1 → 1.2.13-1</li>
+<li>ros-jazzy-hardware-interface: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-hardware-interface-dbgsym: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-hardware-interface-testing: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-hardware-interface-testing-dbgsym: 4.29.0-1 → 4.32.0-1</li>
+<li><a href="http://wiki.ros.org/hls_lfcd_lds_driver">ros-jazzy-hls-lfcd-lds-driver</a>: 2.1.0-1 → 2.1.1-1</li>
+<li>ros-jazzy-hls-lfcd-lds-driver-dbgsym: 2.1.0-1 → 2.1.1-1</li>
+<li><a href="http://www.ros.org/wiki/image_common">ros-jazzy-image-common</a>: 5.1.6-1 → 5.1.7-1</li>
+<li><a href="https://index.ros.org/p/image_pipeline/github-ros-perception-image_pipeline/">ros-jazzy-image-pipeline</a>: 5.0.10-1 → 5.0.11-1</li>
+<li><a href="https://index.ros.org/p/image_proc/github-ros-perception-image_pipeline/">ros-jazzy-image-proc</a>: 5.0.10-1 → 5.0.11-1</li>
+<li>ros-jazzy-image-proc-dbgsym: 5.0.10-1 → 5.0.11-1</li>
+<li><a href="https://index.ros.org/p/image_publisher/github-ros-perception-image_pipeline/">ros-jazzy-image-publisher</a>: 5.0.10-1 → 5.0.11-1</li>
+<li>ros-jazzy-image-publisher-dbgsym: 5.0.10-1 → 5.0.11-1</li>
+<li><a href="https://index.ros.org/p/image_rotate/github-ros-perception-image_pipeline/">ros-jazzy-image-rotate</a>: 5.0.10-1 → 5.0.11-1</li>
+<li>ros-jazzy-image-rotate-dbgsym: 5.0.10-1 → 5.0.11-1</li>
+<li><a href="http://ros.org/wiki/image_transport">ros-jazzy-image-transport</a>: 5.1.6-1 → 5.1.7-1</li>
+<li>ros-jazzy-image-transport-dbgsym: 5.1.6-1 → 5.1.7-1</li>
+<li><a href="https://index.ros.org/p/image_view/github-ros-perception-image_pipeline/">ros-jazzy-image-view</a>: 5.0.10-1 → 5.0.11-1</li>
+<li>ros-jazzy-image-view-dbgsym: 5.0.10-1 → 5.0.11-1</li>
+<li><a href="http://ros.org/wiki/imu_pipeline">ros-jazzy-imu-pipeline</a>: 0.5.0-3 → 0.5.2-1</li>
+<li><a href="http://ros.org/wiki/imu_processors">ros-jazzy-imu-processors</a>: 0.5.0-3 → 0.5.2-1</li>
+<li>ros-jazzy-imu-processors-dbgsym: 0.5.0-3 → 0.5.2-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-imu-sensor-broadcaster</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-imu-sensor-broadcaster-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="http://ros.org/wiki/imu_transformer">ros-jazzy-imu-transformer</a>: 0.5.0-3 → 0.5.2-1</li>
+<li>ros-jazzy-imu-transformer-dbgsym: 0.5.0-3 → 0.5.2-1</li>
+<li><a href="https://github.com/ros-controls/ros2_control/wiki" rel="noopener nofollow ugc">ros-jazzy-joint-limits</a>: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-joint-limits-dbgsym: 4.29.0-1 → 4.32.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-joint-state-broadcaster</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-joint-state-broadcaster-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-joint-trajectory-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-joint-trajectory-controller-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-kinematics-interface: 1.3.0-1 → 1.4.0-1</li>
+<li>ros-jazzy-kinematics-interface-dbgsym: 1.3.0-1 → 1.4.0-1</li>
+<li>ros-jazzy-kinematics-interface-kdl: 1.3.0-1 → 1.4.0-1</li>
+<li>ros-jazzy-kinematics-interface-kdl-dbgsym: 1.3.0-1 → 1.4.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/kitti_metrics_eval" rel="noopener nofollow ugc">ros-jazzy-kitti-metrics-eval</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-kitti-metrics-eval-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="http://ros.org/wiki/laser_geometry">ros-jazzy-laser-geometry</a>: 2.7.0-3 → 2.7.1-1</li>
+<li>ros-jazzy-laser-geometry-dbgsym: 2.7.0-3 → 2.7.1-1</li>
+<li>ros-jazzy-launch: 3.4.4-1 → 3.4.5-1</li>
+<li>ros-jazzy-launch-pytest: 3.4.4-1 → 3.4.5-1</li>
+<li>ros-jazzy-launch-ros: 0.26.7-1 → 0.26.8-1</li>
+<li>ros-jazzy-launch-testing: 3.4.4-1 → 3.4.5-1</li>
+<li>ros-jazzy-launch-testing-ament-cmake: 3.4.4-1 → 3.4.5-1</li>
+<li>ros-jazzy-launch-testing-ros: 0.26.7-1 → 0.26.8-1</li>
+<li>ros-jazzy-launch-xml: 3.4.4-1 → 3.4.5-1</li>
+<li>ros-jazzy-launch-yaml: 3.4.4-1 → 3.4.5-1</li>
+<li><a href="http://wiki.ros.org/ld08_driver">ros-jazzy-ld08-driver</a>: 1.1.3-1 → 1.1.4-1</li>
+<li>ros-jazzy-ld08-driver-dbgsym: 1.1.3-1 → 1.1.4-1</li>
+<li>ros-jazzy-lely-core-libraries: 0.3.0-1 → 0.3.1-1</li>
+<li>ros-jazzy-lely-core-libraries-dbgsym: 0.3.0-1 → 0.3.1-1</li>
+<li><a href="http://wiki.ros.org/leo_bringup">ros-jazzy-leo-bringup</a>: 2.1.3-1 → 2.3.0-1</li>
+<li>ros-jazzy-leo-filters: 2.1.3-1 → 2.3.0-1</li>
+<li>ros-jazzy-leo-filters-dbgsym: 2.1.3-1 → 2.3.0-1</li>
+<li><a href="http://wiki.ros.org/leo_fw">ros-jazzy-leo-fw</a>: 2.1.3-1 → 2.3.0-1</li>
+<li>ros-jazzy-leo-fw-dbgsym: 2.1.3-1 → 2.3.0-1</li>
+<li><a href="http://wiki.ros.org/leo_robot">ros-jazzy-leo-robot</a>: 2.1.3-1 → 2.3.0-1</li>
+<li>ros-jazzy-libcaer-driver: 1.5.0-1 → 1.5.1-1</li>
+<li>ros-jazzy-libcaer-driver-dbgsym: 1.5.0-1 → 1.5.1-1</li>
+<li><a href="https://gitlab.com/inivation/dv/libcaer" rel="noopener nofollow ugc">ros-jazzy-libcaer-vendor</a>: 1.3.0-1 → 2.0.0-1</li>
+<li>ros-jazzy-libcaer-vendor-dbgsym: 1.3.0-1 → 2.0.0-1</li>
+<li><a href="https://libcamera.org" rel="noopener nofollow ugc">ros-jazzy-libcamera</a>: 0.5.0-1 → 0.5.1-1</li>
+<li>ros-jazzy-libcamera-dbgsym: 0.5.0-1 → 0.5.1-1</li>
+<li><a href="http://wiki.ros.org/mavros">ros-jazzy-libmavconn</a>: 2.10.0-1 → 2.10.1-1</li>
+<li>ros-jazzy-libmavconn-dbgsym: 2.10.0-1 → 2.10.1-1</li>
+<li><a href="http://ros.org/wiki/libphidget22">ros-jazzy-libphidget22</a>: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-libphidget22-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li><a href="https://github.com/swri-robotics/mapviz" rel="noopener nofollow ugc">ros-jazzy-mapviz</a>: 2.4.6-1 → 2.5.6-1</li>
+<li>ros-jazzy-mapviz-dbgsym: 2.4.6-1 → 2.5.6-1</li>
+<li><a href="https://github.com/swri-robotics/mapviz" rel="noopener nofollow ugc">ros-jazzy-mapviz-interfaces</a>: 2.4.6-1 → 2.5.6-1</li>
+<li>ros-jazzy-mapviz-interfaces-dbgsym: 2.4.6-1 → 2.5.6-1</li>
+<li><a href="https://github.com/swri-robotics/mapviz" rel="noopener nofollow ugc">ros-jazzy-mapviz-plugins</a>: 2.4.6-1 → 2.5.6-1</li>
+<li>ros-jazzy-mapviz-plugins-dbgsym: 2.4.6-1 → 2.5.6-1</li>
+<li><a href="https://mavlink.io/en/" rel="noopener nofollow ugc">ros-jazzy-mavlink</a>: 2025.5.5-1 → 2025.6.6-1</li>
+<li><a href="http://wiki.ros.org/mavros">ros-jazzy-mavros</a>: 2.10.0-1 → 2.10.1-1</li>
+<li>ros-jazzy-mavros-dbgsym: 2.10.0-1 → 2.10.1-1</li>
+<li><a href="http://wiki.ros.org/mavros_extras">ros-jazzy-mavros-extras</a>: 2.10.0-1 → 2.10.1-1</li>
+<li>ros-jazzy-mavros-extras-dbgsym: 2.10.0-1 → 2.10.1-1</li>
+<li><a href="http://wiki.ros.org/mavros_msgs">ros-jazzy-mavros-msgs</a>: 2.10.0-1 → 2.10.1-1</li>
+<li>ros-jazzy-mavros-msgs-dbgsym: 2.10.0-1 → 2.10.1-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-mecanum-drive-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-mecanum-drive-controller-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="https://github.com/LORD-MicroStrain/microstrain_inertial" rel="noopener nofollow ugc">ros-jazzy-microstrain-inertial-description</a>: 4.6.1-1 → 4.7.0-1</li>
+<li><a href="https://github.com/LORD-MicroStrain/microstrain_inertial" rel="noopener nofollow ugc">ros-jazzy-microstrain-inertial-driver</a>: 4.6.1-1 → 4.7.0-1</li>
+<li>ros-jazzy-microstrain-inertial-driver-dbgsym: 4.6.1-1 → 4.7.0-1</li>
+<li><a href="https://github.com/LORD-MicroStrain/microstrain_inertial" rel="noopener nofollow ugc">ros-jazzy-microstrain-inertial-examples</a>: 4.6.1-1 → 4.7.0-1</li>
+<li><a href="https://github.com/LORD-MicroStrain/microstrain_inertial" rel="noopener nofollow ugc">ros-jazzy-microstrain-inertial-msgs</a>: 4.6.1-1 → 4.7.0-1</li>
+<li>ros-jazzy-microstrain-inertial-msgs-dbgsym: 4.6.1-1 → 4.7.0-1</li>
+<li><a href="https://github.com/LORD-MicroStrain/microstrain_inertial" rel="noopener nofollow ugc">ros-jazzy-microstrain-inertial-rqt</a>: 4.6.1-1 → 4.7.0-1</li>
+<li>ros-jazzy-mola: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_bridge_ros2" rel="noopener nofollow ugc">ros-jazzy-mola-bridge-ros2</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-bridge-ros2-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/" rel="noopener nofollow ugc">ros-jazzy-mola-common</a>: 0.4.0-1 → 0.4.1-1</li>
+<li><a href="https://github.com/MOLAorg/" rel="noopener nofollow ugc">ros-jazzy-mola-demos</a>: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola_state_estimation" rel="noopener nofollow ugc">ros-jazzy-mola-imu-preintegration</a>: 1.8.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-imu-preintegration-dbgsym: 1.8.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_input_euroc_dataset" rel="noopener nofollow ugc">ros-jazzy-mola-input-euroc-dataset</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-input-euroc-dataset-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_input_kitti_dataset" rel="noopener nofollow ugc">ros-jazzy-mola-input-kitti-dataset</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-input-kitti-dataset-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_input_kitti360_dataset" rel="noopener nofollow ugc">ros-jazzy-mola-input-kitti360-dataset</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-input-kitti360-dataset-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_input_mulran_dataset" rel="noopener nofollow ugc">ros-jazzy-mola-input-mulran-dataset</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-input-mulran-dataset-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_input_paris_luco_dataset" rel="noopener nofollow ugc">ros-jazzy-mola-input-paris-luco-dataset</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-input-paris-luco-dataset-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_input_rawlog" rel="noopener nofollow ugc">ros-jazzy-mola-input-rawlog</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-input-rawlog-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_input_rosbag2" rel="noopener nofollow ugc">ros-jazzy-mola-input-rosbag2</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-input-rosbag2-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_input_video" rel="noopener nofollow ugc">ros-jazzy-mola-input-video</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-input-video-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_kernel" rel="noopener nofollow ugc">ros-jazzy-mola-kernel</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-kernel-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_launcher" rel="noopener nofollow ugc">ros-jazzy-mola-launcher</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-launcher-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://docs.mola-slam.org/" rel="noopener nofollow ugc">ros-jazzy-mola-lidar-odometry</a>: 0.7.2-1 → 0.8.0-1</li>
+<li>ros-jazzy-mola-lidar-odometry-dbgsym: 0.7.2-1 → 0.8.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_metric_maps" rel="noopener nofollow ugc">ros-jazzy-mola-metric-maps</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-metric-maps-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_msgs" rel="noopener nofollow ugc">ros-jazzy-mola-msgs</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-msgs-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_pose_list" rel="noopener nofollow ugc">ros-jazzy-mola-pose-list</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-pose-list-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_relocalization" rel="noopener nofollow ugc">ros-jazzy-mola-relocalization</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-relocalization-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola_state_estimation" rel="noopener nofollow ugc">ros-jazzy-mola-state-estimation</a>: 1.8.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola_state_estimation" rel="noopener nofollow ugc">ros-jazzy-mola-state-estimation-simple</a>: 1.8.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-state-estimation-simple-dbgsym: 1.8.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola_state_estimation" rel="noopener nofollow ugc">ros-jazzy-mola-state-estimation-smoother</a>: 1.8.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-state-estimation-smoother-dbgsym: 1.8.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/" rel="noopener nofollow ugc">ros-jazzy-mola-test-datasets</a>: 0.4.0-1 → 0.4.1-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_traj_tools" rel="noopener nofollow ugc">ros-jazzy-mola-traj-tools</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-traj-tools-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_viz" rel="noopener nofollow ugc">ros-jazzy-mola-viz</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-viz-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li><a href="https://github.com/MOLAorg/mola/tree/develop/mola_yaml" rel="noopener nofollow ugc">ros-jazzy-mola-yaml</a>: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-mola-yaml-dbgsym: 1.7.0-1 → 1.9.0-1</li>
+<li>ros-jazzy-motion-capture-tracking: 1.0.3-3 → 1.0.6-1</li>
+<li>ros-jazzy-motion-capture-tracking-dbgsym: 1.0.3-3 → 1.0.6-1</li>
+<li>ros-jazzy-motion-capture-tracking-interfaces: 1.0.3-3 → 1.0.6-1</li>
+<li>ros-jazzy-motion-capture-tracking-interfaces-dbgsym: 1.0.3-3 → 1.0.6-1</li>
+<li><a href="https://github.com/MOLAorg/mp2p_icp" rel="noopener nofollow ugc">ros-jazzy-mp2p-icp</a>: 1.6.7-1 → 1.7.1-1</li>
+<li>ros-jazzy-mp2p-icp-dbgsym: 1.6.7-1 → 1.7.1-1</li>
+<li><a href="http://wiki.ros.org/mqtt_client">ros-jazzy-mqtt-client</a>: 2.3.0-1 → 2.4.0-1</li>
+<li>ros-jazzy-mqtt-client-dbgsym: 2.3.0-1 → 2.4.0-1</li>
+<li><a href="http://wiki.ros.org/mqtt_client">ros-jazzy-mqtt-client-interfaces</a>: 2.3.0-1 → 2.4.0-1</li>
+<li>ros-jazzy-mqtt-client-interfaces-dbgsym: 2.3.0-1 → 2.4.0-1</li>
+<li><a href="https://github.com/swri-robotics/mapviz" rel="noopener nofollow ugc">ros-jazzy-multires-image</a>: 2.4.6-1 → 2.5.6-1</li>
+<li>ros-jazzy-multires-image-dbgsym: 2.4.6-1 → 2.5.6-1</li>
+<li><a href="https://wiki.ros.org/mvsim">ros-jazzy-mvsim</a>: 0.13.2-1 → 0.13.3-1</li>
+<li>ros-jazzy-mvsim-dbgsym: 0.13.2-1 → 0.13.3-1</li>
+<li>ros-jazzy-nav-2d-msgs: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav-2d-msgs-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav-2d-utils: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav-2d-utils-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-amcl: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-amcl-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-behavior-tree: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-behavior-tree-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-behaviors: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-behaviors-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-bringup: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-bt-navigator: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-bt-navigator-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-collision-monitor: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-collision-monitor-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-common: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-constrained-smoother: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-constrained-smoother-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-controller: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-controller-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-core: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-costmap-2d: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-costmap-2d-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-dwb-controller: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-graceful-controller: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-graceful-controller-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-lifecycle-manager: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-lifecycle-manager-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-loopback-sim: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-map-server: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-map-server-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-mppi-controller: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-mppi-controller-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-msgs: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-msgs-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-navfn-planner: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-navfn-planner-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-planner: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-planner-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-regulated-pure-pursuit-controller: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-regulated-pure-pursuit-controller-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-rotation-shim-controller: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-rotation-shim-controller-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-rviz-plugins: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-rviz-plugins-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-simple-commander: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-smac-planner: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-smac-planner-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-smoother: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-smoother-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-system-tests: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-system-tests-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-theta-star-planner: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-theta-star-planner-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-util: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-util-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-velocity-smoother: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-velocity-smoother-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-voxel-grid: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-voxel-grid-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-waypoint-follower: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-nav2-waypoint-follower-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-navigation2: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-neo-nav2-bringup: 1.3.0-1 → 1.3.1-1</li>
+<li><a href="https://github.com/aussierobots/ublox_dgnss" rel="noopener nofollow ugc">ros-jazzy-ntrip-client-node</a>: 0.5.5-3 → 0.5.7-1</li>
+<li>ros-jazzy-ntrip-client-node-dbgsym: 0.5.5-3 → 0.5.7-1</li>
+<li>ros-jazzy-odom-to-tf-ros2: 1.0.5-1 → 1.0.7-1</li>
+<li>ros-jazzy-odom-to-tf-ros2-dbgsym: 1.0.5-1 → 1.0.7-1</li>
+<li>ros-jazzy-om-joint-trajectory-command-broadcaster: 3.2.2-1 → 4.0.1-1</li>
+<li>ros-jazzy-om-joint-trajectory-command-broadcaster-dbgsym: 3.2.2-1 → 4.0.1-1</li>
+<li><a href="http://wiki.ros.org/open_manipulator">ros-jazzy-open-manipulator-bringup</a>: 3.2.2-1 → 4.0.1-1</li>
+<li><a href="http://wiki.ros.org/open_manipulator">ros-jazzy-open-manipulator-description</a>: 3.2.2-1 → 4.0.1-1</li>
+<li><a href="http://wiki.ros.org/open_manipulator">ros-jazzy-open-manipulator-gui</a>: 3.2.2-1 → 4.0.1-1</li>
+<li>ros-jazzy-open-manipulator-gui-dbgsym: 3.2.2-1 → 4.0.1-1</li>
+<li><a href="http://wiki.ros.org/open_manipulator">ros-jazzy-open-manipulator-moveit-config</a>: 3.2.2-1 → 4.0.1-1</li>
+<li><a href="http://wiki.ros.org/open_manipulator">ros-jazzy-open-manipulator-playground</a>: 3.2.2-1 → 4.0.1-1</li>
+<li>ros-jazzy-open-manipulator-playground-dbgsym: 3.2.2-1 → 4.0.1-1</li>
+<li>ros-jazzy-open-manipulator-teleop: 3.2.2-1 → 4.0.1-1</li>
+<li>ros-jazzy-opennav-docking: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-opennav-docking-bt: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-opennav-docking-bt-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-opennav-docking-core: 1.3.6-1 → 1.3.7-1</li>
+<li>ros-jazzy-opennav-docking-dbgsym: 1.3.6-1 → 1.3.7-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-parallel-gripper-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-parallel-gripper-controller-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-parameter-traits: 0.4.0-1 → 0.5.0-1</li>
+<li>ros-jazzy-phidgets-accelerometer: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-accelerometer-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-analog-inputs: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-analog-inputs-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-analog-outputs: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-analog-outputs-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li><a href="http://ros.org/wiki/phidgets_api">ros-jazzy-phidgets-api</a>: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-api-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-digital-inputs: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-digital-inputs-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-digital-outputs: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-digital-outputs-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li><a href="http://ros.org/wiki/phidgets_drivers">ros-jazzy-phidgets-drivers</a>: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-gyroscope: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-gyroscope-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-high-speed-encoder: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-high-speed-encoder-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-ik: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-magnetometer: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-magnetometer-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-motors: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-motors-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-msgs: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-msgs-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li><a href="http://ros.org/wiki/phidgets_spatial">ros-jazzy-phidgets-spatial</a>: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-spatial-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-stepper: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-stepper-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-temperature: 2.3.4-1 → 2.4.0-1</li>
+<li>ros-jazzy-phidgets-temperature-dbgsym: 2.3.4-1 → 2.4.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-pid-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-pid-controller-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="https://github.com/stack-of-tasks/pinocchio" rel="noopener nofollow ugc">ros-jazzy-pinocchio</a>: 3.5.0-1 → 3.6.0-1</li>
+<li>ros-jazzy-pinocchio-dbgsym: 3.5.0-1 → 3.6.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-pose-broadcaster</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-pose-broadcaster-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-position-controllers</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-position-controllers-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-rai-interfaces: 0.2.2-1 → 0.3.0-1</li>
+<li>ros-jazzy-rai-interfaces-dbgsym: 0.2.2-1 → 0.3.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-range-sensor-broadcaster</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-range-sensor-broadcaster-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-rcl: 9.2.6-1 → 9.2.7-1</li>
+<li>ros-jazzy-rcl-action: 9.2.6-1 → 9.2.7-1</li>
+<li>ros-jazzy-rcl-action-dbgsym: 9.2.6-1 → 9.2.7-1</li>
+<li>ros-jazzy-rcl-dbgsym: 9.2.6-1 → 9.2.7-1</li>
+<li>ros-jazzy-rcl-lifecycle: 9.2.6-1 → 9.2.7-1</li>
+<li>ros-jazzy-rcl-lifecycle-dbgsym: 9.2.6-1 → 9.2.7-1</li>
+<li>ros-jazzy-rcl-yaml-param-parser: 9.2.6-1 → 9.2.7-1</li>
+<li>ros-jazzy-rcl-yaml-param-parser-dbgsym: 9.2.6-1 → 9.2.7-1</li>
+<li>ros-jazzy-rclcpp: 28.1.9-1 → 28.1.10-1</li>
+<li>ros-jazzy-rclcpp-action: 28.1.9-1 → 28.1.10-1</li>
+<li>ros-jazzy-rclcpp-action-dbgsym: 28.1.9-1 → 28.1.10-1</li>
+<li>ros-jazzy-rclcpp-components: 28.1.9-1 → 28.1.10-1</li>
+<li>ros-jazzy-rclcpp-components-dbgsym: 28.1.9-1 → 28.1.10-1</li>
+<li>ros-jazzy-rclcpp-dbgsym: 28.1.9-1 → 28.1.10-1</li>
+<li>ros-jazzy-rclcpp-lifecycle: 28.1.9-1 → 28.1.10-1</li>
+<li>ros-jazzy-rclcpp-lifecycle-dbgsym: 28.1.9-1 → 28.1.10-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-realtime-tools</a>: 3.5.1-1 → 3.7.0-1</li>
+<li>ros-jazzy-realtime-tools-dbgsym: 3.5.1-1 → 3.7.0-1</li>
+<li>ros-jazzy-rmw-desert: 2.0.2-1 → 2.0.3-1</li>
+<li>ros-jazzy-rmw-desert-dbgsym: 2.0.2-1 → 2.0.3-1</li>
+<li>ros-jazzy-rmw-zenoh-cpp: 0.2.3-1 → 0.2.5-1</li>
+<li>ros-jazzy-rmw-zenoh-cpp-dbgsym: 0.2.3-1 → 0.2.5-1</li>
+<li>ros-jazzy-ros-gz: 1.0.12-1 → 1.0.15-1</li>
+<li>ros-jazzy-ros-gz-bridge: 1.0.12-1 → 1.0.15-1</li>
+<li>ros-jazzy-ros-gz-bridge-dbgsym: 1.0.12-1 → 1.0.15-1</li>
+<li>ros-jazzy-ros-gz-image: 1.0.12-1 → 1.0.15-1</li>
+<li>ros-jazzy-ros-gz-image-dbgsym: 1.0.12-1 → 1.0.15-1</li>
+<li>ros-jazzy-ros-gz-interfaces: 1.0.12-1 → 1.0.15-1</li>
+<li>ros-jazzy-ros-gz-interfaces-dbgsym: 1.0.12-1 → 1.0.15-1</li>
+<li>ros-jazzy-ros-gz-sim: 1.0.12-1 → 1.0.15-1</li>
+<li>ros-jazzy-ros-gz-sim-dbgsym: 1.0.12-1 → 1.0.15-1</li>
+<li>ros-jazzy-ros-gz-sim-demos: 1.0.12-1 → 1.0.15-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-ros2-control</a>: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-ros2-control-cmake: 0.1.1-1 → 0.2.1-1</li>
+<li>ros-jazzy-ros2-control-test-assets: 4.29.0-1 → 4.32.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-ros2-controllers</a>: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-ros2-controllers-test-nodes</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-ros2controlcli: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-ros2launch: 0.26.7-1 → 0.26.8-1</li>
+<li><a href="http://ros.org/wiki/rqt_controller_manager">ros-jazzy-rqt-controller-manager</a>: 4.29.0-1 → 4.32.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-rqt-joint-trajectory-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-rsl: 1.1.0-3 → 1.2.0-1</li>
+<li>ros-jazzy-rsl-dbgsym: 1.1.0-3 → 1.2.0-1</li>
+<li><a href="http://introlab.github.io/rtabmap" rel="noopener nofollow ugc">ros-jazzy-rtabmap</a>: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-conversions: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-conversions-dbgsym: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-dbgsym: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-demos: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-examples: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-launch: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-msgs: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-msgs-dbgsym: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-odom: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-odom-dbgsym: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-python: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-ros: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-rviz-plugins: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-rviz-plugins-dbgsym: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-slam: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-slam-dbgsym: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-sync: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-sync-dbgsym: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-util: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-util-dbgsym: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-viz: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rtabmap-viz-dbgsym: 0.21.10-1 → 0.22.0-1</li>
+<li>ros-jazzy-rviz-2d-overlay-msgs: 1.3.0-3 → 1.3.1-1</li>
+<li>ros-jazzy-rviz-2d-overlay-msgs-dbgsym: 1.3.0-3 → 1.3.1-1</li>
+<li>ros-jazzy-rviz-2d-overlay-plugins: 1.3.0-3 → 1.3.1-1</li>
+<li>ros-jazzy-rviz-2d-overlay-plugins-dbgsym: 1.3.0-3 → 1.3.1-1</li>
+<li><a href="http://assimp.sourceforge.net/index.html" rel="noopener nofollow ugc">ros-jazzy-rviz-assimp-vendor</a>: 14.1.11-1 → 14.1.12-1</li>
+<li><a href="https://github.com/ros2/rviz/blob/ros2/README.md" rel="noopener nofollow ugc">ros-jazzy-rviz-common</a>: 14.1.11-1 → 14.1.12-1</li>
+<li>ros-jazzy-rviz-common-dbgsym: 14.1.11-1 → 14.1.12-1</li>
+<li><a href="https://github.com/ros2/rviz/blob/ros2/README.md" rel="noopener nofollow ugc">ros-jazzy-rviz-default-plugins</a>: 14.1.11-1 → 14.1.12-1</li>
+<li>ros-jazzy-rviz-default-plugins-dbgsym: 14.1.11-1 → 14.1.12-1</li>
+<li><a href="https://www.ogre3d.org/" rel="noopener nofollow ugc">ros-jazzy-rviz-ogre-vendor</a>: 14.1.11-1 → 14.1.12-1</li>
+<li>ros-jazzy-rviz-ogre-vendor-dbgsym: 14.1.11-1 → 14.1.12-1</li>
+<li><a href="https://github.com/ros2/rviz/blob/ros2/README.md" rel="noopener nofollow ugc">ros-jazzy-rviz-rendering</a>: 14.1.11-1 → 14.1.12-1</li>
+<li>ros-jazzy-rviz-rendering-dbgsym: 14.1.11-1 → 14.1.12-1</li>
+<li>ros-jazzy-rviz-rendering-tests: 14.1.11-1 → 14.1.12-1</li>
+<li><a href="http://ros.org/wiki/rviz2">ros-jazzy-rviz-visual-testing-framework</a>: 14.1.11-1 → 14.1.12-1</li>
+<li><a href="https://github.com/ros2/rviz/blob/ros2/README.md" rel="noopener nofollow ugc">ros-jazzy-rviz2</a>: 14.1.11-1 → 14.1.12-1</li>
+<li>ros-jazzy-rviz2-dbgsym: 14.1.11-1 → 14.1.12-1</li>
+<li>ros-jazzy-scenario-execution: 1.2.0-5 → 1.3.0-1</li>
+<li>ros-jazzy-scenario-execution-control: 1.2.0-5 → 1.3.0-1</li>
+<li>ros-jazzy-scenario-execution-coverage: 1.2.0-5 → 1.3.0-1</li>
+<li>ros-jazzy-scenario-execution-gazebo: 1.2.0-5 → 1.3.0-1</li>
+<li>ros-jazzy-scenario-execution-interfaces: 1.2.0-5 → 1.3.0-1</li>
+<li>ros-jazzy-scenario-execution-interfaces-dbgsym: 1.2.0-5 → 1.3.0-1</li>
+<li>ros-jazzy-scenario-execution-nav2: 1.2.0-5 → 1.3.0-1</li>
+<li>ros-jazzy-scenario-execution-os: 1.2.0-5 → 1.3.0-1</li>
+<li>ros-jazzy-scenario-execution-ros: 1.2.0-5 → 1.3.0-1</li>
+<li>ros-jazzy-scenario-execution-x11: 1.2.0-5 → 1.3.0-1</li>
+<li><a href="http://www.ros.org/wiki/self_test">ros-jazzy-self-test</a>: 4.2.4-1 → 4.2.6-1</li>
+<li>ros-jazzy-self-test-dbgsym: 4.2.4-1 → 4.2.6-1</li>
+<li><a href="https://github.com/septentrio-gnss/septentrio_gnss_driver" rel="noopener nofollow ugc">ros-jazzy-septentrio-gnss-driver</a>: 1.4.3-1 → 1.4.4-1</li>
+<li>ros-jazzy-septentrio-gnss-driver-dbgsym: 1.4.3-1 → 1.4.4-1</li>
+<li>ros-jazzy-sick-scan-xd: 3.6.0-1 → 3.7.0-1</li>
+<li>ros-jazzy-sick-scan-xd-dbgsym: 3.6.0-1 → 3.7.0-1</li>
+<li>ros-jazzy-spinnaker-camera-driver: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-spinnaker-camera-driver-dbgsym: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-spinnaker-synchronized-camera-driver: 3.0.1-1 → 3.0.2-1</li>
+<li>ros-jazzy-spinnaker-synchronized-camera-driver-dbgsym: 3.0.1-1 → 3.0.2-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-steering-controllers-library</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-steering-controllers-library-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="https://index.ros.org/p/stereo_image_proc/github-ros-perception-image_pipeline/">ros-jazzy-stereo-image-proc</a>: 5.0.10-1 → 5.0.11-1</li>
+<li>ros-jazzy-stereo-image-proc-dbgsym: 5.0.10-1 → 5.0.11-1</li>
+<li>ros-jazzy-swri-cli-tools: 3.7.4-1 → 3.8.4-1</li>
+<li><a href="http://ros.org/wiki/swri_console">ros-jazzy-swri-console</a>: 2.0.6-1 → 2.0.7-1</li>
+<li>ros-jazzy-swri-console-dbgsym: 2.0.6-1 → 2.0.7-1</li>
+<li><a href="https://github.com/swri-robotics/marti_common" rel="noopener nofollow ugc">ros-jazzy-swri-console-util</a>: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-swri-console-util-dbgsym: 3.7.4-1 → 3.8.4-1</li>
+<li><a href="https://github.com/swri-robotics/marti_common" rel="noopener nofollow ugc">ros-jazzy-swri-dbw-interface</a>: 3.7.4-1 → 3.8.4-1</li>
+<li><a href="https://github.com/swri-robotics/marti_common" rel="noopener nofollow ugc">ros-jazzy-swri-geometry-util</a>: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-swri-geometry-util-dbgsym: 3.7.4-1 → 3.8.4-1</li>
+<li><a href="https://github.com/swri-robotics/marti_common" rel="noopener nofollow ugc">ros-jazzy-swri-image-util</a>: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-swri-image-util-dbgsym: 3.7.4-1 → 3.8.4-1</li>
+<li><a href="https://github.com/swri-robotics/marti_common" rel="noopener nofollow ugc">ros-jazzy-swri-math-util</a>: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-swri-math-util-dbgsym: 3.7.4-1 → 3.8.4-1</li>
+<li><a href="https://github.com/swri-robotics/marti_common" rel="noopener nofollow ugc">ros-jazzy-swri-opencv-util</a>: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-swri-opencv-util-dbgsym: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-swri-roscpp: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-swri-roscpp-dbgsym: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-swri-route-util: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-swri-route-util-dbgsym: 3.7.4-1 → 3.8.4-1</li>
+<li><a href="https://github.com/swri-robotics/marti_common" rel="noopener nofollow ugc">ros-jazzy-swri-serial-util</a>: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-swri-serial-util-dbgsym: 3.7.4-1 → 3.8.4-1</li>
+<li><a href="https://github.com/swri-robotics/marti_common" rel="noopener nofollow ugc">ros-jazzy-swri-transform-util</a>: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-swri-transform-util-dbgsym: 3.7.4-1 → 3.8.4-1</li>
+<li>ros-jazzy-test-ros-gz-bridge: 1.0.12-1 → 1.0.15-1</li>
+<li><a href="http://www.ros.org/wiki/tf2">ros-jazzy-tf2</a>: 0.36.11-1 → 0.36.12-1</li>
+<li><a href="http://www.ros.org/wiki/tf2_bullet">ros-jazzy-tf2-bullet</a>: 0.36.11-1 → 0.36.12-1</li>
+<li>ros-jazzy-tf2-dbgsym: 0.36.11-1 → 0.36.12-1</li>
+<li>ros-jazzy-tf2-eigen: 0.36.11-1 → 0.36.12-1</li>
+<li>ros-jazzy-tf2-eigen-kdl: 0.36.11-1 → 0.36.12-1</li>
+<li>ros-jazzy-tf2-eigen-kdl-dbgsym: 0.36.11-1 → 0.36.12-1</li>
+<li><a href="http://www.ros.org/wiki/tf2_ros">ros-jazzy-tf2-geometry-msgs</a>: 0.36.11-1 → 0.36.12-1</li>
+<li><a href="http://ros.org/wiki/tf2">ros-jazzy-tf2-kdl</a>: 0.36.11-1 → 0.36.12-1</li>
+<li><a href="http://www.ros.org/wiki/tf2_msgs">ros-jazzy-tf2-msgs</a>: 0.36.11-1 → 0.36.12-1</li>
+<li>ros-jazzy-tf2-msgs-dbgsym: 0.36.11-1 → 0.36.12-1</li>
+<li><a href="http://ros.org/wiki/tf2_py">ros-jazzy-tf2-py</a>: 0.36.11-1 → 0.36.12-1</li>
+<li>ros-jazzy-tf2-py-dbgsym: 0.36.11-1 → 0.36.12-1</li>
+<li><a href="http://www.ros.org/wiki/tf2_ros">ros-jazzy-tf2-ros</a>: 0.36.11-1 → 0.36.12-1</li>
+<li>ros-jazzy-tf2-ros-dbgsym: 0.36.11-1 → 0.36.12-1</li>
+<li><a href="http://www.ros.org/wiki/tf2_ros">ros-jazzy-tf2-ros-py</a>: 0.36.11-1 → 0.36.12-1</li>
+<li><a href="http://www.ros.org/wiki/tf2_ros">ros-jazzy-tf2-sensor-msgs</a>: 0.36.11-1 → 0.36.12-1</li>
+<li><a href="http://www.ros.org/wiki/tf2_tools">ros-jazzy-tf2-tools</a>: 0.36.11-1 → 0.36.12-1</li>
+<li><a href="https://github.com/swri-robotics/mapviz" rel="noopener nofollow ugc">ros-jazzy-tile-map</a>: 2.4.6-1 → 2.5.6-1</li>
+<li>ros-jazzy-tile-map-dbgsym: 2.4.6-1 → 2.5.6-1</li>
+<li>ros-jazzy-tracetools-image-pipeline: 5.0.10-1 → 5.0.11-1</li>
+<li>ros-jazzy-tracetools-image-pipeline-dbgsym: 5.0.10-1 → 5.0.11-1</li>
+<li>ros-jazzy-transmission-interface: 4.29.0-1 → 4.32.0-1</li>
+<li>ros-jazzy-transmission-interface-dbgsym: 4.29.0-1 → 4.32.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-tricycle-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-tricycle-controller-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-tricycle-steering-controller</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-tricycle-steering-controller-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3</a>: 2.2.9-1 → 2.3.1-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-bringup</a>: 2.2.9-1 → 2.3.1-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-cartographer</a>: 2.2.9-1 → 2.3.1-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-description</a>: 2.2.9-1 → 2.3.1-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-example</a>: 2.2.9-1 → 2.3.1-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-fake-node</a>: 2.3.2-1 → 2.3.5-1</li>
+<li>ros-jazzy-turtlebot3-fake-node-dbgsym: 2.3.2-1 → 2.3.5-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-gazebo</a>: 2.3.2-1 → 2.3.5-1</li>
+<li>ros-jazzy-turtlebot3-gazebo-dbgsym: 2.3.2-1 → 2.3.5-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-navigation2</a>: 2.2.9-1 → 2.3.1-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-node</a>: 2.2.9-1 → 2.3.1-1</li>
+<li>ros-jazzy-turtlebot3-node-dbgsym: 2.2.9-1 → 2.3.1-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-simulations</a>: 2.3.2-1 → 2.3.5-1</li>
+<li><a href="http://turtlebot3.robotis.com" rel="noopener nofollow ugc">ros-jazzy-turtlebot3-teleop</a>: 2.2.9-1 → 2.3.1-1</li>
+<li>ros-jazzy-turtlebot4-description: 2.0.1-1 → 2.1.0-1</li>
+<li>ros-jazzy-turtlebot4-msgs: 2.0.1-1 → 2.1.0-1</li>
+<li>ros-jazzy-turtlebot4-msgs-dbgsym: 2.0.1-1 → 2.1.0-1</li>
+<li>ros-jazzy-turtlebot4-navigation: 2.0.1-1 → 2.1.0-1</li>
+<li>ros-jazzy-turtlebot4-node: 2.0.1-1 → 2.1.0-1</li>
+<li>ros-jazzy-turtlebot4-node-dbgsym: 2.0.1-1 → 2.1.0-1</li>
+<li>ros-jazzy-tuw-airskin-msgs: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-airskin-msgs-dbgsym: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-geo-msgs: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-geo-msgs-dbgsym: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-geometry: 0.1.3-1 → 0.1.4-1</li>
+<li>ros-jazzy-tuw-geometry-dbgsym: 0.1.3-1 → 0.1.4-1</li>
+<li>ros-jazzy-tuw-geometry-msgs: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-geometry-msgs-dbgsym: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-graph-msgs: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-graph-msgs-dbgsym: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-msgs: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-multi-robot-msgs: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-multi-robot-msgs-dbgsym: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-nav-msgs: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-nav-msgs-dbgsym: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-object-map-msgs: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-object-map-msgs-dbgsym: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-object-msgs: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-object-msgs-dbgsym: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-std-msgs: 0.2.5-1 → 0.2.6-1</li>
+<li>ros-jazzy-tuw-std-msgs-dbgsym: 0.2.5-1 → 0.2.6-1</li>
+<li><a href="https://github.com/aussierobots/ublox_dgnss" rel="noopener nofollow ugc">ros-jazzy-ublox-dgnss</a>: 0.5.5-3 → 0.5.7-1</li>
+<li><a href="https://github.com/aussierobots/ublox_dgnss" rel="noopener nofollow ugc">ros-jazzy-ublox-dgnss-node</a>: 0.5.5-3 → 0.5.7-1</li>
+<li>ros-jazzy-ublox-dgnss-node-dbgsym: 0.5.5-3 → 0.5.7-1</li>
+<li>ros-jazzy-ublox-nav-sat-fix-hp-node: 0.5.5-3 → 0.5.7-1</li>
+<li>ros-jazzy-ublox-nav-sat-fix-hp-node-dbgsym: 0.5.5-3 → 0.5.7-1</li>
+<li><a href="https://github.com/aussierobots/ublox_dgnss" rel="noopener nofollow ugc">ros-jazzy-ublox-ubx-interfaces</a>: 0.5.5-3 → 0.5.7-1</li>
+<li>ros-jazzy-ublox-ubx-interfaces-dbgsym: 0.5.5-3 → 0.5.7-1</li>
+<li><a href="https://github.com/aussierobots/ublox_dgnss" rel="noopener nofollow ugc">ros-jazzy-ublox-ubx-msgs</a>: 0.5.5-3 → 0.5.7-1</li>
+<li>ros-jazzy-ublox-ubx-msgs-dbgsym: 0.5.5-3 → 0.5.7-1</li>
+<li>ros-jazzy-ur: 3.3.0-1 → 3.3.3-1</li>
+<li>ros-jazzy-ur-calibration: 3.3.0-1 → 3.3.3-1</li>
+<li>ros-jazzy-ur-calibration-dbgsym: 3.3.0-1 → 3.3.3-1</li>
+<li><a href="http://wiki.ros.org/ur_client_library">ros-jazzy-ur-client-library</a>: 2.0.0-1 → 2.1.0-1</li>
+<li>ros-jazzy-ur-client-library-dbgsym: 2.0.0-1 → 2.1.0-1</li>
+<li>ros-jazzy-ur-controllers: 3.3.0-1 → 3.3.3-1</li>
+<li>ros-jazzy-ur-controllers-dbgsym: 3.3.0-1 → 3.3.3-1</li>
+<li>ros-jazzy-ur-dashboard-msgs: 3.3.0-1 → 3.3.3-1</li>
+<li>ros-jazzy-ur-dashboard-msgs-dbgsym: 3.3.0-1 → 3.3.3-1</li>
+<li>ros-jazzy-ur-moveit-config: 3.3.0-1 → 3.3.3-1</li>
+<li>ros-jazzy-ur-robot-driver: 3.3.0-1 → 3.3.3-1</li>
+<li>ros-jazzy-ur-robot-driver-dbgsym: 3.3.0-1 → 3.3.3-1</li>
+<li>ros-jazzy-ur-simulation-gz: 2.2.0-1 → 2.3.0-2</li>
+<li><a href="http://ros.org/wiki/urg_node">ros-jazzy-urg-node</a>: 1.1.1-4 → 1.1.2-1</li>
+<li>ros-jazzy-urg-node-dbgsym: 1.1.1-4 → 1.1.2-1</li>
+<li><a href="https://control.ros.org">ros-jazzy-velocity-controllers</a>: 4.25.0-1 → 4.27.0-1</li>
+<li>ros-jazzy-velocity-controllers-dbgsym: 4.25.0-1 → 4.27.0-1</li>
+<li><a href="http://ros.org/wiki/web_video_server">ros-jazzy-web-video-server</a>: 2.0.0-1 → 2.1.0-1</li>
+<li>ros-jazzy-web-video-server-dbgsym: 2.0.0-1 → 2.1.0-1</li>
+<li><a href="https://www.stereolabs.com/" rel="noopener nofollow ugc">ros-jazzy-zed-msgs</a>: 5.0.0-1 → 5.0.1-1</li>
+<li>ros-jazzy-zed-msgs-dbgsym: 5.0.0-1 → 5.0.1-1</li>
+<li>ros-jazzy-zenoh-cpp-vendor: 0.2.3-1 → 0.2.5-1</li>
+<li>ros-jazzy-zenoh-cpp-vendor-dbgsym: 0.2.3-1 → 0.2.5-1</li>
+</ul>
+<h3><a class="anchor" href="https://discourse.openrobotics.org#p-94656-removed-packages-3-4" name="p-94656-removed-packages-3-4"/>Removed Packages [3]:</h3>
+<ul>
+<li>ros-jazzy-scenario-execution-py-trees-ros</li>
+<li><a href="https://github.com/swri-robotics/marti_common" rel="noopener nofollow ugc">ros-jazzy-swri-system-util</a></li>
+<li>ros-jazzy-swri-system-util-dbgsym</li>
+</ul>
+<p>Thanks to all ROS maintainers who make packages available to the ROS community. The above list of packages was made possible by the work of the following maintainers:</p>
+<ul>
+<li>Adam Dabrowski</li>
+<li>Addisu Z. Taddese</li>
+<li>Aditya Pande</li>
+<li>Alberto Tudela</li>
+<li>Alejandro Hernández</li>
+<li>Alexey Merzlyakov</li>
+<li>Audrow Nash</li>
+<li>Austin Hendrix</li>
+<li>Autoware</li>
+<li>Bence Magyar</li>
+<li>Benjamin Binder</li>
+<li>Berkay Karaman</li>
+<li>Bernd Pfrommer</li>
+<li>Brian Wilcox</li>
+<li>Bruk Gebregziabher</li>
+<li>Błażej Sowa</li>
+<li>Carl Delsey</li>
+<li>Carlos Orduno</li>
+<li>Chris Iverach-Brereton</li>
+<li>Chris Lalancette</li>
+<li>Christian Rauch</li>
+<li>Christoph Hellmann Santos</li>
+<li>Daan Wijffels</li>
+<li>David Brown</li>
+<li>David V. Lu!!</li>
+<li>Davide Costa</li>
+<li>Denis Stogl</li>
+<li>Denis Štogl</li>
+<li>Dharini Dutia</li>
+<li>Felix Exner</li>
+<li>Fictionlab</li>
+<li>Frederik Pasch</li>
+<li>Geoff Sokoll</li>
+<li>George Stavrinos</li>
+<li>George Todoran</li>
+<li>Hilary Luo</li>
+<li>Ivan Paunovic</li>
+<li>Jian Kang</li>
+<li>Jonas Otto</li>
+<li>Jose Luis Blanco-Claraco</li>
+<li>Jose Mastrangelo</li>
+<li>Justin Carpentier</li>
+<li>Lennart Reiher</li>
+<li>Lovro Ivanov</li>
+<li>Luis Camero</li>
+<li>M. Fatih Cırıt</li>
+<li>MA Song</li>
+<li>Markus Bader</li>
+<li>Martin Günther</li>
+<li>Matej Vargovcik</li>
+<li>Mathieu Labbe</li>
+<li>Mete Fatih Cırıt</li>
+<li>Michael Ferguson</li>
+<li>Michael Jeronimo</li>
+<li>Mohammad Haghighipanah</li>
+<li>Nick Hortovanyi</li>
+<li>Paul Bovbel</li>
+<li>Paul Gesel</li>
+<li>Pradheep Padmanabhan</li>
+<li>Pyo</li>
+<li>Rob Fisher</li>
+<li>Ryohsuke Mitsudome</li>
+<li>STEREOLABS</li>
+<li>Severn Lortie</li>
+<li>Shigeru Wakida</li>
+<li>Southwest Research Institute</li>
+<li>Steve Macenski</li>
+<li>Takagi, Isamu</li>
+<li>Team Spatzenhirn</li>
+<li>Temkei Kem</li>
+<li>Tibor Dome</li>
+<li>Timo Röhling</li>
+<li>Tony Baltovski</li>
+<li>Tyler Weaver</li>
+<li>Victor Paléologue</li>
+<li>Vincent Rabaud</li>
+<li>Vladimir Ermakov</li>
+<li>Víctor Mayoral-Vilches</li>
+<li>Wolfgang Hönig</li>
+<li>Yadunund</li>
+<li>Yukihiro Saito</li>
+<li>paul</li>
+<li>rostest</li>
+<li>steve macenski</li>
+</ul>
+<p>Enjoy! <img alt=":jazzy:" class="emoji emoji-custom" height="20" src="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/0/6/069b37ebb316d05e401ebef4cd55fee92efc94a8.png?v=14" title=":jazzy:" width="20"/></p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/new-packages-for-jazzy-jalisco-2024-07-29/44516">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-06-29T14:46:27Z</updated>
+    <published>2025-06-29T14:46:27Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>marcogg</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/new-packages-for-jazzy-jalisco-2024-07-29/44516.rss" title="New packages for Jazzy Jalisco 2024-07-29"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-44493</id>
+    <link href="https://discourse.openrobotics.org/t/new-tutorial-package-release-melfa-ros2-iq-platform/44493" rel="alternate" type="text/html"/>
+    <title>New tutorial package release: MELFA ROS2 iQ Platform</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Hi ROS community,</p>
+<p>We would like to announce the release of our first tutorial package <a href="https://github.com/Mitsubishi-Electric-Asia/melfa_ros2_iq_simple" rel="noopener nofollow ugc">MELFA ROS2 iQ Platform</a> <img alt=":tada:" class="emoji" height="20" src="https://emoji.discourse-cdn.com/noto/tada.png?v=14" title=":tada:" width="20"/></p>
+<p>This package provides a guided tutorial with examples to integrate Mitsubishi Electric PLC and HMI with ROS2 via <a href="https://github.com/Mitsubishi-Electric-Asia/melfa_ros2_driver" rel="noopener nofollow ugc">MELFA ROS2 Driver</a>. This package includes a guide to setup your own MELSOFT simulators for system-accurate simulations, connect to ROS2 and create applications with a seamless sim2real transition.</p>
+<p>The tutorial explains the various applications and use-cases of iQ Platform (our integrated industrial automation platform) and how it can be used with ROS2. The tutorial explains various technologies such as micro-second memory operations using fibre-optic industrial networks and IoT integrations which can be used to compliment ROS2.</p>
+<p>Experience the reliability and consistency of industry proven platforms from the familiarity of ROS2.</p>
+<p>Feel free to ask us any questions regarding the tutorial package.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/new-tutorial-package-release-melfa-ros2-iq-platform/44493">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-06-27T08:14:23Z</updated>
+    <published>2025-06-27T08:14:23Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>offinliu</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/new-tutorial-package-release-melfa-ros2-iq-platform/44493.rss" title="New tutorial package release: MELFA ROS2 iQ Platform"/>
+      <updated>2025-07-19T20:10:03Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-44458</id>
+    <link href="https://discourse.openrobotics.org/t/live-an-all-in-one-robotics-development-platform-with-ros-2-and-10-tops-computing-capability/44458" rel="alternate" type="text/html"/>
+    <title>【LIVE】an all-in-one robotics development platform with ROS 2 and 10 TOPS computing capability</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Join <a href="https://www.linkedin.com/company/make-community/" rel="noopener nofollow ugc">Make:</a> and <a href="https://www.linkedin.com/company/d-robotics/" rel="noopener nofollow ugc">D-Robotics</a> for a live look at the future of embedded AI.</p>
+<p>Dive Into Robotics with Make: &amp; D-Robotics! Join us as we unveil the <a href="https://developer.d-robotics.cc/en/rdkx5" rel="noopener nofollow ugc">RDK X5</a> and demo its powerful features — an all-in-one robotics development board with open-sourced ROS 2 packages and 10 TOPS computing capability for acceleration.</p>
+<p>Whether you’re an educator, hobbyist, or seasoned maker, this livestream will be a great resource for embedded AI and robotics projects.</p>
+<p>Stay tuned in for a chance to win a huge giveaway - myCobot 280 RDK X5 robotic arm (1 set worth about 1,000 USD).</p>
+<p>Register for the event here: <a class="inline-onebox" href="https://lnkd.in/gENcjauN" rel="noopener nofollow ugc">LinkedIn</a></p>
+<p>Can’t make it live? Tune in via YouTube to catch the full event: <a class="inline-onebox" href="https://lnkd.in/gdzbBP3B" rel="noopener nofollow ugc">LinkedIn</a></p>
+<p/><div class="lightbox-wrapper"><a class="lightbox" href="https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/a/5/a5772c8bddf4866e89df30fcefaa1bad48d85f2a.jpeg" rel="noopener nofollow ugc" title="1750451499095"><img alt="1750451499095" height="361" src="https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/a/5/a5772c8bddf4866e89df30fcefaa1bad48d85f2a_2_690x361.jpeg" width="690"/></a></div><p/>
+            <p><small>5 posts - 4 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/live-an-all-in-one-robotics-development-platform-with-ros-2-and-10-tops-computing-capability/44458">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-06-26T02:20:56Z</updated>
+    <published>2025-06-26T02:20:56Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>Robbin</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/live-an-all-in-one-robotics-development-platform-with-ros-2-and-10-tops-computing-capability/44458.rss" title="&#x3010;LIVE&#x3011;an all-in-one robotics development platform with ROS 2 and 10 TOPS computing capability"/>
+      <updated>2025-07-19T20:10:02Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-44454</id>
+    <link href="https://discourse.openrobotics.org/t/cloud-robotics-wg-meeting-2025-06-30-logging-observability-discussion/44454" rel="alternate" type="text/html"/>
+    <title>Cloud Robotics WG Meeting 2025-06-30 | Logging &amp; Observability Discussion</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Please come and join us for this coming meeting at <span class="discourse-local-date">Mon, Jun 30, 2025 4:00 PM UTC</span>â†’<span class="discourse-local-date">Mon, Jun 30, 2025 5:00 PM UTC</span>, where we will review the research carried out so far for Logging &amp; Observability. This includes the first preparation session and the previous session, where we hosted a discussion with Benji Barash, Co-Found and CEO of Roboto.AI.</p>
+<p>In that meeting, we heard from Benji  about Roboto.AI, which provides an analytics engine for physical AI. The meeting became more of a presentation and Q&amp;A, as Benji had slides and demos ready to show. There was very impressive teach from the company, including the ability to select a clip of robot data and search other datasets for similar clips to find the same motions performed by other robots! The recording is available <a href="https://youtu.be/9Hr_G9fvHhQ" rel="noopener nofollow ugc">on YouTube</a>.</p>
+<p>The <strong>meeting link is <a href="https://meet.google.com/xox-nshv-uvm" rel="noopener nofollow ugc">here</a></strong>, and you can sign up to <a href="https://calendar.google.com/calendar/u/0/embed?src=c_3fc5c4d6ece9d80d49f136c1dcd54d7f44e1acefdbe87228c92ff268e85e2ea0@group.calendar.google.com&amp;ctz=UTC" rel="noopener nofollow ugc">our calendar</a> or our <a href="https://groups.google.com/g/cloud-robotics-working-group-invites" rel="noopener nofollow ugc">Google Group</a> for meeting notifications or keep an eye on the <a href="https://cloudroboticshub.github.io/" rel="noopener nofollow ugc">Cloud Robotics Hub</a>.</p>
+<p>Hopefully we will see you there!</p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/cloud-robotics-wg-meeting-2025-06-30-logging-observability-discussion/44454">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-06-25T17:33:42Z</updated>
+    <published>2025-06-25T17:33:42Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>mikelikesrobots</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/cloud-robotics-wg-meeting-2025-06-30-logging-observability-discussion/44454.rss" title="Cloud Robotics WG Meeting 2025-06-30 | Logging &amp; Observability Discussion"/>
+      <updated>2025-07-19T20:10:03Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>discourse.openrobotics.org-topic-44429</id>
+    <link href="https://discourse.openrobotics.org/t/introducing-robotin-r2-a-modular-home-robot-platform-for-developers/44429" rel="alternate" type="text/html"/>
+    <title>Introducing Robotin R2: A Modular Home Robot Platform for Developers</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Hello Open Robotics community!</p>
+<p>I’m reaching out to share an exciting project we’ve been working on: Robotin R2, a modular home robot platform designed to support a range of household tasks, starting with carpet washing and deep vacuuming. We believe there’s a real opportunity to evolve this platform into something much more versatile, and we’re excited to open up the potential for developers to contribute to its growth.</p>
+<p>Here’s a bit about what we’re doing:</p>
+<p><strong>Versatile and Expandable:</strong><br/>
+Robotin R2 is designed with expansion in mind. While it currently focuses on carpet washing and vacuuming, the system can accommodate additional modules, like autonomous arms for tasks such as organizing or even storing items.</p>
+<p><strong>Developer-Centric:</strong><br/>
+Our goal is to create an ecosystem where developers can design and integrate new features, whether for home automation, cleaning solutions, or other novel applications. The flexibility of the platform allows for endless possibilities for innovation.</p>
+<p><strong>VLA (Versatile Living Assistant):</strong><br/>
+We envision Robotin R2 evolving into a multi-functional household assistant. Our ultimate goal is to reduce the burden of everyday chores—making “Robot In, Chores Out” a reality. And we hope to collaborate with you all to make that happen.</p>
+<p><strong>Why is this exciting?</strong></p>
+<ul>
+<li><strong>Collaborate on innovative solutions:</strong> Help shape the future of home robotics.</li>
+<li><strong>Developer-friendly integration:</strong> With user-friendly APIs and SDKs, integrating your own modules is straightforward.</li>
+<li><strong>A global community:</strong> We’re aiming to unite developers worldwide to shape the next generation of home robotics and intelligent living.</li>
+</ul>
+<p>If you’re interested in exploring this further or contributing, feel free to follow along as we continue to develop the platform. We’re also open to any feedback, ideas, or collaborations that align with our vision.</p>
+<p>Looking forward to connecting with the community!</p>
+<p>Best regards,<br/>
+The Robotin Team</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://discourse.openrobotics.org/t/introducing-robotin-r2-a-modular-home-robot-platform-for-developers/44429">Read full topic</a></p></div>
+    </summary>
+    <updated>2025-06-23T17:10:34Z</updated>
+    <published>2025-06-23T17:10:34Z</published>
+    <category term="ROS General"/>
+    <author>
+      <name>Jun_Long</name>
+    </author>
+    <source>
+      <link href="https://discourse.openrobotics.org/t/introducing-robotin-r2-a-modular-home-robot-platform-for-developers/44429.rss" title="Introducing Robotin R2: A Modular Home Robot Platform for Developers"/>
+      <updated>2025-07-19T20:10:03Z</updated>
+    </source>
+  </entry>
+</feed>
