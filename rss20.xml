@@ -1,0 +1,894 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+
+<channel>
+	<title>Planet ROS</title>
+	<link>http://planet.ros.org</link>
+	<language>en</language>
+	<description>Planet ROS - http://planet.ros.org</description>
+
+<item>
+	<title>ROS Discourse General: Has anyone written a custom I²C transport for micro-ROS (or any MCU ROS stack)?</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58035</guid>
+	<link>https://discourse.openrobotics.org/t/has-anyone-written-a-custom-i-c-transport-for-micro-ros-or-any-mcu-ros-stack/58035</link>
+	<description>&lt;p&gt;Small embedded team at a startup, weighing an idea before we commit to it. As far as I can tell, none of the MCU ROS stacks support I²C out of the box — micro-ROS does UART/UDP/CAN-FD, zenoh-pico does serial/UDP/TCP, Cyphal does CAN/serial. I²C isn’t on any of those lists. So if we want a board to be a ROS node talking over I²C, it looks like we’d have to write that transport layer ourselves. micro-ROS at least exposes a custom-transport API (the open/close/write/read hooks + set_custom_transport), so in principle an I²C transport is writable. My question is whether anyone actually has.&lt;/p&gt;
+&lt;p&gt;Context for why I²C at all: our STM32 boards sit behind a GMSL camera link, which tunnels an I²C channel through to the host side. The wire is already there, so an I²C transport would cost us no extra wiring — that’s the whole appeal.&lt;/p&gt;
+&lt;p&gt;So: Has anyone implemented a custom micro-ROS transport over I²C, or pushed zenoh-pico / Pico-ROS down onto an I²C link? How did it go — did the request/response and discovery patterns map onto a master-driven bus okay, or did that mismatch (the host has to poll, the MCU can’t initiate) become the whole problem? And if you tried and bailed — what made you bail? Rather hear where it broke now than find out the hard way later. (Not asking whether I²C is a “real” bus for this — I know it’s unusual. Asking specifically whether anyone’s made a ROS middleware transport work on top of it.)&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;4 posts - 4 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/has-anyone-written-a-custom-i-c-transport-for-micro-ros-or-any-mcu-ros-stack/58035&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 11 Sep 2026 08:51:54 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROSCon Global 2026 Sponsors and Exhibitors</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58020</guid>
+	<link>https://discourse.openrobotics.org/t/roscon-global-2026-sponsors-and-exhibitors/58020</link>
+	<description>&lt;div class=&quot;d-image-grid&quot;&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/0/f/0f91ab0f2e9e8b28c9395939604ea781faf011c7.jpeg&quot; title=&quot;ROSConSponsorBanner (2)&quot;&gt;&lt;img alt=&quot;ROSConSponsorBanner (2)&quot; height=&quot;500&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/0/f/0f91ab0f2e9e8b28c9395939604ea781faf011c7_2_235x500.jpeg&quot; width=&quot;235&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/6/d/6d76c99d0f6b4b173759c96de9eaa5b5d2a59930.webp&quot; title=&quot;FullPageMap&quot;&gt;&lt;img alt=&quot;FullPageMap&quot; height=&quot;463&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/6/d/6d76c99d0f6b4b173759c96de9eaa5b5d2a59930_2_690x463.webp&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/7/d/7dc7969cbcef8c7e7c99f86dd7593e0b1a3fc892.png&quot; title=&quot;ROSCon_2026_FINAL&quot;&gt;&lt;img alt=&quot;ROSCon_2026_FINAL&quot; height=&quot;500&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/7/d/7dc7969cbcef8c7e7c99f86dd7593e0b1a3fc892_2_402x500.png&quot; width=&quot;402&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117847-roscon-global-2026-sponsors-and-exhibitors-1&quot; name=&quot;p-117847-roscon-global-2026-sponsors-and-exhibitors-1&quot;&gt;&lt;/a&gt;ROSCon Global 2026 Sponsors and Exhibitors&lt;/h1&gt;
+&lt;p&gt;Robotics is a team sport, and putting together an event the size of &lt;a href=&quot;https://roscon.ros.org/2026/&quot;&gt;ROSCon Global&lt;/a&gt; every year takes an incredible team of sponsors and OSRA member organizations!&lt;/p&gt;
+&lt;p&gt;We would like to take a moment to recognize the amazing sponsors helping to make &lt;a href=&quot;https://roscon.ros.org/2026/&quot;&gt;ROSCon Global in Toronto&lt;/a&gt; a reality this year. We deeply appreciate your support of our open source community!&lt;/p&gt;
+&lt;p&gt;For ROSCon attendees, all of our sponsors will be on-site at ROSCon Global this year. Please make sure to check out their booths, watch their talks, attend their demos and sessions, and collaborate with them to make our open-source ecosystem a better place for all of us! The exhibitor map is now live on the &lt;a href=&quot;https://roscon.ros.org/2026/&quot;&gt;ROSCon Global website&lt;/a&gt; so you can start planning your visit.&lt;/p&gt;
+&lt;p&gt;We look forward to seeing everyone in Toronto starting September 22nd! &lt;img alt=&quot;:rocket:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/rocket.png?v=15&quot; title=&quot;:rocket:&quot; width=&quot;20&quot; /&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117847-platinum-sponsor-2&quot; name=&quot;p-117847-platinum-sponsor-2&quot;&gt;&lt;/a&gt;&lt;img alt=&quot;:gem_stone:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/gem_stone.png?v=15&quot; title=&quot;:gem_stone:&quot; width=&quot;20&quot; /&gt; Platinum Sponsor&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amd.com/&quot;&gt;AMD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117847-gold-sponsors-3&quot; name=&quot;p-117847-gold-sponsors-3&quot;&gt;&lt;/a&gt;&lt;img alt=&quot;:1st_place_medal:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/1st_place_medal.png?v=15&quot; title=&quot;:1st_place_medal:&quot; width=&quot;20&quot; /&gt; Gold Sponsors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://canonical.com/&quot;&gt;Canonical &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://clearpathrobotics.com/&quot;&gt;Clearpath&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.dexory.com/&quot;&gt;Dexory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://dimensional.org/&quot;&gt;Dimensional&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://foxglove.dev/&quot;&gt;Foxglove&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.intel.com/content/www/us/en/homepage.html&quot;&gt;Intel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.intrinsic.ai/&quot;&gt;Intrinsic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://locusrobotics.com/&quot;&gt;Locus Robotics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://nrp.gov.sg/&quot;&gt;National Robotics Program&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://nextchip.com/kr/index.php&quot;&gt;NEXTCHIP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.nvidia.com/en-us/&quot;&gt;NVIDIA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.nxp.com/&quot;&gt;NXP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://qnx.software/en&quot;&gt;QNX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.qualcomm.com/&quot;&gt;Qualcomm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.realsenseai.com/&quot;&gt;Realsense&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.roboto.ai/&quot;&gt;Roboto AI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.siemens.com/en-us/&quot;&gt;Siemens&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117847-silver-sponsors-4&quot; name=&quot;p-117847-silver-sponsors-4&quot;&gt;&lt;/a&gt;&lt;img alt=&quot;:2nd_place_medal:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/2nd_place_medal.png?v=15&quot; title=&quot;:2nd_place_medal:&quot; width=&quot;20&quot; /&gt; Silver Sponsors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://global.agilex.ai/&quot;&gt;AgileX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.auroralabs.com/&quot;&gt;Aurora&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://botasys.com&quot;&gt;Botasys&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.edgeimpulse.com/&quot;&gt;EdgeImpulse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ekumenlabs.com/&quot;&gt;Ekumen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.eys3d.com/&quot;&gt;Eys3D&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://fictionlab.pl/&quot;&gt;FictionLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.fieldai.com/&quot;&gt;FieldAI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.huawei.com/en/&quot;&gt;Huawei&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.innate.bot/&quot;&gt;Innate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jfrog.com&quot;&gt;JFrog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.kinovarobotics.com/&quot;&gt;Kinova&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://mainstreetautonomy.com&quot;&gt;Main Street Autonomy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.oscp.com/&quot;&gt;OSCP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ouster.com/&quot;&gt;Ouster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://picknik.ai/&quot;&gt;Picknik Robotics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.quanser.com/&quot;&gt;Quanser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.redhat.com/&quot;&gt;Redhat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rosindustrial.org/&quot;&gt;ROS-Industrial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.seeedstudio.com/reBot-Arm-B601-DM-p-6740.html?srsltid=AfmBOoqdGXnIa4JRj_ZGiU7Vq3BiBeoMvl2hlIIFSGElSaFjxpkwDYb-&quot;&gt;Seeed Studio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://seegrid.com/&quot;&gt;Seegrid&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://upsiderobotics.com/&quot;&gt;Upside Robotics &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.uvify.com/#1&quot;&gt;UVIFY&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117847-bronze-sponsors-5&quot; name=&quot;p-117847-bronze-sponsors-5&quot;&gt;&lt;/a&gt;&lt;img alt=&quot;:3rd_place_medal:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/3rd_place_medal.png?v=15&quot; title=&quot;:3rd_place_medal:&quot; width=&quot;20&quot; /&gt; Bronze Sponsors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://autoware.org/&quot;&gt;Autoware&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.b-robotized.com/&quot;&gt;b-robotized&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.d-robotics.cc/&quot;&gt;D-Robotics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.esol.com/&quot;&gt;eSol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hello-robot.com/&quot;&gt;Hello Robot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://honurobotics.com/&quot;&gt;Honu Robotics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.resim.ai/&quot;&gt;Resim.ai&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.simberobotics.com/&quot;&gt;Simbe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.zettascale.tech/&quot;&gt;Zettascale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117847-startup-alley-sponsors-6&quot; name=&quot;p-117847-startup-alley-sponsors-6&quot;&gt;&lt;/a&gt;&lt;img alt=&quot;:seedling:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/seedling.png?v=15&quot; title=&quot;:seedling:&quot; width=&quot;20&quot; /&gt; Startup Alley Sponsors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.10things.tech/&quot;&gt;10Things&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.botbot.bot/&quot;&gt;Botbot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://craftifai.com/&quot;&gt;CraftifAI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://glidance.io/&quot;&gt;Glidance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://looper-robotics.com/&quot;&gt;Looper Robotics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://olive-robotics.com/&quot;&gt;Olive Robotics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://smarobix.com/&quot;&gt;Smarobix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vicharak.in/&quot;&gt;Vicharak&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/roscon-global-2026-sponsors-and-exhibitors/58020&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 10 Sep 2026 20:07:14 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROS Meetup Cartagena Colombia - 7 Nov 2026</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57994</guid>
+	<link>https://discourse.openrobotics.org/t/ros-meetup-cartagena-colombia-7-nov-2026/57994</link>
+	<description>&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/2670aca66a27a05cf1352388379aef28ca4af2d2.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;ROS Cartagena 01 NEW-01.jpg&quot;&gt;&lt;img alt=&quot;ROS Cartagena 01 NEW-01.jpg&quot; height=&quot;375&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/2/6/2670aca66a27a05cf1352388379aef28ca4af2d2_2_300x375.jpeg&quot; width=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/div&gt;       &lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/a/1/a1bc9282ba43fa71f293aa45b4abdda978711943.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;ROS Cartagena 01 NEW-02.jpg&quot;&gt;&lt;img alt=&quot;ROS Cartagena 01 NEW-02.jpg&quot; height=&quot;375&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/a/1/a1bc9282ba43fa71f293aa45b4abdda978711943_2_300x375.jpeg&quot; width=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;:robot:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/robot.png?v=15&quot; title=&quot;:robot:&quot; width=&quot;20&quot; /&gt;&lt;img alt=&quot;:palm_tree:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/palm_tree.png?v=15&quot; title=&quot;:palm_tree:&quot; width=&quot;20&quot; /&gt; ROS Meetup Cartagena 2026 is coming!&lt;br /&gt;
+On November 7th, Cartagena will become a meeting point for the Robotics Operating System (ROS) community in Colombia.&lt;br /&gt;
+The event is organized by IEEE RAS Colombia, IEEE RAS Colcaribe, IEEE RAS Javeriana, and UTBot, bringing together students, researchers, developers, and professionals to share knowledge, experiences, and projects around robotics and ROS. &lt;img alt=&quot;:colombia:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/colombia.png?v=15&quot; title=&quot;:colombia:&quot; width=&quot;20&quot; /&gt;&lt;img alt=&quot;:robot:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/robot.png?v=15&quot; title=&quot;:robot:&quot; width=&quot;20&quot; /&gt;&lt;br /&gt;
+&lt;img alt=&quot;:round_pushpin:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/round_pushpin.png?v=15&quot; title=&quot;:round_pushpin:&quot; width=&quot;20&quot; /&gt; Napoleón de la Rosa Echávez Auditorium — Universidad Tecnológica de Bolívar&lt;br /&gt;
+&lt;img alt=&quot;:date:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/date.png?v=15&quot; title=&quot;:date:&quot; width=&quot;20&quot; /&gt; November 7, 2026&lt;br /&gt;
+&lt;img alt=&quot;:stopwatch:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/stopwatch.png?v=15&quot; title=&quot;:stopwatch:&quot; width=&quot;20&quot; /&gt; 8:00 am - 5:00 PM&lt;br /&gt;
+A space to connect, learn, and continue strengthening the open-source robotics community in Colombia and Latin America. &lt;img alt=&quot;:rocket:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/rocket.png?v=15&quot; title=&quot;:rocket:&quot; width=&quot;20&quot; /&gt;&lt;br /&gt;
+&lt;img alt=&quot;:admission_tickets:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/admission_tickets.png?v=15&quot; title=&quot;:admission_tickets:&quot; width=&quot;20&quot; /&gt; Register yourself as a participant, or as an speaker in the following LinkTree: &lt;strong&gt;&lt;a class=&quot;inline-onebox&quot; href=&quot;https://linktr.ee/IEEE_RAS_Colombia&quot; rel=&quot;noopener nofollow ugc&quot;&gt;RAS Colombia Official: Instagram | Linktree&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/ros-meetup-cartagena-colombia-7-nov-2026/57994&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 09 Sep 2026 21:30:29 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Open Source Safety Consortium: sharing safety evidence, not just code</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57992</guid>
+	<link>https://discourse.openrobotics.org/t/open-source-safety-consortium-sharing-safety-evidence-not-just-code/57992</link>
+	<description>&lt;p&gt;I’d like the next autonomy team to spend less time reconstructing basic safety analysis, and more time finding what was missed.&lt;/p&gt;
+&lt;p&gt;That’s why I helped start the Open Source Safety Consortium (&lt;a href=&quot;http://opensourcesafe.com&quot; rel=&quot;noopener nofollow ugc&quot;&gt;opensourcesafe.com&lt;/a&gt;), with Polymath Robotics as a founding member.&lt;/p&gt;
+&lt;p&gt;We’re developing reusable evidence for open-source components: hazard analyses, safety requirements, tests, assumptions, and known gaps, versioned alongside the code. Our first worked example is an open-source protective-stop prototype, with firmware, hardware designs, and a draft safety case all getting published together. We will then expand into other work asap.&lt;/p&gt;
+&lt;p&gt;It is not certified (yet!) and requires careful testing before using it in production (Polymath does use it). We are targeting the rigor required of a SIL 3/PLr=e capable solution.&lt;/p&gt;
+&lt;p&gt;Reusing its evidence would not automatically approve a machine, for example a haul truck still needs its own safety story around braking, and mine-site validation.&lt;/p&gt;
+&lt;p&gt;The question we want to test is how much another developer can actually reuse, what still needs independent review, and whether the effort saved outweighs the work of adapting and maintaining the evidence.&lt;/p&gt;
+&lt;p&gt;If you’ve qualified autonomy for a use case, what did you have to recreate because earlier evidence wasn’t available? And what would a shared package need before you or your assessor could use it?&lt;/p&gt;
+&lt;p&gt;If this all seems interesting to you, check out the above website, and send a hello!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/open-source-safety-consortium-sharing-safety-evidence-not-just-code/57992&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 09 Sep 2026 20:38:35 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Luxonis Solutions + Luxonis Agent Toolkit</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57956</guid>
+	<link>https://discourse.openrobotics.org/t/luxonis-solutions-luxonis-agent-toolkit/57956</link>
+	<description>&lt;p&gt;Hi Everyone! I’m Carson, the Global GTM Manager at Luxonis.&lt;img alt=&quot;:grinning_face:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/grinning_face.png?v=15&quot; title=&quot;:grinning_face:&quot; width=&quot;20&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Just wanted to pop in and mention some new items we have recently released that we feel are truly elevating the game in the computer vision space.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;bbcode-u&quot;&gt;Within the warehousing realm, we have recently released some new industry specific solutions for both &lt;strong&gt;&lt;a href=&quot;https://www.luxonis.com/solutions&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Box Dimensioning and Barcode reading&lt;/a&gt;&lt;/strong&gt;.&lt;/span&gt; We already have various customers in trial with these solutions and some deploying them to their operations.&lt;/p&gt;
+&lt;p&gt;These solutions combine with our high resolution (48MP) cameras, and 52 TOPS of AI processing power on board our OAK 4 Camera Line, all in an IP67 build for tough environments. This allows you to deploy these solutions with your current models in the pipeline and run them side by side without needing a host PC. Whether its mounted above your belt, or needs to be guiding an AMR that checks shelf inventory… there are so many possibilities of where these solutions shine in automating warehousing spaces.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;bbcode-u&quot;&gt;Building on these specific solutions, we also released our &lt;a href=&quot;https://discuss.luxonis.com/blog/7022-a-better-way-to-build-with-oak-introducing-the-luxonis-agent-toolkit&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Luxonis Agent Toolkit&lt;/a&gt;, which are 8 Luxonis specific skills that enable your personal coding agents with the abilities of a Luxonis Engineer.&lt;/span&gt; It is like having a little helper in your pocket to take you from start to finish when building with a Luxonis OAK camera. We have some cool demos we have built in just 15 minutes, and even hosted an internal hackathon with our engineers to push the boundaries.&lt;/p&gt;
+&lt;p&gt;We feel that the age of agentic coding is only going to grow… but now your agent doesn’t ever have to guess when it comes to a Luxonis camera, it can be embedded with all the right information.&lt;/p&gt;
+&lt;p&gt;We are constantly building with this toolkit internally, but would love to see what cool stuff other people can spin up with the skills!&lt;/p&gt;
+&lt;p&gt;Anyways… not trying to have this sound too pitchy, but, these are developments we have spent tons of time on internally, and people in this space would be the exact people we are looking to use these items. Happy to answer any questions or point you in the direction of information!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/luxonis-solutions-luxonis-agent-toolkit/57956&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 08 Sep 2026 18:03:41 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Logging and Observability Guide Review Part 3 | Cloud Robotics WG Meeting 2026-10-05</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57930</guid>
+	<link>https://discourse.openrobotics.org/t/logging-and-observability-guide-review-part-3-cloud-robotics-wg-meeting-2026-10-05/57930</link>
+	<description>&lt;p&gt;&lt;em&gt;The group is skipping two meetings (2026-09-07, 2026-09-21) due to members being unavailable!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The next meeting of the CRWG will be at &lt;span class=&quot;discourse-local-date&quot;&gt;Mon, Oct 5, 2026 4:00 PM UTC&lt;/span&gt;â†’&lt;span class=&quot;discourse-local-date&quot;&gt;Mon, Oct 5, 2026 5:00 PM UTC&lt;/span&gt;, where we will continue editing the first draft of the Logging and Observability guide. This time, more changes have been to the guide between sessions, and the members will focus on a higher-level view of the guide.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;meeting link for next meeting is &lt;a href=&quot;https://meet.google.com/xox-nshv-uvm&quot; rel=&quot;noopener nofollow ugc&quot;&gt;here&lt;/a&gt;&lt;/strong&gt;, and you can sign up to &lt;a href=&quot;https://calendar.google.com/calendar/u/0/embed?src=c_3fc5c4d6ece9d80d49f136c1dcd54d7f44e1acefdbe87228c92ff268e85e2ea0@group.calendar.google.com&amp;amp;ctz=UTC&quot; rel=&quot;noopener nofollow ugc&quot;&gt;our calendar&lt;/a&gt; or our &lt;a href=&quot;https://groups.google.com/g/cloud-robotics-working-group-invites&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Google Group&lt;/a&gt; for meeting notifications or keep an eye on the &lt;a href=&quot;https://cloudroboticshub.github.io/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Cloud Robotics Hub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hopefully we will see you there!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/logging-and-observability-guide-review-part-3-cloud-robotics-wg-meeting-2026-10-05/57930&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 07 Sep 2026 09:58:14 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: NASA Space Roboticist Challenge: propose an experiment for a 7-DoF arm in orbit (U.S.; registration closes Sep 23)</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57919</guid>
+	<link>https://discourse.openrobotics.org/t/nasa-space-roboticist-challenge-propose-an-experiment-for-a-7-dof-arm-in-orbit-u-s-registration-closes-sep-23/57919</link>
+	<description>&lt;p&gt;Sharing an opportunity that may interest people working on manipulation, autonomy, and motion planning. NASAâ€™s Space Roboticist Challenge (part of the Fly Foundational Robots mission) is opening access to a 7-Degree-of-Freedom (7-DoF) robotic arm operating in low Earth orbit.&lt;/p&gt;
+&lt;p&gt;U.S.-based researchers can propose a short, focused experiment to run on the arm. It is an active system in microgravity, not a simulation.&lt;/p&gt;
+&lt;p&gt;How it works:&lt;/p&gt;
+&lt;p&gt;- Phase 1: submit a white paper proposing the experiment (up to 15 teams advance).&lt;/p&gt;
+&lt;p&gt;- Phase 2: simulation and validation at NASA Goddard with NASA engineers. Teams that pass may receive an offer of on-orbit experiment time.&lt;/p&gt;
+&lt;p&gt;Eligibility: open to U.S. citizens and permanent residents at eligible U.S. institutions (PIs, post-docs, professors, and qualified graduate students with faculty sponsorship).&lt;/p&gt;
+&lt;p&gt;Deadlines: register by September 23, 2026; white papers due October 2, 2026.&lt;/p&gt;
+&lt;p&gt;Details and registration: &lt;a href=&quot;https://spaceroboticistchallenge.com&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://spaceroboticistchallenge.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Questions: &lt;a href=&quot;mailto:SpaceRoboticist@floor23digital.com&quot;&gt;SpaceRoboticist@floor23digital.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Administered under the America COMPETES Reauthorization Act.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/nasa-space-roboticist-challenge-propose-an-experiment-for-a-7-dof-arm-in-orbit-u-s-registration-closes-sep-23/57919&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 07 Sep 2026 02:32:30 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: What is the hardest part of learning ROS 2 as a beginner</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57917</guid>
+	<link>https://discourse.openrobotics.org/t/what-is-the-hardest-part-of-learning-ros-2-as-a-beginner/57917</link>
+	<description>&lt;p&gt;I teach a robotics lab and my students lose about a week each semester to&lt;br /&gt;
+workspace and sourcing problems before they write any robot code. I recorded&lt;br /&gt;
+the whole thing end to end on Jazzy, including the errors rather than a clean&lt;br /&gt;
+take: workspace, package, first node, entry points, --symlink-install, and&lt;br /&gt;
+why sourcing is per-terminal.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Gl-4h24-dBg&quot;&gt;ROS 2 Workspace and Your First Node — and why &quot;package not found&quot; happens (Jazzy)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s aimed squarely at first-week beginners. Happy to take corrections —&lt;br /&gt;
+I’d rather fix a video than leave something wrong in front of students.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/what-is-the-hardest-part-of-learning-ros-2-as-a-beginner/57917&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 07 Sep 2026 02:31:49 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: New CLI tool: fastdds_transport_viz — predict &amp; measure per-topic DDS transport in ROS 2</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57900</guid>
+	<link>https://discourse.openrobotics.org/t/new-cli-tool-fastdds-transport-viz-predict-measure-per-topic-dds-transport-in-ros-2/57900</link>
+	<description>&lt;p&gt;Hi all,&lt;/p&gt;
+&lt;p&gt;I built &lt;strong&gt;fastdds_transport_viz&lt;/strong&gt;, a CLI tool that shows which transport (UDPv4/v6, TCP, SHM, or zero-copy data-sharing) each ROS 2 topic actually uses — and why.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Predicts the transport per writer→reader pair from Fast DDS discovery data (no changes needed on the observed nodes)&lt;/li&gt;
+&lt;li&gt;With &lt;code&gt;--stats&lt;/code&gt;, measures real traffic (rate, latency) via the Fast DDS statistics module&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--watch&lt;/code&gt; live view, &lt;code&gt;--json&lt;/code&gt; output, and a web viewer (graph/table)&lt;/li&gt;
+&lt;li&gt;Verified on Jazzy and Kilted/Rolling, x86_64/arm64, including a two-host Wi-Fi setup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;rmw_fastrtps_cpp&lt;/code&gt; only, Linux only — details in the README.&lt;/p&gt;
+&lt;p&gt;Repo: &lt;a href=&quot;https://github.com/atinfinity/fastdds_transport_viz&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://github.com/atinfinity/fastdds_transport_viz&lt;/a&gt;&lt;br /&gt;
+Docs: &lt;a href=&quot;https://atinfinity.github.io/fastdds_transport_viz&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://atinfinity.github.io/fastdds_transport_viz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/b/c/bc70c9500ef632ac1dfa798b6113630867bfc6e1.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;web-viewer-table&quot;&gt;&lt;img alt=&quot;web-viewer-table&quot; height=&quot;332&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/b/c/bc70c9500ef632ac1dfa798b6113630867bfc6e1_2_690x332.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Feedback and issues welcome!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;4 posts - 3 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/new-cli-tool-fastdds-transport-viz-predict-measure-per-topic-dds-transport-in-ros-2/57900&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sun, 06 Sep 2026 14:32:40 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Why we did not extend /diagnostics?</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57859</guid>
+	<link>https://discourse.openrobotics.org/t/why-we-did-not-extend-diagnostics/57859</link>
+	<description>&lt;p&gt;Can &lt;code&gt;/diagnostics&lt;/code&gt; carry a fault, or only a status?&lt;br /&gt;
+We spent a year building a diagnostic layer for ROS 2 (ros2_medkit, earlier thread: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://discourse.openrobotics.org/t/whats-missing-from-ros-2-diagnostics-and-what-we-built/52489&quot;&gt;What's missing from ROS 2 diagnostics (and what we built)&lt;/a&gt; ) and the question we get most (including from a ROSCon reviewer) is why we did not extend diagnostic_msgs, diagnostic_updater and the aggregator instead.&lt;br /&gt;
+Here is the reasoning with the message definitions side by side, so the specifics can be argued with.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: a status is information, a fault is a model you can query and act on, and the second does not fall out of the first by adding fields or more context.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What /diagnostics is, and does well&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;REP 107 (Tully Foote, November 2010) wrote down the diagnostics system Willow Garage had already built: a &lt;code&gt;/diagnostics&lt;/code&gt; topic carrying &lt;code&gt;DiagnosticArray&lt;/code&gt; of &lt;code&gt;DiagnosticStatus&lt;/code&gt;, and an aggregator with analyzers. It names three things the system is for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a quick look at normal operation&lt;/li&gt;
+&lt;li&gt;detailed debug information&lt;/li&gt;
+&lt;li&gt;and long-term logs for history.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Its best practices are robot_monitor on screen while the robot runs, and a &lt;code&gt;rosbag record&lt;/code&gt; of &lt;code&gt;/diagnostics&lt;/code&gt; in the bringup launch. The REP defined three levels, OK, Warn and Error. The message today:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-auto&quot;&gt;byte OK=0
+byte WARN=1
+byte ERROR=2
+byte STALE=3
+byte level
+string name          # &quot;a description of the test/component reporting&quot;
+string message       # &quot;a description of the status&quot;
+string hardware_id   # &quot;a hardware unique string&quot;
+KeyValue[] values
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;diagnostic_updater&lt;/code&gt; publishes on a period (1s by default)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;diagnostic_aggregator&lt;/code&gt; groups statuses by name rules (prefix, substring, regex) into &lt;code&gt;/diagnostics_agg&lt;/code&gt;, publishes the worst level on &lt;code&gt;/diagnostics_toplevel_state&lt;/code&gt;, and marks an item STALE when it stops updating within the analyzer timeout.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rqt_robot_monitor&lt;/code&gt; keeps the last 30 arrays in memory.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;diagnostic_remote_logging&lt;/code&gt; sends statuses to InfluxDB.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;diagnostic_analysis&lt;/code&gt;, the ROS 1 tool for recorded diagnostics, is “Not ported to ROS2 yet” in the ros2 README.&lt;/p&gt;
+&lt;p&gt;That is a live status stream. It works well for a person watching a screen, and we did NOT change any of it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where a status stream is not enough&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Identity.&lt;/strong&gt;&lt;/em&gt; A status is keyed by who reports it (&lt;code&gt;name&lt;/code&gt;, “LiDAR scan0”). It can say what broke in &lt;code&gt;message&lt;/code&gt;, &lt;code&gt;hardware_id&lt;/code&gt; or a key-value, and people use those fields that way, but that is text. Nothing in the stack reads it as a fault identity. The aggregator keeps one status per name, the latest, and overwrites it with the next one. So the stack has no thing called “the fault”. I mean nothing knows when it started, how many times it came back, whether it is still active, or whether anyone acknowledged it.&lt;/p&gt;
+&lt;p&gt;rqt keeps the last 30 arrays, so a blip at night is gone by morning. People have asked for this before. In January 2018 someone on ROS Answers wanted a latched log of warnings and errors (“high level system log, latching diagnostic warnings/error”, question 280273). Nobody answered, and the asker wrote that they would probably build their own collector node.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Address.&lt;/strong&gt;&lt;/em&gt; Say you have the rosbag from the three seconds around the failure. Where do you put it? &lt;code&gt;hardware_id&lt;/code&gt; is just a free text. The aggregator tree is for display in rqt and a tag for the InfluxDB exporter, not a place where you can attach a recording.&lt;/p&gt;
+&lt;p&gt;Also, much of what breaks in a robot is not a ROS node: the MCU in a motor driver, a sensor with its own firmware. These appear in &lt;code&gt;/diagnostics&lt;/code&gt; only if the driver author wrote a diagnostic task for them, and when the driver goes quiet the aggregator can only say STALE.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Operations and state.&lt;/strong&gt;&lt;/em&gt; You cannot ask the stream about a fault. Is it still active? acknowledge it, change the configuration behind it, give me the recording. What the aggregator holds in RAM dies with the process. A bag of &lt;code&gt;/diagnostics&lt;/code&gt; or the InfluxDB export survives a restart, but those are stored samples, not state. To know what is active now, you read the samples and work it out yourself. Whatever answers those questions has to be a separate service beside the ROS graph, one that holds fault records with an address and verbs. At that point you are no longer extending a message. Extending the aggregator ends in the same place. The aggregator does one thing: statuses in, one combined status out, with a fast path for watchdogs. Add fault ids, a database and an API and it is no longer an aggregator. It is a fault manager.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What we built beside it&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ros2_medkit_msgs/Fault&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-auto&quot;&gt;string fault_code               # e.g. MOTOR_OVERHEAT
+uint8 severity                  # INFO WARN ERROR CRITICAL
+string description              # the third argument of report()
+builtin_interfaces/Time first_occurred
+builtin_interfaces/Time last_occurred
+builtin_interfaces/Time last_passed
+uint32 occurrence_count         # counted on edges: a cleared fault that comes back adds one
+string status                   # PREFAILED PREPASSED CONFIRMED HEALED CLEARED
+string[] reporting_sources
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The lifecycle is an AUTOSAR DEM-style debounce counter. FAILED events move it towards CONFIRMED, PASSED events move it towards HEALED. HEALED means the counter reached the healing threshold. CLEARED means a human acknowledged the fault through the clear service. Both kinds of record stay in the database.&lt;/p&gt;
+
+Defaults worth knowing before you compare &lt;a href=&quot;https://discourse.openrobotics.org/t/why-we-did-not-extend-diagnostics/57859/1&quot;&gt;(click for more details)&lt;/a&gt;
+&lt;p&gt;On CONFIRMED the fault manager takes a freeze frame of the reporting node’s topics and with recording on, it writes its ring buffer to an MCAP bag. Each fault is linked by its reporting sources to an entity in a SOVD (ISO 17978) tree: Areas, Components, Apps, Functions. A function carries its own &lt;code&gt;/faults&lt;/code&gt;, so “obstacle avoidance is degraded” maps to the app that is containing the fault. A device that never speaks DDS becomes an external component from the manifest, and a protocol plugin (OPC UA in the open repo) turns its alarms into faults on it. All of it is served over REST: list and stream faults (SSE), read one, clear it, read the entity’s data, PUT a configuration, download the bag from &lt;code&gt;bulk-data&lt;/code&gt;, etc. A laptop, a fleet server or a tool can do that without joining the DDS graph.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;And /diagnostics stays an input&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ros2_medkit_diagnostic_bridge&lt;/code&gt; subscribes to &lt;code&gt;/diagnostics&lt;/code&gt; and feeds the fault manager:&lt;/p&gt;
+&lt;div class=&quot;md-table&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;DiagnosticStatus level&lt;/th&gt;
+&lt;th&gt;Fault event&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;OK&lt;/td&gt;
+&lt;td&gt;PASSED, moves the fault towards HEALED when healing is enabled&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;WARN&lt;/td&gt;
+&lt;td&gt;fault, severity WARN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ERROR&lt;/td&gt;
+&lt;td&gt;fault, severity ERROR&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;STALE&lt;/td&gt;
+&lt;td&gt;fault, severity CRITICAL (see caveats)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;&lt;p&gt;An existing &lt;code&gt;diagnostic_updater&lt;/code&gt; gains a fault code, a lifecycle and a history. The node does not change.&lt;/p&gt;
+
+Bridge details and caveats &lt;a href=&quot;https://discourse.openrobotics.org/t/why-we-did-not-extend-diagnostics/57859/1&quot;&gt;(click for more details)&lt;/a&gt;
+
+How the existing tools fit &lt;a href=&quot;https://discourse.openrobotics.org/t/why-we-did-not-extend-diagnostics/57859/1&quot;&gt;(click for more details)&lt;/a&gt;
+&lt;p&gt;&lt;strong&gt;The question to diagnostics users&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where should the line be? Our answer: DiagnosticStatus stays the health stream, and the fault record, its entity and the REST API get agreed on separately. That is what we built. Should the fault record become a shared ROS message one day? That is the question for this group. The ROSCon talk goes through the trade-offs.&lt;br /&gt;
+Repo: &lt;a href=&quot;https://github.com/selfpatch/ros2_medkit&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros2_medkit&lt;/a&gt;&lt;/p&gt;
+
+Sources &lt;a href=&quot;https://discourse.openrobotics.org/t/why-we-did-not-extend-diagnostics/57859/1&quot;&gt;(click for more details)&lt;/a&gt;
+            &lt;p&gt;&lt;small&gt;6 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/why-we-did-not-extend-diagnostics/57859&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 04 Sep 2026 10:09:43 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: GPS says ~5m accuracy but the fixes agree to 9 cm. Anyone else seen this?</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57831</guid>
+	<link>https://discourse.openrobotics.org/t/gps-says-5m-accuracy-but-the-fixes-agree-to-9-cm-anyone-else-seen-this/57831</link>
+	<description>&lt;p&gt;So I’ve been chasing something for a couple of days and I figured I’d just post it, partly in case it helps someone and partly because I’m not totally sure I’m reading it right.&lt;/p&gt;
+&lt;p&gt;I’ve got a u-blox on a small rover doing 1 Hz fixes. The receiver puts ~5m horizontal 1-sigma in position_covariance, which honestly seemed believable for where I was driving. But then I looked at how much the fixes actually move relative to each other, and the median second difference is around ~0.1 m. The worst one in the whole run was about 1 m. If the noise were really white at ~5m I’d have expected that number to be somewhere around 14 m.&lt;/p&gt;
+&lt;p&gt;So there’s roughly a factor of 160 between what it says and how it behaves.&lt;/p&gt;
+&lt;p&gt;My guess, and this is the bit I’d like a sanity check on, is that the receiver smooths internally. So the 5m is the absolute error, mostly multipath, and it’s an honest number. But the fix-to-fix noise is centimetres because consecutive fixes are now heavily correlated. Which would mean the covariance is true, it’s just not the thing a Kalman filter is asking for, since the filter assumes the noise is white and independent.&lt;/p&gt;
+&lt;p&gt;Anyway, if that’s right then it explains my gate. My NIS sits around 0.03 where it should be near 3, so the chi-squared threshold ends up miles above anything that ever actually happens and nothing can trip it.&lt;/p&gt;
+&lt;p&gt;Two things I genuinely don’t know:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Is this a u-blox thing specifically, or do other receivers do the same? I’ve only got the one so I can’t really tell.&lt;/li&gt;
+&lt;li&gt;And what do people actually do about it in practice? Shrinking R feels wrong to me, because then you’d just track the multipath bias and confidently report centimetre accuracy while sitting metres off. I’ve seen a slowly varying GPS bias state mentioned as the proper fix but I haven’t tried it yet.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here’s the script I used if anyone wants to check theirs. Works on any bag with a NavSatFix, nothing else needed:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#!/usr/bin/env python3&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;&quot;&quot;&quot;python3 gps_cov_check.py &amp;lt;bag_dir&amp;gt;&quot;&quot;&quot;&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;import sys, math, statistics, rosbag2_py&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;from rclpy.serialization import deserialize_message&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;from rosidl_runtime_py.utilities import get_message&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bag = sys.argv[1]&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;r = rosbag2_py.SequentialReader()&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;r.open(rosbag2_py.StorageOptions(uri=bag, storage_id=&quot;&quot;), rosbag2_py.ConverterOptions(&quot;&quot;, &quot;&quot;))&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;topic = next(t.name for t in r.get_all_topics_and_types()&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;             if t.type == &quot;sensor_msgs/msg/NavSatFix&quot;)&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;r.set_filter(rosbag2_py.StorageFilter(topics=[topic]))&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;M = get_message(&quot;sensor_msgs/msg/NavSatFix&quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lat, lon, sig = [], [], []&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;while r.has_next():&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;    _, data, _ = r.read_next()&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;    m = deserialize_message(data, M)&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;    if m.position_covariance_type == 0:&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;        continue&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;    lat.append(m.latitude); lon.append(m.longitude)&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;    sig.append(math.sqrt(max(m.position_covariance[0], 0.0)))&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;R = 6371000.0&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;xs = [math.radians(v - lon[0]) * R * math.cos(math.radians(lat[0])) for v in lon]&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;ys = [math.radians(v - lat[0]) * R for v in lat]&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;d2 = sorted(math.hypot(xs[i+1] - 2*xs[i] + xs[i-1], ys[i+1] - 2*ys[i] + ys[i-1])&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;            for i in range(1, len(xs) - 1))&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;declared = statistics.median(sig)&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;observed = d2[len(d2) // 2]&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;expected = math.sqrt(6.0) * 1.1774 * declared&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;print(&quot;declared 1-sigma        %.2f m&quot; % declared)&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;print(&quot;median |2nd difference| %.3f m&quot; % observed)&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;print(&quot;  if that were white    %.1f m&quot; % expected)&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;print(&quot;ratio                   %.0fx smoother&quot; % (expected / max(observed, 1e-9)))&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Would be curious what ratio other people get and which receiver you’re on, especially if anyone’s running RTK fixed or something that doesn’t smooth its output. Thanks&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;4 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/gps-says-5m-accuracy-but-the-fixes-agree-to-9-cm-anyone-else-seen-this/57831&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 02 Sep 2026 18:29:57 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Three bugs that changed how our sensor board talks to ROS 2</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57825</guid>
+	<link>https://discourse.openrobotics.org/t/three-bugs-that-changed-how-our-sensor-board-talks-to-ros-2/57825</link>
+	<description>&lt;p&gt;We’re working on a board that connects cameras and sensors to a robot’s compute over CAN-FD and GMSL2. Three things came up during development that changed the design more than anything we planned upfront.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The flash budget made the decision for us.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We started assuming the &lt;a href=&quot;https://nxs.aliensense.com/?utm_source=ros-discourse&amp;amp;utm_medium=community&amp;amp;utm_campaign=vanguard-launch&quot; rel=&quot;noopener nofollow ugc&quot;&gt;board&lt;/a&gt; would speak ROS directly. Put micro-ROS on the chip to test it, and it ate 60% of flash before we’d written any of our own code.&lt;/p&gt;
+&lt;p&gt;That settled it. The device speaks Cyphal now. ROS runs host-side behind a thin bridge, and one firmware image serves three transports instead of one.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;One reboot didn’t actually reboot anything.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A link kept dying every time we swapped a board. Power cycles didn’t fix it. Full host reboots didn’t fix it either.&lt;/p&gt;
+&lt;p&gt;Turned out one chip never fully powered off. It was getting backfed through its own data lines and holding old state through every reset we tried. The fix was a single reset write, once we found where the power was actually coming from.&lt;/p&gt;
+&lt;p&gt;Also explained an older bug on the same rig we’d never tracked down. Same root cause.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Timestamps mattered more than we assumed.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We treated per-sample timestamps as optional at first. Sensor sends data, host receives it, how far off could the timing really be.&lt;/p&gt;
+&lt;p&gt;Turns out it matters a lot once you’re fusing readings from different nodes on different transports. SLAM cares when the sensor captured the reading, not when the host got it. Those two numbers aren’t close.&lt;/p&gt;
+&lt;p&gt;Now every sample is stamped at capture, on the node, with a sequence number so drops are visible.&lt;/p&gt;
+&lt;p&gt;Wrote this up mostly for our own record and I guess other people building sensor nodes run into some version of the same three things.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;3 posts - 3 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/three-bugs-that-changed-how-our-sensor-board-talks-to-ros-2/57825&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 02 Sep 2026 08:02:55 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Humanoid Robotics Use In Manufacturing</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57784</guid>
+	<link>https://discourse.openrobotics.org/t/humanoid-robotics-use-in-manufacturing/57784</link>
+	<description>&lt;p&gt;Hello,&lt;/p&gt;
+&lt;p&gt;I am looking for anyone that has implemented a humanoid robot into their manufacturing facility. I would like to discuss the use cases, safety topics, successes, failures and any other information that would make my decision more informed. I have tried reaching out to several manufacturers to setup a meeting to discuss these topics but I am not getting any response. I look forward to any and all responses.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/humanoid-robotics-use-in-manufacturing/57784&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 31 Aug 2026 16:04:23 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROS 2 Windows CI on GitHub Actions: current options and a Pixi-based pattern</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57736</guid>
+	<link>https://discourse.openrobotics.org/t/ros-2-windows-ci-on-github-actions-current-options-and-a-pixi-based-pattern/57736</link>
+	<description>&lt;p&gt;I’m trying to understand what we should currently recommend for ROS 2 projects that want to run a real Windows CI job on GitHub Actions, including both build and tests.&lt;/p&gt;
+&lt;p&gt;There are several existing actions and examples, but their Windows behavior is somewhat different from Linux. I recently compared a few approaches with ROS 2 Lyrical in a small &lt;a href=&quot;https://github.com/dskkato/ros2_rmw_launch_smoke_test&quot; rel=&quot;noopener nofollow ugc&quot;&gt;AI-assisted smoke-test repository&lt;/a&gt;, and thought it might be useful to summarize what I found and ask whether there is already a preferred approach.&lt;/p&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117379-what-i-found-1&quot; name=&quot;p-117379-what-i-found-1&quot;&gt;&lt;/a&gt;What I found&lt;/h2&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117379-action-ros-ci-2&quot; name=&quot;p-117379-action-ros-ci-2&quot;&gt;&lt;/a&gt;&lt;code&gt;action-ros-ci&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ros-tooling/action-ros-ci/blob/v0.4/src/action-ros-ci.ts#L280-L325&quot; rel=&quot;noopener nofollow ugc&quot;&gt;&lt;code&gt;action-ros-ci@v0.4&lt;/code&gt;&lt;/a&gt; currently has:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-auto&quot;&gt;const doTests = !isWindows;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;so &lt;code&gt;colcon test&lt;/code&gt; is intentionally skipped on Windows. The related background seems to be &lt;a href=&quot;https://github.com/ros-tooling/action-ros-ci/pull/712&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros-tooling/action-ros-ci#712&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This makes it useful for some Windows build jobs, but not for CI whose purpose is explicitly to verify tests.&lt;/p&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117379-setup-ros-3&quot; name=&quot;p-117379-setup-ros-3&quot;&gt;&lt;/a&gt;&lt;code&gt;setup-ros&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;I also tried &lt;a href=&quot;https://github.com/ros-tooling/setup-ros&quot; rel=&quot;noopener nofollow ugc&quot;&gt;&lt;code&gt;setup-ros@v0.7&lt;/code&gt;&lt;/a&gt; with Lyrical.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://github.com/dskkato/ros2_rmw_launch_smoke_test/actions/runs/33240774199/job/99069638775?pr=3&quot; rel=&quot;noopener nofollow ugc&quot;&gt;this experiment&lt;/a&gt;, it selected the April 30 Lyrical beta binary and ended up combining the GitHub-hosted Python 3.12 environment with an older colcon/Python toolchain.&lt;/p&gt;
+&lt;p&gt;That caused plugin-loading errors involving removed Python APIs such as &lt;code&gt;pkgutil.ImpImporter&lt;/code&gt; and &lt;code&gt;distutils&lt;/code&gt;. More importantly, the job still completed successfully with effectively:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-auto&quot;&gt;Summary: 0 packages finished
+...
+Summary: 0 tests, 0 errors, 0 failures, 0 skipped
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This may be specific to this Lyrical configuration, and I may be missing an intended version pin or setup. However, the false-green result seems worth being aware of.&lt;/p&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117379-pinned-ros-2-binary-pixi-4&quot; name=&quot;p-117379-pinned-ros-2-binary-pixi-4&quot;&gt;&lt;/a&gt;Pinned ROS 2 binary + Pixi&lt;/h3&gt;
+&lt;p&gt;The approach that worked most consistently in my experiment was:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download a known ROS 2 Windows binary release.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the &lt;code&gt;pixi.toml&lt;/code&gt; provided with the ROS 2 source/release environment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;pixi install&lt;/code&gt;.and &lt;code&gt;preinstall_setup_windows.py&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter the Visual Studio developer environment and source ROS 2.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;colcon build&lt;/code&gt;, &lt;code&gt;colcon test&lt;/code&gt;, and &lt;code&gt;colcon test-result&lt;/code&gt; explicitly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For example, &lt;a href=&quot;https://github.com/dskkato/ros2_rmw_launch_smoke_test/blob/0e4eedb78a1b9253e454e7a719df6fc85d7b6925/.github/workflows/launch-test.yml&quot; rel=&quot;noopener nofollow ugc&quot;&gt;this workflow&lt;/a&gt; uses the &lt;a href=&quot;https://github.com/ros2/ros2/releases/tag/release-lyrical-20260807&quot; rel=&quot;noopener nofollow ugc&quot;&gt;2026-08-07 Lyrical Windows binary&lt;/a&gt; and successfully runs launch tests against Fast DDS, Cyclone DDS, and Zenoh.&lt;/p&gt;
+&lt;p&gt;There are also existing Windows CI examples with a similar shape:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ros2-rust/ros2_rust/blob/4606ed41a212fb6c65ab01d1e79ddabde4e7cb05/.github/workflows/rust-win.yml&quot; rel=&quot;noopener nofollow ugc&quot;&gt;&lt;code&gt;ros2-rust&lt;/code&gt;&lt;/a&gt; uses Pixi around a ROS 2 Rolling binary environment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ros-controls/ros2_control_ci/blob/master/.github/workflows/reusable-ros-tooling-win-build.yml&quot; rel=&quot;noopener nofollow ugc&quot;&gt;&lt;code&gt;ros-controls/ros2_control_ci&lt;/code&gt;&lt;/a&gt; also has a reusable Pixi-based Windows workflow using a Rolling binary underlay.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They are not exactly equivalent use cases—the ros-controls workflow, for example, is primarily a build workflow—but they suggest that using the ROS binary environment together with Pixi is already a practical pattern.&lt;/p&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117379-possible-recommendation-5&quot; name=&quot;p-117379-possible-recommendation-5&quot;&gt;&lt;/a&gt;Possible recommendation?&lt;/h2&gt;
+&lt;p&gt;For ROS 2 distributions that provide/support the Pixi environment, I wonder whether the current practical recommendation could be something along these lines:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Download a known ROS 2 Windows binary, reproduce its dependency environment with Pixi, and run colcon build/test explicitly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It has the advantage that the dependency environment stays close to the one used for the ROS 2 binary itself, while the workflow remains explicit about whether tests are actually executed.&lt;/p&gt;
+&lt;p&gt;One additional safeguard may be worth recommending regardless of the setup: CI should fail if an expected package or test is not discovered. A green Windows job that actually ran zero tests is particularly easy to overlook.&lt;/p&gt;
+&lt;p&gt;A few questions remain:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Is there already a maintained action or reusable workflow that encapsulates this pattern?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is there a recommended way to resolve a stable distro-specific Windows binary rather than hard-coding a dated release URL? For the experiment above I pinned Lyrical 2026-08-07.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is Windows test execution expected to return to &lt;code&gt;action-ros-ci&lt;/code&gt;, or is another approach preferred?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For distributions that do not provide the Pixi setup, what is the recommended Windows CI environment today?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If there is already a preferred solution, I would be interested in using and documenting that instead. Otherwise, it may be useful to turn the working Pixi-based pattern into a small reusable example so individual projects do not need to rediscover the same Windows setup details.&lt;/p&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117379-related-links-6&quot; name=&quot;p-117379-related-links-6&quot;&gt;&lt;/a&gt;Related links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/github-actions-for-ros-and-ros-2-ci-beta/12755&quot;&gt;GitHub Actions for ROS, and ROS 2 CI (beta)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/windows-ci-builds-are-now-officially-containerized-and-virtualized-on-ci-ros2-org/13099&quot;&gt;Windows CI builds are now officially containerized and virtualized on ci.ros2.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;p&gt;&lt;small&gt;6 posts - 4 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/ros-2-windows-ci-on-github-actions-current-options-and-a-pixi-based-pattern/57736&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sat, 29 Aug 2026 08:37:12 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: first VIO demo: global-shutter camera + IMU streamed over one GMSL2 coax, mapped live in ROS 2</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57700</guid>
+	<link>https://discourse.openrobotics.org/t/first-vio-demo-global-shutter-camera-imu-streamed-over-one-gmsl2-coax-mapped-live-in-ros-2/57700</link>
+	<description>&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/f/4/f48c4aefa219ece294b0880ff1c85426a109e687.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;2026-08-27 16.15.05&quot;&gt;&lt;img alt=&quot;2026-08-27 16.15.05&quot; height=&quot;437&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/f/4/f48c4aefa219ece294b0880ff1c85426a109e687_2_690x437.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;TL;DR: Nick is walking around the office holding our beautiful rig where a global-shutter camera + IMU share one GMSL2 coax for data and power, estimated in real time on a Jetson (ROS 2 + OpenVINS). Return-to-start after the ~25 m loop: 42 cm (~1.7 %).&lt;/p&gt;
+&lt;p&gt;Hardware is our &lt;a href=&quot;https://nxs.aliensense.com/?utm_source=ros-discourse&amp;amp;utm_medium=community&amp;amp;utm_campaign=vanguard-launch&quot; rel=&quot;noopener nofollow ugc&quot;&gt;NXS sensor module&lt;/a&gt; (Sony IMX900 global shutter (72 fps native; 24 fps fed to the estimator), fixed exposure + IAM-20680 IMU @ 200 Hz, hardware-synchronized on the module) into an NXS Hub carrying the GMSL link to a Jetson Orin Nano. ROS 2 Humble, OpenVINS, kalibr calibration. No wheels, no markers, no prior map.&lt;/p&gt;
+&lt;p&gt;Happy to answer you questions about the sync design, the single-cable setup, or the takes that didnâ€™t survive.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/first-vio-demo-global-shutter-camera-imu-streamed-over-one-gmsl2-coax-mapped-live-in-ros-2/57700&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 27 Aug 2026 16:14:05 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Bringing ROS into your native C/C++ workflow with Conan</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57697</guid>
+	<link>https://discourse.openrobotics.org/t/bringing-ros-into-your-native-c-c-workflow-with-conan/57697</link>
+	<description>&lt;p&gt;Hi ROS community!&lt;/p&gt;
+&lt;p&gt;I am Dani, a member of the &lt;a href=&quot;https://conan.io&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Conan C/C++ Package Manager&lt;/a&gt; team, and we would like to introduce &lt;a href=&quot;https://github.com/conan-io/ros-conan&quot; rel=&quot;noopener nofollow ugc&quot;&gt;conan-io/ros-conan&lt;/a&gt;: a collection of Conan recipes for installing and consuming ROS Kilted on Linux, macOS, and Windows.&lt;/p&gt;
+&lt;p&gt;We have recently been working to offer an alternative workflow for C++ developers: install ROS with Conan, declare it in a conanfile, and consume its libraries like any other C++ package.&lt;/p&gt;
+&lt;p&gt;Here is a quick demo of how it works:&lt;/p&gt;
+&lt;video controls=&quot;&quot; width=&quot;100%&quot;&gt;
+  &lt;source src=&quot;https://github.com/conan-io/ros-conan/raw/refs/heads/danimtb/video/examples/pose_estimation/assets/ros-conan-screencast.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;p&gt;This &lt;a href=&quot;https://github.com/conan-io/ros-conan/tree/main/examples/pose_estimation&quot; rel=&quot;noopener nofollow ugc&quot;&gt;example&lt;/a&gt; demonstrates how to install ROS Kilted along with OpenCV and TensorFlow to create a ROS node application that tracks the human pose from an image input.&lt;/p&gt;
+&lt;h1&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117322-lets-try-it-1&quot; name=&quot;p-117322-lets-try-it-1&quot;&gt;&lt;/a&gt;Let’s try it!&lt;/h1&gt;
+&lt;p&gt;Here is a small guide on how to start using ROS with Conan:&lt;/p&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117322-prepare-conan-and-the-ros-recipes-2&quot; name=&quot;p-117322-prepare-conan-and-the-ros-recipes-2&quot;&gt;&lt;/a&gt;Prepare Conan and the ROS recipes&lt;/h2&gt;
+&lt;p&gt;ROS 2 Kilted targets Python 3.12. Create a virtual environment and install Conan.&lt;/p&gt;
+&lt;p&gt;On Linux or macOS:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install conan
+conan profile detect --force
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On Windows PowerShell:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-powershell&quot;&gt;py -3.12 -m venv .venv
+.venv\Scripts\activate
+python -m pip install conan
+conan profile detect --force
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, clone the recipes and add the repository as a local recipe index:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;git clone https://github.com/conan-io/ros-conan.git
+conan remote add ros-conan ./ros-conan --type=local-recipes-index
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The recipe provides &lt;code&gt;core&lt;/code&gt;, &lt;code&gt;base&lt;/code&gt;, and &lt;code&gt;desktop&lt;/code&gt; variants, allowing a project to select the part of the ROS distribution it needs.&lt;/p&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117322-start-with-a-ros-node-in-plain-cmake-3&quot; name=&quot;p-117322-start-with-a-ros-node-in-plain-cmake-3&quot;&gt;&lt;/a&gt;Start with a ROS node in plain CMake&lt;/h2&gt;
+&lt;p&gt;The clearest way to show the proposed workflow is a minimal C++ ROS node.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;cd ros-conan/examples/consumer_cmake
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The complete dependency declaration is in the &lt;code&gt;conanfile.txt&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-ini&quot;&gt;[requires]
+ros-kilted/2026.06.17
+
+[generators]
+CMakeToolchain
+CMakeDeps
+
+[layout]
+cmake_layout
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The CMake side uses the standard package config and imported target provided by &lt;code&gt;rclcpp&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-cmake&quot;&gt;cmake_minimum_required(VERSION 3.22)
+project(conan_ros2_kilted_consumer CXX)
+
+find_package(rclcpp REQUIRED)
+
+add_executable(consumer_node src/main.cpp)
+target_link_libraries(consumer_node PRIVATE rclcpp::rclcpp)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;From the example directory, install the dependencies:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;conan install --profile=../../profiles/ros --build=missing
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This command builds ROS and any missing dependencies from source if the binaries are not already cached. The first run can take a while, but the resulting packages are cached for reuse.&lt;/p&gt;
+&lt;p&gt;Now build the application with the same commands used by any other CMake project:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;# macOS and Linux
+
+cmake --preset conan-release
+cmake --build --preset conan-release
+
+# Windows
+
+cmake --preset conan-default
+cmake --build --preset conan-release
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Activate the environment:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;# macOS and Linux
+/build/generators/conanrun.sh
+
+# Windows
+.\build\generators\conanrun.bat
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And run the node:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;# macOS and Linux
+./build/Release/consumer_node
+
+# Windows
+.\build\Release\consumer_node.exe
+
+[INFO] [...] [conan_test_package_node]: Conan consumer_node: rclcpp linked and node started.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There is no ROS-specific project layout, &lt;code&gt;package.xml&lt;/code&gt;, &lt;code&gt;ament_cmake&lt;/code&gt; integration, or &lt;code&gt;colcon&lt;/code&gt; workspace in this example.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;An existing CMake application can add ROS without adopting a separate development flow&lt;/strong&gt;, while Conan manages ROS and the application’s other C++ dependencies together.&lt;/p&gt;
+&lt;p&gt;As an alternative, for projects using a colcon workspace, the &lt;a href=&quot;https://github.com/conan-io/ros-conan/tree/main/examples/consumer_colcon&quot; rel=&quot;noopener nofollow ugc&quot;&gt;colcon example&lt;/a&gt; shows the same Conan-provided ROS installation being consumed by ordinary &lt;code&gt;ament_cmake&lt;/code&gt; packages. Teams can choose the development model that fits each project.&lt;/p&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117322-run-a-familiar-ros-tutorial-4&quot; name=&quot;p-117322-run-a-familiar-ros-tutorial-4&quot;&gt;&lt;/a&gt;Run a familiar ROS tutorial&lt;/h2&gt;
+&lt;p&gt;The packaged ROS installation also supports the usual ROS commands. Let’s use the &lt;code&gt;desktop&lt;/code&gt; variant to run the &lt;a href=&quot;https://docs.ros.org/en/kilted/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html&quot;&gt;turtlesim tutorial&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;cd ros-conan/examples/consumer_cmake
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;First of, &lt;strong&gt;update the conanfile.txt&lt;/strong&gt; to indicate the &lt;strong&gt;desktop variant&lt;/strong&gt; for this case (as this is the one that includes the &lt;code&gt;turtlesim&lt;/code&gt; package):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-ini&quot;&gt;[requires]
+ros-kilted/2026.06.17
+
+[options]
+ros-kilted/*:variant=desktop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Use the install command to install and build the packages as we did previously (&lt;strong&gt;this will take some time&lt;/strong&gt; as the desktop variant includes many more packages of ROS):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;conan install --profile=../../profiles/ros --build=missing
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Activate the generated run environment and launch &lt;code&gt;turtlesim&lt;/code&gt; as described in the ROS tutorials:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;# Linux and macOS
+
+source conanrun.sh
+ros2 run turtlesim turtlesim_node
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bat&quot;&gt;REM Windows
+
+conanrun.bat
+ros2 run turtlesim turtlesim_node
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In a second terminal, launch the keyboard controller. You can use &lt;code&gt;conan run&lt;/code&gt; command to launch the command inside the enviroment directly:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;conan run &quot;ros2 run turtlesim turtle_teleop_key&quot; --profile=ros-conan/profiles/ros
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;strong&gt;ROS commands and behavior are unchanged&lt;/strong&gt;, Conan supplies the installation and runtime environment.&lt;/p&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117322-why-consume-ros-with-conan-5&quot; name=&quot;p-117322-why-consume-ros-with-conan-5&quot;&gt;&lt;/a&gt;Why consume ROS with Conan?&lt;/h2&gt;
+&lt;p&gt;Bringing ROS into the Conan dependency graph offers several advantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;A native C++ workflow:&lt;/strong&gt; plain CMake projects can use &lt;code&gt;find_package(rclcpp REQUIRED)&lt;/code&gt; and link to &lt;code&gt;rclcpp::rclcpp&lt;/code&gt;. They do not need a &lt;code&gt;colcon&lt;/code&gt; workspace or &lt;code&gt;ament_cmake&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The same workflow as any other C/C++ package:&lt;/strong&gt; declare ROS in a &lt;code&gt;conanfile&lt;/code&gt; and use the same install command, profiles, options, lockfiles, and local cache across Linux, macOS, and Windows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;One dependency graph for the whole application:&lt;/strong&gt; Conan detects version conflicts and lets ROS compose directly with libraries from &lt;a href=&quot;https://conan.io/center&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ConanCenter (the Conan central repository for open-source libraries)&lt;/a&gt;, such as OpenCV, Eigen, or TensorFlow Lite.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Per-project ROS dependency:&lt;/strong&gt;  Different ROS versions and distributions could coexist in the Conan cache on the same machine. Each project would select and activate its own ROS dependency without colliding with a system-wide installation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117322-we-would-like-your-feedback-6&quot; name=&quot;p-117322-we-would-like-your-feedback-6&quot;&gt;&lt;/a&gt;We would like your feedback&lt;/h2&gt;
+&lt;p&gt;ROS 2 Kilted is the first distribution covered by these recipes. The &lt;code&gt;core&lt;/code&gt; and &lt;code&gt;desktop&lt;/code&gt; variants are exercised in CI by building from source for Linux (gcc 13, X86_64/ARM64), macOS (clang 17, x86_64/ARM64), and Windows (MSVC 19.40).&lt;/p&gt;
+&lt;p&gt;We would particularly like to hear:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;How does the proposed native C/C++ workflow compare with the traditional ROS development workflow for your projects?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Would per-project ROS dependencies help you develop and test packages against multiple ROS versions or distributions?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Which third-party C or C++ packages would you want to combine with ROS through the same &lt;code&gt;conanfile&lt;/code&gt;?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Which ROS distributions, package variants, and platforms should we prioritize next?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please try the &lt;a href=&quot;https://github.com/conan-io/ros-conan&quot; rel=&quot;noopener nofollow ugc&quot;&gt;quick start and examples&lt;/a&gt; and share your experience in this thread. Bugs and contributions are also welcome in the repository’s &lt;a href=&quot;https://github.com/conan-io/ros-conan/issues&quot; rel=&quot;noopener nofollow ugc&quot;&gt;issues&lt;/a&gt; and pull requests.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;We will be at ROSCon Global 2026 in Toronto&lt;/strong&gt;, so if you are attending, we would be very happy to discuss this workflow and your feedback in person.&lt;/p&gt;
+&lt;p&gt;Thanks for taking a look. We are looking forward to hearing what you think!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/bringing-ros-into-your-native-c-c-workflow-with-conan/57697&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 27 Aug 2026 15:11:21 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Meet Booster T2: An Open Humanoid Platform for Embodied AI Development</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57683</guid>
+	<link>https://discourse.openrobotics.org/t/meet-booster-t2-an-open-humanoid-platform-for-embodied-ai-development/57683</link>
+	<description>&lt;p&gt;We’re excited to introduce Booster T2, our flagship humanoid development platform for robotics researchers and developers.&lt;/p&gt;
+&lt;p&gt;T2 is designed to support work across:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Whole-body locomotion and control&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mobile manipulation and dexterous-hand research&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Perception, navigation, and human–robot interaction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Teleoperation and real-world data collection&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reinforcement learning, imitation learning, and VLA development&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Onboard AI applications and external system integration&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The platform provides ROS 2 compatibility, high- and low-level SDK access, onboard NVIDIA computing, and support for custom sensors and applications.&lt;/p&gt;
+&lt;p&gt;Product: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://www.booster.tech/booster-t2/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Booster T2 | Flagship Embodied Development Platform&lt;/a&gt;&lt;br /&gt;
+Documentation: &lt;a href=&quot;https://docs.booster.tech/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://docs.booster.tech/&lt;/a&gt;&lt;br /&gt;
+GitHub: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/BoosterRobotics&quot; rel=&quot;noopener nofollow ugc&quot;&gt;BoosterRobotics · GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We’re interested in connecting with researchers, developers, and robotics teams working on embodied AI and real-world humanoid applications. If you would like technical information, pricing, or a T2 demonstration, please contact me at &lt;a href=&quot;mailto:chenshaoyun@booster.tech&quot;&gt;chenshaoyun@booster.tech&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;— Viki Chen&lt;br /&gt;
+Booster Robotics&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/meet-booster-t2-an-open-humanoid-platform-for-embodied-ai-development/57683&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 26 Aug 2026 17:27:01 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Bridging the Gap: A Dockerized ROS 1 Noetic ↔ ROS 2 Jazzy Bridge (Ubuntu 24.04) for Gradual Migration</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57681</guid>
+	<link>https://discourse.openrobotics.org/t/bridging-the-gap-a-dockerized-ros-1-noetic-ros-2-jazzy-bridge-ubuntu-24-04-for-gradual-migration/57681</link>
+	<description>&lt;p&gt;Hi ROS Community!&lt;/p&gt;
+&lt;p&gt;I want to share an open-source project I’ve been working on that solves a very real, very painful business problem: &lt;strong&gt;Migrating massive legacy ROS 1 robotics systems to ROS 2.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Like many companies, we realized that rewriting our entire historic ROS 1 codebase to ROS 2 all at once would be financially devastating and halt our feature development. We needed a way to develop &lt;em&gt;new&lt;/em&gt; components purely in ROS 2 (Jazzy) while keeping our reliable legacy stack in ROS 1 (Noetic), migrating piece by piece over time.&lt;/p&gt;
+&lt;p&gt;The challenge? ROS 1 Noetic isn’t natively supported on Ubuntu 24.04 (Noble), which is required for ROS 2 Jazzy.&lt;/p&gt;
+&lt;p&gt;So, I built a robust, Dockerized integration: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/Lukas-Kozel/ros-noetic-jazzy-bridge&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - Lukas-Kozel/ros-noetic-jazzy-bridge: A robust, Dockerized bridge for bidirectional communication between ROS 1 Noetic (compiled from source) and ROS 2 Jazzy on Ubuntu 24.04. Designed for gradual migration of legacy robotics systems without full codebase rewrites. Includes E2E integration tests. · GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compiles ROS 1 Noetic from source alongside ROS 2 Jazzy in a single ubuntu:24.04 container.&lt;/li&gt;
+&lt;li&gt;Provides a fully configured ros1_bridge with custom message mapping.&lt;/li&gt;
+&lt;li&gt;Highly optimized Dockerfile (using BuildKit, parallel workers via ARG, and selective ros_core dependencies to prevent memory/OOM crashes and keep build times short).&lt;/li&gt;
+&lt;li&gt;Includes a Python-based E2E Integration Test Runner and a GitHub Actions CI pipeline.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The repository contains a clean example/ directory so you can spin it up via docker-compose and test bidirectional communication in seconds.&lt;/p&gt;
+&lt;p&gt;I’d love for you to check it out, use it in your migration strategies, and drop any feedback, issues, or PRs. Let’s make the transition to ROS 2 easier for everyone!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/bridging-the-gap-a-dockerized-ros-1-noetic-ros-2-jazzy-bridge-ubuntu-24-04-for-gradual-migration/57681&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 26 Aug 2026 17:26:11 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Nav2 Lyrical Release &amp; Key Features!</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57666</guid>
+	<link>https://discourse.openrobotics.org/t/nav2-lyrical-release-key-features/57666</link>
+	<description>&lt;p&gt;Howdy!&lt;/p&gt;
+&lt;p&gt;Its Your Friendly Neighborhood Navigator with an exciting announcement: Nav2’s Lyrical Release!&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/9/5/95cfb4ebaafee207c4b76b18ccb03c571df4056a.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;500&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/9/5/95cfb4ebaafee207c4b76b18ccb03c571df4056a_2_500x500.jpeg&quot; width=&quot;500&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;(I just couldn’t help myself; this is just too cool. If anyone has swag ideas for this, let me know!)&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;This release marks some of the most exciting and broad updates made in several distributions, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New &lt;code&gt;nav2_ros_common&lt;/code&gt; package which makes major headway into abstracting ROS APIs into a common location for easier software development and compliant node development, which will continue to be developed over time&lt;/li&gt;
+&lt;li&gt;New to MPPI: open-loop control mode, dynamics support, asymmetric acceleration limits, plugin motion models, trajectory validators, delay compensation, and more!&lt;/li&gt;
+&lt;li&gt;New Pause and Resume capabilities powered by the &lt;code&gt;PauseResumeController&lt;/code&gt; BT node from &lt;a class=&quot;mention&quot; href=&quot;https://discourse.openrobotics.org/u/redvinaa&quot;&gt;@redvinaa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New Vector Object Server to work with polygon and shape data with costmap 2D, costmap filters, and other key integrations by &lt;a class=&quot;mention&quot; href=&quot;https://discourse.openrobotics.org/u/sushant-chavan&quot;&gt;@Sushant-Chavan&lt;/a&gt; and continued work from my time at Samsung Research&lt;/li&gt;
+&lt;li&gt;New Adaptive Goal Checker with coarse and fine criteria for more accurate goal achievement &lt;a class=&quot;mention&quot; href=&quot;https://discourse.openrobotics.org/u/davidg-develop&quot;&gt;@DavidG-Develop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A litany of new features for RPP including the support for Dynamic Window Pure Pursuit to consider dynamic limitations during path tracking &lt;a class=&quot;mention&quot; href=&quot;https://discourse.openrobotics.org/u/decwest&quot;&gt;@Decwest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New support for IPC within composed bringups for true zero-copy communications&lt;/li&gt;
+&lt;li&gt;The start of support by measuring path tracking bounds in the controller server which may be used by the behavior tree, costmap plugins, controllers, and other algorithms to improve behaviors &lt;span class=&quot;mention&quot;&gt;@silanus23&lt;/span&gt; &lt;a class=&quot;mention&quot; href=&quot;https://discourse.openrobotics.org/u/mini-1235&quot;&gt;@mini-1235&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Massive speed ups in the Inflation Layer aided by a new algorithm, optional OpenMP processing, as well as an symmetric inflation layer to incentivize left- or right-hand side passing &lt;a class=&quot;mention&quot; href=&quot;https://discourse.openrobotics.org/u/tnajjar&quot;&gt;@tnajjar&lt;/a&gt; &lt;a class=&quot;mention&quot; href=&quot;https://discourse.openrobotics.org/u/mbloechli&quot;&gt;@mbloechli&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Collision monitor toggles, exclusion zones, and costmap sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;… and literally &lt;em&gt;so, so much more&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;One thing I’m particularly proud of with the dedication, time, and support of &lt;span class=&quot;mention&quot;&gt;@AJedancov&lt;/span&gt; is a &lt;strong&gt;&lt;a href=&quot;https://docs.nav2.org&quot; rel=&quot;noopener nofollow ugc&quot;&gt;brand new, fully redesigned Nav2 documentation website&lt;/a&gt;&lt;/strong&gt; which is now live!&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/4/0/4048ccee73d9357d2e365309ffb2bb15fe201ce8.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;385&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/4/0/4048ccee73d9357d2e365309ffb2bb15fe201ce8_2_690x385.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Not only is it more beautiful, we now have support for separate documentation versions per-distribution to support distribution life-long documentation, tutorials, and guides for each currently active ROS distribution, and dark mode. Alot of time and effort went into this work and I hope you enjoy this new experience!&lt;/p&gt;
+&lt;p&gt;This has been a truly exciting past year and its been a pleasure to try to keep up with all the amazing ways people are using Nav2 and ROS in their applications and building in the open to improve the industry together. If you’re using Nav2, I highly encourage you get involved!&lt;/p&gt;
+&lt;p&gt;All of this is only possible due to the support of our sponsors, so I’d like to make sure we thank Dexory, Polymath Robotics, &lt;strong&gt;NVIDIA, AMD, StereoLabs, 3Laws, and Staer&lt;/strong&gt; for their excellent partnership, support, and collaboration.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/a/c/ac50fb66cc297ef30bbad704b2faf7f3edc6cdf2.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Sponsorship Graphic Website v5 No Labels&quot;&gt;&lt;img alt=&quot;Sponsorship Graphic Website v5 No Labels&quot; height=&quot;499&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/a/c/ac50fb66cc297ef30bbad704b2faf7f3edc6cdf2_2_653x499.png&quot; width=&quot;653&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;As always: Happy Navigating,&lt;/p&gt;
+&lt;p&gt;Steve Macenski&lt;/p&gt;
+&lt;p&gt;Open Navigation&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/0/6/06a37e578334cf66b156e3b52360fd9dfa49a80e.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;open_navigation_full_logo&quot;&gt;&lt;img alt=&quot;open_navigation_full_logo&quot; height=&quot;115&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/0/6/06a37e578334cf66b156e3b52360fd9dfa49a80e_2_345x115.png&quot; width=&quot;345&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/nav2-lyrical-release-key-features/57666&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 25 Aug 2026 21:42:33 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Regular Price ROSCon Tickets Extended until August 27th</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57652</guid>
+	<link>https://discourse.openrobotics.org/t/regular-price-roscon-tickets-extended-until-august-27th/57652</link>
+	<description>&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/f/c/fc5d59c6d86b47a8f929ca962a48982599cdc4a3.png&quot; title=&quot;Toronto_LOGO_RGB&quot;&gt;&lt;img alt=&quot;Toronto_LOGO_RGB&quot; height=&quot;79&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/f/c/fc5d59c6d86b47a8f929ca962a48982599cdc4a3.png&quot; width=&quot;345&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+&lt;img alt=&quot;:tada:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/tada.png?v=15&quot; title=&quot;:tada:&quot; width=&quot;20&quot; /&gt; Great news! Thanks to the generous support of &lt;a href=&quot;https://www.destinationtoronto.com/&quot;&gt;Destination Toronto&lt;/a&gt; weâ€™ve extended the &lt;a href=&quot;https://roscon.regfox.com/roscon-2026&quot;&gt;sale of regular price ROSCon tickets&lt;/a&gt; until &lt;span class=&quot;discourse-local-date&quot;&gt;Fri, Aug 28, 2026 6:59 AM UTC&lt;/span&gt;.&lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/regular-price-roscon-tickets-extended-until-august-27th/57652&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 25 Aug 2026 03:04:14 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Nvidia jetson debloating guide</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57606</guid>
+	<link>https://discourse.openrobotics.org/t/nvidia-jetson-debloating-guide/57606</link>
+	<description>&lt;p&gt;does anyone know of like an nvidia jetson debloating guide that exists?&lt;/p&gt;
+&lt;p&gt;I was just updating my jetson to the latest jetpack release and wanted to take a go at removing some of the massive amounts of bloat that nvidia ships with jetpack. I looked around and couldn’t find really many good guides on getting rid of some of the garbage they leave laying around&lt;/p&gt;
+&lt;p&gt;if no such guide exists, I was pretty comprehensive in documenting the steps that I took to clean things up. would anyone be interested in me writing it up into a guide and publishing it? (I’m not talking about smth paid, I mean like a free blog post)&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;8 posts - 4 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/nvidia-jetson-debloating-guide/57606&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sun, 23 Aug 2026 05:38:22 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: How do I open the connector cap on an Ouster OS0-128 to inspect the internal ethernet connector? (fastener type unknown)</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57596</guid>
+	<link>https://discourse.openrobotics.org/t/how-do-i-open-the-connector-cap-on-an-ouster-os0-128-to-inspect-the-internal-ethernet-connector-fastener-type-unknown/57596</link>
+	<description>&lt;p&gt;I have an Ouster OS0-128 with an ethernet connectivity fault, and I want to remove the connector cap on the base to inspect the sensor-side connector pins and internal ethernet wiring.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Symptom and what I’ve ruled out:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;I had lidar and interface box, I tried connecting different ouster with existing interface box, I got data, it’s working.&lt;/li&gt;
+&lt;li&gt;But issue is my existing OS0-128 not connecting, only inside laser light comming, but no data, As i tried with different interface box also.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This points to the sensor-side connector, hence wanting to open the connector cap.&lt;/p&gt;
+&lt;p&gt;Questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;For anyone who has opened an OS0/OS1 connector cap: what is the exact fastener type and size?&lt;/li&gt;
+&lt;li&gt;Is the connector behind the cap a standard panel-mount part or Ouster-proprietary?&lt;/li&gt;
+&lt;li&gt;Any precautions when refitting — gasket orientation, torque, pin alignment?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I’m aware this likely voids the warranty; Asking here first because Ouster doesn’t publish service documentation.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;6 posts - 5 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/how-do-i-open-the-connector-cap-on-an-ouster-os0-128-to-inspect-the-internal-ethernet-connector-fastener-type-unknown/57596&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sat, 22 Aug 2026 00:45:18 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Announcing FastSwarmSim: Lightweight Multi-UAV ROS 2 Simulation with Lock-Step Time</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57578</guid>
+	<link>https://discourse.openrobotics.org/t/announcing-fastswarmsim-lightweight-multi-uav-ros-2-simulation-with-lock-step-time/57578</link>
+	<description>&lt;p&gt;Hello ROS 2 and robotics simulation community,&lt;/p&gt;
+&lt;p&gt;I would like to introduce &lt;strong&gt;FastSwarmSim&lt;/strong&gt;, an open-source, lightweight multi-UAV simulator for PX4-compatible vehicles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/shupx/FastSwarmSim&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - shupx/FastSwarmSim: lightweight multi-drone simulator · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Documentation: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://shupx.github.io/FastSwarmSim/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;FastSwarmSim Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;FastSwarmSim is designed for multi-robot algorithm development and repeatable simulation-time experiments. It combines a trimmed PX4 runtime, MAVROS-compatible ROS interfaces, RViz visualization, local LiDAR point-cloud rendering, and a conservative lock-step simulation clock.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/3/c/3cbeee6c82bc295c6e7512231e06031e9f214ae1.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;px4_rotor_sim_multi&quot;&gt;&lt;img alt=&quot;px4_rotor_sim_multi&quot; height=&quot;473&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/3/c/3cbeee6c82bc295c6e7512231e06031e9f214ae1_2_690x473.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/c/2ca1ae9c2698dce0d43e7ca33c90731b2efbd741.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;sim_px4_drone_lidar_single&quot;&gt;&lt;img alt=&quot;sim_px4_drone_lidar_single&quot; height=&quot;473&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/2/c/2ca1ae9c2698dce0d43e7ca33c90731b2efbd741_2_690x473.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117095-a-key-feature-lock-step-simulation-time-1&quot; name=&quot;p-117095-a-key-feature-lock-step-simulation-time-1&quot;&gt;&lt;/a&gt;A key feature: lock-step simulation time&lt;/h2&gt;
+&lt;p&gt;FastSwarmSim publishes simulation time through ROS 2 &lt;code&gt;/clock&lt;/code&gt; and advances the simulation in lock-step. This makes simulation progress explicit and reproducible instead of being tied directly to wall-clock speed.&lt;/p&gt;
+&lt;p&gt;With a small adaptation, a ROS node can participate in this timing model: use ROS time, respond to &lt;code&gt;/clock&lt;/code&gt;, and advance its algorithm or publish outputs according to the simulation-time cycle. This allows existing ROS nodes to be integrated into lock-step experiments without redesigning the whole system. Nodes that are not adapted can still run normally, but they will not provide the same deterministic lock-step behavior.&lt;/p&gt;
+&lt;p&gt;The practical result is that the same experiment can be run faster than real time when the workload allows it, while retaining a consistent simulation-time reference across PX4, ROS 2 nodes, sensors, and controllers. This is useful for high-volume algorithm testing, repeatable multi-UAV experiments, accelerated parameter sweeps, and timing-sensitive coordination studies.&lt;/p&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-117095-current-capabilities-2&quot; name=&quot;p-117095-current-capabilities-2&quot;&gt;&lt;/a&gt;Current capabilities&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;PX4-compatible multi-rotor simulation;&lt;/li&gt;
+&lt;li&gt;single- and multi-vehicle launch workflows;&lt;/li&gt;
+&lt;li&gt;ROS 2 and MAVROS-compatible interfaces;&lt;/li&gt;
+&lt;li&gt;namespace-based multi-vehicle operation;&lt;/li&gt;
+&lt;li&gt;RViz visualization;&lt;/li&gt;
+&lt;li&gt;local LiDAR point-cloud simulation;&lt;/li&gt;
+&lt;li&gt;ROS 2 command-line tools, including map generation;&lt;/li&gt;
+&lt;li&gt;keyboard control for interactive vehicle operation;&lt;/li&gt;
+&lt;li&gt;documentation hosted with GitHub Pages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On a desktop-class computer, the documentation reports operation up to approximately 100x real time for a single vehicle with LiDAR simulation disabled, with lower but still accelerated rates as the vehicle count increases.&lt;/p&gt;
+&lt;p&gt;The project is still evolving, and feedback, use cases, and contributions are welcome.&lt;/p&gt;
+&lt;p&gt;Best regards,&lt;br /&gt;
+Peixuan Shu, Beihang University, China&lt;/p&gt;
+&lt;p&gt;Email: &lt;a href=&quot;mailto:shupeixuan@qq.com&quot;&gt;shupeixuan@qq.com&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/announcing-fastswarmsim-lightweight-multi-uav-ros-2-simulation-with-lock-step-time/57578&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 21 Aug 2026 08:56:41 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Now Open Source! HM-LD1 dToF Lidar Officially Supports ROS1 &amp; ROS2</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57563</guid>
+	<link>https://discourse.openrobotics.org/t/now-open-source-hm-ld1-dtof-lidar-officially-supports-ros1-ros2/57563</link>
+	<description>&lt;p&gt;&lt;img alt=&quot;:rocket:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/rocket.png?v=15&quot; title=&quot;:rocket:&quot; width=&quot;20&quot; /&gt; Now Open Source! &lt;strong&gt;HM-LD1 3D dToF Lidar&lt;/strong&gt; Officially Supports ROS1 &amp;amp; ROS2&lt;/p&gt;
+&lt;p&gt;Robot developers, this one’s for you — we’ve released the official ROS1 Noetic + ROS2 Humble/Lyrical dual driver for the HM-LD1 depth camera. The open-source repository is now live:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/e/f/ef98749c44c52ba71a838df62e6a1ba427b94def.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;HM-LD1 ROS&quot;&gt;&lt;img alt=&quot;HM-LD1 ROS&quot; height=&quot;332&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/e/f/ef98749c44c52ba71a838df62e6a1ba427b94def_2_690x332.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;:backhand_index_pointing_right:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/backhand_index_pointing_right.png?v=15&quot; title=&quot;:backhand_index_pointing_right:&quot; width=&quot;20&quot; /&gt; &lt;a href=&quot;https://github.com/myrobotproject/HM-LD1-ROS1-ROS2-driver&quot; rel=&quot;noopener nofollow ugc&quot;&gt;myrobotproject/HM-LD1-ROS1-ROS2-driver: ROS1 Noetic &amp;amp; ROS2 Humble/Lyrical driver for HM-LD1 dToF Lidar depth sensor module. Serial / UDP / UVC transports, depth + point cloud , auto-reconnect.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Why choose HM-LD1?&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;:white_check_mark:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/white_check_mark.png?v=15&quot; title=&quot;:white_check_mark:&quot; width=&quot;20&quot; /&gt; Outstanding outdoor performance under strong light&lt;br /&gt;
+Still reaches a stable 8 meters even under 80 klux sunlight — something many dToF sensors struggle with.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;:white_check_mark:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/white_check_mark.png?v=15&quot; title=&quot;:white_check_mark:&quot; width=&quot;20&quot; /&gt; Wide ranging distance&lt;br /&gt;
+Indoor: 0.2 – 25 m&lt;br /&gt;
+Outdoor (strong light): up to 8 m&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;:white_check_mark:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/white_check_mark.png?v=15&quot; title=&quot;:white_check_mark:&quot; width=&quot;20&quot; /&gt; Flexible interfaces&lt;br /&gt;
+Supports UVC / UDP / UART, making it easy to connect with different controllers.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;:white_check_mark:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/white_check_mark.png?v=15&quot; title=&quot;:white_check_mark:&quot; width=&quot;20&quot; /&gt; Excellent platform compatibility&lt;br /&gt;
+Verified on Raspberry Pi and Jetson Nano, and supports Windows / Linux / ARM.&lt;/p&gt;
+&lt;p&gt;Robot developers can now quickly integrate depth images, point clouds, and diagnostics via ROS, significantly lowering the development barrier.&lt;/p&gt;
+&lt;p&gt;Feel free to star, fork, or open issues — we’ll keep maintaining and improving it!&lt;/p&gt;
+&lt;p&gt;Interested in the product or potential collaboration? Drop a comment or send a DM!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/now-open-source-hm-ld1-dtof-lidar-officially-supports-ros1-ros2/57563&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 21 Aug 2026 02:35:10 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: What VPN / networking solution do you use for ROS robots?</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-57544</guid>
+	<link>https://discourse.openrobotics.org/t/what-vpn-networking-solution-do-you-use-for-ros-robots/57544</link>
+	<description>&lt;p&gt;For anyone running ROS across more than a single machine or LAN, how are you handling networking today?&lt;/p&gt;
+&lt;p&gt;Iâ€™m particularly curious about setups where you need remote access to robots, ROS 1/ROS 2 communication across sites or subnets, or connectivity between robots and backend/fleet systems.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What do you use?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;OpenVPN / traditional VPN&lt;/li&gt;
+&lt;li&gt;Tailscale&lt;/li&gt;
+&lt;li&gt;ZeroTier&lt;/li&gt;
+&lt;li&gt;Self-managed WireGuard&lt;/li&gt;
+&lt;li&gt;Other&lt;/li&gt;
+&lt;li&gt;No VPN&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/what-vpn-networking-solution-do-you-use-for-ros-robots/57544/1&quot;&gt;Click to view the poll.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Would be great to hear in the comments what your setup looks like, especially for ROS 2/DDS discovery and multi-machine communication, and whether networking constraints influenced your choice.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/what-vpn-networking-solution-do-you-use-for-ros-robots/57544&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 20 Aug 2026 12:17:51 +0000</pubDate>
+</item>
+
+</channel>
+</rss>
