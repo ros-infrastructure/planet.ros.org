@@ -1,0 +1,934 @@
+<?xml version="1.0"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns="http://purl.org/rss/1.0/"
+>
+<channel rdf:about="http://planet.ros.org">
+	<title>Planet ROS</title>
+	<link>http://planet.ros.org</link>
+	<description>Planet ROS - http://planet.ros.org</description>
+
+	<items>
+		<rdf:Seq>
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58708" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58658" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58616" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58568" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58566" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58556" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58542" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58541" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58501" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58394" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58367" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58350" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58349" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58347" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58340" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58308" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58302" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58247" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58232" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58222" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58184" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58097" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58088" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58084" />
+			<rdf:li rdf:resource="discourse.openrobotics.org-topic-58035" />
+		</rdf:Seq>
+	</items>
+</channel>
+
+<item rdf:about="discourse.openrobotics.org-topic-58708">
+	<title>ROS Discourse General: Upcoming breaking changes in ros2_control: deprecated Handle / export APIs removed</title>
+	<link>https://discourse.openrobotics.org/t/upcoming-breaking-changes-in-ros2-control-deprecated-handle-export-apis-removed/58708</link>
+	<content:encoded>&lt;p&gt;Quick heads-up for anyone maintaining &lt;strong&gt;hardware components&lt;/strong&gt; or &lt;strong&gt;controllers&lt;/strong&gt; on &lt;strong&gt;Rolling or Lyrical&lt;/strong&gt;: &lt;code&gt;ros2_control 6.12.0&lt;/code&gt; removes the API that has been deprecated since Jazzy. It has been released into Lyrical and Rolling and will reach users with the next sync. We’ve patched most simulators and many public drivers already.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If your package currently builds with deprecation warnings from &lt;code&gt;hardware_interface&lt;/code&gt; or &lt;code&gt;controller_interface&lt;/code&gt;, it will very likely fail to build after the sync.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Jazzy and Kilted are &lt;strong&gt;not affected&lt;/strong&gt;. The deprecated API remains there for backward compatibility.&lt;/p&gt;
+&lt;h4&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118853-migration-notes-1&quot; name=&quot;p-118853-migration-notes-1&quot;&gt;&lt;/a&gt;Migration notes&lt;/h4&gt;
+&lt;p&gt;We had &lt;a href=&quot;https://control.ros.org/rolling/doc/ros2_control/doc/migration.html&quot;&gt;migration notes&lt;/a&gt; for this available for some time but today I made some updates too on &lt;a href=&quot;https://github.com/ros-controls/ros2_control/pull/3674&quot; rel=&quot;noopener nofollow ugc&quot;&gt;this PR&lt;/a&gt;, should it be still in flight when you are reading this.&lt;/p&gt;
+&lt;h4&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118853-whats-being-removed-2&quot; name=&quot;p-118853-whats-being-removed-2&quot;&gt;&lt;/a&gt;What’s being removed&lt;/h4&gt;
+&lt;p&gt;Affected packages are &lt;code&gt;hardware_interface&lt;/code&gt; and &lt;code&gt;controller_interface&lt;/code&gt; from this PR &lt;a href=&quot;https://github.com/ros-controls/ros2_control/pull/3610&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros2_control#3610&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Raw-pointer handles.&lt;/strong&gt; You can no longer construct a &lt;code&gt;StateInterface&lt;/code&gt;/&lt;code&gt;CommandInterface&lt;/code&gt; from a &lt;code&gt;double*&lt;/code&gt; that points into your own member variables. Handles now own their data, and you access it through shared pointers and the getter/setter API.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Legacy hardware component exports.&lt;/strong&gt; &lt;code&gt;export_state_interfaces()&lt;/code&gt; and &lt;code&gt;export_command_interfaces()&lt;/code&gt;, which return interfaces by value, are removed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Legacy chainable controller exports.&lt;/strong&gt; The old by-value export methods on &lt;code&gt;ChainableControllerInterface&lt;/code&gt; are removed in favour of the shared-pointer &lt;code&gt;on_export_*_interfaces_list()&lt;/code&gt; callbacks.&lt;/li&gt;
+&lt;/ol&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/upcoming-breaking-changes-in-ros2-control-deprecated-handle-export-apis-removed/58708&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-10-08T18:02:33+00:00</dc:date>
+	<dc:creator>bmagyar</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58658">
+	<title>ROS Discourse General: Rokoko ROS 2 bridge for Smartgloves II is released</title>
+	<link>https://discourse.openrobotics.org/t/rokoko-ros-2-bridge-for-smartgloves-ii-is-released/58658</link>
+	<content:encoded>&lt;p&gt;We’ve released an open-source ROS 2 bridge for the Rokoko Device SDK. It takes solved hand data from &lt;strong&gt;Smartgloves II&lt;/strong&gt; and publishes it natively into ROS 2.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/9/29695c1fb21034aeca120aae327fb85eef9d70d1.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;1791280376688&quot;&gt;&lt;img alt=&quot;1791280376688&quot; height=&quot;368&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/9/29695c1fb21034aeca120aae327fb85eef9d70d1.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;What’s included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;26-joint hand poses&lt;/strong&gt; per solved frame, in OpenXR &lt;code&gt;XrHandJointEXT&lt;/code&gt; order.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TF transforms&lt;/strong&gt;, one per joint (opt-in).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RViz visualization&lt;/strong&gt; of the hand skeleton (opt-in).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Per-hand diagnostics&lt;/strong&gt; on &lt;code&gt;/diagnostics&lt;/code&gt;, once a second.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;calibrate service&lt;/strong&gt; to set which direction is “forward”.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One launch command&lt;/strong&gt; starts the driver, hand solver and bridge together.&lt;/li&gt;
+&lt;li&gt;One left and one right glove are supported at a time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Requirements: &lt;strong&gt;ROS 2 Lyrical Luth&lt;/strong&gt; and &lt;strong&gt;Rokoko Device SDK 0.10.0&lt;/strong&gt; or newer.&lt;/p&gt;
+&lt;p&gt;Licensed under &lt;strong&gt;Apache 2.0&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Docs: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://sdk.rokoko.com/integrations/ros2/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ROS 2 bridge | ROKOKO Device SDK&lt;/a&gt;&lt;/p&gt;
+&lt;aside class=&quot;onebox githubrepo&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+
+      &lt;a href=&quot;https://github.com/Rokoko/rokoko-ros2-bridge&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;github.com&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    &lt;div class=&quot;github-row&quot;&gt;
+  &lt;img class=&quot;thumbnail&quot; height=&quot;344&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/1/4/147eebb2c8e0dd9a1de174c345c66a05d99bff1b_2_690x344.png&quot; width=&quot;690&quot; /&gt;
+
+  &lt;h3&gt;&lt;a href=&quot;https://github.com/Rokoko/rokoko-ros2-bridge&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;GitHub - Rokoko/rokoko-ros2-bridge: A ROS2 bridge to be used with Rokoko's Smartgloves...&lt;/a&gt;&lt;/h3&gt;
+
+    &lt;p&gt;&lt;span class=&quot;github-repo-description&quot;&gt;A ROS2 bridge to be used with Rokoko's Smartgloves II along the Rokoko Device SDK&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/rokoko-ros-2-bridge-for-smartgloves-ii-is-released/58658&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-10-07T16:11:22+00:00</dc:date>
+	<dc:creator>Olivia_Rokoko</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58616">
+	<title>ROS Discourse General: University of Waterloo user study on understanding CMake changes</title>
+	<link>https://discourse.openrobotics.org/t/university-of-waterloo-user-study-on-understanding-cmake-changes/58616</link>
+	<content:encoded>&lt;p&gt;Hi everyone,&lt;/p&gt;
+&lt;p&gt;I’m Mattie Nejati, a Ph.D. candidate at the University of Waterloo. I’m recruiting participants for a user study on &lt;strong&gt;understanding the impact of changes to CMake build specifications&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Since CMake is widely used in the ROS ecosystem, I thought developers in this community might be particularly interested in participating.&lt;/p&gt;
+&lt;p&gt;We are evaluating a new approach that aims to help developers identify how a modification to a CMake build specification affects the resulting build configuration.&lt;/p&gt;
+&lt;p&gt;The study is conducted entirely online, takes about &lt;strong&gt;one hour&lt;/strong&gt;, and involves inspecting changes to CMake build specifications and identifying their impact.&lt;/p&gt;
+&lt;p&gt;You can participate if you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;are &lt;strong&gt;18–64 years old&lt;/strong&gt;; and&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;have any level of experience with &lt;strong&gt;CMake, programming, or code review&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You do &lt;strong&gt;not&lt;/strong&gt; need to be a CMake expert. We are interested in participants with different levels of experience.&lt;/p&gt;
+&lt;p&gt;You will need a computer with internet access and approximately &lt;strong&gt;4 GB of free space&lt;/strong&gt; to download the files required for the tasks.&lt;/p&gt;
+&lt;p&gt;We will not collect your name. We will ask for your email address only for study follow-up. It will be stored separately from your study data using a randomly assigned ID, and your name or email will not appear in any dataset or publication.&lt;/p&gt;
+&lt;p&gt;The study has received clearance from the &lt;strong&gt;University of Waterloo Research Ethics Board (REB &lt;span class=&quot;hashtag-raw&quot;&gt;#46621&lt;/span&gt;)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If you’re interested, you can find the consent form, screening questionnaire, and study here:&lt;/p&gt;
+&lt;aside class=&quot;onebox allowlistedgeneric&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+
+      &lt;a href=&quot;https://buiscout.cs.uwaterloo.ca/&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;buiscout.cs.uwaterloo.ca&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    
+
+&lt;h3&gt;&lt;a href=&quot;https://buiscout.cs.uwaterloo.ca/&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;Buiscoutusp&lt;/a&gt;&lt;/h3&gt;
+
+
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;Thank you very much for considering participating! I’d also really appreciate it if you shared the study with others who might be interested.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/university-of-waterloo-user-study-on-understanding-cmake-changes/58616&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-10-06T06:26:10+00:00</dc:date>
+	<dc:creator>MattieN</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58568">
+	<title>ROS Discourse General: Tuning StereoSGBM on PS5 Camera (ROS 2 Galactic) for Dense Depth Maps</title>
+	<link>https://discourse.openrobotics.org/t/tuning-stereosgbm-on-ps5-camera-ros-2-galactic-for-dense-depth-maps/58568</link>
+	<content:encoded>&lt;p&gt;Hi everyone,&lt;/p&gt;
+&lt;p&gt;I’m working on setting up a stereo camera PS5 HD Camera in ROS 2 Galactic for stereo depth estimation using &lt;code&gt;stereo_image_proc&lt;/code&gt; (&lt;code&gt;DisparityNode&lt;/code&gt;), with the end goal of feeding the depth data into RTAB-Map for 3D reconstruction.&lt;/p&gt;
+&lt;p&gt;I transitioned from &lt;code&gt;StereoBM&lt;/code&gt; to &lt;code&gt;StereoSGBM&lt;/code&gt; (&lt;code&gt;stereo_algorithm: 1&lt;/code&gt;) to handle the wide-angle camera setup better, but I’m having trouble finding the optimal combination of parameters which result in a dense point cloud with smooth surfaces. My depth output keeps swinging between two extremes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Extremely sparse/empty&lt;/strong&gt; with huge black gaps on uniform surfaces (e.g., walls, desks, pillows).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Overly noisy&lt;/strong&gt; with heavy color “speckle” artifacts across the scene.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What I’ve configured/tried so far:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Matching P1 and P2 to window size:&lt;/strong&gt; Calculated and tuned P1 and P2 based on &lt;code&gt;correlation_window_size&lt;/code&gt; (testing window sizes 5, 7, 9, and 13 with corresponding P₁ = 8 × C × WS² and P₂ = 32 × C × WS²). High P2 values help smooth out surfaces, but &lt;code&gt;rqt_reconfigure&lt;/code&gt; caps P2 at 4000.0, so I’ve been overriding parameters via CLI/launch files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Filter adjustments:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Lowered &lt;code&gt;uniqueness_ratio&lt;/code&gt; (from 15.0 down to 5.0–7.0) to force coverage on weakly textured regions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set &lt;code&gt;texture_ratio&lt;/code&gt; to 0.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tuned &lt;code&gt;speckle_size&lt;/code&gt; (50–200) and &lt;code&gt;speckle_range&lt;/code&gt; (2–4) to filter out isolated noise clusters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Search range &amp;amp; Offsets:&lt;/strong&gt; Set &lt;code&gt;disparity_range&lt;/code&gt; to 128 (multiple of 16) and kept &lt;code&gt;min_disparity&lt;/code&gt; at 0 (raising it above 0 completely wrecked mid/far range depth).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Despite these adjustments, large homogeneous surfaces still disintegrate or become heavily fragmented unless I push the correlation window size to absurdly high values (which causes blocky, stepped artifacts).&lt;/p&gt;
+&lt;p&gt;Here is the code of my DisparityNode in the launch file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-auto&quot;&gt;ComposableNode(
+                    package='stereo_image_proc',
+                    plugin='stereo_image_proc::DisparityNode',
+                    name='disparity_node',
+                    namespace='',
+                    parameters=[{
+                        'stereo_algorithm': 1,          # 0 = StereoBM (30 FPS), 1 = StereoSGBM
+                        'approximate_sync': True,
+                        'queue_size': 2,
+                        'correlation_window_size': 13,
+                        'min_disparity': 0,
+                        'disparity_range': 128,
+                        'uniqueness_ratio': 5.0,
+                        'P1': 1350.0,                         # 8 * 1 * 9^2 (for smoothing boundaries)
+                        'P2': 4000.0,                        # 32 * 1 * 9^2 (for smooth surfaces)
+                        'speckle_size': 150,
+                        'speckle_range': 4,
+                        'full_dp': False,
+                    }]
+                ),
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here I attach the results I got so far.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/7/3/73ead5bbbbab9c566b5a7e0beff74645e6b99912.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;1ks7j200s3th1&quot;&gt;&lt;img alt=&quot;1ks7j200s3th1&quot; height=&quot;399&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/7/3/73ead5bbbbab9c566b5a7e0beff74645e6b99912_2_690x399.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/7/b/7b6487a71b3c464ee7b73e668a66fcdb55852467.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;2u6jvrjko3th1&quot;&gt;&lt;img alt=&quot;2u6jvrjko3th1&quot; height=&quot;311&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/7/b/7b6487a71b3c464ee7b73e668a66fcdb55852467_2_690x311.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Questions:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Are there specific pre-filtering parameters (&lt;code&gt;prefilter_cap&lt;/code&gt;, &lt;code&gt;prefilter_size&lt;/code&gt;) or SGBM settings I’m overlooking for this specific camera lens/sensor?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Could this be a rectification/calibration alignment issue rather than pure SGBM parameter tuning?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Any advice or working configuration examples for similar stereo setups in ROS 2 would be greatly appreciated!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/tuning-stereosgbm-on-ps5-camera-ros-2-galactic-for-dense-depth-maps/58568&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-10-04T09:10:01+00:00</dc:date>
+	<dc:creator>Vladimir_Privalov</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58566">
+	<title>ROS Discourse General: RobotCAD v12.10.0 is released!</title>
+	<link>https://discourse.openrobotics.org/t/robotcad-v12-10-0-is-released/58566</link>
+	<content:encoded>&lt;p&gt;It’s been a long time since I posted any news. Many new features and fixes have been released.&lt;/p&gt;
+&lt;p&gt;Here is a list of some of them that have appeared in recent versions.&lt;/p&gt;
+&lt;p&gt;Added &lt;strong&gt;RobotCAD MCP&lt;/strong&gt; server for agentic robot assembling.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/d/c/dcf1ac4e46c1872a73260e38f419bed6ba87672d.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;mcp&quot;&gt;&lt;img alt=&quot;mcp&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/d/c/dcf1ac4e46c1872a73260e38f419bed6ba87672d_2_690x381.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/e/6/e60507307bcd323d4e7a414c8bcfc5e21d5dc2e5.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;mcp1&quot;&gt;&lt;img alt=&quot;mcp1&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/e/6/e60507307bcd323d4e7a414c8bcfc5e21d5dc2e5_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Updated Models Library. &lt;strong&gt;More models (219 now) and faster import&lt;/strong&gt;. Added xacro and mjcf models import from Models Library.&lt;/p&gt;
+&lt;div class=&quot;d-image-grid&quot;&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/7/273deac10bf1a96f0e9e1b93510aefb2309066f0.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-57-28&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-57-28&quot; height=&quot;380&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/2/7/273deac10bf1a96f0e9e1b93510aefb2309066f0_2_690x380.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/7/b/7b36bf0bebb52c97adc4edf6a4edab81acb0399d.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-19-09&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-19-09&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/7/b/7b36bf0bebb52c97adc4edf6a4edab81acb0399d_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/9/0/90ef9ef6c32dc57e0dedef459ac57437f542aed6.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-18-26&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-18-26&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/9/0/90ef9ef6c32dc57e0dedef459ac57437f542aed6_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/f/2fb0be84d1996e17608ed0458204cf40e29e40c8.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-16-42&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-16-42&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/2/f/2fb0be84d1996e17608ed0458204cf40e29e40c8_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/9/4/94c0d2b072b49d2283aa9d63df69f6c6de0a5009.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-16-11&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-16-11&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/9/4/94c0d2b072b49d2283aa9d63df69f6c6de0a5009_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/9/1/91f92cf04e5eb7dfc617eb3b0d2453b55c38633a.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-15-42&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-15-42&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/9/1/91f92cf04e5eb7dfc617eb3b0d2453b55c38633a_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/d/2d587fb0b26f433b6cd0eaec657b046f5d60a0f5.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-14-47&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-14-47&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/2/d/2d587fb0b26f433b6cd0eaec657b046f5d60a0f5_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/3/f/3f453676a35b7cb97b2d1feb5058f81c9dcb5536.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-13-52&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-13-52&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/3/f/3f453676a35b7cb97b2d1feb5058f81c9dcb5536_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/9/8/98c47fab731fa6696125e98359fb47cab03b1683.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-12-25&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-12-25&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/9/8/98c47fab731fa6696125e98359fb47cab03b1683_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/8/b/8bd072b4f34be980ca02620cb946371d6f4426dd.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;models_library&quot;&gt;&lt;img alt=&quot;models_library&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/8/b/8bd072b4f34be980ca02620cb946371d6f4426dd_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Added &lt;strong&gt;sensors field of view&lt;/strong&gt; with reacting to sensor parameters.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/9/a/9ac9168bc7509f30fbd8138751cc3f52343f1da2.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;sensors_field_of_view&quot;&gt;&lt;img alt=&quot;sensors_field_of_view&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/9/a/9ac9168bc7509f30fbd8138751cc3f52343f1da2_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Other features and fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed an error in &lt;strong&gt;collision creation&lt;/strong&gt; for objects obtained via a link from an &lt;strong&gt;external document.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed the URDF export for meshes retrieved from an &lt;strong&gt;external document via a link.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set Placement&lt;/strong&gt; tools now support &lt;code&gt;Part::LocalCoordinateSystem&lt;/code&gt; (LCS) objects, not only &lt;code&gt;PartDesign::CoordinateSystem&lt;/code&gt;. It also fixes &lt;strong&gt;FreeCAD Assembly to RobotCAD convertion&lt;/strong&gt; with that type of CS as references of joints.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set Placement&lt;/strong&gt; tools now work correctly with links to parts/bodies from &lt;strong&gt;external documents&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;strong&gt;sensors bridging GZ → ROS2&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Controllers config are now also placed in the basic code generator’s config folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;External code generator now support &lt;strong&gt;Sverk&lt;/strong&gt; (&lt;strong&gt;multicopter framework based on PX4&lt;/strong&gt;). This significantly simplifies the control of aerial robots.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;strong&gt;vacuum gripper&lt;/strong&gt; tool. You can make vacuum gripper for Gazebo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added automatic storing parts of robot to folders when using some model creation tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;strong&gt;dependencies installation system&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/4/8/4897f91753b453201805eaabfc5bfa0bfb3d84c1.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;deps_install_sys&quot;&gt;&lt;img alt=&quot;deps_install_sys&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/4/8/4897f91753b453201805eaabfc5bfa0bfb3d84c1_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Many fixes and improvements were not included in this list.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class=&quot;onebox githubrepo&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+
+      &lt;a href=&quot;https://github.com/drfenixion/freecad.robotcad&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;github.com&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    &lt;div class=&quot;github-row&quot;&gt;
+  &lt;img class=&quot;thumbnail&quot; height=&quot;344&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/0/1/0151db1709258c0e6231c244e81b022d08e558fc_2_690x344.png&quot; width=&quot;690&quot; /&gt;
+
+  &lt;h3&gt;&lt;a href=&quot;https://github.com/drfenixion/freecad.robotcad&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;GitHub - drfenixion/freecad.robotcad: RobotCAD is a FreeCAD workbench to generate robot...&lt;/a&gt;&lt;/h3&gt;
+
+    &lt;p&gt;&lt;span class=&quot;github-repo-description&quot;&gt;RobotCAD is a FreeCAD workbench to generate robot description packages for ROS2 (URDF) with launchers to Gazebo and RViz. Includes controllers based on ros2_controllers and sensors based on Gazebo. With integrated models library and a lot of other tools. In other words CAD → ROS2.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/robotcad-v12-10-0-is-released/58566&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-10-04T06:26:18+00:00</dc:date>
+	<dc:creator>fenixionsoul</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58556">
+	<title>ROS Discourse General: Has anyone found a reliable way to validate a hand eye calibration result?</title>
+	<link>https://discourse.openrobotics.org/t/has-anyone-found-a-reliable-way-to-validate-a-hand-eye-calibration-result/58556</link>
+	<content:encoded>&lt;p&gt;I have been trying to work out how a hand eye calibration should be validated and I have not found any complete answer yet&lt;/p&gt;
+&lt;p&gt;There are some tools I looked at (MoveIt Calibration, easy_handeye, Kalibr) that just print reprojection error or transform, but I could not find a clear way to decide from that whether the result can be trusted or not. I read some of their GitHub issues and many people seem to end up in the same place “result looks off” and the only way to find out why is to ask someone more experienced.&lt;/p&gt;
+&lt;p&gt;Checking by eye on one robot and looking at each result in RViz is one thing and it’s fine. But that shouldn’t be the proper way to do it, especially at scale right?&lt;/p&gt;
+&lt;p&gt;So I would really like to know how people handle it in practice. What do you run after a calibration to decide it is good? Validation motion, touching a known point, comparing against a measured pose and does any of it work without someone experienced doing the judging?&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/has-anyone-found-a-reliable-way-to-validate-a-hand-eye-calibration-result/58556&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-10-03T12:00:31+00:00</dc:date>
+	<dc:creator>sanethdassanayake</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58542">
+	<title>ROS Discourse General: ROS2 Parameter Value Querying</title>
+	<link>https://discourse.openrobotics.org/t/ros2-parameter-value-querying/58542</link>
+	<content:encoded>&lt;p&gt;I need a much better way of grabbing the current value of every parameter of every node running on my system. Not just the dynamic ones, but the defaults and overrides from the launch system. From an experiment documentation standpoint, this is extremely important to understanding exactly how things are configured when producing data and later if data is changing figuring if one of these changed. Sure some nodes may be less important and their parameters not matter much, but there would remain many that are important, so I just want to query all of them. Unfortunately in ROS2 this is extremely disruptive to the node graph and it causes data I’m recording to have gaps. I’ve already played around with QoS to make this a little better, but the entire problem is so frustrating regardless. It was so much better in ROS1. Does anyone have a low impact method to achieve this? Or are there plans to make the parameter system smarter in the future? Is there perhaps an easy way behind the scenes to mod source code and do something like write the parameters values to a field/database on startup?&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;4 posts - 4 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/ros2-parameter-value-querying/58542&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-10-02T16:12:39+00:00</dc:date>
+	<dc:creator>engnfrc</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58541">
+	<title>ROS Discourse General: MoveIt 2 Setup Assistant Tutorial: Custom 3-Joint Arm Troubleshooting Guide (ROS 2 Jazzy)</title>
+	<link>https://discourse.openrobotics.org/t/moveit-2-setup-assistant-tutorial-custom-3-joint-arm-troubleshooting-guide-ros-2-jazzy/58541</link>
+	<content:encoded>&lt;p&gt;&lt;strong&gt;Hello ROS Community,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I want to share a comprehensive step-by-step video tutorial on configuring &lt;strong&gt;MoveIt 2&lt;/strong&gt; from scratch for a custom robotic manipulator on &lt;strong&gt;ROS 2 Jazzy&lt;/strong&gt; and &lt;strong&gt;Ubuntu 24.04&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;While most official tutorials use high-DOF industrial manipulators (like the Franka Emika Panda), building configurations for smaller or custom arms often introduces unique glitches that standard guides donâ€™t cover (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=33s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;0:33&lt;/a&gt;). In this video, I take a 3-joint printed arm model (&lt;code&gt;arduinobot&lt;/code&gt;) with a gripper (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=17s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;0:17&lt;/a&gt;), walk through the &lt;strong&gt;MoveIt Setup Assistant&lt;/strong&gt;, generate the config package, and explicitly show how to fix the common runtime errors that pop up (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=1108s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;18:28&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;:television:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/television.png?v=15&quot; title=&quot;:television:&quot; width=&quot;20&quot; /&gt; &lt;strong&gt;Watch the Full Tutorial here:&lt;/strong&gt; &lt;a href=&quot;https://youtu.be/eWbAi8HUdE8&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://youtu.be/eWbAi8HUdE8&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Environment &amp;amp; Setup&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; Ubuntu 24.04 LTS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ROS 2 Version:&lt;/strong&gt; Jazzy Jalisco&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MoveIt Version:&lt;/strong&gt; MoveIt 2.12&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Middleware:&lt;/strong&gt; Cyclone DDS (&lt;code&gt;rmw_cyclonedds_cpp&lt;/code&gt;) (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=199s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;3:19&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; No physical hardware required (uses simulated/fake components in RViz) (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=471s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;7:51&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;What This Video Covers (And the Errors Fixed)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Instead of just showing a flawless run, this video acts as a practical troubleshooting handbook. Here are the 5 major roadblocks we encounter and solve live:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;move_group&lt;/code&gt; Crash (Joint Limits Type Error):&lt;/strong&gt; Fixing the &lt;code&gt;expected double, got integer&lt;/code&gt; error inside &lt;code&gt;joint_limits.yaml&lt;/code&gt; by ensuring type consistency and manually initializing acceleration properties (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=1307s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;21:47&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Action Execution Failure:&lt;/strong&gt; Resolving trajectory failures by explicitly mapping the &lt;code&gt;action_ns: follow_joint_trajectory&lt;/code&gt; namespace inside &lt;code&gt;moveit_controllers.yaml&lt;/code&gt; (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=1604s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;26:44&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Start Point Deviation Abort:&lt;/strong&gt; How to correctly configure and command execution directly from the current robot state to avoid state deviations (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=1559s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;25:59&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Broken Interactive Markers (3-DOF Limitation) (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=1908s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;31:48&lt;/a&gt;):&lt;/strong&gt; Standard KDL kinematics solver fails to compute position and orientation together for a 3-joint setup (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=43s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;0:43&lt;/a&gt;). We resolve this by forcing &lt;code&gt;position_only_ik: true&lt;/code&gt; inside &lt;code&gt;kinematics.yaml&lt;/code&gt; to unlock full marker functionality (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=2063s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;34:23&lt;/a&gt;).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Pilz Industrial Motion Planner Acceleration Violations:&lt;/strong&gt; Setting up the &lt;strong&gt;OMPL&lt;/strong&gt; and &lt;strong&gt;Pilz planners&lt;/strong&gt; (LIN, PTP, CIRC) (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=2249s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;37:29&lt;/a&gt;). We fix joint acceleration violations under linear paths by dialing down the Acceleration Scaling factor to &lt;code&gt;0.3&lt;/code&gt; (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=2349s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;39:09&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;img alt=&quot;:open_book:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/open_book.png?v=15&quot; title=&quot;:open_book:&quot; width=&quot;20&quot; /&gt; Video Timeline &amp;amp; Highlights&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;0:00&lt;/code&gt; - Intro &amp;amp; Overview of the 3-Joint &lt;code&gt;arduinobot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2:51&lt;/code&gt; - Setting up Cyclone DDS Middleware&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;7:09&lt;/code&gt; - URDF Preparation (Stripping conflicting Gazebo/ros2_control tags)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;10:36&lt;/code&gt; - Defining Planning Groups (Arm KDL Chain &amp;amp; Gripper)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;21:16&lt;/code&gt; - &lt;strong&gt;[Error Fix 1]&lt;/strong&gt; Repairing &lt;code&gt;joint_limits.yaml&lt;/code&gt; formatting&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;26:16&lt;/code&gt; - &lt;strong&gt;[Error Fix 2]&lt;/strong&gt; Structuring &lt;code&gt;moveit_controllers.yaml&lt;/code&gt; action namespaces&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;31:59&lt;/code&gt; - &lt;strong&gt;[Error Fix 3]&lt;/strong&gt; Fixing Interactive Markers via Position-Only IK&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;37:00&lt;/code&gt; - Switching to Pilz Industrial Planner for Linear (LIN) Motion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are currently struggling to port a low-degree-of-freedom manipulator or custom URDF into MoveIt 2 on Jazzy, I hope this deep dive saves you hours of debugging (&lt;a href=&quot;https://www.youtube.com/watch?v=eWbAi8HUdE8&amp;amp;t=33s&quot; rel=&quot;noopener nofollow ugc&quot;&gt;0:33&lt;/a&gt;)!&lt;/p&gt;
+&lt;p&gt;I would love to hear feedback from the community regarding your experiences with Position-Only IK behaviors or configuring custom industrial motion planners on Jazzy!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/moveit-2-setup-assistant-tutorial-custom-3-joint-arm-troubleshooting-guide-ros-2-jazzy/58541&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-10-02T16:09:37+00:00</dc:date>
+	<dc:creator>Prasad_Prabhu</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58501">
+	<title>ROS Discourse General: Introducing NoDL: the Node Definition Language (ROSCon recap)</title>
+	<link>https://discourse.openrobotics.org/t/introducing-nodl-the-node-definition-language-roscon-recap/58501</link>
+	<content:encoded>&lt;p&gt;&lt;strong&gt;TLDR:&lt;/strong&gt; come work on &lt;a href=&quot;https://nodl.readthedocs.io/en/latest/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;NoDL&lt;/a&gt; in the &lt;a href=&quot;https://docs.google.com/document/d/1xFqQECOKVCR3sZIUHGCPUi2huXw6nvgMxu6G3qBuQDU/edit?tab=t.0&quot; rel=&quot;noopener nofollow ugc&quot;&gt;rosgraph-wg&lt;/a&gt;. Join the mailing list for automatic calendar invites to meetings: &lt;a href=&quot;https://groups.google.com/u/1/g/rosgraph-wg&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://groups.google.com/u/1/g/rosgraph-wg&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi everyone!&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;mention&quot; href=&quot;https://discourse.openrobotics.org/u/emersonknapp&quot;&gt;@emersonknapp&lt;/a&gt; and I presented “The Legible Node” at ROSCon last week. We talked about two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Thin nodes - your &lt;em&gt;node&lt;/em&gt; is an interface adapter, it should not contain robot logic&lt;/li&gt;
+&lt;li&gt;NoDL - the node definition language that allows you to statically declare your node interfaces&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you didnt catch it, &lt;a href=&quot;https://sea2.discourse-cdn.com/flex022/404&quot; rel=&quot;noopener nofollow ugc&quot;&gt;here are the slides (the_legible_node_slides.pdf)&lt;/a&gt; (5.4 MB) - go check out the recording once its up. Working example code &lt;a href=&quot;https://github.com/emersonknapp/roscon2026_the_legible_node&quot; rel=&quot;noopener nofollow ugc&quot;&gt;here&lt;/a&gt; too.&lt;/p&gt;
+&lt;p&gt;We had a great response from everyone at the conference, and we’re really excited to keep building NoDL with the community.&lt;/p&gt;
+&lt;h1&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118576-nodl-recap-1&quot; name=&quot;p-118576-nodl-recap-1&quot;&gt;&lt;/a&gt;NoDL Recap&lt;/h1&gt;
+&lt;p&gt;A NoDL document looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-yaml&quot;&gt;nodl_version: 2
+description: Drives a differential-base robot along a sequence of waypoints.
+
+include:
+  - ref: nodl://rclcpp/node
+
+parameters:
+  max_linear_speed:
+    type: double
+    default_value: 0.8
+    description: Upper bound on commanded forward speed, in m/s.
+
+publishers:
+  - name: ~/status
+    type: std_msgs/msg/String
+    qos: {history: KEEP_LAST, depth: 1, reliability: RELIABLE}
+    description: Human-readable status of the waypoint follower.
+
+subscriptions:
+  - name: odom
+    type: nav_msgs/msg/Odometry
+    qos: {history: KEEP_LAST, depth: 10, reliability: BEST_EFFORT}
+    description: Wheel/inertial odometry used to track pose.
+
+service_servers:
+  - name: ~/cancel
+    type: std_srvs/srv/Trigger
+    description: Drops any queued waypoints and stops the robot.
+
+service_clients:
+  - name: /global_costmap/clear_entirely
+    type: std_srvs/srv/Trigger
+    description: Asks the costmap server to clear itself before a retry.
+
+action_servers:
+  - name: ~/follow_waypoints
+    type: nav2_msgs/action/FollowWaypoints
+    description: Follows an ordered list of waypoints to completion.
+
+action_clients:
+  - name: /navigate_to_pose
+    type: nav2_msgs/action/NavigateToPose
+    description: Delegates single-goal navigation to the planner stack.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You write this as part of your source code to declare the interface of your node (pub, sub, service, action, clients, params).&lt;/p&gt;
+&lt;p&gt;You can manually write a nodl document, or you can scrape an existing interface from a running node, using &lt;code&gt;ros2 nodl describe &amp;lt;node_name&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Once you have a nodl document you can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;assert that a running node conforms to the spec&lt;/li&gt;
+&lt;li&gt;generate node documentation&lt;/li&gt;
+&lt;li&gt;generate node boilerplate&lt;/li&gt;
+&lt;li&gt;(currently working on it) map out your application rosgraph statically&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of these concepts are covered in our documentation here: &lt;a href=&quot;https://nodl.readthedocs.io&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://nodl.readthedocs.io&lt;/a&gt; - go read it&lt;/p&gt;
+&lt;h1&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118576-come-work-with-us-2&quot; name=&quot;p-118576-come-work-with-us-2&quot;&gt;&lt;/a&gt;Come work with us&lt;/h1&gt;
+&lt;p&gt;We are building NoDL in the ROSGraph Working Group (&lt;a href=&quot;https://docs.google.com/document/d/1xFqQECOKVCR3sZIUHGCPUi2huXw6nvgMxu6G3qBuQDU/edit?tab=t.0&quot; rel=&quot;noopener nofollow ugc&quot;&gt;link&lt;/a&gt;). Currently, its &lt;a class=&quot;mention&quot; href=&quot;https://discourse.openrobotics.org/u/emersonknapp&quot;&gt;@emersonknapp&lt;/a&gt;, Luke Sy and myself - we would love more friends!&lt;/p&gt;
+&lt;p&gt;You can check out what we’re working on in our current &lt;a href=&quot;https://github.com/ros-tooling/nodl/milestone/3&quot; rel=&quot;noopener nofollow ugc&quot;&gt;milestone&lt;/a&gt;. Exciting ones:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pluggable code generator system, and more code generation features&lt;/li&gt;
+&lt;li&gt;Library-based node extension/mixin features&lt;/li&gt;
+&lt;li&gt;Graph analysis through launchfiles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We meet fornightly, next meeting is &lt;span class=&quot;discourse-local-date&quot;&gt;Tue, Oct 13, 2026 8:00 PM UTC&lt;/span&gt;→&lt;span class=&quot;discourse-local-date&quot;&gt;Tue, Oct 13, 2026 9:00 PM UTC&lt;/span&gt; The meeting link is open to anyone: &lt;a class=&quot;inline-onebox&quot; href=&quot;http://meet.google.com/veu-qkhb-iim&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Google Meet meeting&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118576-how-to-get-involved-3&quot; name=&quot;p-118576-how-to-get-involved-3&quot;&gt;&lt;/a&gt;How to get involved&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Join the mailing list and you’ll automatically get a meeting calendar invite: &lt;a href=&quot;https://groups.google.com/u/1/g/rosgraph-wg&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://groups.google.com/u/1/g/rosgraph-wg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;say hi in Zulip - &lt;a class=&quot;inline-onebox&quot; href=&quot;https://openrobotics.zulipchat.com/#narrow/channel/546182-ROSGraph-Working-Group/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Public view of Open Source Robotics Foundation | Zulip team chat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;read the docs: &lt;a href=&quot;https://nodl.readthedocs.io&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://nodl.readthedocs.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;check out the repo: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/ros-tooling/nodl&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - ros-tooling/nodl: ROS 2 Node Definition Lanaguage (NoDL) · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;have a look at our milestones and project board
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/orgs/ros-tooling/projects/6/views/1&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ROSGraph WG · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/ros-tooling/nodl/milestone/3&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub · Where software is built&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118576-links-4&quot; name=&quot;p-118576-links-4&quot;&gt;&lt;/a&gt;LINKS&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;ROSCon Presentation materials (slides and &lt;em&gt;working examples)&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/emersonknapp/roscon2026_the_legible_node&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - emersonknapp/roscon2026_the_legible_node: Materials from ROSCon 2026 talk &quot;The Legible Node: Patterns and tools for clearer, more declarative ROS applications&quot; · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NoDL&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;docs: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://nodl.readthedocs.io/en/latest/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;NoDL: Node Definition Language&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;repo: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/ros-tooling/nodl&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - ros-tooling/nodl: ROS 2 Node Definition Lanaguage (NoDL) · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ROSGraph-wg&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Info page: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://docs.google.com/document/d/1xFqQECOKVCR3sZIUHGCPUi2huXw6nvgMxu6G3qBuQDU/edit?tab=t.0&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ROSGraph Working Group - Google Docs&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Meeting link: &lt;a class=&quot;inline-onebox&quot; href=&quot;http://meet.google.com/veu-qkhb-iim&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Google Meet meeting&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/u/1/g/rosgraph-wg&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://groups.google.com/u/1/g/rosgraph-wg&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zulip channel: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://openrobotics.zulipchat.com/#narrow/channel/546182-ROSGraph-Working-Group/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Public view of Open Source Robotics Foundation | Zulip team chat&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Project board: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/orgs/ros-tooling/projects/6/views/1&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ROSGraph WG · GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Current milestone: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/ros-tooling/nodl/milestone/3&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub · Where software is built&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;p&gt;&lt;small&gt;4 posts - 3 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/introducing-nodl-the-node-definition-language-roscon-recap/58501&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-29T22:49:47+00:00</dc:date>
+	<dc:creator>alistair-english</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58394">
+	<title>ROS Discourse General: Question on local vs. remote inference placement for perception tasks</title>
+	<link>https://discourse.openrobotics.org/t/question-on-local-vs-remote-inference-placement-for-perception-tasks/58394</link>
+	<content:encoded>&lt;p&gt;Hey all!  ECE undergrad here, exploring an inference-routing idea for robots (deciding at runtime whether a perception or higher-level AI task runs onboard, on a nearby edge server, or in the cloud, based on deadlines, network conditions, and local compute load) and trying to validate the problem before building anything.&lt;/p&gt;
+&lt;p&gt;For those running real robots: is your local/remote split for perception or AI tasks fixed, or does it ever change dynamically? Has latency or local compute contention ever actually caused a problem, what happened, and how did you fix it (changed placement, went async, added local compute, something else)? And has anyone tried offloading inference and then walked it back. What made it not worth it?&lt;/p&gt;
+&lt;p&gt;Not asking about anything safety-critical (e-stops, motor control), just perception/AI tasks. Production, lab, or abandoned-experiment stories all welcome, just mention which is which. Thanks!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/question-on-local-vs-remote-inference-placement-for-perception-tasks/58394&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-25T12:50:06+00:00</dc:date>
+	<dc:creator>johan784</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58367">
+	<title>ROS Discourse General: Ros2_unbag is now available via the ROS 2 buildfarm 📦</title>
+	<link>https://discourse.openrobotics.org/t/ros2-unbag-is-now-available-via-the-ros-2-buildfarm/58367</link>
+	<content:encoded>&lt;p&gt;Hi everyone,&lt;/p&gt;
+&lt;p&gt;A small-but-important update for &lt;strong&gt;&lt;a href=&quot;https://github.com/ika-rwth-aachen/ros2_unbag&quot; rel=&quot;noopener nofollow ugc&quot;&gt;&lt;code&gt;ros2_unbag&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/6/5/65557949e63874af777eaa1e94f36a5296fb9afe.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;badge (1)&quot;&gt;&lt;img alt=&quot;badge (1)&quot; height=&quot;80&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/6/5/65557949e63874af777eaa1e94f36a5296fb9afe_2_80x80.png&quot; width=&quot;80&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Starting with &lt;strong&gt;v1.3.0&lt;/strong&gt;, &lt;code&gt;ros2_unbag&lt;/code&gt; is now released through the official ROS 2 buildfarm.&lt;/p&gt;
+&lt;p&gt;That means installation is now as simple as:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-auto&quot;&gt;sudo apt install ros-&amp;lt;distro&amp;gt;-unbag
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and then:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-auto&quot;&gt;ros2 unbag
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;No separate pip install, no cloning, no building from source — just a regular ROS package.&lt;/p&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118398-for-anyone-who-hasnt-come-across-ros2_unbag-yet-1&quot; name=&quot;p-118398-for-anyone-who-hasnt-come-across-ros2_unbag-yet-1&quot;&gt;&lt;/a&gt;For anyone who hasn’t come across &lt;code&gt;ros2_unbag&lt;/code&gt; yet:&lt;/h3&gt;
+&lt;p&gt;Your robot packs the bags; &lt;code&gt;ros2_unbag&lt;/code&gt; brings them to your room, unpacks them, and sorts out the mess. No lost luggage included.&lt;/p&gt;
+&lt;p&gt;It supports exporting data to, among others:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;images and videos&lt;/li&gt;
+&lt;li&gt;point clouds&lt;/li&gt;
+&lt;li&gt;CSV&lt;/li&gt;
+&lt;li&gt;JSON / YAML&lt;/li&gt;
+&lt;li&gt;custom formats through user-defined processors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It also provides parallelized extraction, topic filtering, organized output structures, and both CLI and GUI workflows.&lt;/p&gt;
+&lt;p&gt;Getting ros2_unbag into the ROS buildfarm was something I had wanted to do for a while, so I’m very happy that installation is now much more in line with the usual ROS 2 workflow.&lt;/p&gt;
+&lt;p&gt;GitHub: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/ika-rwth-aachen/ros2_unbag&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - ika-rwth-aachen/ros2_unbag: A ROS 2 tool for exporting bags to human readable files. Supports pluggable export routines to handle any message type. · GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As always, feedback, feature requests, bug reports, and contributions are very welcome!&lt;/p&gt;
+&lt;p&gt;Happy unbagging &lt;img alt=&quot;:package:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/package.png?v=15&quot; title=&quot;:package:&quot; width=&quot;20&quot; /&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/ros2-unbag-is-now-available-via-the-ros-2-buildfarm/58367&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-24T09:29:39+00:00</dc:date>
+	<dc:creator>lostendo</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58350">
+	<title>ROS Discourse General: ROSCon Toronto FollowUp: Kubernetes/KubeEdge with ROS 2</title>
+	<link>https://discourse.openrobotics.org/t/roscon-toronto-followup-kubernetes-kubeedge-with-ros-2/58350</link>
+	<content:encoded>&lt;p&gt;Hi All&lt;/p&gt;
+&lt;p&gt;those who joined the k8s/kubeedge with ROS 2 meetup at ROSCon Toronto, here is the thread that we follow up more information.&lt;br /&gt;
+please subscribe this thread so that you will not miss the notification.&lt;/p&gt;
+&lt;p&gt;as we mentioned, letâ€™s follow up more details about this topic after ROSCon.&lt;br /&gt;
+i will send the online meeting once i get back to Tokyo, probably in Oct we can have the follow up online meeting.&lt;/p&gt;
+&lt;p&gt;thanks,&lt;br /&gt;
+Tomoya&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;5 posts - 3 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/roscon-toronto-followup-kubernetes-kubeedge-with-ros-2/58350&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-23T17:42:51+00:00</dc:date>
+	<dc:creator>tomoyafujita</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58349">
+	<title>ROS Discourse General: Fifteen Years of MoveIt, and the Next Fifteen</title>
+	<link>https://discourse.openrobotics.org/t/fifteen-years-of-moveit-and-the-next-fifteen/58349</link>
+	<content:encoded>&lt;p&gt;Today we announced that &lt;a href=&quot;https://www.qualcomm.com/news/releases&quot; rel=&quot;noopener nofollow ugc&quot;&gt;PickNik Inc. and Qualcomm Technologies, Inc. are joining forces&lt;/a&gt;. Before I go into that, I want to talk about MoveIt, because MoveIt is the reason any of this happened.&lt;/p&gt;
+&lt;p&gt;If you have learned about robotic arm manipulation in the past decade and a half, or been involved in manipulation R&amp;amp;D, there’s a good chance you’ve used MoveIt. More than 560 people have contributed code across the MoveIt project, which today spans 40 repositories, 6,700 GitHub stars, and 4,400 forks. The two main MoveIt papers have been cited more than 1,700 times between them.  More than a million people have visited MoveIt’s websites and documentation over the years. Thousands of robot models have been made to work with it, in labs and companies I have never heard of, which is the point.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where MoveIt came from&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;MoveIt started at Willow Garage, and the earliest and largest debts are owed to Ioan-Alex Șucan, Sachin Chitta, E. Gil Jones, and Acorn Pooley, who wrote the first version of what became the standard way to move an arm in ROS. I got my start in this world as a motion planning intern at Willow Garage in the summer of 2012, and benefited tremendously from their mentorship. I really loved ROS’s mission.&lt;/p&gt;
+&lt;p&gt;But then Willow Garage shut down in 2014, and a lot of software from the Willow days did not survive. MoveIt did, however, because Michael Ferguson, Robert Haschke, Michael Görner, and I decided it was worth keeping alive. Back in grad school, I spent way too much time working on MoveIt rather than publishing research, but it turned out to be the most useful thing I could have been doing anyway, which is a thing I got lucky about.&lt;/p&gt;
+&lt;p&gt;I started PickNik in 2015 when companies were asking for help using MoveIt. I started it as a software consulting shop, but then we received funding to begin the development of MoveIt 2 from a number of sources, including the EU’s ROSin and the US’s SBIR programs, as well as Acutronic Robotics. Many others got involved over time, including Mark Moll, Nathan Brooks, Sebastian Castro, Henning Kayser, Jafar Uruç, Andy Zelenak, Felix von Drigalski, and Tyler Weaver. The kind of maintenance required to keep a big project like MoveIt going can be unglamorous, so thank you to everyone on the &lt;a href=&quot;https://github.com/moveit/moveit2/graphs/contributors?all=1&quot; rel=&quot;noopener nofollow ugc&quot;&gt;complete list of contributors&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Going forward&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For most of MoveIt’s history, the easy problems in the industry were solved with hard-coded waypoints, but the MoveIt community instead used geometric and model-based dynamic motion planning to achieve more reactivity. This included inverse kinematics, collision checking, and probabilistic sampling-based motion planning. Everything looked great in simulation, but the biggest struggle was always making it work on a real-time controller, reliably, in a production system.&lt;/p&gt;
+&lt;p&gt;Learned models are now really changing our field. VLAs, VLMs, and WAMs are becoming a bigger part of the robotic system in ways I could not have imagined previously. Things we used to use heuristics for are now shifting to AI-based task planning. But I don’t think planning goes away. At PickNik, we’ve been betting on hybrid AI systems over the past few years, combining the power of AI models with the determinism, safety, and validity of the traditional MoveIt approaches. This hybrid AI approach is where the interesting architecture work is now: how to get advanced motion planning deployed in production environments today, at the level of reliability that our customers demand.&lt;/p&gt;
+&lt;p&gt;MoveIt is already running in production in incredible places: NASA missions, surgical robots, warehouse logistics, 3D bioprinting, cell therapy manufacturing, sanitation in food processing, strawberry picking, airport baggage handling, bathroom cleaning, and car washes. These are real deployments running on ROS 2 and MoveIt.&lt;/p&gt;
+&lt;p&gt;Making AI models work reliably in all of those places is a different engineering problem than the last decade was. It needs different expertise and a different kind of investment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why is Qualcomm Technologies acquiring PickNik?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Back to the acquisition announcement. “Why Qualcomm?” A key insight about the future of robotics is that these powerful AI models need to run on the robot in real time, within a power budget, not in a data center or over a network. With that realization comes a fundamental shift: many of the toughest AI challenges are no longer purely software problems, but joint software and hardware design challenges. A good way to address those problems is to be close to the people designing the compute, instead of integrating with it after it’s already designed. Powerful heterogeneous compute and advanced processors are enabling techniques we could only dream of 15 years ago, and that means paying more attention to the hardware layer is not optional.&lt;/p&gt;
+&lt;p&gt;I will admit that when this started I thought of Qualcomm as the company powering my 5G Android phone. I have spent the last several months learning how wrong I was: Qualcomm is a full-stack physical AI company, combining industry-leading compute with software and AI that are increasingly enabling the next generation of intelligent robots with its Qualcomm Dragonwing platforms. I’m excited about how heavily Qualcomm is now betting on physical AI.&lt;/p&gt;
+&lt;p&gt;I’m also comforted knowing that they have made some big plays in open source recently, including acquiring Arduino, Modular, Edge Impulse, and &lt;a href=&quot;http://Foundries.io&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Foundries.io&lt;/a&gt;. Qualcomm and Arduino bring scale to developer communities, and I look forward to seeing open-source MoveIt and the ROS interoperability layer go further into the mainstream with&lt;/p&gt;
+&lt;p&gt;The part that mattered most to me personally: we are both founding members of the Open Source Robotics Alliance, and Qualcomm will continue investing in ROS and MoveIt.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is not changing&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;●      MoveIt 1 and 2 stays open source under its existing license, with community-driven roadmaps.&lt;/p&gt;
+&lt;p&gt;●      MoveIt stays hardware agnostic.&lt;/p&gt;
+&lt;p&gt;●      PickNik customers will continue to receive support from the team.&lt;/p&gt;
+&lt;p&gt;●      We will continue to support the open source development of MoveIt and ROS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;My promise&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I am going to keep being an advocate for MoveIt, for ROS, and for open source, from inside a company considerably larger than the one I started.  That is my commitment to you and the entire MoveIt community.&lt;/p&gt;
+&lt;p&gt;This week I am at ROSCon in Toronto, at the PickNik booth, number 7. Please stop by and see me. Thank you for fifteen years of groundbreaking work in robotics. Let’s go do the next fifteen and beyond.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;4 posts - 4 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/fifteen-years-of-moveit-and-the-next-fifteen/58349&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-23T17:33:03+00:00</dc:date>
+	<dc:creator>davetcoleman</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58347">
+	<title>ROS Discourse General: Announcement: rclrs 0.8.0 Release</title>
+	<link>https://discourse.openrobotics.org/t/announcement-rclrs-0-8-0-release/58347</link>
+	<content:encoded>&lt;p&gt;We’re happy to announce the release of &lt;code&gt;rclrs&lt;/code&gt; v0.8.0!&lt;/p&gt;
+&lt;p&gt;Continuing our proud tradition of Conference-Driven Development (CDD), this release arrives just in time for &lt;a href=&quot;https://roscon.ros.org/2026/&quot;&gt;ROSCon Global 2026 in Toronto&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are at ROSCon, do not miss Michael Grey’s talk on composable actions concurrency with rclrs.&lt;/p&gt;
+&lt;p&gt;What’s New&lt;/p&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118367-ros-2-lyrical-support-1&quot; name=&quot;p-118367-ros-2-lyrical-support-1&quot;&gt;&lt;/a&gt;&lt;strong&gt;ROS 2 Lyrical Support&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;rclrs&lt;/code&gt; now supports ROS 2 Lyrical Luth. Bindings have been regenerated for Humble, Jazzy, Kilted, Lyrical, and Rolling.&lt;/p&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118367-ros-env-message-access-2&quot; name=&quot;p-118367-ros-env-message-access-2&quot;&gt;&lt;/a&gt;&lt;strong&gt;ros-env Message Access&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;ROS message packages are now accessed through &lt;code&gt;ros-env&lt;/code&gt;. This keeps &lt;code&gt;rclrs&lt;/code&gt;, applications, and generated messages on the same message definitions.&lt;/p&gt;
+&lt;p&gt;Applications using generated messages should import them with:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;use ros_env::*;&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118367-actions-and-parameters-3&quot; name=&quot;p-118367-actions-and-parameters-3&quot;&gt;&lt;/a&gt;&lt;strong&gt;Actions and Parameters&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ActionClientState&lt;/code&gt; now exposes &lt;code&gt;server_is_available&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Action APIs received corrections and action-server tasks no longer require Sync.&lt;/li&gt;
+&lt;li&gt;Parameter callbacks are now supported.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118367-topic-endpoint-qos-4&quot; name=&quot;p-118367-topic-endpoint-qos-4&quot;&gt;&lt;/a&gt;&lt;strong&gt;Topic Endpoint QoS&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;TopicEndpointInfo&lt;/code&gt; now exposes its QoS profile, improving graph inspection and diagnostics.&lt;/p&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118367-performance-and-reliability-5&quot; name=&quot;p-118367-performance-and-reliability-5&quot;&gt;&lt;/a&gt;&lt;strong&gt;Performance and Reliability&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;This release includes performance improvements and fixes across action handling, dynamic-message introspection, sequence resizing, and &lt;code&gt;rosout&lt;/code&gt; initialization.&lt;/p&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118367-breaking-changes-6&quot; name=&quot;p-118367-breaking-changes-6&quot;&gt;&lt;/a&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Applications using generated ROS messages must add &lt;code&gt;ros-env&lt;/code&gt; and use &lt;code&gt;use ros_env::*;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;ROS shim interfaces are now supplied through &lt;code&gt;ros-env&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TopicEndpointInfo&lt;/code&gt; exposes its QoS profile.&lt;/li&gt;
+&lt;li&gt;Parameter callback APIs introduce breaking interface changes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See the changelog ( &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/ros2-rust/ros2_rust/blob/main/rclrs/CHANGELOG.md&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros2_rust/rclrs/CHANGELOG.md at main · ros2-rust/ros2_rust · GitHub&lt;/a&gt; ) for the complete list of changes.&lt;/p&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118367-contributors-7&quot; name=&quot;p-118367-contributors-7&quot;&gt;&lt;/a&gt;Contributors&lt;/h3&gt;
+&lt;p&gt;A huge thank you to everyone who contributed to this release!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Balthasar Schüssler&lt;/li&gt;
+&lt;li&gt;Esteve Fernández&lt;/li&gt;
+&lt;li&gt;J Pace&lt;/li&gt;
+&lt;li&gt;Kimberly McGuire&lt;/li&gt;
+&lt;li&gt;Mathieu David&lt;/li&gt;
+&lt;li&gt;Michael G. Grey&lt;/li&gt;
+&lt;li&gt;Patrick Deschambault&lt;/li&gt;
+&lt;li&gt;Peter Isho&lt;/li&gt;
+&lt;li&gt;Sam Privett&lt;/li&gt;
+&lt;li&gt;Tony Welte&lt;/li&gt;
+&lt;li&gt;Trim Bresilla&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118367-links-8&quot; name=&quot;p-118367-links-8&quot;&gt;&lt;/a&gt;Links&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/ros2-rust/ros2_rust&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - ros2-rust/ros2_rust: Rust bindings for ROS 2&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Examples: &lt;a href=&quot;https://github.com/ros2-rust/examples&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - ros2-rust/examples: Example packages for ros2-rust&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Changelog: &lt;a href=&quot;https://github.com/ros2-rust/ros2_rust/blob/main/rclrs/CHANGELOG.md&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros2_rust/rclrs/CHANGELOG.md at main · ros2-rust/ros2_rust · GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://Crates.io&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Crates.io&lt;/a&gt;: &lt;a href=&quot;https://crates.io/crates/rclrs&quot; rel=&quot;noopener nofollow ugc&quot;&gt;crates.io: Rust Package Registry&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As always, we welcome feedback and contributions.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/announcement-rclrs-0-8-0-release/58347&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-23T16:49:53+00:00</dc:date>
+	<dc:creator>esteve</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58340">
+	<title>ROS Discourse General: ROSCon Global 2026 Live Stream</title>
+	<link>https://discourse.openrobotics.org/t/roscon-global-2026-live-stream/58340</link>
+	<content:encoded>&lt;h1&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118357-roscon-global-2026-live-from-toronto-canada-1&quot; name=&quot;p-118357-roscon-global-2026-live-from-toronto-canada-1&quot;&gt;&lt;/a&gt;ROSCon Global 2026 live from Toronto! &lt;img alt=&quot;:canada:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/canada.png?v=15&quot; title=&quot;:canada:&quot; width=&quot;20&quot; /&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/6/3/632618084066de65b99f3b1e1dc58676f80e683f.webp&quot; title=&quot;be10b549a9310e5a4b89a2fcf40f7e4bcdb74b5f_2_1035x475&quot;&gt;&lt;img alt=&quot;be10b549a9310e5a4b89a2fcf40f7e4bcdb74b5f_2_1035x475&quot; height=&quot;158&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/6/3/632618084066de65b99f3b1e1dc58676f80e683f_2_345x158.webp&quot; width=&quot;345&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://roscon.ros.org/&quot;&gt;Streams are both on the ROSCon website.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vimeo.com/event/6211060/7b6ec82e73&quot;&gt;Primary ROSCon 2026 Live Stream on Vimeo (Grand Ballroom West/Centre)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vimeo.com/event/6209541/3c6325ffae&quot;&gt;Secondary ROSCon 2026 Live Stream on Vimeo (Grand Ballroom East)&lt;/a&gt; (starts after lunch)&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;p&gt;&lt;small&gt;3 posts - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/roscon-global-2026-live-stream/58340&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-23T12:51:02+00:00</dc:date>
+	<dc:creator>Katherine_Scott</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58308">
+	<title>ROS Discourse General: From CT Scan to Robotic Surgery Prototype: Kidney Stone Detection &amp; PCNL Planning in ROS 2</title>
+	<link>https://discourse.openrobotics.org/t/from-ct-scan-to-robotic-surgery-prototype-kidney-stone-detection-pcnl-planning-in-ros-2/58308</link>
+	<content:encoded>&lt;p&gt;Hi all,&lt;br /&gt;
+I’d like to share a research prototype that connects &lt;strong&gt;medical CT imaging&lt;/strong&gt; to &lt;strong&gt;ROS 2 visualization and robot simulation&lt;/strong&gt;.&lt;br /&gt;
+The pipeline starts from a DICOM / NIfTI CT scan, segments kidneys and nearby organs, finds stone candidates, builds 3D meshes, ranks &lt;strong&gt;PCNL&lt;/strong&gt; (percutaneous nephrolithotomy) access corridors, then visualizes the anatomy in &lt;strong&gt;RViz&lt;/strong&gt; and &lt;strong&gt;Gazebo&lt;/strong&gt;. A &lt;strong&gt;Franka FR3&lt;/strong&gt; with a surgical needle can replay the selected path in simulation.&lt;br /&gt;
+This is &lt;strong&gt;not&lt;/strong&gt; a clinical tool and &lt;strong&gt;not&lt;/strong&gt; medical advice. It is a learning / research MVP: geometric planning + kinematic replay, not a validated surgical system.&lt;/p&gt;
+&lt;p&gt;You can watch the project’s video &lt;a href=&quot;https://www.linkedin.com/posts/yunus-ziya-erdo%C4%9Fan_ros2-medicalrobotics-frankarobotics-ugcPost-7507190142995116032-8sGb/?utm_source=share&amp;amp;utm_medium=member_desktop&amp;amp;rcm=ACoAACtkkesBPOKGw2EQpj8mxGVjwIA2U2RBe2k&quot; rel=&quot;noopener nofollow ugc&quot;&gt;LinkedIn Video&lt;/a&gt; or &lt;a href=&quot;https://youtu.be/j-GiM9eXwVs&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Youtube Video&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/8/6/86d1738ff3e245b1a5d2a0113c46b09c82fdc5bb.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;pcnl_pipeline_grid_1920x1080(1)&quot;&gt;&lt;img alt=&quot;pcnl_pipeline_grid_1920x1080(1)&quot; height=&quot;388&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/8/6/86d1738ff3e245b1a5d2a0113c46b09c82fdc5bb_2_690x388.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Load DICOM series or NIfTI with spacing / origin / affine preserved&lt;/li&gt;
+&lt;li&gt;Preprocess: HU clip, resample (~1 mm), normalize&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TotalSegmentator&lt;/strong&gt; for left/right kidney and context organs (colon, liver, spleen, lungs, vessels, …)&lt;/li&gt;
+&lt;li&gt;Temporary stone segmentation: high-HU threshold + connected components inside the kidney ROI&lt;/li&gt;
+&lt;li&gt;Per-stone report: volume (mm³), equivalent diameter, centroid, min/mean/max HU, laterality&lt;/li&gt;
+&lt;li&gt;Marching cubes → optional smooth/simplify → STL / OBJ / PLY (meshes are in &lt;strong&gt;millimetres&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;PCNL planner: sample a posterolateral cone, ray-cast skin → kidney surface → stone, rank by length, parenchyma, ribs, hilum, upper pole, and organ hits&lt;/li&gt;
+&lt;li&gt;PySide6 GUI drives the flow; a small bridge launches ROS 2 without importing rclpy into the venv&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118314-what-actually-do-in-the-app-1&quot; name=&quot;p-118314-what-actually-do-in-the-app-1&quot;&gt;&lt;/a&gt;What actually do in the app&lt;/h2&gt;
+&lt;p&gt;There is one window. Buttons on top, the CT slice on the left, a log and a stone table on the right.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118314-load-the-scan-2&quot; name=&quot;p-118314-load-the-scan-2&quot;&gt;&lt;/a&gt;Load the scan&lt;/h3&gt;
+&lt;p&gt;Click Open NIfTI… or Open DICOM folder…. The CT appears as a slice you can scroll through, like flipping pages of the body.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118314-find-the-kidneys-3&quot; name=&quot;p-118314-find-the-kidneys-3&quot;&gt;&lt;/a&gt;Find the kidneys&lt;/h3&gt;
+&lt;p&gt;Segment kidneys paints the left and right kidney (and nearby organs) on the scan. Extract kidney ROIs zooms in so you are not searching the whole abdomen.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118314-find-the-stones-4&quot; name=&quot;p-118314-find-the-stones-4&quot;&gt;&lt;/a&gt;Find the stones&lt;/h3&gt;
+&lt;p&gt;Detect stones (HU) looks for bright spots inside the kidney — stones are denser than soft tissue. A table lists each candidate: left or right, volume, diameter, and how bright it is.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118314-see-it-in-3d-5&quot; name=&quot;p-118314-see-it-in-3d-5&quot;&gt;&lt;/a&gt;See it in 3D&lt;/h3&gt;
+&lt;p&gt;Export STL saves kidney and stone shapes as 3D files. Show 3D meshes opens them in the app. Open RViz shows the same models in ROS, with the planned needle line drawn on top.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118314-plan-the-needle-path-6&quot; name=&quot;p-118314-plan-the-needle-path-6&quot;&gt;&lt;/a&gt;Plan the needle path&lt;/h3&gt;
+&lt;p&gt;Pick a stone in the table, then click Plan PCNL. The program tries many directions from the back, avoids organs where it can, and ranks safer / shorter routes. You can switch between the best path and the backups.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118314-watch-the-robot-7&quot; name=&quot;p-118314-watch-the-robot-7&quot;&gt;&lt;/a&gt;Watch the robot&lt;/h3&gt;
+&lt;p&gt;Simüle et (FR3) opens a simulated operating room: the patient model on a table, and a Franka robot with a needle. The arm lines up with the path, goes in to the stone, and İğneyi çıkar pulls it back out.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;ROS is used for the part it is good at: showing 3D models and moving a robot. The heavy image work stays in a normal desktop app, then hands over files. That split kept the demo understandable and let one window drive the whole story: &lt;strong&gt;scan → stone → path → robot&lt;/strong&gt;.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/from-ct-scan-to-robotic-surgery-prototype-kidney-stone-detection-pcnl-planning-in-ros-2/58308&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-21T22:41:55+00:00</dc:date>
+	<dc:creator>ynsziya</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58302">
+	<title>ROS Discourse General: Oh noes! What's going on with Anubis?</title>
+	<link>https://discourse.openrobotics.org/t/oh-noes-whats-going-on-with-anubis/58302</link>
+	<content:encoded>&lt;p&gt;Lately I’ve been intermittently but often getting this message when trying to access ROS documentation (like c++ API etc). Am I the only one running into this? I definitely have browser cookies enabled, and I’m not going through a VPN. The below messages was obtained by browsing to &lt;a href=&quot;https://docs.ros.org/en/jazzy/p/rclcpp/generated/index.html&quot;&gt;this location&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/b/0/b0b4de981efcedcdba4ef12974415f6819064e83.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;oh_noes&quot;&gt;&lt;img alt=&quot;oh_noes&quot; height=&quot;478&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/b/0/b0b4de981efcedcdba4ef12974415f6819064e83_2_690x478.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;14 posts - 7 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/oh-noes-whats-going-on-with-anubis/58302&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-21T17:25:52+00:00</dc:date>
+	<dc:creator>Bernd_Pfrommer</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58247">
+	<title>ROS Discourse General: D-Robotics at ROSCon Global 2026 — Let’s Connect in Toronto</title>
+	<link>https://discourse.openrobotics.org/t/d-robotics-at-roscon-global-2026-let-s-connect-in-toronto/58247</link>
+	<content:encoded>&lt;p&gt;Hi everyone! &lt;img alt=&quot;:waving_hand:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/waving_hand.png?v=15&quot; title=&quot;:waving_hand:&quot; width=&quot;20&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Here’s from the D-Robotics team. We’re excited to share that our team will be at &lt;strong&gt;ROSCon Global 2026 in Toronto, September 22–24&lt;/strong&gt;. We’re looking forward to meeting fellow ROS developers and robotics folks in person.&lt;/p&gt;
+&lt;p&gt;For &lt;strong&gt;&lt;a href=&quot;https://en.d-robotics.cc/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;D-Robotics&lt;/a&gt;&lt;/strong&gt;, ROS 2 is not an add-on — &lt;strong&gt;it is a core part of the RDK robotics development experience.&lt;/strong&gt; Across the RDK platform, we support multiple ROS 2 distributions, while &lt;a href=&quot;https://d-robotics.github.io/rdk_x_doc/en/Robot_development/?v=3.5.0&amp;amp;p=RDK+X5&quot; rel=&quot;noopener nofollow ugc&quot;&gt;TogetheROS.Bot&lt;/a&gt; builds on ROS 2 with hardware-accelerated capabilities tailored for robotics.&lt;/p&gt;
+&lt;p&gt;If you’re attending too, come find us at the conference. You can meet the D-Robotics team at the &lt;strong&gt;AgileX Robotics booth (&lt;span class=&quot;hashtag-raw&quot;&gt;#48&lt;/span&gt;)&lt;/strong&gt;, where our engineers will be around throughout the event. We’ll be showcasing an &lt;strong&gt;RDK X5 × Piper&lt;/strong&gt; demo, showing how on-device perception and AI inference can connect with physical robotic action.&lt;/p&gt;
+&lt;p&gt;You can also find us at the &lt;strong&gt;LooperRobotics booth&lt;/strong&gt;, where their Insight series integrates D-Robotics RDK X5 modules for spatial AI applications.&lt;/p&gt;
+&lt;p&gt;We’d love to show you what we’ve been building, but even more, we’d like to hear what &lt;strong&gt;you’re working on&lt;/strong&gt;. Come by to exchange ideas around &lt;strong&gt;ROS 2, robotics development, edge AI, and embodied AI&lt;/strong&gt;, or just stop by and say hi.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;See you in Toronto!&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/d-robotics-at-roscon-global-2026-let-s-connect-in-toronto/58247&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-18T16:08:03+00:00</dc:date>
+	<dc:creator>xiangbella093</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58232">
+	<title>ROS Discourse General: New SMACC demo in Gazebo using the PX4 flight stack</title>
+	<link>https://discourse.openrobotics.org/t/new-smacc-demo-in-gazebo-using-the-px4-flight-stack/58232</link>
+	<content:encoded>&lt;p&gt;This demo uses the new SMACC PX4 Client Library to autonomously control the following drone in a Gazebo environment.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=g-Xl1u8TpaU&quot;&gt;SMACC and PX4 flight stack simulation in the Strait of Hormuz&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As always, here’s the source code: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/robosoft-ai/SMACC2/tree/jazzy/smacc2_sm_reference_library/sm_cl_px4_mr_test_4&quot; rel=&quot;noopener nofollow ugc&quot;&gt;SMACC2/smacc2_sm_reference_library/sm_cl_px4_mr_test_4 at jazzy · robosoft-ai/SMACC2 · GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/robosoft-ai/SMACC2/blob/jazzy/smacc2_sm_reference_library/sm_cl_px4_mr_test_4/README.md&quot; rel=&quot;noopener nofollow ugc&quot;&gt;readme&lt;/a&gt; for this application lays out the steps of how to use it.&lt;/p&gt;
+&lt;p&gt;And here’s a link to the original linkedin post: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://lnkd.in/p/gfy5P2De&quot; rel=&quot;noopener nofollow ugc&quot;&gt;#ros2 #px4 #smacc2 #physicalai #gazebo #qgroundcontrol #nav2 | Brett Aldrich&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/new-smacc-demo-in-gazebo-using-the-px4-flight-stack/58232&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-17T23:56:43+00:00</dc:date>
+	<dc:creator>brettpac</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58222">
+	<title>ROS Discourse General: Native ROS 2 on Zephyr with Cyclone DDS</title>
+	<link>https://discourse.openrobotics.org/t/native-ros-2-on-zephyr-with-cyclone-dds/58222</link>
+	<content:encoded>&lt;p&gt;Hi,&lt;/p&gt;
+&lt;p&gt;I have been experimenting with native DDS for ROS 2 on Zephyr and recently got the standard ROS 2 C client stack running on an ESP32-S3 over Wi-Fi.&lt;/p&gt;
+&lt;p&gt;The current stack is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-auto&quot;&gt;rclc -&amp;gt; rcl -&amp;gt; rmw_cyclonedds_c -&amp;gt; Cyclone DDS -&amp;gt; Zephyr
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The board joins the DDS/RTPS network directly, without a Micro XRCE-DDS Agent.&lt;/p&gt;
+&lt;p&gt;The work is split into two repositories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/servoagents/ros2_zephyr&quot; rel=&quot;noopener nofollow ugc&quot;&gt;&lt;code&gt;ros2_zephyr&lt;/code&gt;&lt;/a&gt; for the Zephyr integration and static ROS 2 build&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/servoagents/rmw_cyclonedds_c&quot; rel=&quot;noopener nofollow ugc&quot;&gt;&lt;code&gt;rmw_cyclonedds_c&lt;/code&gt;&lt;/a&gt; for the C RMW implementation and generated Cyclone DDS type support&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I tested an ESP32-S3 against stock ROS 2 Lyrical with &lt;code&gt;rmw_cyclonedds_cpp&lt;/code&gt;, in both publisher and subscriber directions. The current implementation supports fixed-size messages and best-effort QoS.&lt;/p&gt;
+&lt;p&gt;I have also been working on Zephyr support for Micro XRCE-DDS and &lt;a href=&quot;https://github.com/esol-community/rmw_zenoh_pico&quot; rel=&quot;noopener nofollow ugc&quot;&gt;&lt;code&gt;rmw_zenoh_pico&lt;/code&gt;&lt;/a&gt;, with the longer-term goal of comparing these embedded RMW paths on the same hardware.&lt;/p&gt;
+&lt;p&gt;I wrote a short note with more details and measurements here:&lt;/p&gt;
+&lt;aside class=&quot;onebox allowlistedgeneric&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+
+      &lt;a href=&quot;https://fj-blanco.github.io/notes/ros2-zephyr/&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;fj-blanco.github.io&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    
+
+&lt;h3&gt;&lt;a href=&quot;https://fj-blanco.github.io/notes/ros2-zephyr/&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;Native ROS 2 on Zephyr â€” Javier Blanco-Romero&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;Running the normal ROS 2 C stack directly on an ESP32-S3 using Zephyr and Cyclone DDS.&lt;/p&gt;
+
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;I will keep extending the native DDS path with Reliable QoS, Transient Local, ROS graph support and eventually DDS Security.&lt;/p&gt;
+&lt;p&gt;Feedback is very welcome.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/native-ros-2-on-zephyr-with-cyclone-dds/58222&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-17T16:47:31+00:00</dc:date>
+	<dc:creator>fj-blanco</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58184">
+	<title>ROS Discourse General: ROS medical community updates</title>
+	<link>https://discourse.openrobotics.org/t/ros-medical-community-updates/58184</link>
+	<content:encoded>&lt;p&gt;Ahead of ROSCon, anyone using ROS in a medical context is welcome to update the community here with a quick status update. I’ll go first on behalf of Vexev!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Ps if you haven’t seen, there will be a Birds of a Feather session at ROSCon Toronto! 9am Tuesday. Followed by a community meeting online in October.&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Context:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We use ROS in our 8dof ultrasound imaging robot. We’re a startup, pre regulatory submission. Full context in the 2024 ROSCon Keynote: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://vimeo.com/1024971800&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Keynote: Saving lives sooner: leveraging ROS 2 for end-stage kidney disease with Deanna Hood&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Updates:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Successful results from our last clinical trial have been published! &lt;a class=&quot;inline-onebox&quot; href=&quot;https://www.vexev.com/press/vxwave-meets-clinical-endpoints&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Vexev's VxWave System Successfully Meets Clinical Endpoints in Landmark Study Evaluating Robotic Ultrasound Scanning for Mapping Vascular Access at U.S. Renal Care Dialysis Clinics - Vexev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The safety of our hardware has been beefed up following strategies I described in this talk: &lt;a href=&quot;https://www.youtube.com/watch?v=DrJPVY4B1Yc&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://www.youtube.com/watch?v=DrJPVY4B1Yc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;V&amp;amp;V, cybersecurity and FDA trial are all on our radar! &lt;img alt=&quot;:rocket:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/rocket.png?v=15&quot; title=&quot;:rocket:&quot; width=&quot;20&quot; /&gt; still with no plans to remove ROS &lt;img alt=&quot;:grin:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/grin.png?v=15&quot; title=&quot;:grin:&quot; width=&quot;20&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Please keep an eye out for:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Sydney-based technologists for our open roles: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://www.vexev.com/work-with-us&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Work with us - Vexev&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;People looking to join the community. (Sign up to this mailing list &lt;a href=&quot;https://groups.google.com/g/ros-medical-community-group-invites&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://groups.google.com/g/ros-medical-community-group-invites&lt;/a&gt; )&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Speakers for sessions on:&lt;br /&gt;
+* V&amp;amp;V and what changes when SOUP is involved vs not (incl ROS)&lt;/p&gt;
+&lt;p&gt;* cybersecurity and implications of including ROS in the SBOM&lt;/p&gt;
+&lt;p&gt;* what OTA updates look like for medical devices and how that contrasts with packaging practices in ROS community&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;p&gt;Share your updates whether you will be at ROSCon or not - the objective is to help each other find what we’re looking for, to move faster.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Context: (what you’re working on)&lt;br /&gt;
+Updates: (news/where you’re at)&lt;br /&gt;
+Please keep an eye out for: (how others can support)&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;3 posts - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/ros-medical-community-updates/58184&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-16T12:09:22+00:00</dc:date>
+	<dc:creator>dhood</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58097">
+	<title>ROS Discourse General: CRA reporting starts tomorrow. How do you tell an exploited vulnerability from a normal robot failure inside 24 hours?</title>
+	<link>https://discourse.openrobotics.org/t/cra-reporting-starts-tomorrow-how-do-you-tell-an-exploited-vulnerability-from-a-normal-robot-failure-inside-24-hours/58097</link>
+	<content:encoded>&lt;p&gt;The EU Cyber Resilience Act reporting obligation for manufacturers starts on 11 September 2026: early warning within 24 hours of becoming aware of an actively exploited vulnerability or severe incident, and full notification within 72 hours, through the ENISA Single Reporting Platform. Open-source stewards are covered from 11 December 2027 under Article 24(3). Source: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://digital-strategy.ec.europa.eu/en/policies/cra-reporting&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Cyber Resilience Act - Reporting obligations | Shaping Europe’s digital future&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I am not posting this as a compliance warning. Most of us here are not manufacturers placing a product on the EU market, and nothing changes for an open-source stack tomorrow.&lt;/p&gt;
+&lt;p&gt;The engineering question underneath it is the one I would like to ask this group, because it applies whether or not the regulation touches you.&lt;/p&gt;
+&lt;p&gt;When a fielded robot does something wrong, how do you currently decide, quickly, whether that was an induced failure or the system’s own baseline failure rate showing up?&lt;/p&gt;
+&lt;p&gt;On my own bench, I can only answer it because I keep a clean control run at the same task and seed. Without that, a single bad rollout is uninterpretable in either direction: I cannot call it an attack, and I cannot call it noise.&lt;/p&gt;
+&lt;p&gt;What do people do in the field, where you do not get to re-run the same seed? Is there prior practice in the ROS world for baseline-rate logging that I should be reading instead of inventing?&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/cra-reporting-starts-tomorrow-how-do-you-tell-an-exploited-vulnerability-from-a-normal-robot-failure-inside-24-hours/58097&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-14T00:24:59+00:00</dc:date>
+	<dc:creator>Sattyam_Jain</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58088">
+	<title>ROS Discourse General: Debug, Visualize and Teleoperate anything ROS2 with Phantom Bridge</title>
+	<link>https://discourse.openrobotics.org/t/debug-visualize-and-teleoperate-anything-ros2-with-phantom-bridge/58088</link>
+	<content:encoded>&lt;p&gt;If you haven’t tried Phantom Bridge yet, I recommend you do. I’ll be in Toronto next week for the ROSCon 2026, if anyone feels like talking about where this is headed or what features you’re missing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=3QgIGvqOF20&quot;&gt;Debug, Visualize and Teleoperate any ROS2 Robot with Phantom Bridge&lt;/a&gt;&lt;/p&gt;
+
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/debug-visualize-and-teleoperate-anything-ros2-with-phantom-bridge/58088&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-13T20:03:42+00:00</dc:date>
+	<dc:creator>mirek</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58084">
+	<title>ROS Discourse General: Ros2-apt-source bumped to v 1.3.0</title>
+	<link>https://discourse.openrobotics.org/t/ros2-apt-source-bumped-to-v-1-3-0/58084</link>
+	<content:encoded>&lt;p&gt;I’ve just noticed the ros2-apt-source package has been bumped to v1.3.0. Nothing special was added, just Fedora support. If you have v1.2.0 hardcoded to your deploy scripts, it’s time to switch to 1.3.0 &lt;img alt=&quot;:wink:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/wink.png?v=15&quot; title=&quot;:wink:&quot; width=&quot;20&quot; /&gt; (for those who have already this package installed, it will auto-update, so no worries there).&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/ros2-apt-source-bumped-to-v-1-3-0/58084&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-13T12:27:07+00:00</dc:date>
+	<dc:creator>peci1</dc:creator>
+</item>
+<item rdf:about="discourse.openrobotics.org-topic-58035">
+	<title>ROS Discourse General: Has anyone written a custom I²C transport for micro-ROS (or any MCU ROS stack)?</title>
+	<link>https://discourse.openrobotics.org/t/has-anyone-written-a-custom-i-c-transport-for-micro-ros-or-any-mcu-ros-stack/58035</link>
+	<content:encoded>&lt;p&gt;Small embedded team at a startup, weighing an idea before we commit to it. As far as I can tell, none of the MCU ROS stacks support I²C out of the box — micro-ROS does UART/UDP/CAN-FD, zenoh-pico does serial/UDP/TCP, Cyphal does CAN/serial. I²C isn’t on any of those lists. So if we want a board to be a ROS node talking over I²C, it looks like we’d have to write that transport layer ourselves. micro-ROS at least exposes a custom-transport API (the open/close/write/read hooks + set_custom_transport), so in principle an I²C transport is writable. My question is whether anyone actually has.&lt;/p&gt;
+&lt;p&gt;Context for why I²C at all: our STM32 boards sit behind a GMSL camera link, which tunnels an I²C channel through to the host side. The wire is already there, so an I²C transport would cost us no extra wiring — that’s the whole appeal.&lt;/p&gt;
+&lt;p&gt;So: Has anyone implemented a custom micro-ROS transport over I²C, or pushed zenoh-pico / Pico-ROS down onto an I²C link? How did it go — did the request/response and discovery patterns map onto a master-driven bus okay, or did that mismatch (the host has to poll, the MCU can’t initiate) become the whole problem? And if you tried and bailed — what made you bail? Rather hear where it broke now than find out the hard way later. (Not asking whether I²C is a “real” bus for this — I know it’s unusual. Asking specifically whether anyone’s made a ROS middleware transport work on top of it.)&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;3 posts - 3 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/has-anyone-written-a-custom-i-c-transport-for-micro-ros-or-any-mcu-ros-stack/58035&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2026-09-11T08:51:54+00:00</dc:date>
+	<dc:creator>alapir</dc:creator>
+</item>
+
+</rdf:RDF>
