@@ -1,0 +1,26 @@
+name: validate-planet-ini
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  schedule:
+    - cron: '0 6 * * 1'  # every Monday
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v6
+
+      - name: Set up Python 🐍
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies 🔧
+        run: pip install feedparser requests
+
+      - name: Validate planet.ini and feeds 🔍
+        run: python scripts/validate_planet_ini.py planet.ini

@@ -20,6 +20,17 @@ build and output to different folders: ``output_theme``, ``cache_directory``, ``
 This is deployed to github pages via a nightly cron job on travis, as well as on every commit to master changing the config.
 PRs will be test run but not deployed.
 
+VALIDATION
+
+The validate-planet-ini GitHub workflow checks that planet.ini is valid and that
+every active (not commented out) feed can be downloaded and is a well-formed RSS
+or Atom feed. To run the checks locally:
+
+    pip install feedparser requests
+    python3 scripts/validate_planet_ini.py
+
+Pass --offline to only check planet.ini itself, without downloading the feeds.
+
 SECURITY
 
 By default, all potential HTML threats are removed (iframe, javascript, embed ...).
