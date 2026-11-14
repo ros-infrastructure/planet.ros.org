@@ -1,0 +1,881 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+
+<channel>
+	<title>Planet ROS</title>
+	<link>http://planet.ros.org</link>
+	<language>en</language>
+	<description>Planet ROS - http://planet.ros.org</description>
+
+<item>
+	<title>ROS Discourse General: Improved write performance for mcap/rosbag2</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59691</guid>
+	<link>https://discourse.openrobotics.org/t/improved-write-performance-for-mcap-rosbag2/59691</link>
+	<description>&lt;p&gt;Hi all,&lt;/p&gt;
+&lt;p&gt;I just wanted to share that we’ve recently done a bunch of write performance optimizations in the &lt;a href=&quot;https://github.com/foxglove/mcap/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;mcap&lt;/a&gt; libraries.  We’ve also updated &lt;a href=&quot;https://github.com/ros2/rosbag2&quot; rel=&quot;noopener nofollow ugc&quot;&gt;rosbag2&lt;/a&gt; in ROS 2 Rolling to take advantage of the new library, so writing your bags should be a bit faster than before.  You can read about the improvements in &lt;a class=&quot;inline-onebox&quot; href=&quot;https://foxglove.dev/blog/measuring-and-improving-mcap-performance&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Measuring and improving MCAP performance | Foxglove&lt;/a&gt; .  Please leave any questions or comments about the improvements, or any future improvements you’d like to see.&lt;/p&gt;
+&lt;p&gt;Thanks,&lt;br /&gt;
+Chris Lalancette&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;3 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/improved-write-performance-for-mcap-rosbag2/59691&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 10 Nov 2026 16:19:47 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: TC-PEBRAS is hosting a video competition! $250 awards, 3 min videos, due Dec 12, 2026</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59667</guid>
+	<link>https://discourse.openrobotics.org/t/tc-pebras-is-hosting-a-video-competition-250-awards-3-min-videos-due-dec-12-2026/59667</link>
+	<description>&lt;p&gt;&lt;strong&gt;The IEEE RAS Technical Committee on Performance Evaluation and Benchmarking of Robotic and Automation Systems (TC-PEBRAS) is holding a video competition!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;See webpage: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://tinyurl.com/pebras-video-2026&quot; rel=&quot;noopener nofollow ugc&quot;&gt;PEBRAS Video Competition 2026&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/d/3/d38b4df2870805296f35236dea26b6f044599095.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;tc-pebras-video-competition&quot;&gt;&lt;img alt=&quot;tc-pebras-video-competition&quot; height=&quot;467&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/d/3/d38b4df2870805296f35236dea26b6f044599095_2_690x467.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Participants are tasked with creating a video covering topics in scope of the TC, which includes performance evaluation, metrics, reproducibility, test methods, benchmarking, datasets, and competitions of robotics and automation systems. The goal of the videos is to promote and educate robot performance evaluation and benchmarking to a general audience (not just other scientists/engineers), highlighting the importance of these concepts in making research progress and transitioning robotics technologies from the lab to the field. Videos should be created specifically for this competition and can feature narrated commentary, interviews with researchers and developers, and demonstrations of PEBRAS topics in action, including footage from competitions and benchmarking exercises.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Participation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The TC-PEBRAS 2026 Video Competition is open to everyone with an interest in robotics, automation, and performance evaluation! We encourage junior and senior researchers to participate. You are not required to be an IEEE RAS member to participate. Your video could be motivated by questions including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What current gaps are there in test and evaluation of robotics and automation? What metrics are missing? What new capabilities do we need to measure?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Are there existing test methods and evaluation practices you use in your research that you find particularly useful? Why or why not?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Have you participated in a robotics challenge or competition? What was your experience like? How can others be involved?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Have you tried reproducing the results of a robotics research paper? How did the results compare? Was it difficult?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Videos should be no longer than 3 minutes and can be uploaded to YouTube (public or unlisted) for submission over e-mail to &lt;strong&gt;&lt;a href=&quot;mailto:tc.pebras.video@gmail.com&quot; title=&quot;mailto:tc.pebras.video@gmail.com&quot;&gt;tc.pebras.video@gmail.com&lt;/a&gt;&lt;/strong&gt; with “TC-PEBRAS 2026 Video Competition” in the subject line by no later than December 12, 2026.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Awards&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A total of four $250 awards will be given out across two tracks with a 1st and 2nd place designated for each:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&quot;bbcode-u&quot;&gt;General PEBRAS scope&lt;/span&gt;: covering any robotics domain related to PEBRAS scope, using footage from your lab, a conference, a competition, or elsewhere.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&quot;bbcode-u&quot;&gt;Humanoids 2026 activities&lt;/span&gt;: covering activities taken place at the Humanoids 2026 conference, including workshops, competitions, and exhibit displays.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Awards will be granted in the form of reimbursement for expenses related to conference travel (e.g., airfare, hotels). Digital and printed certificates will also be sent to the winners.&lt;/p&gt;
+&lt;p&gt;All videos will be posted to the IEEE RAS TC-PEBRAS website ( &lt;a class=&quot;inline-onebox&quot; href=&quot;https://www.ieee-ras.org/performance-evaluation/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Performance Evaluation &amp;amp; Benchmarking of Robotic and Automation Systems - IEEE Robotics and Automation Society Website&lt;/a&gt; ) as part of a larger website update, coming soon!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Schedule&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;November 5, 2026: Competition opens&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;December 12, 2026: Submissions due by 11:59:59 Anywhere on Earth (AoE) via e-mail to &lt;a href=&quot;mailto:tc.pebras.video@gmail.com&quot; title=&quot;mailto:tc.pebras.video@gmail.com&quot;&gt;tc.pebras.video@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;December 17, 2026: Winners announced&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please e-mail &lt;a href=&quot;mailto:tc.pebras.video@gmail.com&quot; title=&quot;mailto:tc.pebras.video@gmail.com&quot;&gt;tc.pebras.video@gmail.com&lt;/a&gt; with any questions or comments. We look forward to seeing your videos!&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/tc-pebras-is-hosting-a-video-competition-250-awards-3-min-videos-due-dec-12-2026/59667&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 09 Nov 2026 20:25:26 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Do you see anything in AMR telemetry before docking/localization failures?</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59638</guid>
+	<link>https://discourse.openrobotics.org/t/do-you-see-anything-in-amr-telemetry-before-docking-localization-failures/59638</link>
+	<description>&lt;p&gt;I’m working on an offline monitor for AMR deployment traces. In simulation, I’ve seen multi-sensor state signals change before a modeled failure boundary.&lt;/p&gt;
+&lt;p&gt;Has anyone seen something similar in real fleets? What signals do you look at before docking misses or localization resets?&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/do-you-see-anything-in-amr-telemetry-before-docking-localization-failures/59638&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sun, 08 Nov 2026 23:51:16 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: What happened to &quot;Robot-as-a-Snap&quot;?</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59592</guid>
+	<link>https://discourse.openrobotics.org/t/what-happened-to-robot-as-a-snap/59592</link>
+	<description>&lt;p&gt;If you’re building on ROS 2, odds are you’re running Ubuntu. It’s the default for almost everyone. Over the last few years, Canonical has put a ton of engineering effort into pushing an Ubuntu Robotics ecosystem built around &lt;strong&gt;Snaps&lt;/strong&gt; and &lt;strong&gt;Ubuntu Core&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;On paper, it sounds like a dream setup for production robots:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Atomic &amp;amp; Transactional Updates:&lt;/strong&gt; Ubuntu Core gives you atomic OS updates and transactional Snap updates. If an update breaks midway through, it automatically rolls back instead of bricking a robot in the field.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Version Linking:&lt;/strong&gt; You can link snap dependencies across versions so you know everything is compatible before triggering an update across the fleet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Built-in ROS 2 Tooling:&lt;/strong&gt; Snapcraft has ROS 2 extensions and build plugins ready to go out of the box.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Observability &amp;amp; Fleet Management:&lt;/strong&gt; Hooks into the Canonical Observability Stack (Telegraf, Prometheus, Loki) for real-time telemetry, plus Landscape to manage snap versions across your fleet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Yet, despite all this tech being around for years, there’s surprisingly little chatter about it in the ROS 2 community. On Discourse and in forums, I rarely see people asking questions, sharing setups, or recommending snaps for production.&lt;/p&gt;
+&lt;p&gt;Instead, when people talk about shipping robots, it usually comes down to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Standard &lt;code&gt;apt&lt;/code&gt; on Ubuntu Server:&lt;/strong&gt; Easy to set up, but updates are fragile. A failed &lt;code&gt;apt upgrade&lt;/code&gt; can easily leave a robot in a broken state out in the field.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Docker:&lt;/strong&gt; Great for bundling dependencies, but configuring hardware passthrough for heavy GPU workloads like VSLAM or LLMs can add  friction.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Yocto / Custom Embedded Linux:&lt;/strong&gt; Gives you total control and clean atomic updates, but now your team is stuck maintaining every single system package.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-120040-wheres-the-catch-1&quot; name=&quot;p-120040-wheres-the-catch-1&quot;&gt;&lt;/a&gt;Where’s the catch?&lt;/h3&gt;
+&lt;p&gt;Why hasn’t the snap ecosystem become the standard way to reliably deploy software onto robot fleets?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Is strict confinement getting in the way of hardware access (like passing through GPUs for VSLAM/LLMs, direct serial, GPIO, or cameras)?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is the developer iteration loop just too clunky compared to plain workspace builds?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Or are people just happier sticking with Docker or Yocto despite the maintenance headaches?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Curious to hear from anyone deploying ROS 2 in the wild: &lt;strong&gt;What are you actually running on your fleet, and what kept you on (or off) Snaps and Ubuntu Core?&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;15 posts - 6 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/what-happened-to-robot-as-a-snap/59592&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 06 Nov 2026 13:41:48 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Call for participation: UAV Perception Testing Track at ICST 2027 (ROS 2 Jazzy, PX4, nvblox, Isaac Sim)</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59591</guid>
+	<link>https://discourse.openrobotics.org/t/call-for-participation-uav-perception-testing-track-at-icst-2027-ros-2-jazzy-px4-nvblox-isaac-sim/59591</link>
+	<description>&lt;p&gt;Hi everyone,&lt;/p&gt;
+&lt;p&gt;We have opened the &lt;strong&gt;UAV Perception Testing Track&lt;/strong&gt;, a tool competition in the &lt;a href=&quot;https://conf.researchr.org/track/icst-2027/icst-2027-challenge-competition-track#pagetab-c008f3db-b76a-438a-8aaa-eb62b8f7219b&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Challenge Competition Track of ICST 2027&lt;/a&gt;, the IEEE International Conference on Software Testing, Verification and Validation. The question it asks is a practical one for anyone flying ROS 2 drones: which scenarios make a perception-driven autonomy stack fail, in how many different ways?&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;uav_track_crash&quot; class=&quot;animated&quot; height=&quot;225&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/a/0/a04d325085027ddeb1fa809f42c077ed7ae4c128.gif&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Flight c0017 from the released training data: after waypoint W4 a rotor strikes a placed pole, recorded as the mechanism (pole, rotor, turn).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What you build&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A scenario generator. It writes forest scenarios for a quadrotor: a patrol route, the width of the lane cleared along it, poles placed near the route, tree density, wind, cruise speed and altitude. Generators can be written in Python with the provided starter kit and are submitted as Docker images.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The stack under test (fixed for every team)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ROS 2 Jazzy&lt;/li&gt;
+&lt;li&gt;PX4 in software-in-the-loop, Holybro X500 airframe&lt;/li&gt;
+&lt;li&gt;Simulated RGB-D camera with RealSense D455 intrinsics&lt;/li&gt;
+&lt;li&gt;nvblox volumetric mapping&lt;/li&gt;
+&lt;li&gt;EGO-Planner&lt;/li&gt;
+&lt;li&gt;NVIDIA Isaac Sim 6.0.1 with the Pegasus Simulator, procedural forest scenes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;How it is scored&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Each submission writes 20 scenarios on an undisclosed seed; every scenario is flown three times. A collision is recorded as a failure mechanism: what was struck (pole, tree or terrain), with which part of the vehicle and in which route phase. Generators are ranked by how many distinct mechanisms their scenarios reach, so a generator that finds new ways to fail beats one that repeats the same crash. Scores appear on a live scoreboard and each team can submit up to five times; each team’s best submission is flown again on a new seed for the final ranking.&lt;/p&gt;
+&lt;p&gt;You do not need a GPU or a local Isaac Sim install to take part: all flights run on our side, while released flight data is available for training on request.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dates and recognition&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Submission deadline: 15 January 2027 (AoE)&lt;/li&gt;
+&lt;li&gt;Prizes for the three best teams in the final ranking&lt;/li&gt;
+&lt;li&gt;Participating teams may be invited to submit a 2 to 4 page tool paper in the ICST format&lt;/li&gt;
+&lt;li&gt;Results are presented at ICST 2027 in San Sebastián, Spain, 17 to 21 May 2027&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Links&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Track site: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://ideals-lab.github.io/uav-testing-track-2027/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;UAV Perception Testing Track&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Repository and starter kit: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/IDeaLS-Lab/uav-testing-track-2027&quot; rel=&quot;noopener nofollow ugc&quot;&gt;GitHub - IDeaLS-Lab/uav-testing-track-2027: UAV Perception Testing Track: a tool competition on test scenario generation for autonomous UAVs, proposed for the ICST 2027 Challenge Competition Track · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Official ICST call: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://conf.researchr.org/track/icst-2027/icst-2027-challenge-competition-track#pagetab-c008f3db-b76a-438a-8aaa-eb62b8f7219b&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ICST 2027 - Challenge Competition Track - ICST 2027&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Questions are welcome here or on the repository’s issue tracker. If you have worked on drone testing, nvblox or EGO-Planner, we would especially like to see what scenarios you come up with.&lt;/p&gt;
+&lt;p&gt;Prakash Aryan, on behalf of the organizers (The Italian Institute of Artificial Intelligence (AI4I) and the University of Bern)&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/call-for-participation-uav-perception-testing-track-at-icst-2027-ros-2-jazzy-px4-nvblox-isaac-sim/59591&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 06 Nov 2026 12:42:38 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Intrinsic Core released: Open-source, ROS-compatible real-time control, motion planning and more</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59457</guid>
+	<link>https://discourse.openrobotics.org/t/intrinsic-core-released-open-source-ros-compatible-real-time-control-motion-planning-and-more/59457</link>
+	<description>&lt;p&gt;A couple of weeks ago during ROSCon, we released Intrinsic Core (&lt;a class=&quot;inline-onebox&quot; href=&quot;http://github.com/intrinsic-ai/intrinsic-core&quot;&gt;GitHub - intrinsic-ai/intrinsic-core: Intrinsic Core™ provides an open, local runtime, SDK, and hardware agnostic, real-time control framework for industrial robotics. · GitHub&lt;/a&gt;), open-sourcing foundational capabilities and services from Intrinsic that we’ve been using for real-world manufacturing deployments. Intrinsic Core is interoperable with ROS via standard workspaces, message definitions, and tools, allowing developers to combine their existing ROS packages with Intrinsic capabilities.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/a/3/a3b80fd1bc8a39f40402b4eb00dd286788c8640d.jpeg&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;388&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/a/3/a3b80fd1bc8a39f40402b4eb00dd286788c8640d_2_690x388.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;We wanted to make it easier to prototype manufacturing workcells. It’s a pre-configured setup containing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A hardware-agnostic, real-time control framework, delivering fast, sensor-based feedback&lt;/li&gt;
+&lt;li&gt;Pose estimation, motion planning, and grasp planning capabilities&lt;/li&gt;
+&lt;li&gt;Simulation tools and a native digital twin&lt;/li&gt;
+&lt;li&gt;A reference solution called the Open Machine Tending Solution (&lt;a href=&quot;https://github.com/intrinsic-ai/omts&quot;&gt;OMTS&lt;/a&gt;), giving developers a ready-made starting point for real-world CNC machine tending.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The coolest part since releasing this has been watching what people are already doing with it. We’ve seen community members build variations on OMTS that are picking up and inserting car wheels with a custom gripper and larger robot. It’s exciting to see people jumping in and demonstrating this with local inference and ARM support.&lt;/p&gt;
+&lt;p&gt;As a longtime contributor to open source robotics, I’m excited to see what else we’ll build together - and the solutions made possible by collaborating in the open!&lt;/p&gt;
+&lt;p&gt;If you want to dig into the code, try out &lt;a href=&quot;https://github.com/intrinsic-ai/omts&quot;&gt;the reference design&lt;/a&gt;, or check out how the real-time controller is structured, you can get the repo here:&lt;/p&gt;
+&lt;aside class=&quot;onebox githubrepo github-onebox&quot;&gt;
+    &lt;header class=&quot;source github-onebox__header&quot;&gt;
+  &lt;span class=&quot;github-onebox__label&quot;&gt;
+    &lt;svg height=&quot;16&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z&quot; fill-rule=&quot;evenodd&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+    &lt;span&gt;Repository&lt;/span&gt;
+  &lt;/span&gt;
+    &lt;a class=&quot;github-onebox__repo&quot; href=&quot;https://github.com/intrinsic-ai/intrinsic-core&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;
+      &lt;svg height=&quot;16&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+      &lt;span&gt;intrinsic-ai/intrinsic-core&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/header&gt;
+
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    &lt;div class=&quot;github-row&quot;&gt;
+  &lt;img class=&quot;thumbnail&quot; height=&quot;344&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/f/5/f5b44612b7e45e9ae2678c0adc253cd6525a6ad8_2_690x344.png&quot; width=&quot;690&quot; /&gt;
+
+  &lt;h3&gt;&lt;a href=&quot;https://github.com/intrinsic-ai/intrinsic-core&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;GitHub - intrinsic-ai/intrinsic-core: Intrinsic Core™ provides an open, local runtime,...&lt;/a&gt;&lt;/h3&gt;
+
+    &lt;p&gt;&lt;span class=&quot;github-repo-description&quot;&gt;Intrinsic Core™ provides an open, local runtime, SDK, and hardware agnostic, real-time control framework for industrial robotics.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-119841-connect-and-find-out-more-1&quot; name=&quot;p-119841-connect-and-find-out-more-1&quot;&gt;&lt;/a&gt;Connect and find out more&lt;/h2&gt;
+&lt;p&gt;We’re really trying to make this as practical and open as possible for the developer community. Join the &lt;a href=&quot;https://developer.intrinsic.ai/create-profile&quot;&gt;Intrinsic developer community&lt;/a&gt; to access resources, news, and a community for support. Let us know your thoughts, feedback, or hear about what kind of hardware setups you’d want to test this on.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/intrinsic-core-released-open-source-ros-compatible-real-time-control-motion-planning-and-more/59457&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 02 Nov 2026 18:13:28 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: How did you like the Wordly service at RosCon Global?</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59408</guid>
+	<link>https://discourse.openrobotics.org/t/how-did-you-like-the-wordly-service-at-roscon-global/59408</link>
+	<description>&lt;p&gt;In the opening remarks of this year’s RosCon Global, there is a reference to the “AI interpretation” service Wordly.&lt;/p&gt;
+&lt;p&gt;Could I ask those who used it how did they like it? Did it do well with all the technical terms? Were there any other blockers or glitches?&lt;/p&gt;
+&lt;p&gt;I think OSRA also asked for some feedback regarding this service. Will this feedback (or its summary) be publicly available?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;I’m asking because my partner is an interpreter and she’s quite interested in knowing how far are these systems today &lt;img alt=&quot;:slight_smile:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/slight_smile.png?v=16&quot; title=&quot;:slight_smile:&quot; width=&quot;20&quot; /&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/how-did-you-like-the-wordly-service-at-roscon-global/59408&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sun, 01 Nov 2026 16:37:05 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Agentic Development platform for robotics</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59385</guid>
+	<link>https://discourse.openrobotics.org/t/agentic-development-platform-for-robotics/59385</link>
+	<description>&lt;p&gt;Hi everyone! &lt;img alt=&quot;:waving_hand:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/waving_hand.png?v=16&quot; title=&quot;:waving_hand:&quot; width=&quot;20&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I’m excited to share something we’ve been building.&lt;/p&gt;
+&lt;p&gt;We are &lt;strong&gt;Upfreq Robotics&lt;/strong&gt; — building an AI-native development environment for robotics software engineers to accelerate robot software development, simulation, and testing.&lt;/p&gt;
+&lt;p&gt;We’re currently opening up our application to a small group of &lt;strong&gt;beta users&lt;/strong&gt;, especially ROS2 developers and robotics engineers.&lt;/p&gt;
+&lt;p&gt;If you’re working with ROS2, developing robot applications, or experimenting with robotics simulation, we’d love to have you try it out and share your feedback.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;:rocket:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/rocket.png?v=16&quot; title=&quot;:rocket:&quot; width=&quot;20&quot; /&gt; &lt;strong&gt;Interested in early access?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Please fill out the early access form on our website:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;:globe_with_meridians:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/globe_with_meridians.png?v=16&quot; title=&quot;:globe_with_meridians:&quot; width=&quot;20&quot; /&gt; &lt;a href=&quot;https://upfreqrobotics.com&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://upfreqrobotics.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Selected beta users will get early access to the application.&lt;/p&gt;
+&lt;p&gt;Looking forward to connecting with fellow robotics developers! &lt;img alt=&quot;:handshake:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/handshake.png?v=16&quot; title=&quot;:handshake:&quot; width=&quot;20&quot; /&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;4 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/agentic-development-platform-for-robotics/59385&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sat, 31 Oct 2026 19:55:50 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Survey: where does your time go between laptop and robot? (3 min, results shared back)</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59366</guid>
+	<link>https://discourse.openrobotics.org/t/survey-where-does-your-time-go-between-laptop-and-robot-3-min-results-shared-back/59366</link>
+	<description>&lt;p&gt;Hi all,&lt;/p&gt;
+&lt;p&gt;I am a robotics researcher looking at where engineering time goes when software moves from a&lt;br /&gt;
+laptop or simulation to a real robot: integration, bring-up, timing, configuration, debugging&lt;br /&gt;
+between parts. I am trying to measure this across different setups, not just ROS 2, so answers&lt;br /&gt;
+from people using PX4, ArduPilot, bare-metal MCU code or in-house frameworks are equally welcome.&lt;/p&gt;
+&lt;p&gt;Survey link: &lt;a href=&quot;https://forms.cloud.microsoft/r/H7tDj276i5&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Robotics Integration Survey&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;- 20 multiple-choice questions, about 3 minutes&lt;br /&gt;
+- Anonymous, no email or name asked&lt;br /&gt;
+- I will post the aggregated results in this thread in about two weeks&lt;/p&gt;
+&lt;p&gt;If you work on more than one kind of robot, answer for the one you spend the most time on. Multiple answers are accepted for choices marked with square instead of circle.&lt;/p&gt;
+&lt;p&gt;Thank you, and please share it with colleagues who do not read Discourse. &lt;img alt=&quot;:slightly_smiling_face:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/slightly_smiling_face.png?v=16&quot; title=&quot;:slightly_smiling_face:&quot; width=&quot;20&quot; /&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/survey-where-does-your-time-go-between-laptop-and-robot-3-min-results-shared-back/59366&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 30 Oct 2026 18:13:36 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Open Telemetry - the next steps after logs with Matthew Macdonald-Wallace | Cloud Robotics WG Meeting 2026-11-16</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59358</guid>
+	<link>https://discourse.openrobotics.org/t/open-telemetry-the-next-steps-after-logs-with-matthew-macdonald-wallace-cloud-robotics-wg-meeting-2026-11-16/59358</link>
+	<description>&lt;p&gt;The next meeting of the CRWG will be at &lt;span class=&quot;discourse-local-date&quot;&gt;Mon, Nov 16, 2026 4:00 PM UTC&lt;/span&gt;→&lt;span class=&quot;discourse-local-date&quot;&gt;Mon, Nov 16, 2026 5:00 PM UTC&lt;/span&gt;, where guest speaker &lt;a href=&quot;https://www.linkedin.com/in/mattmacdonald-wallace/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Matthew Macdonald-Wallace&lt;/a&gt; from &lt;a href=&quot;https://www.dash0.com/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Dash0&lt;/a&gt; will talk about what comes next once you’ve got your logs under control, and why he thinks Open Telemetry is the best way to approach metrics, logs, &lt;strong&gt;and&lt;/strong&gt; traces today. The aim is visibility from end to end, from the control platform all the way down to the end device.&lt;/p&gt;
+&lt;p&gt;We will begin recording again from this meeting, and the link will be in the next post, so you won’t miss out if you can’t make it.&lt;/p&gt;
+&lt;p&gt;Last meeting, we continued editing the first draft of the Logging and Observability guide. We now consider the guide to be completely reviewed; I need to make a few last changes after last meeting, then release the guide, which will be a separate post. If you do see the guide, community contributions are very welcome, just raise an issue or a PR with suggested fixes!&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;meeting link for next meeting is &lt;a href=&quot;https://meet.google.com/xox-nshv-uvm&quot; rel=&quot;noopener nofollow ugc&quot;&gt;here&lt;/a&gt;&lt;/strong&gt;, and you can sign up to &lt;a href=&quot;https://calendar.google.com/calendar/u/0/embed?src=c_3fc5c4d6ece9d80d49f136c1dcd54d7f44e1acefdbe87228c92ff268e85e2ea0@group.calendar.google.com&amp;amp;ctz=UTC&quot; rel=&quot;noopener nofollow ugc&quot;&gt;our calendar&lt;/a&gt; or our &lt;a href=&quot;https://groups.google.com/g/cloud-robotics-working-group-invites&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Google Group&lt;/a&gt; for meeting notifications or keep an eye on the &lt;a href=&quot;https://cloudroboticshub.github.io/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Cloud Robotics Hub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hopefully we will see you there!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/open-telemetry-the-next-steps-after-logs-with-matthew-macdonald-wallace-cloud-robotics-wg-meeting-2026-11-16/59358&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 30 Oct 2026 12:26:54 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: FOSDEM 2027: Robotics &amp; Simulation Devroom, 3rd edition!</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59333</guid>
+	<link>https://discourse.openrobotics.org/t/fosdem-2027-robotics-simulation-devroom-3rd-edition/59333</link>
+	<description>&lt;p&gt;Hi folks! We have done it again, the 3rd edition of the Robotics and Simulation Devroom got accepted at &lt;a href=&quot;https://fosdem.org/2027/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;FOSDEM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/4/0/40a57e00124874ace16a2378a7e41bf2379703a0.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;429&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/4/0/40a57e00124874ace16a2378a7e41bf2379703a0_2_690x429.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;It will take place on &lt;span class=&quot;discourse-local-date&quot;&gt;Sun, Jan 31, 2027 8:00 AM UTC&lt;/span&gt;→&lt;span class=&quot;discourse-local-date&quot;&gt;Sun, Jan 31, 2027 6:00 PM UTC&lt;/span&gt; and is on the ULB campus, in Brussel, Belgium.&lt;/p&gt;
+&lt;aside class=&quot;onebox allowlistedgeneric&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+      &lt;img alt=&quot;&quot; class=&quot;site-icon&quot; height=&quot;32&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/8/3/830fa0b8b8dafac0ce6923b2a82ced19db735e88.png&quot; width=&quot;32&quot; /&gt;
+
+      &lt;a href=&quot;https://archive.fosdem.org/2026/&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;archive.fosdem.org&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    &lt;img alt=&quot;&quot; class=&quot;thumbnail onebox-avatar&quot; height=&quot;200&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/8/4/84d8eea6c16e0c52ada059165a59b7d4ad3f16ac.png&quot; width=&quot;200&quot; /&gt;
+
+&lt;h3&gt;&lt;a href=&quot;https://archive.fosdem.org/2026/&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;FOSDEM 2026 - Home&lt;/a&gt;&lt;/h3&gt;
+
+
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://robotics-devroom.github.io/cfp/fosdem27.html&quot; rel=&quot;noopener nofollow ugc&quot;&gt;call for participation is open&lt;/a&gt; to submit talk proposals for all things robotics, as long it is open source! And of course ROS and Gazebo are included!&lt;/p&gt;
+&lt;p&gt;If you have attended 5 ROSCons already, then you can talk about something else robotics/simulation related &lt;img alt=&quot;:wink:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/wink.png?v=16&quot; title=&quot;:wink:&quot; width=&quot;20&quot; /&gt; that is the beauty of FOSDEM, we invite all you crazy robotics people no matter from which project you are.&lt;/p&gt;
+&lt;aside class=&quot;onebox allowlistedgeneric&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+
+      &lt;a href=&quot;https://robotics-devroom.github.io/cfp/fosdem27.html&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;Robotics and Simulation Devroom&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    
+
+&lt;h3&gt;&lt;a href=&quot;https://robotics-devroom.github.io/cfp/fosdem27.html&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;Call for Participation 2027&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;Site of the Robotics and Simulation Devroom at FOSDEM 2026&lt;/p&gt;
+
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;The deadline is the 23rd of November so don’t wait with writing your proposal or forget to submit! Go, go, go!&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/5/1/51bbf2302032e0cba5858dbf60b3f5fea6a00cc8.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;image&quot;&gt;&lt;img alt=&quot;image&quot; height=&quot;414&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/5/1/51bbf2302032e0cba5858dbf60b3f5fea6a00cc8_2_690x414.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;And please, propose real-life robot demos. We need more of those!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/fosdem-2027-robotics-simulation-devroom-3rd-edition/59333&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 29 Oct 2026 15:39:56 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: How much RTK fix do your outdoor robots keep under tree canopy? Field data and a test design</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-59222</guid>
+	<link>https://discourse.openrobotics.org/t/how-much-rtk-fix-do-your-outdoor-robots-keep-under-tree-canopy-field-data-and-a-test-design/59222</link>
+	<description>&lt;p&gt;For those of you running outdoor robots (lawn mowers, orchard or vineyard platforms, campus AMRs), how much RTK fix do you actually keep under tree canopy?&lt;/p&gt;
+&lt;p&gt;We recently went through a field test that logged several RTK receivers side by side under roadside trees, and I thought the numbers, and their limits, might be useful here.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What was logged&lt;/strong&gt; (all at about 10 Hz, viewed in RTKPLOT):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Half sky + rain, 21.9 km baseline, about 61 min&lt;/li&gt;
+&lt;li&gt;Under trees + rain, 16.4 km baseline, about 39 min&lt;/li&gt;
+&lt;li&gt;Under trees + network RTK, 1.99 km baseline, about 61 min&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;What the status bars showed:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In both long-baseline sessions, three of four record groups (Septentrio mosaic-X5 / mosaic-H based receivers) held &lt;strong&gt;100% fixed (Q=1)&lt;/strong&gt; for the whole session.&lt;/li&gt;
+&lt;li&gt;One record group dropped to &lt;strong&gt;83.3%&lt;/strong&gt; (half sky) and &lt;strong&gt;88.5%&lt;/strong&gt; (under trees) fixed, with the rest float or DGPS. The ground track shows jumps of tens of centimetres when that happens.&lt;/li&gt;
+&lt;li&gt;On the 1.99 km network RTK session, both record groups held 100%.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;What it can’t tell you:&lt;/strong&gt; there was no ground truth and no raw observation data, the sessions changed canopy, baseline, correction source and weather all at once, and there was one unit per position. So it’s a status comparison, not an accuracy ranking. A fixed flag doesn’t prove the position was right.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If you’re evaluating receivers for a robot that works under trees,&lt;/strong&gt; this is the test design we’d recommend:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Same site, baseline and correction source; cross open-sky/under-canopy with dry/wet, three or more repeats each&lt;/li&gt;
+&lt;li&gt;A known control point or a long static baseline as truth&lt;/li&gt;
+&lt;li&gt;Log raw observations so every receiver can be reprocessed with the same RTKLIB settings&lt;/li&gt;
+&lt;li&gt;At least two units per model; log heading at the same time on dual-antenna setups&lt;/li&gt;
+&lt;li&gt;Report RMS and 95th percentile, time to first fix and availability, not only fix ratio, after decimating to 1 Hz&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;On the ROS side, the &lt;a href=&quot;https://github.com/septentrio-gnss/septentrio_gnss_driver&quot; rel=&quot;noopener nofollow ugc&quot;&gt;septentrio_gnss_driver&lt;/a&gt; publishes the solution status, so you can log fix state alongside your localization output and see exactly where under the canopy your EKF starts leaning on odometry.&lt;/p&gt;
+&lt;p&gt;The full write-up with all 36 figures and per-screenshot readings is here: &lt;a href=&quot;https://gnss-solutions.com/rtk-fix-ratio-under-tree-canopy-rain-field-review/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;RTK fix ratio under tree canopy and rain&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I’d be interested to hear what others see in practice: do you gate your localization on fix status, or blend float solutions with a larger covariance?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Disclosure: I work with Eview GNSS, which makes receivers based on Septentrio modules. Test data was supplied by the test team and is used with permission.&lt;/em&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;5 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/how-much-rtk-fix-do-your-outdoor-robots-keep-under-tree-canopy-field-data-and-a-test-design/59222&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 26 Oct 2026 18:08:02 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROSCon Türkiye 2026</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58981</guid>
+	<link>https://discourse.openrobotics.org/t/roscon-turkiye-2026/58981</link>
+	<description>&lt;p&gt;In collaboration with the &lt;strong&gt;Open Robotics&lt;/strong&gt; , &lt;strong&gt;Saha Robotics and Terminal Istanbul will jointly host and organize the very first ROSCon Türkiye 2026!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Location:&lt;/strong&gt; Terminal Istanbul, Istanbul, Türkiye&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Date:&lt;/strong&gt; December 3–4, 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conference languages:&lt;/strong&gt; English and Turkish&lt;/p&gt;
+&lt;p&gt;You can submit your talk proposal using the form in the &lt;strong&gt;Talks&lt;/strong&gt; section of our website. For &lt;strong&gt;ticket registration&lt;/strong&gt; and &lt;strong&gt;more information&lt;/strong&gt; about the event, please visit our official website:&lt;/p&gt;
+&lt;aside class=&quot;onebox allowlistedgeneric&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+      &lt;img alt=&quot;&quot; class=&quot;site-icon&quot; height=&quot;&quot; src=&quot;https://roscon.ros.org/tr/2026/img/favicon.ico&quot; width=&quot;&quot; /&gt;
+
+      &lt;a href=&quot;https://roscon.ros.org/tr/2026/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;roscon.ros.org&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    
+
+&lt;h3&gt;&lt;a href=&quot;https://roscon.ros.org/tr/2026/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;ROSCon Türkiye&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;The local Türkiye edition of the annual global ROS developer conference.&lt;/p&gt;
+
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;We look forward to welcoming the ROS community to Istanbul!&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/6/7/67d46697c96ae05280be73a58354d7636898e972.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;roscon_post&quot;&gt;&lt;img alt=&quot;roscon_post&quot; height=&quot;500&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/6/7/67d46697c96ae05280be73a58354d7636898e972_2_375x500.jpeg&quot; width=&quot;375&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;4 posts - 3 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/roscon-turkiye-2026/58981&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 20 Oct 2026 13:37:25 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Help us make image_transport and point_cloud_transport better for Makoa!</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58979</guid>
+	<link>https://discourse.openrobotics.org/t/help-us-make-image-transport-and-point-cloud-transport-better-for-makoa/58979</link>
+	<description>&lt;p&gt;Hi all, I’m not a maintainer of neither image_transport nor point_cloud_transport, though I’m their big user and proponent (point_cloud_transport has, in the end, origins in my lab &lt;img alt=&quot;:slight_smile:&quot; class=&quot;emoji&quot; height=&quot;20&quot; src=&quot;https://emoji.discourse-cdn.com/noto/slight_smile.png?v=15&quot; title=&quot;:slight_smile:&quot; width=&quot;20&quot; /&gt; , though it has come a long way since then).&lt;/p&gt;
+&lt;p&gt;The more I use both throughout various ROS 2 distros, the more obstacles and surprises I keep hitting.&lt;/p&gt;
+&lt;p&gt;I’ve started putting together a list of issues/API differences/API inconveniences of both: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://github.com/ros-perception/image_common/issues/434&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Unify the APIs of image_transport and point_cloud_transport in Makoa? · Issue #434 · ros-perception/image_common · GitHub&lt;/a&gt; . My ultimate goal would be to sync the API of both and make it easy to use in both Python and C++. I’d like to get it as easy as changing &lt;code&gt;rclcpp::Publisher&lt;/code&gt; for &lt;code&gt;image_transport::Publisher&lt;/code&gt; with minimum required code changes and with as many features as the normal publisher/subscriber has (like connect callbacks). Ideally, before Makoa Mata-mata code-freeze (May '27).&lt;/p&gt;
+&lt;p&gt;Do you agree this is something worth resolving? (there will be some API-level friction caused by this).&lt;/p&gt;
+&lt;p&gt;Do you see any other issues not mentioned in my Github post? Please add them!&lt;/p&gt;
+&lt;p&gt;The proposed timeline is collecting inputs until mid November and then start with the implementation.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;3 posts - 3 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/help-us-make-image-transport-and-point-cloud-transport-better-for-makoa/58979&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 20 Oct 2026 11:51:58 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Is OTA for ROS 2 robots a solved problem?</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58933</guid>
+	<link>https://discourse.openrobotics.org/t/is-ota-for-ros-2-robots-a-solved-problem/58933</link>
+	<description>&lt;p&gt;I could not find anything out there built specifically for OTA updates in the ROS 2 ecosystem. Coming from the web I wanted to see how close I could get to the developer experience I know, so I built a small project on a Raspberry Pi. The device pulls new container images from GitHub releases, runs a health check and rolls back automatically if a release is broken.&lt;/p&gt;
+&lt;p&gt;It turned out to be harder than just shipping Docker containers. My updater for example could not update itself. A/B updates seem to solve that, but each approach has its trade-offs.&lt;/p&gt;
+&lt;p&gt;So I would love to hear from people who run robots in production. What did you pick and why? Is anything still painful with Mender, balena or other tools or do they already cover everything?&lt;/p&gt;
+&lt;p&gt;Write-up: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://maxriazantsev.substack.com/p/the-code-was-the-easy-part&quot; rel=&quot;noopener nofollow ugc&quot;&gt;The code was the easy part - Max Riazantsev&lt;/a&gt;&lt;br /&gt;
+Code: &lt;a href=&quot;https://github.com/maxriazantsev/vision-stand&quot; rel=&quot;noopener nofollow ugc&quot;&gt;https://github.com/maxriazantsev/vision-stand&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/4/9/49f0e51bcc0f7ed23183ccfee32e7cf6d58539b7.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;vision-stand-photo&quot;&gt;&lt;img alt=&quot;vision-stand-photo&quot; height=&quot;500&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/4/9/49f0e51bcc0f7ed23183ccfee32e7cf6d58539b7_2_666x500.jpeg&quot; width=&quot;666&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;8 posts - 7 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/is-ota-for-ros-2-robots-a-solved-problem/58933&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sun, 18 Oct 2026 23:05:42 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Logging and Observability Guide Review Part 4 | Cloud Robotics WG Meeting 2026-10-19</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58901</guid>
+	<link>https://discourse.openrobotics.org/t/logging-and-observability-guide-review-part-4-cloud-robotics-wg-meeting-2026-10-19/58901</link>
+	<description>&lt;p&gt;The next meeting of the CRWG will be at &lt;span class=&quot;discourse-local-date&quot;&gt;Mon, Oct 19, 2026 4:00 PM UTC&lt;/span&gt;â†’&lt;span class=&quot;discourse-local-date&quot;&gt;Mon, Oct 19, 2026 5:00 PM UTC&lt;/span&gt;, where we will continue editing the first draft of the Logging and Observability guide. This will be very similar to the last meeting, except that the group hopes to finish the edit of the guide this meeting and send it to our prior guest speakers for review.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;meeting link for next meeting is &lt;a href=&quot;https://meet.google.com/xox-nshv-uvm&quot; rel=&quot;noopener nofollow ugc&quot;&gt;here&lt;/a&gt;&lt;/strong&gt;, and you can sign up to &lt;a href=&quot;https://calendar.google.com/calendar/u/0/embed?src=c_3fc5c4d6ece9d80d49f136c1dcd54d7f44e1acefdbe87228c92ff268e85e2ea0@group.calendar.google.com&amp;amp;ctz=UTC&quot; rel=&quot;noopener nofollow ugc&quot;&gt;our calendar&lt;/a&gt; or our &lt;a href=&quot;https://groups.google.com/g/cloud-robotics-working-group-invites&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Google Group&lt;/a&gt; for meeting notifications or keep an eye on the &lt;a href=&quot;https://cloudroboticshub.github.io/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;Cloud Robotics Hub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hopefully we will see you there!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/logging-and-observability-guide-review-part-4-cloud-robotics-wg-meeting-2026-10-19/58901&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 16 Oct 2026 10:29:50 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: AI-assisted inspection of ROS 2 systems: a preview of DDS Monitor Pro’s MCP integration</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58853</guid>
+	<link>https://discourse.openrobotics.org/t/ai-assisted-inspection-of-ros-2-systems-a-preview-of-dds-monitor-pro-s-mcp-integration/58853</link>
+	<description>&lt;p&gt;Hi everyone,&lt;/p&gt;
+&lt;p&gt;We at eProsima are sharing a preview of the upcoming AI capabilities in DDS Monitor Pro, with a workflow that is also relevant to engineers working with DDS-based ROS 2 systems.&lt;/p&gt;
+&lt;p&gt;The Monitorâ€™s built-in Model Context Protocol (MCP) server connects an MCP-compatible AI assistant to the system information and operations available in the Monitor. You can ask questions about the running system and inspect the resulting entities, charts and operations in the workspace.&lt;/p&gt;
+&lt;p&gt;The preview demonstrates four workflows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Explore discovered applications, topics, publishers and subscribers.&lt;/li&gt;
+&lt;li&gt;Create graphs from selected topic fields.&lt;/li&gt;
+&lt;li&gt;Investigate a communication problem using endpoint configuration, including a reliability QoS mismatch.&lt;/li&gt;
+&lt;li&gt;Publish sample data to a selected topic in a test environment and observe the response.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For ROS 2 deployments using DDS, the connection is the underlying DDS topics and endpoints. The Monitor works at that layer; this is not a claim that it understands every ROS graph concept or supports every ROS middleware implementation.&lt;/p&gt;
+&lt;p&gt;Fast DDS Pro can also be integrated into ROS 2 and Vulcanexus to provide additional communication capabilities and professional tools. That integration is distinct from the requirements for inspecting a particular system with the Monitor.&lt;/p&gt;
+&lt;p&gt;The linked videos demonstrate the DDS workflows. For a specific ROS 2 setup, compatibility and the available operations depend on the middleware, versions, topic type information and configuration.&lt;/p&gt;
+&lt;p&gt;DDS Monitor Pro is a commercial product. These new capabilities are in final testing, with release expected in the coming weeks. The MCP server starts disabled. Once enabled, connected clients can invoke supported operations without a separate approval prompt for each action, so use trusted clients and a test environment for publishing data.&lt;/p&gt;
+&lt;p&gt;Watch the announcement:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=yyrkuKhllpw&quot;&gt;DDS Monitor Pro AI Preview | Explore Your DDS System with Natural Language&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Explore the preview, short demonstrations and tutorial:&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;onebox&quot; href=&quot;https://www.eprosima.com/middleware/tools/dds-monitor-pro/ai-preview&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;https://www.eprosima.com/middleware/tools/dds-monitor-pro/ai-preview&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Which ROS 2 inspection or debugging tasks would you find most useful to perform through this interface? We would welcome examples of your workflows and questions about compatibility.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/ai-assisted-inspection-of-ros-2-systems-a-preview-of-dds-monitor-pro-s-mcp-integration/58853&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 14 Oct 2026 09:09:24 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Rclnodejs 2.3.0: ROS 2 Actions over WebSocket and HTTP/SSE</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58817</guid>
+	<link>https://discourse.openrobotics.org/t/rclnodejs-2-3-0-ros-2-actions-over-websocket-and-http-sse/58817</link>
+	<description>&lt;p&gt;Send a goal, follow the feedback, get the result. &lt;a href=&quot;https://github.com/RobotWebTools/rclnodejs/releases/tag/2.3.0&quot; rel=&quot;noopener nofollow ugc&quot;&gt;rclnodejs 2.3.0&lt;/a&gt;, the ROS 2 client library for Node.js, brings ROS 2 actions to web apps over WebSocket and HTTP/SSE.&lt;/p&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118984-ros-2-actions-from-the-browser-1&quot; name=&quot;p-118984-ros-2-actions-from-the-browser-1&quot;&gt;&lt;/a&gt;ROS 2 Actions from the Browser&lt;/h2&gt;
+&lt;p&gt;The browser SDK derives TypeScript goal, feedback and result types from generated ROS declarations. OpenAPI export also includes action schemas.&lt;/p&gt;
+&lt;p&gt;With an HTTP runtime on port 9001 exposing a running Fibonacci action server as &lt;code&gt;/fibonacci&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-js&quot;&gt;import { connect } from 'rclnodejs/web';
+
+const ros = await connect({ http: 'http://localhost:9001' });
+try {
+  const goal = await ros.action(
+    '/fibonacci',
+    { order: 5 },
+    { onFeedback: (feedback) =&amp;gt; console.log(feedback.sequence) }
+  );
+  console.log(await goal.result, goal.status);
+} finally {
+  await ros.close();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118984-web-capabilities-at-a-glance-2&quot; name=&quot;p-118984-web-capabilities-at-a-glance-2&quot;&gt;&lt;/a&gt;Web capabilities at a glance&lt;/h2&gt;
+&lt;p&gt;Together with the topic and service support from earlier releases, actions round out the following client-facing operations, controlled by the same capability allow-list:&lt;/p&gt;
+&lt;div class=&quot;md-table&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;ROS 2 operation&lt;/th&gt;
+&lt;th&gt;WebSocket&lt;/th&gt;
+&lt;th&gt;HTTP / SSE&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Publish topic messages&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;HTTP POST&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Subscribe to topics&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;HTTP GET + SSE (opt-in)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Call services&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;HTTP POST&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Send action goals, receive feedback/results &lt;strong&gt;(new)&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;HTTP POST + SSE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Request cancellation of an action goal &lt;strong&gt;(new)&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Yes; server may reject&lt;/td&gt;
+&lt;td&gt;Not supported&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;&lt;p&gt;Try the &lt;a href=&quot;https://github.com/RobotWebTools/rclnodejs/tree/2.3.0/demo/web&quot; rel=&quot;noopener nofollow ugc&quot;&gt;JavaScript and TypeScript demos&lt;/a&gt; for runnable examples.&lt;/p&gt;
+&lt;p&gt;For background on the typed Web SDK and capability runtime first introduced in 2.0.0, see our &lt;a href=&quot;https://discourse.openrobotics.org/t/rclnodejs-2-0-0-typed-web-sdk-for-ros-2-ready-for-lyrical/55061&quot;&gt;original announcement&lt;/a&gt;.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;2 posts - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/rclnodejs-2-3-0-ros-2-actions-over-websocket-and-http-sse/58817&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 13 Oct 2026 07:43:15 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Upcoming breaking changes in ros2_control: deprecated Handle / export APIs removed</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58708</guid>
+	<link>https://discourse.openrobotics.org/t/upcoming-breaking-changes-in-ros2-control-deprecated-handle-export-apis-removed/58708</link>
+	<description>&lt;p&gt;Quick heads-up for anyone maintaining &lt;strong&gt;hardware components&lt;/strong&gt; or &lt;strong&gt;controllers&lt;/strong&gt; on &lt;strong&gt;Rolling or Lyrical&lt;/strong&gt;: &lt;code&gt;ros2_control 6.12.0&lt;/code&gt; removes the API that has been deprecated since Jazzy. It has been released into Lyrical and Rolling and will reach users with the next sync. We’ve patched most simulators and many public drivers already.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If your package currently builds with deprecation warnings from &lt;code&gt;hardware_interface&lt;/code&gt; or &lt;code&gt;controller_interface&lt;/code&gt;, it will very likely fail to build after the sync.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Jazzy and Kilted are &lt;strong&gt;not affected&lt;/strong&gt;. The deprecated API remains there for backward compatibility.&lt;/p&gt;
+&lt;h4&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118853-migration-notes-1&quot; name=&quot;p-118853-migration-notes-1&quot;&gt;&lt;/a&gt;Migration notes&lt;/h4&gt;
+&lt;p&gt;We had &lt;a href=&quot;https://control.ros.org/rolling/doc/ros2_control/doc/migration.html&quot;&gt;migration notes&lt;/a&gt; for this available for some time but today I made some updates too on &lt;a href=&quot;https://github.com/ros-controls/ros2_control/pull/3674&quot; rel=&quot;noopener nofollow ugc&quot;&gt;this PR&lt;/a&gt;, should it be still in flight when you are reading this.&lt;/p&gt;
+&lt;h4&gt;&lt;a class=&quot;anchor&quot; href=&quot;https://discourse.openrobotics.org#p-118853-whats-being-removed-2&quot; name=&quot;p-118853-whats-being-removed-2&quot;&gt;&lt;/a&gt;What’s being removed&lt;/h4&gt;
+&lt;p&gt;Affected packages are &lt;code&gt;hardware_interface&lt;/code&gt; and &lt;code&gt;controller_interface&lt;/code&gt; from this PR &lt;a href=&quot;https://github.com/ros-controls/ros2_control/pull/3610&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ros2_control#3610&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Raw-pointer handles.&lt;/strong&gt; You can no longer construct a &lt;code&gt;StateInterface&lt;/code&gt;/&lt;code&gt;CommandInterface&lt;/code&gt; from a &lt;code&gt;double*&lt;/code&gt; that points into your own member variables. Handles now own their data, and you access it through shared pointers and the getter/setter API.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Legacy hardware component exports.&lt;/strong&gt; &lt;code&gt;export_state_interfaces()&lt;/code&gt; and &lt;code&gt;export_command_interfaces()&lt;/code&gt;, which return interfaces by value, are removed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Legacy chainable controller exports.&lt;/strong&gt; The old by-value export methods on &lt;code&gt;ChainableControllerInterface&lt;/code&gt; are removed in favour of the shared-pointer &lt;code&gt;on_export_*_interfaces_list()&lt;/code&gt; callbacks.&lt;/li&gt;
+&lt;/ol&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/upcoming-breaking-changes-in-ros2-control-deprecated-handle-export-apis-removed/58708&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 08 Oct 2026 18:02:33 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Rokoko ROS 2 bridge for Smartgloves II is released</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58658</guid>
+	<link>https://discourse.openrobotics.org/t/rokoko-ros-2-bridge-for-smartgloves-ii-is-released/58658</link>
+	<description>&lt;p&gt;We’ve released an open-source ROS 2 bridge for the Rokoko Device SDK. It takes solved hand data from &lt;strong&gt;Smartgloves II&lt;/strong&gt; and publishes it natively into ROS 2.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/9/29695c1fb21034aeca120aae327fb85eef9d70d1.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;1791280376688&quot;&gt;&lt;img alt=&quot;1791280376688&quot; height=&quot;368&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/9/29695c1fb21034aeca120aae327fb85eef9d70d1.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;What’s included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;26-joint hand poses&lt;/strong&gt; per solved frame, in OpenXR &lt;code&gt;XrHandJointEXT&lt;/code&gt; order.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TF transforms&lt;/strong&gt;, one per joint (opt-in).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RViz visualization&lt;/strong&gt; of the hand skeleton (opt-in).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Per-hand diagnostics&lt;/strong&gt; on &lt;code&gt;/diagnostics&lt;/code&gt;, once a second.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;calibrate service&lt;/strong&gt; to set which direction is “forward”.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One launch command&lt;/strong&gt; starts the driver, hand solver and bridge together.&lt;/li&gt;
+&lt;li&gt;One left and one right glove are supported at a time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Requirements: &lt;strong&gt;ROS 2 Lyrical Luth&lt;/strong&gt; and &lt;strong&gt;Rokoko Device SDK 0.10.0&lt;/strong&gt; or newer.&lt;/p&gt;
+&lt;p&gt;Licensed under &lt;strong&gt;Apache 2.0&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Docs: &lt;a class=&quot;inline-onebox&quot; href=&quot;https://sdk.rokoko.com/integrations/ros2/&quot; rel=&quot;noopener nofollow ugc&quot;&gt;ROS 2 bridge | ROKOKO Device SDK&lt;/a&gt;&lt;/p&gt;
+&lt;aside class=&quot;onebox githubrepo&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+
+      &lt;a href=&quot;https://github.com/Rokoko/rokoko-ros2-bridge&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;github.com&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    &lt;div class=&quot;github-row&quot;&gt;
+  &lt;img class=&quot;thumbnail&quot; height=&quot;344&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/1/4/147eebb2c8e0dd9a1de174c345c66a05d99bff1b_2_690x344.png&quot; width=&quot;690&quot; /&gt;
+
+  &lt;h3&gt;&lt;a href=&quot;https://github.com/Rokoko/rokoko-ros2-bridge&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;GitHub - Rokoko/rokoko-ros2-bridge: A ROS2 bridge to be used with Rokoko's Smartgloves...&lt;/a&gt;&lt;/h3&gt;
+
+    &lt;p&gt;&lt;span class=&quot;github-repo-description&quot;&gt;A ROS2 bridge to be used with Rokoko's Smartgloves II along the Rokoko Device SDK&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/rokoko-ros-2-bridge-for-smartgloves-ii-is-released/58658&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 07 Oct 2026 16:11:22 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: University of Waterloo user study on understanding CMake changes</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58616</guid>
+	<link>https://discourse.openrobotics.org/t/university-of-waterloo-user-study-on-understanding-cmake-changes/58616</link>
+	<description>&lt;p&gt;Hi everyone,&lt;/p&gt;
+&lt;p&gt;I’m Mattie Nejati, a Ph.D. candidate at the University of Waterloo. I’m recruiting participants for a user study on &lt;strong&gt;understanding the impact of changes to CMake build specifications&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Since CMake is widely used in the ROS ecosystem, I thought developers in this community might be particularly interested in participating.&lt;/p&gt;
+&lt;p&gt;We are evaluating a new approach that aims to help developers identify how a modification to a CMake build specification affects the resulting build configuration.&lt;/p&gt;
+&lt;p&gt;The study is conducted entirely online, takes about &lt;strong&gt;one hour&lt;/strong&gt;, and involves inspecting changes to CMake build specifications and identifying their impact.&lt;/p&gt;
+&lt;p&gt;You can participate if you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;are &lt;strong&gt;18–64 years old&lt;/strong&gt;; and&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;have any level of experience with &lt;strong&gt;CMake, programming, or code review&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You do &lt;strong&gt;not&lt;/strong&gt; need to be a CMake expert. We are interested in participants with different levels of experience.&lt;/p&gt;
+&lt;p&gt;You will need a computer with internet access and approximately &lt;strong&gt;4 GB of free space&lt;/strong&gt; to download the files required for the tasks.&lt;/p&gt;
+&lt;p&gt;We will not collect your name. We will ask for your email address only for study follow-up. It will be stored separately from your study data using a randomly assigned ID, and your name or email will not appear in any dataset or publication.&lt;/p&gt;
+&lt;p&gt;The study has received clearance from the &lt;strong&gt;University of Waterloo Research Ethics Board (REB &lt;span class=&quot;hashtag-raw&quot;&gt;#46621&lt;/span&gt;)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If you’re interested, you can find the consent form, screening questionnaire, and study here:&lt;/p&gt;
+&lt;aside class=&quot;onebox allowlistedgeneric&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+
+      &lt;a href=&quot;https://buiscout.cs.uwaterloo.ca/&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;buiscout.cs.uwaterloo.ca&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    
+
+&lt;h3&gt;&lt;a href=&quot;https://buiscout.cs.uwaterloo.ca/&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;Buiscoutusp&lt;/a&gt;&lt;/h3&gt;
+
+
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;Thank you very much for considering participating! I’d also really appreciate it if you shared the study with others who might be interested.&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/university-of-waterloo-user-study-on-understanding-cmake-changes/58616&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 06 Oct 2026 06:26:10 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Tuning StereoSGBM on PS5 Camera (ROS 2 Galactic) for Dense Depth Maps</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58568</guid>
+	<link>https://discourse.openrobotics.org/t/tuning-stereosgbm-on-ps5-camera-ros-2-galactic-for-dense-depth-maps/58568</link>
+	<description>&lt;p&gt;Hi everyone,&lt;/p&gt;
+&lt;p&gt;I’m working on setting up a stereo camera PS5 HD Camera in ROS 2 Galactic for stereo depth estimation using &lt;code&gt;stereo_image_proc&lt;/code&gt; (&lt;code&gt;DisparityNode&lt;/code&gt;), with the end goal of feeding the depth data into RTAB-Map for 3D reconstruction.&lt;/p&gt;
+&lt;p&gt;I transitioned from &lt;code&gt;StereoBM&lt;/code&gt; to &lt;code&gt;StereoSGBM&lt;/code&gt; (&lt;code&gt;stereo_algorithm: 1&lt;/code&gt;) to handle the wide-angle camera setup better, but I’m having trouble finding the optimal combination of parameters which result in a dense point cloud with smooth surfaces. My depth output keeps swinging between two extremes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Extremely sparse/empty&lt;/strong&gt; with huge black gaps on uniform surfaces (e.g., walls, desks, pillows).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Overly noisy&lt;/strong&gt; with heavy color “speckle” artifacts across the scene.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What I’ve configured/tried so far:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Matching P1 and P2 to window size:&lt;/strong&gt; Calculated and tuned P1 and P2 based on &lt;code&gt;correlation_window_size&lt;/code&gt; (testing window sizes 5, 7, 9, and 13 with corresponding P₁ = 8 × C × WS² and P₂ = 32 × C × WS²). High P2 values help smooth out surfaces, but &lt;code&gt;rqt_reconfigure&lt;/code&gt; caps P2 at 4000.0, so I’ve been overriding parameters via CLI/launch files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Filter adjustments:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Lowered &lt;code&gt;uniqueness_ratio&lt;/code&gt; (from 15.0 down to 5.0–7.0) to force coverage on weakly textured regions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set &lt;code&gt;texture_ratio&lt;/code&gt; to 0.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tuned &lt;code&gt;speckle_size&lt;/code&gt; (50–200) and &lt;code&gt;speckle_range&lt;/code&gt; (2–4) to filter out isolated noise clusters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Search range &amp;amp; Offsets:&lt;/strong&gt; Set &lt;code&gt;disparity_range&lt;/code&gt; to 128 (multiple of 16) and kept &lt;code&gt;min_disparity&lt;/code&gt; at 0 (raising it above 0 completely wrecked mid/far range depth).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Despite these adjustments, large homogeneous surfaces still disintegrate or become heavily fragmented unless I push the correlation window size to absurdly high values (which causes blocky, stepped artifacts).&lt;/p&gt;
+&lt;p&gt;Here is the code of my DisparityNode in the launch file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-auto&quot;&gt;ComposableNode(
+                    package='stereo_image_proc',
+                    plugin='stereo_image_proc::DisparityNode',
+                    name='disparity_node',
+                    namespace='',
+                    parameters=[{
+                        'stereo_algorithm': 1,          # 0 = StereoBM (30 FPS), 1 = StereoSGBM
+                        'approximate_sync': True,
+                        'queue_size': 2,
+                        'correlation_window_size': 13,
+                        'min_disparity': 0,
+                        'disparity_range': 128,
+                        'uniqueness_ratio': 5.0,
+                        'P1': 1350.0,                         # 8 * 1 * 9^2 (for smoothing boundaries)
+                        'P2': 4000.0,                        # 32 * 1 * 9^2 (for smooth surfaces)
+                        'speckle_size': 150,
+                        'speckle_range': 4,
+                        'full_dp': False,
+                    }]
+                ),
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here I attach the results I got so far.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/7/3/73ead5bbbbab9c566b5a7e0beff74645e6b99912.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;1ks7j200s3th1&quot;&gt;&lt;img alt=&quot;1ks7j200s3th1&quot; height=&quot;399&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/7/3/73ead5bbbbab9c566b5a7e0beff74645e6b99912_2_690x399.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/7/b/7b6487a71b3c464ee7b73e668a66fcdb55852467.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;2u6jvrjko3th1&quot;&gt;&lt;img alt=&quot;2u6jvrjko3th1&quot; height=&quot;311&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/7/b/7b6487a71b3c464ee7b73e668a66fcdb55852467_2_690x311.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Questions:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Are there specific pre-filtering parameters (&lt;code&gt;prefilter_cap&lt;/code&gt;, &lt;code&gt;prefilter_size&lt;/code&gt;) or SGBM settings I’m overlooking for this specific camera lens/sensor?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Could this be a rectification/calibration alignment issue rather than pure SGBM parameter tuning?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Any advice or working configuration examples for similar stereo setups in ROS 2 would be greatly appreciated!&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/tuning-stereosgbm-on-ps5-camera-ros-2-galactic-for-dense-depth-maps/58568&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sun, 04 Oct 2026 09:10:01 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: RobotCAD v12.10.0 is released!</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58566</guid>
+	<link>https://discourse.openrobotics.org/t/robotcad-v12-10-0-is-released/58566</link>
+	<description>&lt;p&gt;It’s been a long time since I posted any news. Many new features and fixes have been released.&lt;/p&gt;
+&lt;p&gt;Here is a list of some of them that have appeared in recent versions.&lt;/p&gt;
+&lt;p&gt;Added &lt;strong&gt;RobotCAD MCP&lt;/strong&gt; server for agentic robot assembling.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/d/c/dcf1ac4e46c1872a73260e38f419bed6ba87672d.jpeg&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;mcp&quot;&gt;&lt;img alt=&quot;mcp&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/d/c/dcf1ac4e46c1872a73260e38f419bed6ba87672d_2_690x381.jpeg&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/e/6/e60507307bcd323d4e7a414c8bcfc5e21d5dc2e5.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;mcp1&quot;&gt;&lt;img alt=&quot;mcp1&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/e/6/e60507307bcd323d4e7a414c8bcfc5e21d5dc2e5_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Updated Models Library. &lt;strong&gt;More models (219 now) and faster import&lt;/strong&gt;. Added xacro and mjcf models import from Models Library.&lt;/p&gt;
+&lt;div class=&quot;d-image-grid&quot;&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/7/273deac10bf1a96f0e9e1b93510aefb2309066f0.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-57-28&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-57-28&quot; height=&quot;380&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/2/7/273deac10bf1a96f0e9e1b93510aefb2309066f0_2_690x380.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/7/b/7b36bf0bebb52c97adc4edf6a4edab81acb0399d.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-19-09&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-19-09&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/7/b/7b36bf0bebb52c97adc4edf6a4edab81acb0399d_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/9/0/90ef9ef6c32dc57e0dedef459ac57437f542aed6.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-18-26&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-18-26&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/9/0/90ef9ef6c32dc57e0dedef459ac57437f542aed6_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/f/2fb0be84d1996e17608ed0458204cf40e29e40c8.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-16-42&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-16-42&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/2/f/2fb0be84d1996e17608ed0458204cf40e29e40c8_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/9/4/94c0d2b072b49d2283aa9d63df69f6c6de0a5009.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-16-11&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-16-11&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/9/4/94c0d2b072b49d2283aa9d63df69f6c6de0a5009_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/9/1/91f92cf04e5eb7dfc617eb3b0d2453b55c38633a.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-15-42&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-15-42&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/9/1/91f92cf04e5eb7dfc617eb3b0d2453b55c38633a_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/d/2d587fb0b26f433b6cd0eaec657b046f5d60a0f5.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-14-47&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-14-47&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/2/d/2d587fb0b26f433b6cd0eaec657b046f5d60a0f5_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/3/f/3f453676a35b7cb97b2d1feb5058f81c9dcb5536.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-13-52&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-13-52&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/3/f/3f453676a35b7cb97b2d1feb5058f81c9dcb5536_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/9/8/98c47fab731fa6696125e98359fb47cab03b1683.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;Снимок экрана_2026-10-02_23-12-25&quot;&gt;&lt;img alt=&quot;Снимок экрана_2026-10-02_23-12-25&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/9/8/98c47fab731fa6696125e98359fb47cab03b1683_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/8/b/8bd072b4f34be980ca02620cb946371d6f4426dd.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;models_library&quot;&gt;&lt;img alt=&quot;models_library&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/8/b/8bd072b4f34be980ca02620cb946371d6f4426dd_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Added &lt;strong&gt;sensors field of view&lt;/strong&gt; with reacting to sensor parameters.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/9/a/9ac9168bc7509f30fbd8138751cc3f52343f1da2.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;sensors_field_of_view&quot;&gt;&lt;img alt=&quot;sensors_field_of_view&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/9/a/9ac9168bc7509f30fbd8138751cc3f52343f1da2_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Other features and fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed an error in &lt;strong&gt;collision creation&lt;/strong&gt; for objects obtained via a link from an &lt;strong&gt;external document.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed the URDF export for meshes retrieved from an &lt;strong&gt;external document via a link.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set Placement&lt;/strong&gt; tools now support &lt;code&gt;Part::LocalCoordinateSystem&lt;/code&gt; (LCS) objects, not only &lt;code&gt;PartDesign::CoordinateSystem&lt;/code&gt;. It also fixes &lt;strong&gt;FreeCAD Assembly to RobotCAD convertion&lt;/strong&gt; with that type of CS as references of joints.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set Placement&lt;/strong&gt; tools now work correctly with links to parts/bodies from &lt;strong&gt;external documents&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;strong&gt;sensors bridging GZ → ROS2&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Controllers config are now also placed in the basic code generator’s config folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;External code generator now support &lt;strong&gt;Sverk&lt;/strong&gt; (&lt;strong&gt;multicopter framework based on PX4&lt;/strong&gt;). This significantly simplifies the control of aerial robots.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;strong&gt;vacuum gripper&lt;/strong&gt; tool. You can make vacuum gripper for Gazebo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added automatic storing parts of robot to folders when using some model creation tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;strong&gt;dependencies installation system&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;lightbox-wrapper&quot;&gt;&lt;a class=&quot;lightbox&quot; href=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/4/8/4897f91753b453201805eaabfc5bfa0bfb3d84c1.png&quot; rel=&quot;noopener nofollow ugc&quot; title=&quot;deps_install_sys&quot;&gt;&lt;img alt=&quot;deps_install_sys&quot; height=&quot;381&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/4/8/4897f91753b453201805eaabfc5bfa0bfb3d84c1_2_690x381.png&quot; width=&quot;690&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Many fixes and improvements were not included in this list.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class=&quot;onebox githubrepo&quot;&gt;
+  &lt;header class=&quot;source&quot;&gt;
+
+      &lt;a href=&quot;https://github.com/drfenixion/freecad.robotcad&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;github.com&lt;/a&gt;
+  &lt;/header&gt;
+
+  &lt;article class=&quot;onebox-body&quot;&gt;
+    &lt;div class=&quot;github-row&quot;&gt;
+  &lt;img class=&quot;thumbnail&quot; height=&quot;344&quot; src=&quot;https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/0/1/0151db1709258c0e6231c244e81b022d08e558fc_2_690x344.png&quot; width=&quot;690&quot; /&gt;
+
+  &lt;h3&gt;&lt;a href=&quot;https://github.com/drfenixion/freecad.robotcad&quot; rel=&quot;noopener nofollow ugc&quot; target=&quot;_blank&quot;&gt;GitHub - drfenixion/freecad.robotcad: RobotCAD is a FreeCAD workbench to generate robot...&lt;/a&gt;&lt;/h3&gt;
+
+    &lt;p&gt;&lt;span class=&quot;github-repo-description&quot;&gt;RobotCAD is a FreeCAD workbench to generate robot description packages for ROS2 (URDF) with launchers to Gazebo and RViz. Includes controllers based on ros2_controllers and sensors based on Gazebo. With integrated models library and a lot of other tools. In other words CAD → ROS2.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;/article&gt;
+
+  &lt;div class=&quot;onebox-metadata&quot;&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/robotcad-v12-10-0-is-released/58566&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sun, 04 Oct 2026 06:26:18 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: Has anyone found a reliable way to validate a hand eye calibration result?</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58556</guid>
+	<link>https://discourse.openrobotics.org/t/has-anyone-found-a-reliable-way-to-validate-a-hand-eye-calibration-result/58556</link>
+	<description>&lt;p&gt;I have been trying to work out how a hand eye calibration should be validated and I have not found any complete answer yet&lt;/p&gt;
+&lt;p&gt;There are some tools I looked at (MoveIt Calibration, easy_handeye, Kalibr) that just print reprojection error or transform, but I could not find a clear way to decide from that whether the result can be trusted or not. I read some of their GitHub issues and many people seem to end up in the same place “result looks off” and the only way to find out why is to ask someone more experienced.&lt;/p&gt;
+&lt;p&gt;Checking by eye on one robot and looking at each result in RViz is one thing and it’s fine. But that shouldn’t be the proper way to do it, especially at scale right?&lt;/p&gt;
+&lt;p&gt;So I would really like to know how people handle it in practice. What do you run after a calibration to decide it is good? Validation motion, touching a known point, comparing against a measured pose and does any of it work without someone experienced doing the judging?&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/has-anyone-found-a-reliable-way-to-validate-a-hand-eye-calibration-result/58556&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sat, 03 Oct 2026 12:00:31 +0000</pubDate>
+</item>
+<item>
+	<title>ROS Discourse General: ROS2 Parameter Value Querying</title>
+	<guid isPermaLink="false">discourse.openrobotics.org-topic-58542</guid>
+	<link>https://discourse.openrobotics.org/t/ros2-parameter-value-querying/58542</link>
+	<description>&lt;p&gt;I need a much better way of grabbing the current value of every parameter of every node running on my system. Not just the dynamic ones, but the defaults and overrides from the launch system. From an experiment documentation standpoint, this is extremely important to understanding exactly how things are configured when producing data and later if data is changing figuring if one of these changed. Sure some nodes may be less important and their parameters not matter much, but there would remain many that are important, so I just want to query all of them. Unfortunately in ROS2 this is extremely disruptive to the node graph and it causes data I’m recording to have gaps. I’ve already played around with QoS to make this a little better, but the entire problem is so frustrating regardless. It was so much better in ROS1. Does anyone have a low impact method to achieve this? Or are there plans to make the parameter system smarter in the future? Is there perhaps an easy way behind the scenes to mod source code and do something like write the parameters values to a field/database on startup?&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;5 posts - 4 participants&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://discourse.openrobotics.org/t/ros2-parameter-value-querying/58542&quot;&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 02 Oct 2026 16:12:39 +0000</pubDate>
+</item>
+
+</channel>
+</rss>
