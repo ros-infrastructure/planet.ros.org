@@ -1,0 +1,132 @@
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0;
+    font-family: "Arial",sans-serif;
+}
+
+.top_block {
+    border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    border-width: medium;
+    border-color: #2E3E60;
+    border-style:solid;
+    border-top: none;
+    margin-bottom:20px;
+    width:500px;
+    padding-bottom:15px;
+    padding-top:5px
+}
+
+#participants {
+  text-align:left;
+}
+
+#add_your_blog {
+  text-align:left;
+}
+
+.ROS_planet_text {
+    font-size: 40pt;
+    font-family: "Interstate",sans-serif;
+    color:#2E3E60;
+    font-weight: bold;
+    font-stretch:semi-condensed;
+}
+
+#top_info {
+    text-align: left;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-width: medium;
+    border-color: #2E3E60;
+    border-style:solid;
+}
+
+.entry {
+    font-size: 11pt;
+    margin-bottom: 2em;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-width: medium;
+    border-color: #2E3E60;
+    border-style:solid;
+    width: 800px;
+}
+
+.entry .content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.entry .by_and_date {
+	color: grey;
+    text-align: right;
+}
+
+.entry .by_and_date a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.entry_title {
+    font-weight: none;
+    font-size: 25pt;
+    padding-bottom: 20pt;
+    float:left;
+}
+
+.channel_name {
+    color: grey;
+    font-weight: none;
+    float:right;
+}
+
+.date {
+    font-size: 20pt;
+    font-weight: none;
+    color:#2E3E60;
+    padding-bottom: 15px;
+}
+
+.entry a {
+    text-decoration: none;
+    color: #2E3E60;
+}
+
+a:hover {
+	text-decoration: underline !important;
+}
+
+.top_button {
+    color: grey;
+    text-decoration: none;
+    text-align: center;
+}
+
+.top_button a:active, a:focus, input[type="image"] {
+outline: 0;
+}
+
+div.top_button {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.top_button img {
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.top_button .icon {
+    width: 30px;
+    height: 30px;
+}
